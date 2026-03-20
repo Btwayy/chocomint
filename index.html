@@ -15,10 +15,7 @@
         \  .-'''-.  /
         '-\__Y__/-'
 
-        不过既然看到这里了，那就奖励你一个小彩蛋吧！🎁
-
-        试着把<style>block里奇怪的class name输入进console里的atob function里，看看会发生什么吧！😉
-        e.g. decode方法：atob('dG9reW8gdW5pdmVyc2l0eQ==')
+        网站建设中，敬请期待！ʕ •ᴥ•ʔ
         __         __
         /  \.-"""-./  \
         \    -   -    /
@@ -165,17 +162,27 @@
 
         function wait(ms) {
             const totalSeconds = Math.max(0, Math.floor(ms / 1000));
-            const h = Math.floor(totalSeconds / 3600);
+
+            const d = Math.floor(totalSeconds / 86400);
+            const h = Math.floor((totalSeconds % 86400) / 3600);
             const m = Math.floor((totalSeconds % 3600) / 60);
             const s = totalSeconds % 60;
-            const timeStr = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            const timeStr = `${d.toString().padStart(2, '0')}:${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
 
             root.style.justifyContent = 'center';
+            root.style.display = 'flex';
+            root.style.flexDirection = 'column';
+            root.style.alignItems = 'center';
+
             root.innerHTML = `
-                <div style="font-size:3.8rem;color:#ff8fa3;font-weight:100;letter-spacing:2px;">${timeStr}</div>
-                <p style="color:#cc99a2;margin-top:15px;letter-spacing:1px;font-size:0.9rem;">White Day まで、あと少し......ʕ •ᴥ•ʔ</p>
+                <div style="font-size:3.5rem; color:#ff8fa3; font-weight:100; letter-spacing:2px; white-space:nowrap;">
+                    ${timeStr}
+                </div>
+                <p style="color:#cc99a2; margin-top:15px; letter-spacing:1px; font-size:0.9rem;">Next Surprise, Coming Soon......ʕ •ᴥ•ʔ</p>
             `;
         }
+
+
 
         setInterval(tick, 1000);
         tick();

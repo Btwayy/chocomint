@@ -1,6 +1,6 @@
 export default function handler(req, res) {
-  // 设置为 2026年3月14日 07:30 (JST)
-  const targetTime = new Date("2026-03-14T07:30:00+09:00").getTime();
+  // 设置为 2026年9月21日 00:00 (JST)
+  const targetTime = new Date("2026-09-21T00:00:00+09:00").getTime();
   const now = Date.now();
 
   if (now >= targetTime) {
