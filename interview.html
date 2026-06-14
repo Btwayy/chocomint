@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Technical Interview Simulator</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --sidebar-bg: #2d2d2d;
+            --editor-bg: #1e1e1e;
+            --text-color: #eff0f6;
+            --text-muted: #aaaaaa;
+            --accent-color: #3b82f6;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --border-color: #444444;
+            --heart-pink: #f43f5e;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); display: flex; flex-direction: column; height: 100vh; overflow: hidden; position: relative; }
+
+        /* Overlays */
+        .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(16, 16, 16, 0.85); backdrop-filter: blur(8px); z-index: 2000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
+        .overlay-card { background: var(--sidebar-bg); padding: 40px; border-radius: 8px; border: 1px solid var(--border-color); text-align: center; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .overlay-card h2 { margin-bottom: 15px; color: #fff; }
+        .overlay-card p { color: var(--text-muted); font-size: 14px; margin-bottom: 25px; line-height: 1.5; }
+        .btn-start { background: var(--accent-color); color: white; padding: 12px 30px; border: none; border-radius: 4px; font-weight: bold; font-size: 16px; cursor: pointer; transition: transform 0.1s; }
+        .btn-start:hover { transform: scale(1.02); }
+
+        /* Girlfriend Surprise Modal */
+        #gf-modal { display: none; }
+        .gf-card { background: #221a24; border: 1px solid #ff79c6; width: 550px; padding: 35px; border-radius: 16px; box-shadow: 0 15px 40px rgba(244, 63, 94, 0.25); text-align: left; position: relative; animation: popUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .gf-title { color: #ff79c6; font-size: 20px; font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; border-bottom: 1px dashed rgba(255,121,198,0.3); padding-bottom: 10px; }
+        .gf-content { font-size: 16px; color: #f8f8f2; line-height: 1.8; white-space: pre-line; margin-bottom: 25px; }
+
+        /* Button Container Styling */
+        .gf-btn-group { display: flex; justify-content: flex-end; gap: 15px; min-height: 40px; position: relative; }
+        .gf-close-btn { background: var(--success-color); color: white; border: none; padding: 10px 24px; border-radius: 20px; font-weight: bold; cursor: pointer; transition: all 0.2s; }
+        .gf-close-btn:hover { background: #059669; transform: scale(1.05); }
+
+        /* Unclickable "No" Button - Fixed Layout Flow */
+        .gf-no-btn { background: #444; color: #aaa; border: none; padding: 10px 24px; border-radius: 20px; font-weight: bold; cursor: default; position: relative; transition: all 0.1s ease; white-space: nowrap; z-index: 10; }
+
+        @keyframes popUp {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        /* Top Header */
+        header { height: 50px; background-color: var(--sidebar-bg); display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-bottom: 1px solid var(--border-color); }
+        .logo { font-weight: bold; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .logo span { background: var(--accent-color); padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+        .timer-box { font-size: 18px; font-family: monospace; font-weight: bold; background: #111; padding: 4px 12px; border-radius: 4px; border: 1px solid var(--border-color); color: #f59e0b; }
+
+        /* Main Layout */
+        .container { display: flex; flex: 1; height: calc(100vh - 50px); overflow: hidden; }
+
+        /* Sidebar Navigation */
+        .sidebar { width: 280px; background-color: var(--sidebar-bg); border-right: 1px solid var(--border-color); display: flex; flex-direction: column; }
+        .sidebar-title { padding: 15px 20px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); border-bottom: 1px solid var(--border-color); }
+        .menu-item { padding: 15px 20px; display: flex; flex-direction: column; gap: 4px; border-bottom: 1px solid #3a3a3a; opacity: 0.3; pointer-events: none; transition: all 0.2s; }
+        .menu-item.unlocked { opacity: 0.8; pointer-events: auto; cursor: pointer; }
+        .menu-item.unlocked:hover { background-color: #3a3a3a; opacity: 1; }
+        .menu-item.active { background-color: #232d3f; border-left: 4px solid var(--accent-color); opacity: 1; pointer-events: auto; }
+        .menu-item .title { font-weight: 500; font-size: 14px; color: #fff; }
+        .menu-item .tag { font-size: 11px; color: var(--text-muted); }
+        .menu-item .status-icon { font-size: 11px; font-weight: bold; margin-top: 2px; }
+
+        /* Content Areas */
+        .problem-area { flex: 1; padding: 25px; overflow-y: auto; border-right: 1px solid var(--border-color); line-height: 1.6; }
+        .problem-title { font-size: 22px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 600; }
+        .problem-desc { margin-bottom: 20px; color: #e5e7eb; font-size: 15px; }
+        .problem-desc ul, .problem-desc ol { margin-left: 20px; margin-top: 5px; }
+        .problem-desc code { background: #333; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 14px; color: #f472b6; }
+        .problem-desc p { margin-bottom: 12px; }
+
+        /* Hidden Easter Egg Link for Period Dot */
+        .hidden-dot-link { color: inherit; text-decoration: none; cursor: pointer; }
+        .hidden-dot-link:hover { color: var(--accent-color); }
+
+        /* Editor Area */
+        .editor-container { width: 48%; display: flex; flex-direction: column; background-color: var(--editor-bg); }
+        .editor-header { height: 40px; background: #2d2d2d; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; border-bottom: 1px solid var(--border-color); font-size: 13px; color: var(--text-muted); }
+        textarea { flex: 1; background: var(--editor-bg); color: #84fff2; border: none; padding: 20px; font-family: "Fira Code", Consolas, Monaco, monospace; font-size: 14px; resize: none; outline: none; line-height: 1.6; }
+        textarea:disabled { color: #555; cursor: not-allowed; background: #151515; }
+
+        /* Bottom Actions */
+        .actions { height: 60px; background: #222; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; border-top: 1px solid var(--border-color); }
+        .left-actions, .right-actions { display: flex; gap: 10px; }
+        button { padding: 10px 22px; border: none; border-radius: 4px; font-weight: 600; font-size: 13px; cursor: pointer; transition: all 0.2s; }
+        button:hover { opacity: 0.9; }
+        button:disabled { opacity: 0.3; cursor: not-allowed; }
+        .btn-secondary { background: #444; color: #fff; }
+        .btn-primary { background: var(--success-color); color: #fff; box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3); }
+
+        .toast { position: fixed; top: 20px; right: 20px; background: var(--accent-color); color: white; padding: 12px 24px; border-radius: 4px; font-weight: bold; display: none; z-index: 3000; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="overlay" id="start-overlay">
+        <div class="overlay-card">
+            <h2>Google Technical Interview</h2>
+            <p>You have <b>45 minutes</b> to solve a series of algorithmic challenges. Your code track will progress linearly. <br></br> Submitting a solution will <b>instantly copy your code automatically</b>, open <b>LeetCode</b> in a new tab, and advance you to the next stage.</p>
+            <button class="btn-start" onclick="beginInterview()">Start Technical Interview</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="gf-modal">
+        <div class="gf-card" id="gf-card-panel">
+            <div class="gf-title">✉️ Session Interrupted Protocol</div>
+            <div class="gf-content">Congratualitions! You finished the exam and got the 2026 Google Internship Offer!! <br></br>こなみちゃん今天也辛苦了お疲れ様！选了几道之前打weekly contests的题，应该还有点难度的^^ 今晚就暂停休息啦～ 剩下的任务就是好好吃东西，然后真的要好好睡一觉！<br></br> 我们今天早点回去吧ʕ •ᴥ•ʔ</div>
+            <div class="gf-btn-group">
+                <button class="gf-close-btn" onclick="closeGfModal()">好的 (๑•̀ㅂ•́)و✧</button>
+                <button class="gf-no-btn" id="runaway-btn" onmouseover="fleeBtn()">不好 (´･_･`)</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast-msg">Code Copied & Redirection Initiated!</div>
+
+    <header>
+        <div class="logo">Google Interview Simulator <span>SWE Mock Session</span></div>
+        <div class="timer-box" id="timer">45:00</div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-title">Interview Track Progress</div>
+            <div id="menu-container"></div>
+        </div>
+
+        <div class="problem-area">
+            <div class="problem-title">
+                <span id="p-title">Loading...</span>
+            </div>
+            <div id="p-desc" class="problem-desc"></div>
+        </div>
+
+        <div class="editor-container">
+            <div class="editor-header">
+                <span>Language: Python3</span>
+                <span style="color: var(--success-color)" id="sim-status">● Live Simulation Mode</span>
+            </div>
+            <textarea id="code-editor" spellcheck="false"></textarea>
+
+            <div class="actions">
+                <div class="left-actions">
+                    <button class="btn-secondary" id="btn-reset" onclick="resetCode()">Reset Code</button>
+                </div>
+                <div class="right-actions">
+                    <button class="btn-primary" id="btn-submit" onclick="executePipeline()">Submit Code & Next Stage →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const problems = {
+            1: {
+                title: "The Two Sneaky Numbers of Digitville",
+                leetcodeUrl: "https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/",
+                desc: `<p>In the town of Digitville, all numbers were originally meant to appear exactly once. However, two sneaky numbers entered the town twice, causing duplicates.</p>
+                       <p>You are given an array <code>nums</code> containing <code>n + 2</code> integers, where the array contains all numbers from <code>0</code> to <code>n - 1</code> exactly once, plus the two sneaky numbers.</p>
+                       <p>Return an array of size 2 containing the two sneaky numbers in any order.</p>
+                       <br>
+                       <p><b>Example:</b><br>Input: <code>nums = [0, 1, 1, 0, 2, 3]</code><br>Output: [0, 1]<a class="hidden-dot-link" href="https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/" target="_blank">.</a></p>`,
+                defaultCode: "class Solution:\n    def getSneakyNumbers(self, nums: list[int]) -> list[int]:\n"
+            },
+            2: {
+                title: "Backspace String Compare",
+                leetcodeUrl: "https://leetcode.com/problems/backspace-string-compare/",
+                desc: `<p>Given two strings <code>s</code> and <code>t</code>, return <code>true</code> if they are equal when both are typed into empty text editors. <code>'#'</code> means a backspace character.</p>
+                       <p>Note that after backspacing an empty text, the text will continue empty.</p>
+                       <br>
+                       <p><b>Example:</b><br>Input: <code>s = "ab#c", t = "ad#c"</code><br>Output: true (Explanation: Both become "ac")<a class="hidden-dot-link" href="https://leetcode.com/problems/backspace-string-compare/" target="_blank">.</a></p>`,
+                defaultCode: "class Solution:\n    def backspaceCompare(self, s: str, t: str) -> bool:\n"
+            },
+            3: {
+                title: "Minimum Cost For Tickets",
+                leetcodeUrl: "https://leetcode.com/problems/minimum-cost-for-tickets/",
+                desc: `<p>You have planned some train traveling for the next year. You are given an integer array <code>days</code>, where each element represents a day of the year you will travel (1 to 365). The array is sorted in strictly increasing order.</p>
+                       <p>Train tickets are sold in three different types of passes:</p>
+                       <ul>
+                           <li>A <b>1-day pass</b> is sold for <code>costs[0]</code> dollars and is valid for exactly 1 day.</li>
+                           <li>A <b>7-day pass</b> is sold for <code>costs[1]</code> dollars and is valid for 7 consecutive days.</li>
+                           <li>A <b>30-day pass</b> is sold for <code>costs[2]</code> dollars and is valid for 30 consecutive days.</li>
+                       </ul>
+                       <p>The passes allow increased flexibility. For example, if we get a 7-day pass on day 2, then we can travel for 7 days: day 2, 3, 4, 5, 6, 7, and 8.</p>
+                       <p>Return _the minimum number of dollars you need to travel every day in the given list of days_.</p>
+                       <br>
+                       <p><b>Example 1:</b><br>
+                       <b>Input:</b> <code>days = [1,4,6,7,8,20], costs = [2,7,15]</code><br>
+                       <b>Output:</b> <code>11</code><br>
+                       <b>Explanation:</b> For example, here is one way to buy passes that lets you travel your travel plan:<br>
+                       - On day 1, you buy a 1-day pass for costs[0] = $2, which covers day 1.<br>
+                       - On day 4, you buy a 7-day pass for costs[1] = $7, which covers days 4, 5, 6, 7, 8, 9, and 10.<br>
+                       - On day 20, you buy a 1-day pass for costs[0] = $2, which covers day 20.<br>
+                       In total, you spent $2 + $7 + $2 = $11 and covered all your travel days.</p>
+                       <br>
+                       <p><b>Example 2:</b><br>
+                       <b>Input:</b> <code>days = [1,2,3,4,5,6,7,8,9,10,30], costs = [2,7,15]</code><br>
+                       <b>Output:</b> <code>17</code><br>
+                       <b>Explanation:</b> Here is a cost-efficient strategy:<br>
+                       - On day 1, you buy a 7-day pass for costs[1] = $7, covering days 1 through 7.<br>
+                       - On day 8, you buy a 7-day pass for costs[1] = $7, covering days 8 through 14.<br>
+                       - On day 30, you buy a 1-day pass for costs[0] = $2, covering day 30.<br>
+                       In total, you spent $7 + $7 + $2 = $17 and covered all your travel days.</p>
+                       <br>
+                       <p><b>Constraints:</b><br>
+                       - <code>1 <= days.length <= 365</code><br>
+                       - <code>1 <= days[i] <= 365</code><br>
+                       - <code>days</code> is in strictly increasing order.<br>
+                       - <code>costs.length == 3</code><br>
+                       - <code>1 <= costs[i] <= 1000</code><a class="hidden-dot-link" href="https://leetcode.com/problems/minimum-cost-for-tickets/" target="_blank">.</a></p>`,
+                defaultCode: "class Solution:\n    def mincostTickets(self, days: list[int], costs: list[int]) -> int:\n"
+            },
+            4: {
+                title: "Find if Path Exists in Graph",
+                leetcodeUrl: "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+                desc: `<p>There is a bi-directional graph with <code>n</code> vertices, where each vertex is labeled from <code>0</code> to <code>n - 1</code>.</p>
+                       <p>You are given a 2D integer array <code>edges</code> where each <code>edges[i] = [u, v]</code> denotes a bi-directional edge between vertex u and vertex v. You are also given a <code>source</code> and a <code>destination</code>.</p>
+                       <p>Return <code>true</code> if there is a valid path from <code>source</code> to <code>destination</code>, or <code>false</code> otherwise.</p>
+                       <br>
+                       <p><b>Example 1:</b><br>
+                       Input: <code>n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2</code><br>
+                       Output: <code>true</code><br>
+                       Explanation: There are two paths from vertex 0 to vertex 2: (0 → 2) and (0 → 1 → 2).</p>
+                       <br>
+                       <p><b>Example 2:</b><br>
+                       Input: <code>n = 6, edges = [[0,1],[0,2],[3,5],[5,4]], source = 0, destination = 5</code><br>
+                       Output: false<br>
+                       Explanation: There is no path from vertex 0 to vertex 5<a class="hidden-dot-link" href="https://leetcode.com/problems/find-if-path-exists-in-graph/" target="_blank">.</a></p>`,
+                defaultCode: "class Solution:\n    def validPath(self, n: int, edges: list[list[int]], source: int, destination: int) -> bool:\n"
+            },
+            5: {
+                title: "Backspace String Compare II",
+                leetcodeUrl: "https://leetcode.com/problems/backspace-string-compare/",
+                desc: `<p>Given two strings <code>s</code> and <code>t</code>, return <code>true</code> if they are equal when both are typed into empty text editors. <code>'#'</code> means a backspace character.</p>
+                       <br>
+                       <p><b>CRITICAL CONSTRAINT:</b><br>
+                       Can you solve it in <b>O(N) time complexity</b> and <b>O(1) auxiliary space complexity</b>?</p>
+                       <br>
+                       <p><b>Example:</b><br>Input: <code>s = "a##b", t = "#b"</code><br>Output: true (Explanation: Both become "b")<a class="hidden-dot-link" href="https://leetcode.com/problems/backspace-string-compare/" target="_blank">.</a></p>`,
+                defaultCode: "class Solution:\n    def backspaceCompare(self, s: str, t: str) -> bool:\n"
+            }
+        };
+
+        const order = [1, 2, 3, 4, 5];
+        let currentId = 1;
+        let unlockedIndex = 0;
+        let interviewStarted = false;
+
+        function initMenu() {
+            const container = document.getElementById('menu-container');
+            container.innerHTML = "";
+            const tags = {
+                1: "Stage 1: Initialization",
+                2: "Stage 2: Linear Stream",
+                3: "Stage 3: Dynamic Programming",
+                4: "Stage 4: Graph Traversal",
+                5: "Stage 5: Space Optimization"
+            };
+
+            order.forEach((id, index) => {
+                const item = document.createElement('div');
+                const isAccessible = index <= unlockedIndex;
+                item.className = `menu-item ${id == currentId ? 'active' : ''} ${isAccessible ? 'unlocked' : ''}`;
+                item.id = `menu-${id}`;
+
+                let statusText = "🔒 Locked";
+                if (index < unlockedIndex) statusText = "✅ Submitted";
+                else if (index === unlockedIndex) statusText = "⚡ Active";
+
+                item.onclick = () => { if(isAccessible && interviewStarted) switchProblem(id); };
+                item.innerHTML = `
+                    <div class="title">${problems[id].title}</div>
+                    <div class="tag">${tags[id]}</div>
+                    <div class="status-icon" style="color: ${statusText.includes('✅')?'var(--success-color)':statusText.includes('⚡')?'#f59e0b':'#777'}">${statusText}</div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function switchProblem(id) {
+            const currentIndexInOrder = order.indexOf(Number(currentId));
+            if (currentIndexInOrder === unlockedIndex) {
+                localStorage.setItem(`code_${currentId}`, document.getElementById('code-editor').value);
+            }
+
+            currentId = id;
+            initMenu();
+
+            const p = problems[id];
+            document.getElementById('p-title').innerText = p.title;
+            document.getElementById('p-desc').innerHTML = p.desc;
+
+            const savedCode = localStorage.getItem(`code_${id}`);
+            document.getElementById('code-editor').value = savedCode ? savedCode : p.defaultCode;
+
+            const targetIndex = order.indexOf(Number(id));
+            const editor = document.getElementById('code-editor');
+            const btnSubmit = document.getElementById('btn-submit');
+            const btnReset = document.getElementById('btn-reset');
+            const simStatus = document.getElementById('sim-status');
+
+            if (targetIndex < unlockedIndex) {
+                editor.disabled = true;
+                simStatus.innerText = "● Locked & Submitted";
+                simStatus.style.color = "var(--text-muted)";
+                btnSubmit.disabled = true;
+                btnReset.disabled = true;
+            } else {
+                editor.disabled = false;
+                simStatus.innerText = "● Live Simulation Mode";
+                simStatus.style.color = "var(--success-color)";
+                btnSubmit.disabled = false;
+                btnReset.disabled = false;
+            }
+        }
+
+        function resetCode() {
+            if(confirm("Reset code template to default?")) {
+                document.getElementById('code-editor').value = problems[currentId].defaultCode;
+                localStorage.removeItem(`code_${currentId}`);
+            }
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast-msg');
+            toast.innerText = msg;
+            toast.style.display = 'block';
+            setTimeout(() => { toast.style.display = 'none'; }, 2500);
+        }
+
+        function executePipeline() {
+            const userCode = document.getElementById('code-editor').value;
+            localStorage.setItem(`code_${currentId}`, userCode);
+            const currentIndexInOrder = order.indexOf(Number(currentId));
+
+            if (window.onCodeSubmittedBackend) {
+                window.onCodeSubmittedBackend(currentId, userCode);
+            }
+
+            const currentTargetUrl = problems[currentId].leetcodeUrl;
+
+            navigator.clipboard.writeText(userCode).then(() => {
+                showToast("Code copied! Opening current LeetCode window...");
+                window.open(currentTargetUrl, '_blank');
+            }).catch(err => {
+                window.open(currentTargetUrl, '_blank');
+            });
+
+            if (currentIndexInOrder === unlockedIndex && unlockedIndex < order.length - 1) {
+                unlockedIndex++;
+                switchProblem(order[currentIndexInOrder + 1]);
+            } else {
+                document.getElementById('code-editor').disabled = true;
+                document.getElementById('btn-submit').disabled = true;
+                document.getElementById('btn-reset').disabled = true;
+                document.getElementById('sim-status').innerText = "● Session Finished";
+                document.getElementById('sim-status').style.color = "var(--success-color)";
+                alert("🎉 Brilliant! You have locked, copied, and advanced through all 5 technical interview stages!");
+            }
+        }
+
+        function beginInterview() {
+            document.getElementById('start-overlay').style.display = 'none';
+            interviewStarted = true;
+            startTimer();
+            switchProblem(1);
+        }
+
+        function triggerSurpriseModal() {
+            document.getElementById('code-editor').disabled = true;
+            document.getElementById('btn-submit').disabled = true;
+            document.getElementById('btn-reset').disabled = true;
+
+            // Reset runaway button state back to natural inline flow
+            const noBtn = document.getElementById('runaway-btn');
+            noBtn.style.position = 'relative';
+            noBtn.style.top = '';
+            noBtn.style.right = '';
+            noBtn.style.left = '';
+
+            document.getElementById('gf-modal').style.display = 'flex';
+        }
+
+        function closeGfModal() {
+            document.getElementById('gf-modal').style.display = 'none';
+        }
+
+        // Updated Flee Behavior: Transitions smoothly from relative layout to absolute positioning inside bounds
+        function fleeBtn() {
+            const noBtn = document.getElementById('runaway-btn');
+            const panel = document.getElementById('gf-card-panel');
+
+            // Switch to absolute layout to unlock unbounded coordinates tracking
+            if (noBtn.style.position !== 'absolute') {
+                noBtn.style.position = 'absolute';
+            }
+
+            // Keep padding buffer safety margins intact
+            const maxX = panel.clientWidth - noBtn.clientWidth - 40;
+            const maxY = panel.clientHeight - noBtn.clientHeight - 60;
+
+            // Compute purely positive translations relative to card box's edges
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+
+            noBtn.style.right = 'auto'; // Clear out baseline flow ties
+            noBtn.style.left = `${randomX}px`;
+            noBtn.style.top = `${randomY}px`;
+        }
+
+        function startTimer() {
+            let duration = 45 * 60;
+            const timerDisplay = document.getElementById('timer');
+
+            const timerInterval = setInterval(() => {
+                let minutes = Math.floor(duration / 60);
+                let seconds = duration % 60;
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                timerDisplay.textContent = minutes + ":" + seconds;
+
+                if (--duration < 0) {
+                    clearInterval(timerInterval);
+                    timerDisplay.textContent = "00:00";
+                    timerDisplay.style.color = "#ef4444";
+                    triggerSurpriseModal();
+                }
+            }, 1000);
+        }
+
+        window.onload = () => {
+            initMenu();
+            document.getElementById('p-title').innerText = "Interview Not Started";
+            document.getElementById('p-desc').innerText = "Please click the overlay button to trigger initialization protocols.";
+        };
+    </script>
+</body>
+</html>
