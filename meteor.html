@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>星落昼神 · 三日行程手册</title>
+<style>
+  @font-face {
+    font-family: 'TripSerif';
+    src: local('Hiragino Mincho ProN'), local('YuMincho'), local('Songti SC');
+  }
+
+  :root{
+    --ink: #14182c;
+    --ink-2: #1e2547;
+    --paper: #efe8d6;
+    --paper-2: #e3dac2;
+    --gold: #c68a3d;
+    --gold-soft: #e0b877;
+    --indigo: #3a4a80;
+    --pine: #4c6350;
+    --vermilion: #b8482e;
+    --text-ink: #f2ecdd;
+    --muted-ink: #a3a8c8;
+    --text-paper: #23231b;
+    --muted-paper: #6c6650;
+    --rule-ink: rgba(242,236,221,0.16);
+    --rule-paper: rgba(35,35,27,0.14);
+    --serif: 'TripSerif', 'Hiragino Mincho ProN', 'YuMincho', '游明朝', 'Songti SC', 'STSong', 'Noto Serif JP', 'Noto Serif SC', serif;
+    --sans: 'Hiragino Sans', '游ゴシック体', 'Yu Gothic', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans JP', 'Noto Sans SC', sans-serif;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--text-paper);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{ display:block; max-width:100%; }
+  .container{
+    max-width:920px;
+    margin:0 auto;
+    padding:0 clamp(20px,5vw,48px);
+  }
+  .prose{ max-width:62ch; }
+  h1,h2,h3,h4{
+    font-family:var(--serif);
+    font-weight:600;
+    text-wrap:balance;
+    margin:0;
+  }
+  a{ color:inherit; }
+  .eyebrow{
+    font-size:0.72rem;
+    letter-spacing:0.18em;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:0.6em;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:1px;
+    background:currentColor;
+    opacity:0.6;
+  }
+  .tag{
+    font-size:0.7rem;
+    letter-spacing:0.04em;
+    padding:0.28em 0.75em;
+    border:1px solid currentColor;
+    border-radius:2px;
+    display:inline-block;
+  }
+  .nums{ font-variant-numeric:tabular-nums; }
+
+  /* ---------- language switch (fixed, shared) ---------- */
+  .lang-switch{
+    position:fixed; top:14px; right:14px; z-index:200;
+    display:flex; gap:2px;
+    background:rgba(20,24,44,0.86);
+    backdrop-filter:blur(6px);
+    border:1px solid rgba(242,236,221,0.25);
+    border-radius:999px;
+    padding:3px;
+  }
+  .lang-btn{
+    font-family:var(--sans);
+    font-size:0.72rem;
+    letter-spacing:0.02em;
+    padding:7px 14px;
+    border:none;
+    border-radius:999px;
+    background:transparent;
+    color:var(--muted-ink);
+    cursor:pointer;
+  }
+  .lang-btn:focus-visible{ outline:2px solid var(--gold-soft); outline-offset:1px; }
+  .lang-btn[aria-pressed="true"]{
+    background:var(--gold);
+    color:#1a1608;
+  }
+
+  /* ---------- sticky nav ---------- */
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(20,24,44,0.92);
+    backdrop-filter:blur(6px);
+    color:var(--text-ink);
+    border-bottom:1px solid var(--rule-ink);
+  }
+  .topnav .container{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:12px; padding-bottom:12px;
+    max-width:1040px;
+  }
+  .topnav-title{
+    font-family:var(--serif);
+    font-size:0.95rem;
+    letter-spacing:0.03em;
+  }
+  .topnav-links{
+    display:flex; gap:clamp(10px,2vw,24px);
+    font-size:0.78rem;
+    letter-spacing:0.02em;
+    list-style:none; margin:0; padding:0;
+    overflow-x:auto;
+    padding-right:84px;
+  }
+  .topnav-links a{
+    text-decoration:none;
+    color:var(--muted-ink);
+    white-space:nowrap;
+    padding:4px 2px;
+    border-bottom:1px solid transparent;
+    transition:color .2s, border-color .2s;
+  }
+  .topnav-links a:hover, .topnav-links a:focus-visible{
+    color:var(--gold-soft);
+    border-color:var(--gold-soft);
+    outline:none;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    background:
+      linear-gradient(180deg, rgba(13,15,28,0.25) 0%, rgba(13,15,28,0.55) 60%, var(--ink) 100%),
+      url('hoshizora.jpg') center 32% / cover no-repeat;
+    color:var(--text-ink);
+    overflow:hidden;
+    padding:clamp(64px,12vw,120px) 0 clamp(90px,14vw,150px);
+  }
+  .hero-inner{ position:relative; z-index:2; }
+  .hero-eyebrow{ color:var(--gold-soft); margin-bottom:22px; }
+  .hero h1{
+    font-size:clamp(2.7rem,7.5vw,4.8rem);
+    line-height:1.1;
+    letter-spacing:0.02em;
+    text-shadow:0 2px 24px rgba(0,0,0,0.35);
+  }
+  .hero-sub{
+    margin-top:22px;
+    max-width:46ch;
+    font-size:clamp(1rem,2vw,1.14rem);
+    color:var(--muted-ink);
+  }
+  .hero-meta{
+    margin-top:40px;
+    display:flex; flex-wrap:wrap; gap:10px;
+    color:var(--gold-soft);
+  }
+
+  /* ---------- stats strip ---------- */
+  .stats{
+    background:var(--paper);
+    border-bottom:1px solid var(--rule-paper);
+  }
+  .stats .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:28px;
+    padding-top:36px; padding-bottom:36px;
+  }
+  .stat b{
+    display:block;
+    font-family:var(--serif);
+    font-size:clamp(1.5rem,3vw,2.1rem);
+    color:var(--indigo);
+  }
+  .stat span{
+    font-size:0.76rem;
+    color:var(--muted-paper);
+    letter-spacing:0.02em;
+  }
+
+  /* ---------- section shells ---------- */
+  section.spread{ padding:clamp(56px,9vw,110px) 0; }
+  .tone-paper{ background:var(--paper); color:var(--text-paper); }
+  .tone-ink{ background:var(--ink); color:var(--text-ink); position:relative; overflow:hidden; }
+  .tone-ink .muted{ color:var(--muted-ink); }
+  .tone-paper .muted{ color:var(--muted-paper); }
+
+  .day-head{ display:flex; align-items:baseline; gap:22px; flex-wrap:wrap; margin-bottom:10px; }
+  .day-num{ font-family:var(--serif); font-size:clamp(3rem,7vw,4.6rem); line-height:1; color:var(--gold); }
+  .day-title h2{ font-size:clamp(1.5rem,3.2vw,2.3rem); }
+  .day-kicker{ margin-top:26px; }
+  .day-kicker p{ margin:10px 0 0; }
+
+  hr.rule{ border:none; border-top:1px solid var(--rule-paper); margin:44px 0; }
+  .tone-ink hr.rule{ border-top-color:var(--rule-ink); }
+
+  /* ---------- trail timeline ---------- */
+  .trail{ list-style:none; margin:34px 0 0; padding:0; position:relative; }
+  .trail::before{
+    content:""; position:absolute; left:5px; top:6px; bottom:6px; width:0;
+    border-left:2px dotted currentColor; opacity:0.35;
+  }
+  .trail li{ position:relative; padding:0 0 30px 34px; }
+  .trail li:last-child{ padding-bottom:0; }
+  .trail li::before{
+    content:""; position:absolute; left:0; top:6px;
+    width:11px; height:11px; border-radius:50%;
+    background:var(--gold);
+    box-shadow:0 0 0 3px var(--paper);
+  }
+  .tone-ink .trail li::before{ box-shadow:0 0 0 3px var(--ink); }
+  .trail time{ display:block; font-family:var(--serif); font-size:1.02rem; color:var(--gold); margin-bottom:4px; }
+  .tone-paper .trail time{ color:var(--indigo); }
+  .trail p{ margin:0; }
+  .trail .note{ display:block; margin-top:6px; font-size:0.86rem; }
+
+  /* ---------- cards / grids ---------- */
+  .grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+  .grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  @media (max-width:760px){ .grid-2, .grid-3{ grid-template-columns:1fr; } }
+  .card{ background:var(--paper-2); border:1px solid var(--rule-paper); padding:26px 24px; }
+  .tone-ink .card{ background:var(--ink-2); border-color:var(--rule-ink); }
+  .card h4{ font-size:1.02rem; margin-bottom:8px; }
+  .card .stat-line{ display:flex; justify-content:space-between; font-size:0.85rem; padding:6px 0; border-top:1px dashed var(--rule-paper); }
+  .tone-ink .card .stat-line{ border-top-color:var(--rule-ink); }
+  .card .stat-line:first-of-type{ border-top:none; }
+
+  /* ---------- route tabs ---------- */
+  .route-picker{ display:flex; gap:10px; flex-wrap:wrap; margin:30px 0 6px; }
+  .route-btn{
+    font-family:var(--sans); font-size:0.84rem; letter-spacing:0.01em;
+    padding:12px 20px; background:transparent; border:1px solid var(--rule-paper);
+    color:var(--text-paper); cursor:pointer; text-align:left; flex:1 1 220px;
+    transition:background .2s, border-color .2s, color .2s;
+  }
+  .route-btn b{ display:block; font-family:var(--serif); font-size:1.02rem; font-weight:600; }
+  .route-btn span{ font-size:0.76rem; color:var(--muted-paper); }
+  .route-btn[aria-selected="true"]{ background:var(--indigo); border-color:var(--indigo); color:#fff; }
+  .route-btn[aria-selected="true"] span{ color:#d7dcf0; }
+  .route-panel{ display:none; margin-top:34px; }
+  .route-panel.active{ display:block; }
+
+  .contour-bg{
+    background-image: repeating-radial-gradient(circle at 85% 12%, rgba(76,99,80,0.16) 0, rgba(76,99,80,0.16) 1px, transparent 1px, transparent 26px);
+  }
+
+  .compare-table{ width:100%; border-collapse:collapse; font-size:0.88rem; margin-top:8px; }
+  .compare-table caption{ text-align:left; margin-bottom:10px; }
+  .compare-table th, .compare-table td{ text-align:left; padding:12px 14px; border-bottom:1px solid var(--rule-paper); vertical-align:top; }
+  .compare-table th{ font-family:var(--serif); font-weight:600; color:var(--indigo); width:23%; }
+  .table-scroll{ overflow-x:auto; }
+
+  .warn-box{
+    border:1px solid var(--vermilion); background:rgba(184,72,46,0.07);
+    padding:20px 22px; margin-top:30px; display:flex; gap:16px;
+  }
+  .tone-ink .warn-box{ background:rgba(184,72,46,0.14); }
+  .warn-box svg{ flex:none; margin-top:3px; }
+  .warn-box h4{ color:var(--vermilion); font-size:0.94rem; margin-bottom:6px; }
+  .warn-box ul{ margin:0; padding-left:1.1em; }
+  .warn-box li{ margin-bottom:4px; font-size:0.9rem; }
+
+  /* ---------- star spots ---------- */
+  .meteor-box{
+    border:1px solid var(--gold); padding:26px 28px; margin:36px 0;
+    display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;
+  }
+  .meteor-box h4{ color:var(--gold-soft); font-size:0.98rem; margin-bottom:8px; }
+  .spot-card{ border:1px solid var(--rule-ink); padding:22px; background:var(--ink-2); }
+  .spot-card .rank{ font-family:var(--serif); color:var(--gold); font-size:0.76rem; letter-spacing:.06em; }
+  .spot-card h4{ margin:8px 0 10px; font-size:1.05rem; }
+  .spot-card ul{ margin:12px 0 0; padding-left:1.1em; font-size:0.86rem; color:var(--muted-ink); }
+  .spot-card li{ margin-bottom:4px; }
+
+  /* ---------- day3 plan tabs ---------- */
+  .plan-tabs{ display:flex; gap:10px; margin:30px 0 0; flex-wrap:wrap; }
+  .plan-panel{ display:none; margin-top:32px; }
+  .plan-panel.active{ display:block; }
+
+  .ticket{
+    border:1px dashed var(--indigo); padding:26px 28px; position:relative;
+    background:var(--paper-2); margin-top:28px;
+  }
+  .ticket::before, .ticket::after{
+    content:""; position:absolute; top:50%; transform:translateY(-50%);
+    width:22px; height:22px; border-radius:50%; background:var(--paper);
+  }
+  .ticket::before{ left:-11px; }
+  .ticket::after{ right:-11px; }
+  .ticket h4{ font-size:0.92rem; color:var(--indigo); margin-bottom:14px; }
+  .bus-cols{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  @media (max-width:600px){ .bus-cols{ grid-template-columns:1fr; } }
+  .bus-list{ list-style:none; margin:0; padding:0; }
+  .bus-list li{ display:flex; justify-content:space-between; font-size:0.9rem; padding:6px 0; border-bottom:1px dotted var(--rule-paper); }
+  .bus-list li b{ font-family:var(--serif); }
+  .bus-list .highlight b{ color:var(--vermilion); }
+
+  /* ---------- practical / cheat sheet ---------- */
+  .checklist{ list-style:none; margin:20px 0 0; padding:0; }
+  .checklist li{ padding:10px 0 10px 30px; position:relative; border-bottom:1px solid var(--rule-ink); font-size:0.9rem; }
+  .checklist li::before{
+    content:""; position:absolute; left:0; top:14px; width:9px; height:9px;
+    border:1px solid var(--gold-soft); transform:rotate(45deg);
+  }
+
+  footer{ background:var(--ink); color:var(--muted-ink); text-align:center; padding:40px 20px; font-size:0.76rem; letter-spacing:0.02em; }
+
+  ::selection{ background:var(--gold); color:#1a1a1a; }
+
+  /* ---------- language documents ---------- */
+  #doc-ja{ display:none; }
+  body.lang-ja #doc-zh{ display:none; }
+  body.lang-ja #doc-ja{ display:block; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch" role="group" aria-label="Language / 言語 / 语言">
+  <button type="button" class="lang-btn" data-lang="zh" aria-pressed="true">中文</button>
+  <button type="button" class="lang-btn" data-lang="ja" aria-pressed="false">日本語</button>
+</div>
+
+<!-- ======================================================= -->
+<!-- =====================  中文版  ========================= -->
+<!-- ======================================================= -->
+<div id="doc-zh">
+
+<nav class="topnav">
+  <div class="container">
+    <div class="topnav-title">星落昼神</div>
+    <ul class="topnav-links">
+      <li><a href="#overview-zh">总览</a></li>
+      <li><a href="#day1-zh">Day 1</a></li>
+      <li><a href="#day2-climb-zh">Day 2 · 登山</a></li>
+      <li><a href="#day2-star-zh">Day 2 · 观星</a></li>
+      <li><a href="#day3-zh">Day 3</a></li>
+      <li><a href="#practical-zh">实用信息</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow hero-eyebrow">TOKYO → HIRUGAMI ONSEN · 自驾三日行程</p>
+    <h1>星落<br>昼神</h1>
+    <p class="hero-sub">东京出发，前往昼神温泉，途经恵那山登顶、日本一の星空与中山道古道的三天两夜自驾行程规划。</p>
+    <div class="hero-meta nums">
+      <span class="tag">3天2晚</span>
+      <span class="tag">自驾 约260km</span>
+      <span class="tag">住宿・清風苑 → 玄竹</span>
+      <span class="tag">目标夜・8月12日夜〜13日凌晨</span>
+    </div>
+  </div>
+</header>
+
+<section class="stats" id="overview-zh">
+  <div class="container">
+    <div class="stat"><b class="nums">260<span style="font-size:.55em">km</span></b><span>东京 → 昼神温泉（阿智村）单程</span></div>
+    <div class="stat"><b class="nums">2191<span style="font-size:.55em">m</span></b><span>恵那山山顶海拔</span></div>
+    <div class="stat"><b class="nums">8/13</b><span>2026 英仙座流星群极大・当天新月</span></div>
+    <div class="stat"><b class="nums">2</b><span>条登山路线可选，本册均详细收录</span></div>
+  </div>
+</section>
+
+<!-- DAY 1 -->
+<section class="spread tone-paper" id="day1-zh">
+  <div class="container">
+    <div class="day-head">
+      <span class="day-num nums">01</span>
+      <div class="day-title">
+        <p class="eyebrow" style="color:var(--indigo)">抵达日</p>
+        <h2>东京 → 昼神温泉「清風苑」</h2>
+      </div>
+    </div>
+    <div class="day-kicker prose">
+      <p class="muted">全程约4小时车程，中途在诹访湖SA稍作休息。抵达后先泡汤放松，为第二天的登山储备体力。</p>
+    </div>
+
+    <ol class="trail">
+      <li><time class="nums">09:00</time><p><b>东京出发</b> — 尽量避开首都高早高峰，走中央自动车道一路向西。</p></li>
+      <li><time class="nums">09:00–11:30</time><p><b>途中休息・诹访湖SA</b><span class="note muted">中央道全线大致中点，距东京约165km／2.5小时车程，海拔828m，可眺望诹访湖与八ヶ岳。</span></p></li>
+      <li><time class="nums">11:30–13:00</time><p><b>继续西行</b> — 经飯田山本IC下高速，转国道153号，约10分钟抵达温泉乡。</p></li>
+      <li><time class="nums">13:00</time><p><b>抵达清風苑</b><span class="note muted">正式入住多在15:00后，可先寄存行李，沿阿智川散步或去公共汤屋泡汤。</span></p></li>
+      <li><time class="nums">15:00</time><p><b>入住・温泉</b> — 好好放松，明天是全程最耗体力的一天。</p></li>
+      <li><time class="nums">18:00</time><p><b>晚饭</b> — 按旅馆平常供餐时间即可，早点休息。</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- DAY 2 CLIMB -->
+<section class="spread tone-paper contour-bg" id="day2-climb-zh">
+  <div class="container">
+    <div class="day-head">
+      <span class="day-num nums">02</span>
+      <div class="day-title">
+        <p class="eyebrow" style="color:var(--pine)">登山日 · 上午</p>
+        <h2>恵那山 — 两条路线，任选其一</h2>
+      </div>
+    </div>
+    <p class="prose muted">恵那山（2191m）是日本百名山之一。从清風苑出发有两条常用路线，风格截然不同——本册把两条都完整收录，出发前再按体力和天气决定走哪一条。当天上午退房后行李可先放车上，登山结束后直接前往当晚入住的玄竹。</p>
+
+    <div class="table-scroll">
+      <table class="compare-table nums">
+        <caption class="muted" style="font-size:.85rem">两条路线速览对比</caption>
+        <thead><tr><th>路线</th><th>広河原ルート</th><th>神坂峠ルート</th></tr></thead>
+        <tbody>
+          <tr><th>定位</th><td>最短・最初级，稳妥推荐</td><td>展望最佳，稜线风光，体力消耗更大</td></tr>
+          <tr><th>往返距离</th><td>8.2km</td><td>6.1km</td></tr>
+          <tr><th>爬升</th><td>约990m</td><td>+968m / −348m</td></tr>
+          <tr><th>标准时间</th><td>往返约6.5小时（上3h20-30／下2.5-3h）</td><td>往返约7.5小时（上4h20／下3h10）</td></tr>
+          <tr><th>接驳车程</th><td>约30-40分钟，经園原IC方向</td><td>约2小时，需绕中津川IC，山路多弯</td></tr>
+          <tr><th>停车场</th><td>约20-30台，免费</td><td>顶上仅约5台；1km外大檜駐車場50台以上（+单程1小时步行）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="route-picker" role="tablist" aria-label="选择登山路线">
+      <button class="route-btn" role="tab" aria-selected="true" aria-controls="panel-hirogawara" id="tab-hirogawara" data-target="panel-hirogawara">
+        <b>広河原ルート</b><span>稳妥推荐・最短初级路线</span>
+      </button>
+      <button class="route-btn" role="tab" aria-selected="false" aria-controls="panel-misaka" id="tab-misaka" data-target="panel-misaka">
+        <b>神坂峠ルート</b><span>展望优先・体力要求更高</span>
+      </button>
+    </div>
+
+    <div class="route-panel active" id="panel-hirogawara" role="tabpanel" aria-labelledby="tab-hirogawara">
+      <ol class="trail">
+        <li><time class="nums">05:30</time><p><b>清風苑出发</b><span class="note muted">退房，行李先放车上。</span></p></li>
+        <li><time class="nums">05:30–06:10</time><p><b>开车至広河原停车场</b><span class="note muted">经園原IC方向，约30-40分钟，免费约20-30个车位，周末较易满建议早到。</span></p></li>
+        <li><time class="nums">06:10–06:40</time><p><b>林道步行</b><span class="note muted">停车场到登山口（1253m）沿林道步行约30分钟。</span></p></li>
+        <li><time class="nums">06:40</time><p><b>开始登山</b><span class="note muted">往返8.2km，爬升约990m，标准上山3h20-30分。</span></p></li>
+        <li><time class="nums">约10:10</time><p><b>登顶（2191m）</b> — 天气好可远眺南阿尔卑斯、御岳山、乗鞍岳。</p></li>
+        <li><time class="nums">10:10–11:00</time><p><b>山顶休息、午餐</b></p></li>
+        <li><time class="nums">11:00–14:00</time><p><b>下山</b><span class="note muted">标准约3小时。</span></p></li>
+        <li><time class="nums">14:00–14:30</time><p><b>林道步行返回停车场</b></p></li>
+        <li><time class="nums">14:30–15:00</time><p><b>开车前往玄竹</b><span class="note muted">两家旅馆均在昼神温泉郷内，车程相近。</span></p></li>
+        <li><time class="nums">15:00</time><p><b>抵达玄竹</b> — 入住，泡汤恢复体力，晚饭可请旅馆提早到17:30-18:00。</p></li>
+      </ol>
+    </div>
+
+    <div class="route-panel" id="panel-misaka" role="tabpanel" aria-labelledby="tab-misaka">
+      <ol class="trail">
+        <li><time class="nums">04:00</time><p><b>清風苑出发</b><span class="note muted">退房，行李先放车上。越早越好——顶上停车场仅5个车位；周末建议03:30出发。</span></p></li>
+        <li><time class="nums">04:00–04:30</time><p><b>経園原IC → 中央道 → 中津川IC</b><span class="note muted">约22km／19分钟。</span></p></li>
+        <li><time class="nums">04:30–06:00</time><p><b>中津川IC经林道上山</b><span class="note muted">约1小时30分钟，抵达神坂峠駐車場（标高1565m）。顶上驻车场约5台；若已满，改停1km外的大檜駐車場（50台以上），需多花单程约1小时步行到登山口。</span></p></li>
+        <li><time class="nums">06:00</time><p><b>开始登山</b><span class="note muted">往返6.1km，爬升+968m/−348m，标准上山4h20分，全程走稜线，经千両山・鳥越峠・大判山，展望极佳。</span></p></li>
+        <li><time class="nums">约10:20</time><p><b>登顶（2191m）</b> — 经山顶避难小屋，可远眺南阿尔卑斯与中央アルプス全景。</p></li>
+        <li><time class="nums">10:20–11:10</time><p><b>山顶休息、午餐</b></p></li>
+        <li><time class="nums">11:10–14:20</time><p><b>下山</b><span class="note muted">标准约3小时10分。</span></p></li>
+        <li><time class="nums">14:20–16:00</time><p><b>开车前往玄竹</b><span class="note muted">约1小时40分钟，若改停大檜駐車場需先加算1小时步行。</span></p></li>
+        <li><time class="nums">16:00</time><p><b>抵达玄竹</b> — 入住，泡汤、尽量早点吃晚饭。</p></li>
+      </ol>
+
+      <div class="warn-box">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2 L18.5 17H1.5Z" stroke="#b8482e" stroke-width="1.4" stroke-linejoin="round"/><line x1="10" y1="8" x2="10" y2="12.5" stroke="#b8482e" stroke-width="1.4"/><circle cx="10" cy="14.7" r="0.9" fill="#b8482e"/></svg>
+        <div>
+          <h4>神坂峠ルート・体力提醒</h4>
+          <ul>
+            <li>这条路线本身单日往返已属偏长（约7.5小时），部分攻略建议山顶小屋过夜分两天走；再加上单程约2小时的接驳车程，当天交通+登山合计接近12小时。</li>
+            <li>给自己设一个折返点：<b>11:30仍未抵达山顶避难小屋，就直接下撤</b>，别硬撑登顶。</li>
+            <li>若体力已经透支，晚上的观星计划可以简化为「看到23点左右就回旅馆」，不必勉强撑到后半夜的极大时刻。</li>
+            <li>顶上驻车场只有5个位置，务必尽早出发；出发前建议确认大谷霧ヶ原線林道是否因崩塌封闭。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 2 STARS -->
+<section class="spread tone-ink" id="day2-star-zh">
+  <div class="starfield" id="starfield-night-zh" data-count="90"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="day-head">
+      <span class="day-num nums" style="color:var(--gold-soft)">02</span>
+      <div class="day-title">
+        <p class="eyebrow" style="color:var(--gold-soft)">登山日 · 夜晚</p>
+        <h2>守一场今年最好的流星雨</h2>
+      </div>
+    </div>
+
+    <div class="meteor-box">
+      <div>
+        <h4>2026年英仙座流星群 · 观测条件说明</h4>
+        <p class="muted" style="margin:0;">极大预计在 <b class="nums" style="color:var(--text-ink)">8月13日 11:00</b> 左右（白天），因此实际最佳观测窗口是 <b style="color:var(--text-ink)">8月12日深夜〜13日凌晨</b>。当晚恰好是新月，完全不受月光干扰——是近年少有的绝佳条件。真正的高峰流量通常出现在 <b style="color:var(--text-ink)" class="nums">23:00–凌晨2:00</b> 之间，辐射点这时升得更高。</p>
+      </div>
+    </div>
+
+    <p class="prose muted">阿智村是2006年环境省认定的「日本一星空観測に適した場所」。以下几个地点都在玄竹附近，免费、开阔、无需预约，很适合安静地守候到极大期的时刻。</p>
+
+    <div class="grid-3" style="margin-top:30px;">
+      <div class="spot-card">
+        <p class="rank">首选</p>
+        <h4>治部坂高原・馬の背</h4>
+        <p class="muted" style="font-size:.9rem;margin:0">海拔约1300m的开阔草原，几乎无光害，是本地人才知道的观星点。</p>
+        <ul>
+          <li>车程约20-25分钟</li>
+          <li>停车场约7台，免费</li>
+          <li>下车步行约3分钟到开阔平地</li>
+          <li>无厕所/自动贩卖机，道路较窄</li>
+        </ul>
+      </div>
+      <div class="spot-card">
+        <p class="rank">备选一</p>
+        <h4>高嶺山展望台（平谷村）</h4>
+        <p class="muted" style="font-size:.9rem;margin:0">标高1574m，当地称「高嶺自然プラネタリウム」，海拔更高、视野更开阔。</p>
+        <ul>
+          <li>车程约35-45分钟</li>
+          <li>驻车场约5台，步行100米到展望台</li>
+          <li>山路无路灯，建议白天先踩点</li>
+          <li>往返车程+步行约需40分钟</li>
+        </ul>
+      </div>
+      <div class="spot-card">
+        <p class="rank">备选二</p>
+        <h4>売木村・やまなみ広場</h4>
+        <p class="muted" style="font-size:.9rem;margin:0">平谷峠（1164m），阿智村星空网络认证点之一，视野朝南开阔。</p>
+        <ul>
+          <li>车程50分钟以上</li>
+          <li>适合当天状态很好、想多探索一点的情况</li>
+          <li>其余为主力地点更从容</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="rule">
+    <p class="prose muted" style="font-size:.92rem">建议21:00左右从玄竹出发，先到治部坂高原安顿下来；如果当天爬山已经很累，看到23点左右尽兴即可打道回府，不必勉强撑到凌晨极大期。</p>
+  </div>
+</section>
+
+<!-- DAY 3 -->
+<section class="spread tone-paper" id="day3-zh">
+  <div class="container">
+    <div class="day-head">
+      <span class="day-num nums">03</span>
+      <div class="day-title">
+        <p class="eyebrow" style="color:var(--indigo)">返程日</p>
+        <h2>中山道・馬籠宿，视当天状态而定</h2>
+      </div>
+    </div>
+    <p class="prose muted">前一晚可能守夜到很晚，所以这天特意准备了两套方案——一套完全不受时刻表束缚，一套走完整段中山道但需要卡准巴士时间。</p>
+
+    <div class="plan-tabs" role="tablist" aria-label="选择第三天方案">
+      <button class="route-btn" role="tab" aria-selected="true" aria-controls="plan-lite" id="tab-lite" data-target="plan-lite">
+        <b>方案 1 · 精华版</b><span>馬籠宿 → 男滝・女滝 往返，无需赶车</span>
+      </button>
+      <button class="route-btn" role="tab" aria-selected="false" aria-controls="plan-full" id="tab-full" data-target="plan-full">
+        <b>方案 2 · 完整版</b><span>馬籠宿 → 妻籠宿，坐巴士回程取车</span>
+      </button>
+    </div>
+
+    <div class="plan-panel active" id="plan-lite" role="tabpanel" aria-labelledby="tab-lite">
+      <p class="muted" style="font-size:.92rem">这个方案完全不用赶时间，10点退房再出发也没问题，进退自如。</p>
+      <ol class="trail">
+        <li><time class="nums">10:00</time><p><b>玄竹退房出发</b><span class="note muted">车程约50-60分钟。</span></p></li>
+        <li><time class="nums">11:00</time><p><b>抵达馬籠宿</b> — 停车，逛入口一带。</p></li>
+        <li><time class="nums">11:30–13:00</time><p><b>步行至「男滝・女滝」往返</b><span class="note muted">单程约35-40分钟，含拍照来回约1.5小时。</span></p></li>
+        <li><time class="nums">13:00–14:00</time><p><b>馬籠宿午饭</b><span class="note muted">五平餅、荞麦面。</span></p></li>
+        <li><time class="nums">14:00</time><p><b>出发返回东京</b><span class="note muted">经中津川IC上中央道，途中在诹访湖SA休息。</span></p></li>
+        <li><time class="nums">约18:00–18:30</time><p><b>预计抵达东京</b></p></li>
+      </ol>
+    </div>
+
+    <div class="plan-panel" id="plan-full" role="tabpanel" aria-labelledby="tab-full">
+      <p class="muted" style="font-size:.92rem">车停在馬籠，走到妻籠后需坐巴士回来取车——出发早晚会直接决定能赶上哪一班。</p>
+
+      <div class="grid-2" style="margin-top:24px;">
+        <div class="card">
+          <h4 style="color:var(--pine)">情况 A ・ 9点前出发</h4>
+          <div class="stat-line"><span>玄竹出发</span><b class="nums">09:00</b></div>
+          <div class="stat-line"><span>抵达馬籠、开始徒步</span><b class="nums">10:00 / 10:15</b></div>
+          <div class="stat-line"><span>抵达妻籠</span><b class="nums">约13:45–14:15</b></div>
+          <div class="stat-line"><span>乘车回馬籠</span><b class="nums">14:22 → 14:50</b></div>
+          <div class="stat-line"><span>取车出发返东京</span><b class="nums">14:50</b></div>
+          <div class="stat-line"><span>预计抵达东京</span><b class="nums">19:30–20:00</b></div>
+        </div>
+        <div class="card">
+          <h4 style="color:var(--vermilion)">情况 B ・ 10点退房才出发</h4>
+          <div class="stat-line"><span>玄竹出发</span><b class="nums">10:00</b></div>
+          <div class="stat-line"><span>抵达馬籠、开始徒步</span><b class="nums">11:00 / 11:15</b></div>
+          <div class="stat-line"><span>抵达妻籠</span><b class="nums">约14:45–15:15</b></div>
+          <div class="stat-line"><span>乘车回馬籠</span><b class="nums">16:42 → 17:10</b></div>
+          <div class="stat-line"><span>取车出发返东京</span><b class="nums">17:10</b></div>
+          <div class="stat-line"><span>预计抵达东京</span><b class="nums">21:30–22:00</b></div>
+        </div>
+      </div>
+
+      <div class="ticket">
+        <h4 class="eyebrow">北恵那交通 · 妻籠馬籠線 时刻表</h4>
+        <div class="bus-cols nums">
+          <div>
+            <p class="muted" style="font-size:.8rem;margin:0 0 8px">妻籠 → 馬籠（回程用）</p>
+            <ul class="bus-list">
+              <li><span>妻籠発</span><b>10:17</b></li>
+              <li><span>妻籠発</span><b>12:47</b></li>
+              <li class="highlight"><span>妻籠発</span><b>14:22</b></li>
+              <li class="highlight"><span>妻籠発</span><b>16:42</b></li>
+            </ul>
+          </div>
+          <div>
+            <p class="muted" style="font-size:.8rem;margin:0 0 8px">馬籠 → 妻籠（去程参考）</p>
+            <ul class="bus-list">
+              <li><span>馬籠発</span><b>09:25</b></li>
+              <li><span>馬籠発</span><b>10:55</b></li>
+              <li><span>馬籠発</span><b>13:25</b></li>
+              <li><span>馬籠発</span><b>15:00</b></li>
+              <li><span>馬籠発</span><b>17:15</b></li>
+            </ul>
+          </div>
+        </div>
+        <p class="muted" style="font-size:.8rem;margin-top:14px">单程约26-28分钟，无需预约，上车付费。出发前建议在北恵那交通官网确认当天季节班次是否有调整。</p>
+      </div>
+
+      <p class="prose muted" style="font-size:.9rem;margin-top:22px">哪怕比10点早半小时到45分钟出发，就能从「情况B」切换到「情况A」，晚上能早两个多小时到家。如果当天真的完全不想赶时间，直接选<b>方案1</b>更省心。</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICAL -->
+<section class="spread tone-paper" id="practical-zh">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--indigo)">实用信息</p>
+    <h2 style="margin-top:10px;">行前速查</h2>
+
+    <hr class="rule">
+    <h3 style="font-size:1.15rem;margin-bottom:16px;">两条登山路线 · 再对照一眼</h3>
+    <div class="table-scroll">
+      <table class="compare-table nums">
+        <thead><tr><th></th><th>広河原ルート</th><th>神坂峠ルート</th></tr></thead>
+        <tbody>
+          <tr><th>往返时间</th><td>约6.5小时</td><td>约7.5小时</td></tr>
+          <tr><th>接驳车程</th><td>约30-40分钟</td><td>约2小时（绕行中津川IC）</td></tr>
+          <tr><th>停车位</th><td>20-30台</td><td>顶上仅5台／备用大檜50台+</td></tr>
+          <tr><th>风景</th><td>一般</td><td>稜线展望极佳</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="rule">
+    <h3 style="font-size:1.15rem;margin-bottom:6px;">行前确认清单</h3>
+    <ul class="checklist" style="color:var(--text-paper)">
+      <li>出发前确认広河原/神坂峠登山口的林道（大谷霧ヶ原線）是否因崩塌临时封闭</li>
+      <li>登山装备：足够的水和行动食、头灯（神坂峠路线凌晨摸黑出发需要）、防寒外套（山顶气温明显更低）</li>
+      <li>若走中山道完整版，出发前上北恵那交通官网核实当天班次</li>
+      <li>观星地点山路多无路灯，建议白天先开车踩一次点</li>
+      <li>长途路段建议轮流驾驶，避免疲劳驾驶</li>
+      <li>周末/连休返程易堵车，建议比计划多预留1小时缓冲</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  星落昼神 · 东京—昼神温泉 三日自驾行程手册 ｜ 仅供行程规划参考，出发前请以官方最新信息为准
+</footer>
+
+</div>
+<!-- ===================  中文版结束  ======================= -->
+
+
+<!-- ======================================================= -->
+<!-- =====================  日本語版  ======================= -->
+<!-- ======================================================= -->
+<div id="doc-ja">
+
+<nav class="topnav">
+  <div class="container">
+    <div class="topnav-title">星降る昼神</div>
+    <ul class="topnav-links">
+      <li><a href="#overview-ja">概要</a></li>
+      <li><a href="#day1-ja">Day 1</a></li>
+      <li><a href="#day2-climb-ja">Day 2・登山</a></li>
+      <li><a href="#day2-star-ja">Day 2・観星</a></li>
+      <li><a href="#day3-ja">Day 3</a></li>
+      <li><a href="#practical-ja">実用情報</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow hero-eyebrow">TOKYO → HIRUGAMI ONSEN・自家用車で巡る三日間</p>
+    <h1>星降る<br>昼神</h1>
+    <p class="hero-sub">東京を出発し、昼神温泉へ。恵那山登頂、日本一の星空、中山道の宿場町を巡る二泊三日のドライブ旅程です。</p>
+    <div class="hero-meta nums">
+      <span class="tag">二泊三日</span>
+      <span class="tag">自家用車 約260km</span>
+      <span class="tag">宿・清風苑 → 玄竹</span>
+      <span class="tag">目標の夜・8月12日夜〜13日未明</span>
+    </div>
+  </div>
+</header>
+
+<section class="stats" id="overview-ja">
+  <div class="container">
+    <div class="stat"><b class="nums">260<span style="font-size:.55em">km</span></b><span>東京 → 昼神温泉（阿智村）片道</span></div>
+    <div class="stat"><b class="nums">2191<span style="font-size:.55em">m</span></b><span>恵那山 山頂標高</span></div>
+    <div class="stat"><b class="nums">8/13</b><span>2026年ペルセウス座流星群 極大・当日新月</span></div>
+    <div class="stat"><b class="nums">2</b><span>つの登山ルートを両方詳しく掲載</span></div>
+  </div>
+</section>
+
+<!-- DAY 1 -->
+<section class="spread tone-paper" id="day1-ja">
+  <div class="container">
+    <div class="day-head">
+      <span class="day-num nums">01</span>
+      <div class="day-title">
+        <p class="eyebrow" style="color:var(--indigo)">到着日</p>
+        <h2>東京 → 昼神温泉「清風苑」</h2>
+      </div>
+    </div>
+    <div class="day-kicker prose">
+      <p class="muted">走行時間は正味約4時間。途中、諏訪湖SAで一度休憩します。到着後はまず温泉でひと休みして、翌日の登山に備えましょう。</p>
+    </div>
+
+    <ol class="trail">
+      <li><time class="nums">09:00</time><p><b>東京出発</b> — 首都高の朝の渋滞を避けたいところ。中央自動車道をひたすら西へ。</p></li>
+      <li><time class="nums">09:00–11:30</time><p><b>途中休憩・諏訪湖SA</b><span class="note muted">中央道のほぼ中間点。東京から約165km／車で2.5時間、標高828m、諏訪湖と八ヶ岳を一望できます。</span></p></li>
+      <li><time class="nums">11:30–13:00</time><p><b>さらに西へ</b> — 飯田山本ICで高速を降り、国道153号で約10分、温泉郷に到着。</p></li>
+      <li><time class="nums">13:00</time><p><b>清風苑に到着</b><span class="note muted">チェックインは15:00以降が一般的。荷物だけ預けて、阿智川沿いを散策したり、共同浴場でひと風呂浴びても。</span></p></li>
+      <li><time class="nums">15:00</time><p><b>チェックイン・温泉</b> — しっかり体を休めましょう。明日は一番体力を使う日です。</p></li>
+      <li><time class="nums">18:00</time><p><b>夕食</b> — 通常の時間で構いません。早めに就寝を。</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- DAY 2 CLIMB -->
+<section class="spread tone-paper contour-bg" id="day2-climb-ja">
+  <div class="container">
+    <div class="day-head">
+      <span class="day-num nums">02</span>
+      <div class="day-title">
+        <p class="eyebrow" style="color:var(--pine)">登山day・午前</p>
+        <h2>恵那山——二つのルート、お好きな方を</h2>
+      </div>
+    </div>
+    <p class="prose muted">恵那山（2191m）は日本百名山のひとつ。清風苑からよく使われるルートは二つあり、性格がまったく異なります。この冊子では両方を詳しく掲載しました。出発前に体力と天気を見て決めてください。当日午前中にチェックアウトし、荷物は車に積んだまま登山へ。下山後はそのまま、その晩の宿である玄竹へ向かいます。</p>
+
+    <div class="table-scroll">
+      <table class="compare-table nums">
+        <caption class="muted" style="font-size:.84rem">二つのルート早見表</caption>
+        <thead><tr><th>ルート</th><th>広河原ルート</th><th>神坂峠ルート</th></tr></thead>
+        <tbody>
+          <tr><th>位置づけ</th><td>最短・初級向け、安心の定番</td><td>展望随一、稜線歩き、体力消耗はより大きい</td></tr>
+          <tr><th>往復距離</th><td>8.2km</td><td>6.1km</td></tr>
+          <tr><th>標高差</th><td>約990m</td><td>+968m／−348m</td></tr>
+          <tr><th>標準タイム</th><td>往復約6.5時間（登り3時間20-30分／下り2.5-3時間）</td><td>往復約7.5時間（登り4時間20分／下り3時間10分）</td></tr>
+          <tr><th>アクセス</th><td>約30-40分、園原IC方面経由</td><td>約2時間、中津川IC経由で大回り、山道はカーブが多い</td></tr>
+          <tr><th>駐車場</th><td>約20-30台、無料</td><td>頂上はわずか5台。1km手前の大檜駐車場は50台以上（片道徒歩約1時間追加）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="route-picker" role="tablist" aria-label="登山ルートを選択">
+      <button class="route-btn" role="tab" aria-selected="true" aria-controls="panel-hirogawara-ja" id="tab-hirogawara-ja" data-target="panel-hirogawara-ja">
+        <b>広河原ルート</b><span>安心の定番・最短初級コース</span>
+      </button>
+      <button class="route-btn" role="tab" aria-selected="false" aria-controls="panel-misaka-ja" id="tab-misaka-ja" data-target="panel-misaka-ja">
+        <b>神坂峠ルート</b><span>展望優先・より体力が必要</span>
+      </button>
+    </div>
+
+    <div class="route-panel active" id="panel-hirogawara-ja" role="tabpanel" aria-labelledby="tab-hirogawara-ja">
+      <ol class="trail">
+        <li><time class="nums">05:30</time><p><b>清風苑出発</b><span class="note muted">チェックアウトし、荷物は車に積んでおきます。</span></p></li>
+        <li><time class="nums">05:30–06:10</time><p><b>車で広河原駐車場へ</b><span class="note muted">園原IC方面経由、約30-40分。無料で20-30台分、週末は早めの到着がおすすめです。</span></p></li>
+        <li><time class="nums">06:10–06:40</time><p><b>林道歩き</b><span class="note muted">駐車場から登山口（1253m）まで林道を約30分。</span></p></li>
+        <li><time class="nums">06:40</time><p><b>登山開始</b><span class="note muted">往復8.2km、標高差約990m、標準登り3時間20-30分。</span></p></li>
+        <li><time class="nums">約10:10</time><p><b>登頂（2191m）</b> — 晴れていれば南アルプス・御嶽山・乗鞍岳を一望。</p></li>
+        <li><time class="nums">10:10–11:00</time><p><b>山頂で休憩・昼食</b></p></li>
+        <li><time class="nums">11:00–14:00</time><p><b>下山</b><span class="note muted">標準約3時間。</span></p></li>
+        <li><time class="nums">14:00–14:30</time><p><b>林道を歩いて駐車場へ</b></p></li>
+        <li><time class="nums">14:30–15:00</time><p><b>車で玄竹へ</b><span class="note muted">どちらの宿も昼神温泉郷内にあり、所要時間はほぼ変わりません。</span></p></li>
+        <li><time class="nums">15:00</time><p><b>玄竹に到着</b> — チェックインし、温泉で疲れを癒やして。夕食は17:30-18:00に早めてもらうと良いでしょう。</p></li>
+      </ol>
+    </div>
+
+    <div class="route-panel" id="panel-misaka-ja" role="tabpanel" aria-labelledby="tab-misaka-ja">
+      <ol class="trail">
+        <li><time class="nums">04:00</time><p><b>清風苑出発</b><span class="note muted">チェックアウトし、荷物は車に積んでおきます。早ければ早いほど良い——頂上駐車場はわずか5台。週末は03:30出発をおすすめします。</span></p></li>
+        <li><time class="nums">04:00–04:30</time><p><b>園原IC → 中央道 → 中津川IC</b><span class="note muted">約22km／19分。</span></p></li>
+        <li><time class="nums">04:30–06:00</time><p><b>中津川ICから林道で山を登る</b><span class="note muted">約1時間30分で神坂峠駐車場（標高1565m）へ。頂上は約5台。満車の場合は1km手前の大檜駐車場（50台以上）に停め、登山口まで片道約1時間の徒歩が追加になります。</span></p></li>
+        <li><time class="nums">06:00</time><p><b>登山開始</b><span class="note muted">往復6.1km、標高差+968m／−348m、標準登り4時間20分。稜線を千両山・鳥越峠・大判山と辿る、展望抜群のコース。</span></p></li>
+        <li><time class="nums">約10:20</time><p><b>登頂（2191m）</b> — 山頂避難小屋を経て、南アルプスと中央アルプスの大パノラマ。</p></li>
+        <li><time class="nums">10:20–11:10</time><p><b>山頂で休憩・昼食</b></p></li>
+        <li><time class="nums">11:10–14:20</time><p><b>下山</b><span class="note muted">標準約3時間10分。</span></p></li>
+        <li><time class="nums">14:20–16:00</time><p><b>車で玄竹へ</b><span class="note muted">約1時間40分。大檜駐車場に停めた場合は、まず徒歩1時間を加算してください。</span></p></li>
+        <li><time class="nums">16:00</time><p><b>玄竹に到着</b> — チェックインし、温泉で癒やされ、夕食はできるだけ早めに。</p></li>
+      </ol>
+
+      <div class="warn-box">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2 L18.5 17H1.5Z" stroke="#b8482e" stroke-width="1.4" stroke-linejoin="round"/><line x1="10" y1="8" x2="10" y2="12.5" stroke="#b8482e" stroke-width="1.4"/><circle cx="10" cy="14.7" r="0.9" fill="#b8482e"/></svg>
+        <div>
+          <h4>神坂峠ルート・体力に関する注意</h4>
+          <ul>
+            <li>このコースは日帰り往復だけでもかなり長く（約7.5時間）、山頂の避難小屋に泊まって二日がかりで歩くことを勧めるガイドもあるほどです。片道約2時間のアクセスも加わると、その日だけで交通と登山を合わせて約12時間になります。</li>
+            <li>折り返しの目安を決めておきましょう。<b>11:30になっても避難小屋に着いていなければ、無理せず引き返してください。</b></li>
+            <li>体力を使い切ってしまったら、夜の観星計画は「23時頃まで見たら宿に戻る」に切り替えて構いません。未明の極大まで無理に粘る必要はありません。</li>
+            <li>頂上駐車場はわずか5台です。できるだけ早く出発し、また出発前に大谷霧ヶ原線の林道が崩落等で通行止めになっていないか確認しておきましょう。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 2 STARS -->
+<section class="spread tone-ink" id="day2-star-ja">
+  <div class="starfield" id="starfield-night-ja" data-count="90"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="day-head">
+      <span class="day-num nums" style="color:var(--gold-soft)">02</span>
+      <div class="day-title">
+        <p class="eyebrow" style="color:var(--gold-soft)">登山day・夜</p>
+        <h2>今年いちばんの流星群を待つ</h2>
+      </div>
+    </div>
+
+    <div class="meteor-box">
+      <div>
+        <h4>2026年ペルセウス座流星群・観測条件について</h4>
+        <p class="muted" style="margin:0;">極大は <b class="nums" style="color:var(--text-ink)">8月13日 11:00</b> 頃（日中）と予想されているため、実際に見頃となるのは <b style="color:var(--text-ink)">8月12日深夜〜13日未明</b>。しかもこの夜は新月にあたり、月明かりの影響をまったく受けません——ここ数年でも屈指の好条件です。放射点が高く上がる <b style="color:var(--text-ink)" class="nums">23:00〜深夜2:00</b> 頃が、本当のピークになりやすい時間帯です。</p>
+      </div>
+    </div>
+
+    <p class="prose muted">阿智村は2006年に環境省から「日本一星空観測に適した場所」に認定された土地です。以下はいずれも玄竹から近く、無料・開放的・予約不要——静かに極大の時を待つのにぴったりの場所です。</p>
+
+    <div class="grid-3" style="margin-top:30px;">
+      <div class="spot-card">
+        <p class="rank">本命</p>
+        <h4>治部坂高原・馬の背</h4>
+        <p class="muted" style="font-size:.88rem;margin:0">標高約1300mの開けた草原。光害がほとんどなく、地元の人しか知らない観星スポットです。</p>
+        <ul>
+          <li>車で約20-25分</li>
+          <li>駐車場は約7台、無料</li>
+          <li>車を降りて徒歩約3分で開けた場所へ</li>
+          <li>トイレ・自動販売機なし、道はやや狭い</li>
+        </ul>
+      </div>
+      <div class="spot-card">
+        <p class="rank">候補その一</p>
+        <h4>高嶺山展望台（平谷村）</h4>
+        <p class="muted" style="font-size:.88rem;margin:0">標高1574m、地元では「高嶺自然プラネタリウム」とも呼ばれる場所。標高がより高く、視界も開けています。</p>
+        <ul>
+          <li>車で約35-45分</li>
+          <li>駐車場は約5台、展望台まで徒歩100m</li>
+          <li>山道に街灯なし、日中に下見をおすすめ</li>
+          <li>往復の運転+徒歩で約40分</li>
+        </ul>
+      </div>
+      <div class="spot-card">
+        <p class="rank">候補その二</p>
+        <h4>売木村・やまなみ広場</h4>
+        <p class="muted" style="font-size:.88rem;margin:0">平谷峠（1164m）。阿智村の星空ネットワーク認定スポットのひとつで、南側の視界が開けています。</p>
+        <ul>
+          <li>車で50分以上</li>
+          <li>その日の体調が良く、少し足を延ばしたいときに</li>
+          <li>それ以外は本命の場所の方が余裕を持てます</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="rule">
+    <p class="prose muted" style="font-size:.9rem">21:00頃に玄竹を出発し、まず治部坂高原に落ち着くのがおすすめです。登山で疲れが残っているようなら、23時頃で満足して宿に戻っても十分——無理に未明の極大まで粘る必要はありません。</p>
+  </div>
+</section>
+
+<!-- DAY 3 -->
+<section class="spread tone-paper" id="day3-ja">
+  <div class="container">
+    <div class="day-head">
+      <span class="day-num nums">03</span>
+      <div class="day-title">
+        <p class="eyebrow" style="color:var(--indigo)">帰路day</p>
+        <h2>中山道・馬籠宿、当日の様子次第で</h2>
+      </div>
+    </div>
+    <p class="prose muted">前夜は遅くまで星を見ているかもしれないので、この日は二つのプランを用意しました。ひとつは時刻表に一切縛られないプラン、もうひとつは中山道を歩き通すけれどバスの時間に合わせる必要があるプランです。</p>
+
+    <div class="plan-tabs" role="tablist" aria-label="三日目のプランを選択">
+      <button class="route-btn" role="tab" aria-selected="true" aria-controls="plan-lite-ja" id="tab-lite-ja" data-target="plan-lite-ja">
+        <b>プラン1・ハイライト版</b><span>馬籠宿→男滝・女滝の往復、バス不要</span>
+      </button>
+      <button class="route-btn" role="tab" aria-selected="false" aria-controls="plan-full-ja" id="tab-full-ja" data-target="plan-full-ja">
+        <b>プラン2・完全版</b><span>馬籠宿→妻籠宿、バスで馬籠に戻り車を回収</span>
+      </button>
+    </div>
+
+    <div class="plan-panel active" id="plan-lite-ja" role="tabpanel" aria-labelledby="tab-lite-ja">
+      <p class="muted" style="font-size:.9rem">このプランなら時間に一切追われません。10時にチェックアウトしてから出発しても大丈夫です。</p>
+      <ol class="trail">
+        <li><time class="nums">10:00</time><p><b>玄竹チェックアウト・出発</b><span class="note muted">車で約50-60分。</span></p></li>
+        <li><time class="nums">11:00</time><p><b>馬籠宿に到着</b> — 駐車し、入口付近を散策。</p></li>
+        <li><time class="nums">11:30–13:00</time><p><b>「男滝・女滝」まで徒歩往復</b><span class="note muted">片道約35-40分、写真を撮りながら往復約1.5時間。</span></p></li>
+        <li><time class="nums">13:00–14:00</time><p><b>馬籠宿で昼食</b><span class="note muted">五平餅やそばなど。</span></p></li>
+        <li><time class="nums">14:00</time><p><b>東京へ向けて出発</b><span class="note muted">中津川ICから中央道へ、途中諏訪湖SAで休憩。</span></p></li>
+        <li><time class="nums">約18:00–18:30</time><p><b>東京到着予定</b></p></li>
+      </ol>
+    </div>
+
+    <div class="plan-panel" id="plan-full-ja" role="tabpanel" aria-labelledby="tab-full-ja">
+      <p class="muted" style="font-size:.9rem">車は馬籠に置いたまま妻籠まで歩くので、戻りはバスで馬籠まで戻って車を回収します。出発時刻の早い遅いが、乗れる便を直接左右します。</p>
+
+      <div class="grid-2" style="margin-top:24px;">
+        <div class="card">
+          <h4 style="color:var(--pine)">情況A・9時前に出発</h4>
+          <div class="stat-line"><span>玄竹出発</span><b class="nums">09:00</b></div>
+          <div class="stat-line"><span>馬籠到着・徒歩開始</span><b class="nums">10:00 / 10:15</b></div>
+          <div class="stat-line"><span>妻籠到着</span><b class="nums">約13:45–14:15</b></div>
+          <div class="stat-line"><span>バスで馬籠へ</span><b class="nums">14:22 → 14:50</b></div>
+          <div class="stat-line"><span>車を回収し東京へ出発</span><b class="nums">14:50</b></div>
+          <div class="stat-line"><span>東京到着予定</span><b class="nums">19:30–20:00</b></div>
+        </div>
+        <div class="card">
+          <h4 style="color:var(--vermilion)">情況B・10時チェックアウトしてから出発</h4>
+          <div class="stat-line"><span>玄竹出発</span><b class="nums">10:00</b></div>
+          <div class="stat-line"><span>馬籠到着・徒歩開始</span><b class="nums">11:00 / 11:15</b></div>
+          <div class="stat-line"><span>妻籠到着</span><b class="nums">約14:45–15:15</b></div>
+          <div class="stat-line"><span>バスで馬籠へ</span><b class="nums">16:42 → 17:10</b></div>
+          <div class="stat-line"><span>車を回収し東京へ出発</span><b class="nums">17:10</b></div>
+          <div class="stat-line"><span>東京到着予定</span><b class="nums">21:30–22:00</b></div>
+        </div>
+      </div>
+
+      <div class="ticket">
+        <h4 class="eyebrow">北恵那交通・妻籠馬籠線 時刻表</h4>
+        <div class="bus-cols nums">
+          <div>
+            <p class="muted" style="font-size:.78rem;margin:0 0 8px">妻籠 → 馬籠（帰りに利用）</p>
+            <ul class="bus-list">
+              <li><span>妻籠発</span><b>10:17</b></li>
+              <li><span>妻籠発</span><b>12:47</b></li>
+              <li class="highlight"><span>妻籠発</span><b>14:22</b></li>
+              <li class="highlight"><span>妻籠発</span><b>16:42</b></li>
+            </ul>
+          </div>
+          <div>
+            <p class="muted" style="font-size:.78rem;margin:0 0 8px">馬籠 → 妻籠（参考・行きに利用する場合）</p>
+            <ul class="bus-list">
+              <li><span>馬籠発</span><b>09:25</b></li>
+              <li><span>馬籠発</span><b>10:55</b></li>
+              <li><span>馬籠発</span><b>13:25</b></li>
+              <li><span>馬籠発</span><b>15:00</b></li>
+              <li><span>馬籠発</span><b>17:15</b></li>
+            </ul>
+          </div>
+        </div>
+        <p class="muted" style="font-size:.78rem;margin-top:14px">所要時間は約26-28分。予約不要・車内精算。出発前に北恵那交通の公式サイトで、当日の季節ダイヤに変更がないかご確認ください。</p>
+      </div>
+
+      <p class="prose muted" style="font-size:.88rem;margin-top:22px">10時より30〜45分早く出発するだけで、「情況B」から「情況A」に切り替わり、帰宅は2時間以上早まります。当日どうしても時間を気にしたくないなら、素直に<b>プラン1</b>を選ぶのが一番気楽です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICAL -->
+<section class="spread tone-paper" id="practical-ja">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--indigo)">実用情報</p>
+    <h2 style="margin-top:10px;">出発前のチェックリスト</h2>
+
+    <hr class="rule">
+    <h3 style="font-size:1.1rem;margin-bottom:16px;">二つの登山ルート・もう一度おさらい</h3>
+    <div class="table-scroll">
+      <table class="compare-table nums">
+        <thead><tr><th></th><th>広河原ルート</th><th>神坂峠ルート</th></tr></thead>
+        <tbody>
+          <tr><th>往復時間</th><td>約6.5時間</td><td>約7.5時間</td></tr>
+          <tr><th>アクセス</th><td>約30-40分</td><td>約2時間（中津川IC経由で大回り）</td></tr>
+          <tr><th>駐車場</th><td>20-30台</td><td>頂上はわずか5台／大檜に50台以上</td></tr>
+          <tr><th>景色</th><td>標準的</td><td>稜線の展望が抜群</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="rule">
+    <h3 style="font-size:1.1rem;margin-bottom:6px;">出発前の確認事項</h3>
+    <ul class="checklist" style="color:var(--text-paper)">
+      <li>出発前に、広河原・神坂峠登山口へ続く林道（大谷霧ヶ原線）が崩落等で通行止めになっていないか確認する</li>
+      <li>登山装備：十分な水と行動食、ヘッドライト（神坂峠ルートは未明出発のため必須）、防寒着（山頂は気温が大きく下がります）</li>
+      <li>中山道を完全版で歩く場合は、出発前に北恵那交通の公式サイトで当日のダイヤを確認する</li>
+      <li>観星スポットへの山道は街灯がないところが多いので、日中に一度下見をしておく</li>
+      <li>長距離区間は交代しながら運転し、無理せずこまめに休憩を取る</li>
+      <li>週末・連休の帰路は渋滞しやすいので、予定より1時間多めに余裕を見ておく</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  星降る昼神 ｜ 東京—昼神温泉 二泊三日ドライブ旅のしおり ｜ 行程計画の参考資料です。出発前に最新の公式情報をご確認ください
+</footer>
+
+</div>
+<!-- ===================  日本語版終わり  ==================== -->
+
+<script>
+(function(){
+  function makeStars(el, count){
+    var frag = document.createDocumentFragment();
+    for(var i=0;i<count;i++){
+      var s = document.createElement('span');
+      var size = (Math.random()*1.6+0.6).toFixed(2);
+      var opacity = (Math.random()*0.6+0.3).toFixed(2);
+      s.className = 'star' + (Math.random() > 0.5 ? ' twinkle' : '');
+      s.style.position='absolute';
+      s.style.background='#fff';
+      s.style.borderRadius='50%';
+      s.style.width = size + 'px';
+      s.style.height = size + 'px';
+      s.style.top = (Math.random()*100).toFixed(2) + '%';
+      s.style.left = (Math.random()*100).toFixed(2) + '%';
+      s.style.setProperty('--o', opacity);
+      s.style.opacity = opacity;
+      frag.appendChild(s);
+    }
+    el.appendChild(frag);
+  }
+  document.querySelectorAll('.starfield').forEach(function(el){
+    makeStars(el, parseInt(el.dataset.count || '90', 10));
+  });
+
+  document.querySelectorAll('[role="tablist"]').forEach(function(tablist){
+    var buttons = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    buttons.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        buttons.forEach(function(b){
+          b.setAttribute('aria-selected','false');
+          var p = document.getElementById(b.dataset.target);
+          if(p) p.classList.remove('active');
+        });
+        btn.setAttribute('aria-selected','true');
+        var target = document.getElementById(btn.dataset.target);
+        if(target) target.classList.add('active');
+      });
+    });
+  });
+
+  var langBtns = Array.prototype.slice.call(document.querySelectorAll('.lang-btn'));
+  var titles = { zh: '星落昼神 · 三日行程手册', ja: '星降る昼神 · 二泊三日' };
+  langBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var lang = btn.dataset.lang;
+      document.body.classList.toggle('lang-ja', lang === 'ja');
+      document.documentElement.lang = lang;
+      document.title = titles[lang];
+      langBtns.forEach(function(b){ b.setAttribute('aria-pressed', String(b === btn)); });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
