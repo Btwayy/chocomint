@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>エイドステーション一覧</title>
+
+<style>
+
+:root{--bg:#f4f3ed;--card:#faf9f5;--ink:#242c25;--sub:#647064;--line:#d6d9cf;--out:#54653c;--back:#526b7c;--out-bg:#e7ebde;--back-bg:#e7edf0;--back-row:#f0f2ed;--water:#405f73;--food:#74603f;--toilet:#526342;--aid:#8a5147;}
+*{box-sizing:border-box;margin:0;padding:0;}
+[hidden]{display:none!important;}
+body{background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.65;padding:32px 28px 24px;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:1160px;margin:auto;}
+.masthead{display:flex;justify-content:space-between;gap:16px;border-top:4px solid var(--ink);padding:12px 0;font-size:10px;letter-spacing:.13em;font-weight:700;}
+.masthead span:last-child{color:var(--sub);}
+header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center;padding:40px 0 34px;border-bottom:1px solid var(--ink);}
+.eyebrow{font-family:monospace;font-size:11px;letter-spacing:.15em;color:var(--out);margin-bottom:12px;}
+h1{font-size:clamp(26px,3.6vw,44px);font-weight:700;letter-spacing:-.045em;line-height:1.35;}
+.lede{max-width:630px;font-size:12px;color:var(--sub);margin-top:16px;line-height:1.9;}
+.course-distance{border-left:1px solid var(--line);padding-left:34px;}
+.course-distance span{display:block;font-size:10px;font-family:monospace;letter-spacing:.12em;color:var(--sub);}
+.course-distance strong{font-family:"Helvetica Neue",Arial,sans-serif;font-size:68px;font-weight:500;letter-spacing:-.065em;line-height:1.2;}
+.course-distance small{font-size:15px;margin-left:6px;}
+.section-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:30px 0 14px;}
+.section-title h2{font-family:monospace;font-size:11px;letter-spacing:.12em;font-weight:500;}
+.section-title p{font-size:11px;color:var(--sub);}
+.filters{display:flex;align-items:center;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;}
+.filter-group{display:flex;align-items:center;gap:7px;border:0;min-width:0;}
+.filters .label{font-size:11px;color:var(--sub);margin-right:9px;}
+.leg-chip,.tag{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;}
+.leg-chip{font-size:10px;letter-spacing:.08em;color:var(--out);}
+.leg-chip.back{color:var(--back);}
+.leg-chip::before{content:'↗';font-size:14px;}
+.leg-chip.back::before{content:'↙';}
+.tag{font-size:11px;color:var(--sub);}
+.tags{display:flex;flex-wrap:wrap;gap:6px 12px;}
+.service-icon{width:13px;height:13px;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.f-btn{font-family:inherit;font-size:12px;padding:7px 10px;border:1px solid transparent;color:var(--ink);background:transparent;cursor:pointer;min-height:36px;}
+.f-btn.leg-chip::before,.f-btn::before{content:'';width:11px;height:11px;border:1px solid #879080;margin-right:4px;}
+.f-btn.on{background:var(--ink);color:var(--card);}
+.f-btn.on::before{background:var(--card);box-shadow:inset 0 0 0 2px var(--ink);border-color:var(--card);}
+.f-btn:hover{border-color:var(--sub);}
+button:focus-visible,.pick input:focus-visible{outline:2px solid var(--out);outline-offset:4px;}
+.reset{margin-left:auto;background:none;border:0;border-bottom:1px solid var(--sub);padding:3px 0;font:inherit;font-size:11px;color:var(--sub);cursor:pointer;white-space:nowrap;}
+.reset:hover{color:var(--ink);}
+.fnote{display:flex;flex-wrap:wrap;gap:4px 18px;padding:12px 0 20px;font-size:10px;color:var(--sub);}
+.fnote b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums;}
+.plan{margin:4px 0 24px;padding:20px 24px;background:var(--out-bg);border-left:3px solid var(--out);}
+.plan-head{display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+.plan-head h2{font-size:15px;letter-spacing:.02em;}
+.plan-count{font-size:11px;color:var(--out);}
+.plan-guide{font-size:10px;color:var(--sub);margin:6px 0 16px;}
+.itin{max-width:700px;}
+.itin .pt{display:flex;align-items:center;flex-wrap:wrap;gap:2px 9px;font-size:12px;font-weight:600;padding-left:2px;}
+.itin .pt::before{content:'';width:8px;height:8px;flex:none;background:var(--out);}
+.itin .pt.back::before{background:var(--back);}
+.itin .pt.start::before,.itin .pt.goal::before{background:transparent;border:1px solid var(--ink);}
+.itin .pt small{font-size:10px;color:var(--sub);font-weight:400;font-variant-numeric:tabular-nums;}
+.itin .gapline{margin-left:5px;padding:5px 0 5px 15px;border-left:1px solid #b4bea4;display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:10px;color:var(--sub);font-variant-numeric:tabular-nums;}
+.itin .gapline.max b{color:var(--ink);}
+.itin .gapline em{font-size:9px;font-style:normal;border-bottom:1px solid var(--out);color:var(--out);}
+.plan-sum{font-size:11px;color:var(--sub);line-height:2;margin-top:16px;padding-top:12px;border-top:1px solid #c3ccb5;}
+.plan-sum b{color:var(--ink);font-variant-numeric:tabular-nums;}
+.table-scroll{overflow-x:auto;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+thead th{text-align:left;padding:10px 16px;font-size:10px;font-weight:500;letter-spacing:.06em;color:var(--sub);border-bottom:1px solid var(--ink);white-space:nowrap;}
+thead th:first-child{padding-left:42px;}
+tbody td{padding:18px 16px;vertical-align:middle;border-bottom:1px solid var(--line);}
+tbody tr:hover{background:#eceedf;}
+tbody tr.picked{background:#e7ebde;}
+tbody tr.terminus{background:#eaece4;}
+tbody tr.is-last td{border-bottom:1px solid var(--ink);}
+.km{position:relative;padding-left:42px!important;white-space:nowrap;width:1%;font-variant-numeric:tabular-nums;}
+.km::before{content:'';position:absolute;left:16px;top:0;bottom:0;width:1px;background:#c4cbbd;}
+tr.is-first .km::before{top:50%;}tr.is-last .km::before{bottom:50%;}
+.km b{font-family:"Helvetica Neue",Arial,sans-serif;font-size:23px;font-weight:500;letter-spacing:-.035em;}
+.km small{font-size:9px;color:var(--sub);margin-left:3px;}
+.pick{position:absolute;left:0;top:0;bottom:0;width:33px;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+.pick input{appearance:none;-webkit-appearance:none;width:13px;height:13px;border:1px solid var(--out);background:var(--bg);border-radius:0;cursor:pointer;}
+.back-row .pick input{border-color:var(--back);}
+.pick input:checked{background:var(--out);box-shadow:inset 0 0 0 2px var(--bg);}
+.back-row .pick input:checked{background:var(--back);}
+tr.terminus .km::after{content:'';position:absolute;width:7px;height:7px;left:13px;top:calc(50% - 3px);background:var(--ink);}
+.place{font-weight:600;min-width:200px;line-height:1.6;}
+.venue{display:block;font-size:10px;font-weight:400;color:var(--sub);margin-top:3px;}
+.elev{white-space:nowrap;font-variant-numeric:tabular-nums;}
+.dwrap{display:flex;align-items:center;gap:9px;}
+.bar{position:relative;flex:none;width:56px;height:5px;}
+.bar::before{content:'';position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--line);}
+.bar i{position:absolute;top:0;height:5px;}.bar i.up{left:50%;background:#899768;}.bar i.down{right:50%;background:#88a0a9;}
+.delta{font-size:12px;font-weight:500;}.delta.up{color:var(--out);}.delta.down{color:var(--back);}.delta.flat{color:var(--sub);}
+.delta small{font-size:9px;margin-left:2px;}
+.abs{display:block;font-size:10px;color:var(--sub);margin-left:65px;}.abs small{font-size:9px;margin-left:2px;}
+.tag.dim{opacity:.35;}
+.empty-row td{text-align:center;padding:28px;color:var(--sub);font-size:12px;}
+footer{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--ink);margin-top:30px;padding-top:16px;color:var(--sub);font-size:10px;line-height:1.9;}
+.footer-mark{white-space:nowrap;font-family:monospace;font-size:11px;letter-spacing:.1em;color:var(--ink);}
+@media(min-width:641px) and (max-width:900px){tbody td,thead th{padding-left:10px;padding-right:10px;}.tags{min-width:130px;}.course-distance strong{font-size:52px;}.filters{gap:10px;}}
+@media(max-width:640px){
+body{padding:16px 18px 24px;}.masthead{font-size:8px;letter-spacing:.06em;}.masthead span:last-child{max-width:120px;text-align:right;}
+header{grid-template-columns:1fr;gap:22px;padding:28px 0 24px;}h1{font-size:30px;}.lede{font-size:11px;margin-top:12px;}
+.course-distance{border-left:0;padding-left:0;display:flex;align-items:baseline;gap:8px;}.course-distance span{font-size:9px;margin-right:auto;}.course-distance strong{font-size:42px;}.course-distance small{font-size:12px;margin-left:0;}
+.section-title{margin:24px 0 12px;align-items:baseline;}.section-title p{font-size:9px;}
+.filters{gap:8px;padding:10px 0;}.filter-group{width:100%;gap:2px;}.filters .label{width:30px;flex:none;margin-right:2px;}.f-btn{font-size:11px;padding:8px 6px;gap:3px;}.f-btn.leg-chip::before,.f-btn::before{width:10px;height:10px;margin-right:2px;}.filters>.reset{margin:2px 0 4px 34px;}
+.filter-group[aria-label="内容"]{display:grid;grid-template-columns:30px repeat(4,minmax(0,1fr));gap:2px;}.filter-group[aria-label="内容"] .f-btn{justify-content:center;padding:8px 0;font-size:10px;}
+.fnote{font-size:10px;gap:4px;padding-bottom:16px;}.fnote .hint{width:100%;}
+.table-scroll{overflow:visible;}table,tbody{display:block;}thead{display:none;}tbody tr{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;padding:16px 0;border-bottom:1px solid var(--line);position:relative;}tbody td{display:block;border:0;padding:0;min-width:0;}tbody tr.is-last td{border:0;}tbody tr.terminus{padding:14px 0;}
+.km{grid-column:1;grid-row:1;width:auto;padding-left:34px!important;}.km b{font-size:24px;}.km::before{display:none;}.pick{width:28px;}.legcell{grid-column:2;grid-row:1;align-self:center;padding-right:8px;}.place{grid-column:1 / -1;grid-row:2;margin:6px 8px 10px 34px;font-size:13px;min-width:0;}.elev{grid-column:2;grid-row:3;display:flex;flex-direction:column;align-items:flex-end;gap:0;padding-right:8px;}.bar{display:none;}.abs{margin:0;font-size:9px;}.delta{font-size:11px;}.tags{gap:7px 10px;}.tag{font-size:10px;}.service-icon{width:12px;height:12px;}tbody td:last-child{grid-column:1;grid-row:3;margin-left:34px;align-self:center;}.terminus .elev{grid-column:2;grid-row:2;align-self:end;padding-bottom:10px;}.terminus .place{grid-column:1;}.terminus .venue{font-size:9px;}.empty-row{display:block;}.empty-row td{padding:20px 0;margin:0!important;}
+.plan{padding:16px 14px;margin-top:0;}.plan-head{gap:5px 10px;}.plan-head h2{font-size:14px;}.plan-head .reset{font-size:10px;}.itin .pt{font-size:11px;}.itin .pt small{font-size:9px;}.plan-sum{font-size:10px;}
+footer{flex-direction:column;gap:12px;font-size:9px;}
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<div class="masthead"><span>OMACHI / RUNNER’S FIELD NOTES</span><span>COURSE &amp; AID STATIONS</span></div>
+<header>
+    <div class="header-copy">
+    <div class="eyebrow">大町を走る / COURSE GUIDE</div>
+    <h1>エイドステーション一覧</h1>
+    <p class="lede">通過する距離順に並べています。同じ場所でも往路・復路で別の行になっているので、上から順にたどれば当日の通過順そのものです。</p>
+    </div>
+    <div class="course-distance" aria-label="フルマラソン 42.195キロメートル"><span>FULL MARATHON</span><strong>42.195</strong><small>km</small></div>
+</header>
+<div class="section-title"><h2>01 / STATION INDEX</h2><p>通過順に、必要な場所を選ぶ。</p></div>
+
+<div class="filters" aria-label="エイドを絞り込む">
+    <div class="filter-group" role="group" aria-label="区間"><span class="label">区間</span>
+    <button type="button" class="f-btn leg-chip out"  data-group="leg" data-value="out"  aria-pressed="false">往路</button>
+    <button type="button" class="f-btn leg-chip back" data-group="leg" data-value="back" aria-pressed="false">復路</button>
+
+    </div>
+    <div class="filter-group" role="group" aria-label="内容">
+
+    <span class="label">内容</span>
+    <button type="button" class="f-btn tag water"  data-group="svc" data-value="water"  aria-pressed="false"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</button>
+    <button type="button" class="f-btn tag food"   data-group="svc" data-value="food"   aria-pressed="false"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</button>
+    <button type="button" class="f-btn tag toilet" data-group="svc" data-value="toilet" aria-pressed="false"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</button>
+    <button type="button" class="f-btn tag aid"    data-group="svc" data-value="aid"    aria-pressed="false"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2h4v4h4v4h-4v4H6v-4H2V6h4z"/></svg> 救護</button>
+
+    </div>
+    <button type="button" class="reset" id="reset" hidden>× 条件をクリア</button>
+</div>
+
+<p class="fnote">
+    <b id="count" aria-live="polite"></b>
+    <span class="hint">内容を複数選ぶと、そのすべてが揃っているエイドだけが残ります。</span>
+    <span class="hint">距離の左の □ を押すと、自分の補給プランを組み立てられます。</span>
+    <span class="hint">標高欄は前の地点からの上り下り。バーは右が上り・左が下りです。</span>
+</p>
+
+<section class="plan" id="plan" hidden>
+    <div class="plan-head">
+        <h2>マイ行程・補給プラン</h2>
+        <span class="plan-count" id="planCount"></span>
+        <button type="button" class="reset" id="clearPlan">× 選択をクリア</button>
+    </div>
+    <p class="plan-guide">選んだ立ち寄り地点の行程です。区間表示は地点間の距離、補給間隔は給水・給食のある選択地点で計算します。</p>
+    <div class="itin" id="itin"></div>
+    <p class="plan-sum" id="planSum" aria-live="polite"></p>
+</section>
+
+<div class="table-scroll">
+<table>
+    <thead>
+        <tr>
+            <th>距離</th>
+            <th>区間</th>
+            <th>場所</th>
+            <th>標高</th>
+            <th>内容</th>
+        </tr>
+    </thead>
+    <tbody id="rows">
+        <tr class="terminus" data-km="0" data-elev="730">
+            <td class="km"><b>0</b><small>km</small></td>
+            <td class="legcell"></td>
+            <td class="place">スタート<span class="venue">大町市運動公園</span></td>
+            <td class="elev"><span class="dwrap"><span class="bar"></span><b class="delta flat">—</b></span><span class="abs">730<small>m</small></span></td>
+            <td></td>
+        </tr>
+        <tr data-leg="out" data-svc="water toilet" data-km="5.0" data-elev="675">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約5.0km 清水みのり像 を選ぶ"></label><b>約5.0</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">清水みのり像（10km折り返し地点）</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="down" style="width:22px"></i></span><b class="delta down">↓ 55<small>m</small></b></span><span class="abs">675<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr data-leg="out" data-svc="water toilet" data-km="8.4" data-elev="645">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約8.4km 西山 を選ぶ"></label><b>約8.4</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">西山（沓掛折り返し直後）</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="down" style="width:12px"></i></span><b class="delta down">↓ 30<small>m</small></b></span><span class="abs">645<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr class="back-row" data-leg="back" data-svc="water toilet" data-km="11" data-elev="675">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約11km 清水みのり像 を選ぶ"></label><b>約11</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip back">復路</span></td>
+            <td class="place">清水みのり像（10km折り返し地点）</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="up" style="width:12px"></i></span><b class="delta up">↑ 30<small>m</small></b></span><span class="abs">675<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr data-leg="out" data-svc="toilet" data-km="14.8" data-elev="740">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約14.8km 観音橋・3km折り返し付近 を選ぶ"></label><b>約14.8</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">観音橋・3km折り返し付近</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="up" style="width:26px"></i></span><b class="delta up">↑ 65<small>m</small></b></span><span class="abs">740<small>m</small></span></td>
+            <td><div class="tags"><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr data-leg="out" data-svc="water food" data-km="16" data-elev="755">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約16km 仏崎観音寺 を選ぶ"></label><b>約16</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">仏崎観音寺</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="up" style="width:6px"></i></span><b class="delta up">↑ 15<small>m</small></b></span><span class="abs">755<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag food"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</span></div></td>
+        </tr>
+        <tr data-leg="out" data-svc="toilet" data-km="17.1" data-elev="770">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約17.1km 大出橋 を選ぶ"></label><b>約17.1</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">大出橋（ハーフ第2折り返し）</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="up" style="width:6px"></i></span><b class="delta up">↑ 15<small>m</small></b></span><span class="abs">770<small>m</small></span></td>
+            <td><div class="tags"><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr data-leg="out" data-svc="water food toilet aid" data-km="20" data-elev="840">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約20km 大町温泉郷・旧りんどう入口 を選ぶ"></label><b>約20</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">大町温泉郷・旧りんどう入口</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="up" style="width:28px"></i></span><b class="delta up">↑ 70<small>m</small></b></span><span class="abs">840<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag food"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</span><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span><span class="tag aid"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2h4v4h4v4h-4v4H6v-4H2V6h4z"/></svg> 救護</span></div></td>
+        </tr>
+        <tr data-leg="out" data-svc="water food toilet aid" data-km="23" data-elev="820">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約23km 二ッ屋改善センター を選ぶ"></label><b>約23</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">二ッ屋改善センター</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="down" style="width:8px"></i></span><b class="delta down">↓ 20<small>m</small></b></span><span class="abs">820<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag food"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</span><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span><span class="tag aid"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2h4v4h4v4h-4v4H6v-4H2V6h4z"/></svg> 救護</span></div></td>
+        </tr>
+        <tr data-leg="out" data-svc="water food" data-km="24.7" data-elev="775">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約24.7km 安曇 を選ぶ"></label><b>約24.7</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">安曇</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="down" style="width:18px"></i></span><b class="delta down">↓ 45<small>m</small></b></span><span class="abs">775<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag food"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</span></div></td>
+        </tr>
+        <tr data-leg="out" data-svc="toilet" data-km="25" data-elev="770">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約25km 女性未来館ピュア を選ぶ"></label><b>約25</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">女性未来館ピュア</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="down" style="width:2px"></i></span><b class="delta down">↓ 5<small>m</small></b></span><span class="abs">770<small>m</small></span></td>
+            <td><div class="tags"><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr data-leg="out" data-svc="water food toilet" data-km="27" data-elev="760">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約27km B&amp;G海洋センター を選ぶ"></label><b>約27</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip out">往路</span></td>
+            <td class="place">B&amp;G海洋センター（木崎湖畔）</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="down" style="width:4px"></i></span><b class="delta down">↓ 10<small>m</small></b></span><span class="abs">760<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag food"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</span><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr class="back-row" data-leg="back" data-svc="water food toilet" data-km="28.7" data-elev="760">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約28.7km B&amp;G海洋センター を選ぶ"></label><b>約28.7</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip back">復路</span></td>
+            <td class="place">B&amp;G海洋センター（木崎湖畔）</td>
+            <td class="elev"><span class="dwrap"><span class="bar"></span><b class="delta flat">→ 0<small>m</small></b></span><span class="abs">760<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag food"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</span><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr class="back-row" data-leg="back" data-svc="toilet" data-km="30.7" data-elev="770">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約30.7km 女性未来館ピュア を選ぶ"></label><b>約30.7</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip back">復路</span></td>
+            <td class="place">女性未来館ピュア</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="up" style="width:4px"></i></span><b class="delta up">↑ 10<small>m</small></b></span><span class="abs">770<small>m</small></span></td>
+            <td><div class="tags"><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr class="back-row" data-leg="back" data-svc="water food" data-km="31" data-elev="775">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約31km 安曇 を選ぶ"></label><b>約31</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip back">復路</span></td>
+            <td class="place">安曇</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="up" style="width:2px"></i></span><b class="delta up">↑ 5<small>m</small></b></span><span class="abs">775<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag food"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</span></div></td>
+        </tr>
+        <tr class="back-row" data-leg="back" data-svc="water food toilet aid" data-km="32.5" data-elev="820">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約32.5km 二ッ屋改善センター を選ぶ"></label><b>約32.5</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip back">復路</span></td>
+            <td class="place">二ッ屋改善センター</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="up" style="width:18px"></i></span><b class="delta up">↑ 45<small>m</small></b></span><span class="abs">820<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag food"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</span><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span><span class="tag aid"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2h4v4h4v4h-4v4H6v-4H2V6h4z"/></svg> 救護</span></div></td>
+        </tr>
+        <tr class="back-row" data-leg="back" data-svc="water food toilet aid" data-km="35" data-elev="840">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約35km 大町温泉郷・旧りんどう入口 を選ぶ"></label><b>約35</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip back">復路</span></td>
+            <td class="place">大町温泉郷・旧りんどう入口</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="up" style="width:8px"></i></span><b class="delta up">↑ 20<small>m</small></b></span><span class="abs">840<small>m</small></span></td>
+            <td><div class="tags"><span class="tag water"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5S3.5 6.5 3.5 9.5a4.5 4.5 0 0 0 9 0C12.5 6.5 8 1.5 8 1.5Z"/></svg> 給水</span><span class="tag food"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3-4 7a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-7a2.3 2.3 0 0 0-4 0Z"/><path d="M6 10h4v3H6z"/></svg> 給食</span><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span><span class="tag aid"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2h4v4h4v4h-4v4H6v-4H2V6h4z"/></svg> 救護</span></div></td>
+        </tr>
+        <tr class="back-row" data-leg="back" data-svc="toilet" data-km="38.2" data-elev="770">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約38.2km 大出橋 を選ぶ"></label><b>約38.2</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip back">復路</span></td>
+            <td class="place">大出橋（ハーフ第2折り返し）</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="down" style="width:28px"></i></span><b class="delta down">↓ 70<small>m</small></b></span><span class="abs">770<small>m</small></span></td>
+            <td><div class="tags"><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr class="back-row" data-leg="back" data-svc="toilet" data-km="40" data-elev="740">
+            <td class="km"><label class="pick"><input type="checkbox" aria-label="約40km 観音橋・3km折り返し付近 を選ぶ"></label><b>約40</b><small>km</small></td>
+            <td class="legcell"><span class="leg-chip back">復路</span></td>
+            <td class="place">観音橋・3km折り返し付近</td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="down" style="width:12px"></i></span><b class="delta down">↓ 30<small>m</small></b></span><span class="abs">740<small>m</small></span></td>
+            <td><div class="tags"><span class="tag toilet"><svg class="service-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3" r="1.3"/><circle cx="11" cy="3" r="1.3"/><path d="M3 7h4M5 6v8M9 7h4m-2-1 2 5H9l2-5Zm0 5v3"/></svg> トイレ</span></div></td>
+        </tr>
+        <tr class="terminus" data-km="42.195" data-elev="735">
+            <td class="km"><b>42.195</b><small>km</small></td>
+            <td class="legcell"></td>
+            <td class="place">フィニッシュ<span class="venue">大町市運動公園</span></td>
+            <td class="elev"><span class="dwrap"><span class="bar"><i class="down" style="width:2px"></i></span><b class="delta down">↓ 5<small>m</small></b></span><span class="abs">735<small>m</small></span></td>
+            <td></td>
+        </tr>
+        <tr class="empty-row" id="empty" hidden>
+            <td colspan="5">条件に合うエイドはありません。<br>選んでいる内容を減らしてみてください。</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<footer><p>距離はいずれも目安です。当日の案内を優先してください。<br>標高は大会公式サイトの「コース高低図」から読み取った概算値（約5m刻み）です。</p><span class="footer-mark">GOOD RUN. / 大町</span></footer>
+
+</div>
+
+<script>
+(function(){
+    var rows    = Array.prototype.slice.call(document.querySelectorAll('#rows tr[data-svc]'));
+    var allRows = Array.prototype.slice.call(document.querySelectorAll('#rows tr'));
+    var btns    = Array.prototype.slice.call(document.querySelectorAll('.f-btn'));
+    var resetEl = document.getElementById('reset');
+    var countEl = document.getElementById('count');
+    var emptyEl = document.getElementById('empty');
+    var total   = rows.length;
+
+    var active = {leg:[], svc:[]};
+    var SVC_KEYS = ['water','food','toilet','aid'];
+
+    function has(list, v){ return list.indexOf(v) !== -1; }
+
+    function apply(){
+        var shown = [];
+
+        rows.forEach(function(tr){
+            var svc = tr.getAttribute('data-svc').split(' ');
+            var leg = tr.getAttribute('data-leg');
+
+            // 区間: どちらも未選択なら全部。内容: 選んだものを「すべて」満たす行だけ。
+            var okLeg = active.leg.length === 0 || has(active.leg, leg);
+            var okSvc = active.svc.every(function(v){ return has(svc, v); });
+            var show  = okLeg && okSvc;
+
+            tr.hidden = !show;
+
+            // 絞り込み中は、条件に入っていない内容タグを薄く
+            Array.prototype.forEach.call(tr.querySelectorAll('.tags .tag'), function(tag){
+                var v = SVC_KEYS.filter(function(k){ return tag.classList.contains(k); })[0];
+                tag.classList.toggle('dim', active.svc.length > 0 && !has(active.svc, v));
+            });
+
+            if(show) shown.push(tr);
+        });
+
+        emptyEl.hidden = shown.length > 0;
+
+        // the timeline runs between the first and last row actually on screen
+        var onScreen = allRows.filter(function(tr){ return !tr.hidden; });
+        allRows.forEach(function(tr){ tr.classList.remove('is-first','is-last'); });
+        if(onScreen.length){
+            onScreen[0].classList.add('is-first');
+            onScreen[onScreen.length - 1].classList.add('is-last');
+        }
+
+        var filtering = active.leg.length > 0 || active.svc.length > 0;
+        resetEl.hidden = !filtering;
+        countEl.textContent = filtering
+            ? shown.length + ' 件を表示中（全 ' + total + ' 件）'
+            : '全 ' + total + ' 件';
+
+        if(typeof renderPlan === 'function') renderPlan();
+    }
+
+    btns.forEach(function(btn){
+        btn.addEventListener('click', function(){
+            var g = btn.getAttribute('data-group');
+            var v = btn.getAttribute('data-value');
+            var i = active[g].indexOf(v);
+
+            if(i === -1){ active[g].push(v); } else { active[g].splice(i,1); }
+
+            btn.classList.toggle('on', active[g].indexOf(v) !== -1);
+            btn.setAttribute('aria-pressed', active[g].indexOf(v) !== -1 ? 'true' : 'false');
+            apply();
+        });
+    });
+
+    /* ---------- 補給プラン ---------- */
+
+    // スタート／ゴールは表の .terminus 行が唯一の出どころ
+    var startRow   = document.querySelector('#rows tr.terminus[data-km="0"]');
+    var goalRow    = document.querySelector('#rows tr.terminus:not([data-km="0"])');
+    var GOAL_KM    = parseFloat(goalRow.getAttribute('data-km'));
+    var START_ELEV = parseFloat(startRow.getAttribute('data-elev'));
+    var GOAL_ELEV  = parseFloat(goalRow.getAttribute('data-elev'));
+    var planEl   = document.getElementById('plan');
+    var itinEl   = document.getElementById('itin');
+    var planCnt  = document.getElementById('planCount');
+    var planSum  = document.getElementById('planSum');
+    var clearEl  = document.getElementById('clearPlan');
+
+    function esc(t){
+        return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    function shortName(tr){
+        return tr.querySelector('.place').textContent.split('（')[0].trim();
+    }
+
+    function renderPlan(){
+        var chosen = rows.filter(function(tr){
+            return tr.querySelector('.pick input').checked;
+        }).sort(function(a,b){
+            return parseFloat(a.getAttribute('data-km')) - parseFloat(b.getAttribute('data-km'));
+        });
+
+        planEl.hidden = chosen.length === 0;
+        if(!chosen.length) return;
+
+        var pts = [{label:'スタート', km:0, sub:'0km', elev:START_ELEV, cls:'start'}];
+        chosen.forEach(function(tr){
+            pts.push({
+                label: shortName(tr),
+                km:    parseFloat(tr.getAttribute('data-km')),
+                sub:   '約' + tr.getAttribute('data-km') + 'km',
+                elev:  parseFloat(tr.getAttribute('data-elev')),
+                cls:   tr.getAttribute('data-leg')
+            });
+        });
+        pts.push({label:'ゴール', km:GOAL_KM, sub:GOAL_KM + 'km', elev:GOAL_ELEV, cls:'goal'});
+
+        var gaps = [], i;
+        for(i = 1; i < pts.length; i++){ gaps.push(pts[i].km - pts[i-1].km); }
+        var maxGap = Math.max.apply(null, gaps);
+
+        var html = '';
+        pts.forEach(function(pt, idx){
+            if(idx > 0){
+                var g     = gaps[idx-1];
+                var isMax = Math.abs(g - maxGap) < 1e-9;
+                var dz    = pt.elev - pts[idx-1].elev;
+                var dCls  = dz > 0 ? 'up' : (dz < 0 ? 'down' : 'flat');
+                var dTxt  = dz > 0 ? '↑ ' + dz + ' m' : (dz < 0 ? '↓ ' + (-dz) + ' m' : '→ 0 m');
+                html += '<div class="gapline' + (isMax ? ' max' : '') + '">'
+                      +   '<b>' + g.toFixed(1) + ' km</b>'
+                      +   '<span class="ud ' + dCls + '">' + dTxt + '</span>'
+                      +   (isMax ? '<em>最長</em>' : '')
+                      + '</div>';
+            }
+            html += '<div class="pt ' + pt.cls + '">'
+                  +   esc(pt.label)
+                  +   ' <small>' + esc(pt.sub) + ' ・ ' + pt.elev + 'm</small>'
+                  + '</div>';
+        });
+        itinEl.innerHTML = html;
+
+        // A stop only counts as refuelling when water or food is available.
+        var refuel = chosen.filter(function(tr){
+            var services = tr.getAttribute('data-svc').split(/\s+/);
+            return has(services, 'water') || has(services, 'food');
+        });
+        var refuelKms = [0].concat(refuel.map(function(tr){
+            return parseFloat(tr.getAttribute('data-km'));
+        }), [GOAL_KM]);
+        var maxRefuelGap = 0;
+        for(i = 1; i < refuelKms.length; i++){
+            maxRefuelGap = Math.max(maxRefuelGap, refuelKms[i] - refuelKms[i-1]);
+        }
+        var offscreen = chosen.filter(function(tr){ return tr.hidden; }).length;
+        planCnt.textContent = '立ち寄り ' + chosen.length + ' か所';
+        var up = 0, dn = 0;
+        for(i = 1; i < pts.length; i++){
+            var dz2 = pts[i].elev - pts[i-1].elev;
+            if(dz2 > 0) up += dz2; else dn -= dz2;
+        }
+        planSum.innerHTML = '立ち寄り <b>' + chosen.length + '</b> か所　／　補給 <b>' + refuel.length + '</b> 回'
+            + '　／　補給間隔（最大） <b>' + maxRefuelGap.toFixed(1) + ' km</b>'
+            + '　／　上り <b>' + up + ' m</b>・下り <b>' + dn + ' m</b>'
+            + (refuel.length === 0 ? '<br>給水・給食のある地点は選択されていません。' : '')
+            + (offscreen ? '<br>選んだうち ' + offscreen + ' か所は、いまの絞り込みでは表に出ていません。' : '');
+    }
+
+    rows.forEach(function(tr){
+        tr.querySelector('.pick input').addEventListener('change', function(){
+            tr.classList.toggle('picked', this.checked);
+            renderPlan();
+        });
+    });
+
+    clearEl.addEventListener('click', function(){
+        rows.forEach(function(tr){
+            tr.querySelector('.pick input').checked = false;
+            tr.classList.remove('picked');
+        });
+        renderPlan();
+    });
+
+    resetEl.addEventListener('click', function(){
+        active.leg = [];
+        active.svc = [];
+        btns.forEach(function(b){
+            b.classList.remove('on');
+            b.setAttribute('aria-pressed','false');
+        });
+        apply();
+    });
+
+    apply();
+})();
+</script>
+</body>
+</html>
