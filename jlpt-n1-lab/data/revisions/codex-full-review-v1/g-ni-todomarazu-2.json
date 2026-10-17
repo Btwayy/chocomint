@@ -1,0 +1,49 @@
+{
+  "target_id": "g-ni-todomarazu",
+  "target_label": "〜にとどまらず",
+  "level": "N1",
+  "focus_zh": "不止于某范围，进一步扩展到更大范围",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "ni-todomarazu",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T13:06:00.458595Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-ni-todomarazu-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T13:06:00.458595Z",
+      "done_reason": "stop",
+      "eval_count": 522,
+      "eval_duration": 56062776000,
+      "prompt_eval_count": 643,
+      "prompt_eval_duration": 10975443000,
+      "load_duration": 593958,
+      "wall_seconds": 67.09
+    }
+  },
+  "review_status": "pending",
+  "stem": "彼の影響力は国内（　）、海外の若者にも大きな感銘を与えている。",
+  "options": [
+    "に留まって",
+    "を抜いて",
+    "にとどまらず",
+    "に限らず"
+  ],
+  "answer_index": 2,
+  "translation_zh": "他的影响力不仅限于国内，还给海外的年轻人留下了深刻印象。",
+  "explanation_zh": "「にとどまらず」突出从较小范围向更大范围的扩展，契合句意。「に限らず」侧重“不限于”但缺乏动态扩展感；「を抜いて」意为“超过”，接续不当；「に留まって」表停滞，与后文矛盾。",
+  "option_explanations_zh": [
+    "干扰项：表示停留在某状态，与后文影响海外的动态事实矛盾。",
+    "干扰项：意为“超过”，通常用于比较优劣，此处语境不适用。",
+    "正确选项：准确表达从国内扩展到海外的范围延伸，语意连贯。",
+    "干扰项：虽可表不限于某处，但缺乏本考点强调的积极扩展意味。"
+  ],
+  "id": "g-ni-todomarazu-2",
+  "kind": "grammar"
+}

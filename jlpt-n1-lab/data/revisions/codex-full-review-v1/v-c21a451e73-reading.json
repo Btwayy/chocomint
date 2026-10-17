@@ -1,0 +1,50 @@
+{
+  "target_id": "v-c21a451e73",
+  "target_label": "円滑",
+  "level": "N1",
+  "focus_zh": "事情进展顺利",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "c21a451e73",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:38:33.979013Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-c21a451e73-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:38:33.979013Z",
+      "done_reason": "stop",
+      "eval_count": 271,
+      "eval_duration": 49760660000,
+      "prompt_eval_count": 447,
+      "prompt_eval_duration": 5750151000,
+      "load_duration": 812209,
+      "wall_seconds": 55.6
+    }
+  },
+  "review_status": "pending",
+  "id": "v-c21a451e73-reading",
+  "kind": "reading",
+  "stem": "交渉が【円滑】に進んだおかげで、契約をすぐに結ぶことができた。",
+  "options": [
+    "えんこつ",
+    "えんかつ",
+    "えんがつ",
+    "えんかっ"
+  ],
+  "answer_index": 1,
+  "translation_zh": "多亏谈判进展顺利，我们得以迅速签订合同。",
+  "explanation_zh": "「円滑」在底库中所列读音为「えんかつ」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「えんかつ」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「えんかつ」不一致。",
+    "与底库所列读音「えんかつ」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

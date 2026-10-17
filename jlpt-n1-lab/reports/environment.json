@@ -1,0 +1,51 @@
+{
+  "recorded_at": "2026-10-17T12:42:49.147755+00:00",
+  "platform": "Darwin",
+  "architecture": "arm64",
+  "cpu": "Apple M1 Max",
+  "memory_gib": 64,
+  "python": "3.15.0",
+  "ollama": {
+    "version": "0.40.5"
+  },
+  "inference_endpoint": "http://127.0.0.1:11434/api/chat",
+  "cloud_disabled": true,
+  "models": [
+    {
+      "name": "qwen3.5:9b-q4_K_M",
+      "digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+      "size_bytes": 6550825550,
+      "details": {
+        "parent_model": "model.gguf",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "9.0B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 4096,
+        "runner": "llamacpp"
+      }
+    },
+    {
+      "name": "qwen3.5:27b-q4_K_M",
+      "digest": "64ae5b1d651fb2709d5928ccb8dcfb4bb2cc9c2c8001ac34497e36a6cf905b59",
+      "size_bytes": 17478556591,
+      "details": {
+        "parent_model": "qwen35-validation-20261004:27b-q4",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "26.9B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 5120,
+        "runner": "llamacpp"
+      }
+    }
+  ]
+}

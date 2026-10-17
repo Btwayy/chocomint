@@ -1,0 +1,31 @@
+{
+  "question_id": "v-e190e9818a-cloze",
+  "content_hash": "be350a9a05b739e7c3e7acb1f5e9836980d153abca23888b496f5c6576a4b03c",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "一律"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「一律」表示无差别地适用，符合语境。「漠然」「柔軟」「円滑」均无法与「適用される」搭配表达此意。",
+    "acceptable_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:56:24.494527Z",
+    "done_reason": "stop",
+    "eval_count": 54,
+    "eval_duration": 3378439000,
+    "prompt_eval_count": 180,
+    "prompt_eval_duration": 1208727000,
+    "load_duration": 714375,
+    "wall_seconds": 4.6,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:56:24.495774+00:00"
+}

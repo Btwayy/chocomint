@@ -1,0 +1,144 @@
+{
+  "question": {
+    "target_id": "v-241f51574c",
+    "target_label": "著しい",
+    "level": "N1",
+    "focus_zh": "变化或差异显著",
+    "source": {
+      "project": "OpenJLPT",
+      "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+      "source_id": "241f51574c",
+      "source_file": "vocab-n1.json",
+      "license": "CC-BY-SA-4.0"
+    },
+    "generation": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:42:53.880522Z",
+      "attempt": 1,
+      "raw_file": "data/raw/generate-v-241f51574c-a1.json",
+      "metrics": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:42:53.880522Z",
+        "done_reason": "stop",
+        "eval_count": 215,
+        "eval_duration": 21258738000,
+        "prompt_eval_count": 541,
+        "prompt_eval_duration": 7462093000,
+        "load_duration": 615500,
+        "wall_seconds": 28.79
+      }
+    },
+    "review_status": "pending",
+    "stem": "最近の気候変動の影響で、季節ごとの気温差が（　）なっている。",
+    "options": [
+      "たやすい",
+      "著しい",
+      "好ましい",
+      "乏しい"
+    ],
+    "answer_index": 1,
+    "translation_zh": "受近期气候变化影响，各季节间的温差变得显著了。",
+    "explanation_zh": "句意强调差异大，需填“显著”。其他词义不符或接续不当。",
+    "option_explanations_zh": [
+      "たやすい：多接动词表示容易做某事，此处接续错误。",
+      "著しい：形容变化或差异非常明显，符合语境。",
+      "好ましい：意为令人满意，不用于描述温差变大。",
+      "乏しい：指缺乏不足，无法修饰气温差的扩大。"
+    ],
+    "id": "v-241f51574c-cloze",
+    "kind": "vocabulary"
+  },
+  "checks_at_revision": {
+    "target_id": "v-241f51574c",
+    "target_label": "著しい",
+    "level": "N1",
+    "focus_zh": "变化或差异显著",
+    "source": {
+      "project": "OpenJLPT",
+      "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+      "source_id": "241f51574c",
+      "source_file": "vocab-n1.json",
+      "license": "CC-BY-SA-4.0"
+    },
+    "generation": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:42:53.880522Z",
+      "attempt": 1,
+      "raw_file": "data/raw/generate-v-241f51574c-a1.json",
+      "metrics": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:42:53.880522Z",
+        "done_reason": "stop",
+        "eval_count": 215,
+        "eval_duration": 21258738000,
+        "prompt_eval_count": 541,
+        "prompt_eval_duration": 7462093000,
+        "load_duration": 615500,
+        "wall_seconds": 28.79
+      }
+    },
+    "review_status": "pending",
+    "stem": "最近の気候変動の影響で、季節ごとの気温差が（　）なっている。",
+    "options": [
+      "たやすい",
+      "著しい",
+      "好ましい",
+      "乏しい"
+    ],
+    "answer_index": 1,
+    "translation_zh": "受近期气候变化影响，各季节间的温差变得显著了。",
+    "explanation_zh": "句意强调差异大，需填“显著”。其他词义不符或接续不当。",
+    "option_explanations_zh": [
+      "たやすい：多接动词表示容易做某事，此处接续错误。",
+      "著しい：形容变化或差异非常明显，符合语境。",
+      "好ましい：意为令人满意，不用于描述温差变大。",
+      "乏しい：指缺乏不足，无法修饰气温差的扩大。"
+    ],
+    "id": "v-241f51574c-cloze",
+    "kind": "vocabulary",
+    "content_hash": "f088d3dbc18bf90cdae1712968728d4dab6b6f0c7bbd68cdfe49ddcb6389a691",
+    "structural_check": {
+      "passed": true,
+      "errors": []
+    },
+    "blind_check": {
+      "question_id": "v-241f51574c-cloze",
+      "content_hash": "f088d3dbc18bf90cdae1712968728d4dab6b6f0c7bbd68cdfe49ddcb6389a691",
+      "passed": true,
+      "answer_format": "literal_option_text_v2",
+      "method": "cross_model_blind_resolve",
+      "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+      "result": {
+        "acceptable_answers": [
+          "著しい"
+        ],
+        "natural_japanese": true,
+        "reason_zh": "句意为“季节温差变得显著”。‘著しい’表示程度大，符合语境。其他选项‘たやすい’（容易）、‘好ましい’（好的）、‘乏しい’（缺乏）均无法自然搭配或逻辑不通。",
+        "acceptable_indices": [
+          1
+        ]
+      },
+      "metrics": {
+        "model": "qwen3.5:9b-q4_K_M",
+        "created_at": "2026-10-17T12:52:48.542485Z",
+        "done_reason": "stop",
+        "eval_count": 73,
+        "eval_duration": 4709723000,
+        "prompt_eval_count": 191,
+        "prompt_eval_duration": 117591000,
+        "load_duration": 684792,
+        "wall_seconds": 10.64,
+        "format_mode": "schema_constrained"
+      },
+      "created_at": "2026-10-17T12:52:48.543524+00:00"
+    },
+    "quality_status": "editorial_flagged",
+    "editorial_check": {
+      "content_hash": "f088d3dbc18bf90cdae1712968728d4dab6b6f0c7bbd68cdfe49ddcb6389a691",
+      "decision": "flagged",
+      "reviewer": "Codex 主代理抽查（非用户人工审核）",
+      "note_zh": "「著しいなっている」接续错误，应为「著しくなっている」。目前四个选项均为い形容词原形，不能直接接「なっている」。需改写题干或调整选项活用。",
+      "created_at": "2026-10-17T12:45:10.295165+00:00"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "question_id": "g-gatera-2",
+  "content_hash": "89192eb395830b4013aa617e952afa3af3be25c49318460ca46019af9b921404",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "「見送り」是名词，不能直接接格助词构成句子；且句意逻辑上“送完友人后买花”应用「後」或「てから」，选项均无法使句子成立。",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:55:50.014926Z",
+    "done_reason": "stop",
+    "eval_count": 66,
+    "eval_duration": 4126643000,
+    "prompt_eval_count": 186,
+    "prompt_eval_duration": 1268933000,
+    "load_duration": 629958,
+    "wall_seconds": 5.4,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:55:50.016009+00:00"
+}

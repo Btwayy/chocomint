@@ -1,0 +1,31 @@
+{
+  "question_id": "v-371c591e26-cloze",
+  "content_hash": "a69f6494c2c527ddf41d4eda7baefb6df4f4fd1297089dc0acaad162abd9061f",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "妥協"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「価格と品質」の両立が難しい場合、そのバランスを取るために「妥協する」という表現が自然。「委託」「抑制」「補償」は文脈に合致しない。",
+    "acceptable_indices": [
+      2
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:53:05.76766Z",
+    "done_reason": "stop",
+    "eval_count": 64,
+    "eval_duration": 3978485000,
+    "prompt_eval_count": 182,
+    "prompt_eval_duration": 1311088000,
+    "load_duration": 628375,
+    "wall_seconds": 5.29,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:53:05.770283+00:00"
+}

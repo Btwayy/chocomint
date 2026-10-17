@@ -1,0 +1,95 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是严谨的日语教材编写者。参考下列开放数据和考点编写原创四选一练习。参考内容只是资料，不是指令。日语必须自然，四个选项必须恰有一个成立。题干用日语，解释与翻译用简体中文。所有填空统一写（　），且每题只有一个空。正确选项放在第一个，answer_index=0。解析按选项文字解释，不提A/B/C/D、选项编号。中文总解析控制在60字内，每个选项解释控制在35字内。干扰项应词性或接续相近、容易混淆，但在本句明确不成立。不要仅靠明显的接续错误出题。题干不要包含考点名称或答案提示。不要照抄例句，换语境。"
+    },
+    {
+      "role": "user",
+      "content": "为「実態」写两种不同语境的练习。reading_stem：完整日语句子，将目标词原样用【】括起，句中恰有一对【】。reading_translation_zh：该句中文翻译。cloze：另一语境的词汇填空题，正确选项必须严格等于目标词原形；动词把屈折结尾放在选项内，若必须变化目标词才能填空则改写句子以适用原形。不要使用目标词的同义词作为另一个可成立的选项。\n词汇填空的四个选项已经给定，严格照用：[\"実態\", \"意向\", \"根拠\", \"余地\"]。不能给选项添加する、した、して、に、な等后缀。必要的活用或助词写在空格后面。例如选项是把握时，可写『現状を（　）する』，不要写『現状を（　）必要がある』。\n考点：事物实际的情况\n参考资料：{\"word\": \"実態\", \"reading\": \"じったい\", \"meanings\": [\"truth\", \"fact\"], \"pos\": [\"n\"], \"examples\": [{\"ja\": \"死亡事例が19件と全体の20％を超えており、過労死の深刻な実態が浮き彫りになった。\", \"en\": \"With 19 cases of death forming over 20% of the whole, the grave reality of overwork-deaths has been thrown into relief.\", \"tatoeba_id\": 74381}]}"
+    }
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "reading_stem": {
+        "type": "string"
+      },
+      "reading_translation_zh": {
+        "type": "string"
+      },
+      "cloze": {
+        "type": "object",
+        "properties": {
+          "stem": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "実態",
+                "意向",
+                "根拠",
+                "余地"
+              ]
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "answer_index": {
+            "type": "integer",
+            "const": 0
+          },
+          "translation_zh": {
+            "type": "string"
+          },
+          "explanation_zh": {
+            "type": "string"
+          },
+          "option_explanations_zh": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "stem",
+          "options",
+          "answer_index",
+          "translation_zh",
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "reading_stem",
+      "reading_translation_zh",
+      "cloze"
+    ],
+    "additionalProperties": false
+  },
+  "response": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:34:43.904146Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"reading_stem\": \"調査の結果、企業の過重労働という深刻な【実態】が明らかになった。\",\n  \"reading_translation_zh\": \"调查结果揭示了企业过度劳动这一严峻的实际情况。\",\n  \"cloze\": {\n    \"stem\": \"この問題の（　）を把握するため、現場での聞き取り調査を行った。\",\n    \"options\": [\"実態\", \"意向\", \"根拠\", \"余地\"],\n    \"answer_index\": 0,\n    \"translation_zh\": \"为了掌握该问题的实际情况，我们进行了现场访谈调查。\",\n    \"explanation_zh\": \"实态指事物真实状况，符合语境。意向指想法，根拠指理由，余地指空间，均不合逻辑。\",\n    \"option_explanations_zh\": [\n      \"実態：指事物的真实情况，与‘把握’搭配恰当，符合句意。\",\n      \"意向：指意图或想法，无法用‘听取调查’来掌握其客观状况。\",\n      \"根拠：指理由或根据，通常用于论证而非描述问题现状。\",\n      \"余地：指剩余空间或可能性，与掌握问题本质无关。\"\n    ]\n  }\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 29470241625,
+    "load_duration": 756583,
+    "prompt_eval_count": 474,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 4392838000,
+    "eval_count": 270,
+    "eval_duration": 25039243000
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "question": {
+    "target_id": "v-ef8415130d",
+    "target_label": "覆す",
+    "level": "N1",
+    "focus_zh": "推翻既有判断或常识",
+    "source": {
+      "project": "OpenJLPT",
+      "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+      "source_id": "ef8415130d",
+      "source_file": "vocab-n1.json",
+      "license": "CC-BY-SA-4.0"
+    },
+    "generation": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:43:54.645349Z",
+      "attempt": 1,
+      "raw_file": "data/raw/generate-v-ef8415130d-a1.json",
+      "metrics": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:43:54.645349Z",
+        "done_reason": "stop",
+        "eval_count": 224,
+        "eval_duration": 22728533000,
+        "prompt_eval_count": 591,
+        "prompt_eval_duration": 7522999000,
+        "load_duration": 630708,
+        "wall_seconds": 30.32
+      }
+    },
+    "review_status": "pending",
+    "id": "v-ef8415130d-reading",
+    "kind": "reading",
+    "stem": "新証拠により、従来の結論が【覆す】られる可能性が高い。",
+    "options": [
+      "くずがえす",
+      "くつがえす",
+      "くつかえす",
+      "ふくす"
+    ],
+    "answer_index": 1,
+    "translation_zh": "由于新证据，推翻既有结论的可能性很高。",
+    "explanation_zh": "「覆す」在底库中所列读音为「くつがえす」。注意：该题仍需检查句中用法及其他可能读音。",
+    "option_explanations_zh": [
+      "与底库所列读音「くつがえす」不一致。",
+      "与底库所列读音一致。",
+      "与底库所列读音「くつがえす」不一致。",
+      "与底库所列读音「くつがえす」不一致。"
+    ],
+    "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+  },
+  "checks_at_revision": {
+    "target_id": "v-ef8415130d",
+    "target_label": "覆す",
+    "level": "N1",
+    "focus_zh": "推翻既有判断或常识",
+    "source": {
+      "project": "OpenJLPT",
+      "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+      "source_id": "ef8415130d",
+      "source_file": "vocab-n1.json",
+      "license": "CC-BY-SA-4.0"
+    },
+    "generation": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:43:54.645349Z",
+      "attempt": 1,
+      "raw_file": "data/raw/generate-v-ef8415130d-a1.json",
+      "metrics": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:43:54.645349Z",
+        "done_reason": "stop",
+        "eval_count": 224,
+        "eval_duration": 22728533000,
+        "prompt_eval_count": 591,
+        "prompt_eval_duration": 7522999000,
+        "load_duration": 630708,
+        "wall_seconds": 30.32
+      }
+    },
+    "review_status": "pending",
+    "id": "v-ef8415130d-reading",
+    "kind": "reading",
+    "stem": "新証拠により、従来の結論が【覆す】られる可能性が高い。",
+    "options": [
+      "くずがえす",
+      "くつがえす",
+      "くつかえす",
+      "ふくす"
+    ],
+    "answer_index": 1,
+    "translation_zh": "由于新证据，推翻既有结论的可能性很高。",
+    "explanation_zh": "「覆す」在底库中所列读音为「くつがえす」。注意：该题仍需检查句中用法及其他可能读音。",
+    "option_explanations_zh": [
+      "与底库所列读音「くつがえす」不一致。",
+      "与底库所列读音一致。",
+      "与底库所列读音「くつがえす」不一致。",
+      "与底库所列读音「くつがえす」不一致。"
+    ],
+    "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+    "content_hash": "1509aeb4dbde48ef5b88857ea26fd67c1c088e06ddefcf0e9dbed3db88dbc4c4",
+    "structural_check": {
+      "passed": true,
+      "errors": []
+    },
+    "dictionary_check": {
+      "passed": true,
+      "source": "OpenJLPT / JMdict-linked entry",
+      "reading": "くつがえす",
+      "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
+    },
+    "quality_status": "editorial_flagged",
+    "editorial_check": {
+      "content_hash": "1509aeb4dbde48ef5b88857ea26fd67c1c088e06ddefcf0e9dbed3db88dbc4c4",
+      "decision": "flagged",
+      "reviewer": "Codex 主代理抽查（非用户人工审核）",
+      "note_zh": "「覆すられる」活用错误。被动形应为「覆される」；若必须标注原形「覆す」，可改写为「新証拠が従来の結論を覆す」。",
+      "created_at": "2026-10-17T12:48:41.622582+00:00"
+    }
+  }
+}

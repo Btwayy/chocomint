@@ -1,0 +1,27 @@
+{
+  "question_id": "g-you-ni-mo-nai-2",
+  "content_hash": "dafe973fb192f4ae9e72bb6108a33d096ce5fc10f52be1ba479cce3364e875ab",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "前句表示因锁门导致无法进入，后句应接否定结果。选项“入るつもりだ”（打算进）与因果逻辑矛盾；其他选项语法或语义均不自然成立。",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T13:04:19.58822Z",
+    "done_reason": "stop",
+    "eval_count": 63,
+    "eval_duration": 3905424000,
+    "prompt_eval_count": 189,
+    "prompt_eval_duration": 1244056000,
+    "load_duration": 853500,
+    "wall_seconds": 5.17,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T13:04:19.589604+00:00"
+}

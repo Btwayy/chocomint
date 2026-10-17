@@ -1,0 +1,50 @@
+{
+  "target_id": "v-419813adc3",
+  "target_label": "意向",
+  "level": "N1",
+  "focus_zh": "本人或组织的意愿",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "419813adc3",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:35:45.349715Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-419813adc3-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:35:45.349715Z",
+      "done_reason": "stop",
+      "eval_count": 281,
+      "eval_duration": 25771114000,
+      "prompt_eval_count": 520,
+      "prompt_eval_duration": 4876239000,
+      "load_duration": 684209,
+      "wall_seconds": 30.69
+    }
+  },
+  "review_status": "pending",
+  "id": "v-419813adc3-reading",
+  "kind": "reading",
+  "stem": "新プロジェクトの開始について、部長は明確な【意向】を示した。",
+  "options": [
+    "いごう",
+    "いっこう",
+    "いこう",
+    "いこ"
+  ],
+  "answer_index": 2,
+  "translation_zh": "关于新项目的启动，部长表明了明确的意愿。",
+  "explanation_zh": "「意向」在底库中所列读音为「いこう」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「いこう」不一致。",
+    "与底库所列读音「いこう」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「いこう」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

@@ -1,0 +1,81 @@
+{
+  "target_id": "v-45cadd9e01",
+  "questions": [
+    {
+      "target_id": "v-45cadd9e01",
+      "target_label": "公認",
+      "level": "N1",
+      "focus_zh": "正式承认、认可",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "45cadd9e01",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.649034+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-45cadd9e01-reading",
+      "kind": "reading",
+      "stem": "この競技会で出た記録は、競技団体から正式に【公認】された。",
+      "options": [
+        "こうにん",
+        "こうねん",
+        "こうりん",
+        "こにん"
+      ],
+      "answer_index": 0,
+      "translation_zh": "这场比赛的纪录获得了竞赛组织的正式认可。",
+      "explanation_zh": "「公認」本题读「こうにん」，句中表示正式承认、认可。",
+      "option_explanations_zh": [
+        "正确：本题标记词读「こうにん」。",
+        "不是本题标记词的正确读音；这里应选「こうにん」。",
+        "不是本题标记词的正确读音；这里应选「こうにん」。",
+        "不是本题标记词的正确读音；这里应选「こうにん」。"
+      ]
+    },
+    {
+      "target_id": "v-45cadd9e01",
+      "target_label": "公認",
+      "level": "N1",
+      "focus_zh": "正式承认、认可",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "45cadd9e01",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.649030+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-45cadd9e01-cloze",
+      "kind": "vocabulary",
+      "stem": "この競技会で出た記録は、競技団体から正式に（　）された。",
+      "options": [
+        "棄権",
+        "公認",
+        "返済",
+        "寄贈"
+      ],
+      "answer_index": 1,
+      "translation_zh": "这场比赛的纪录获得了竞赛组织的正式认可。",
+      "explanation_zh": "由组织正式认可纪录，用「公認される」。",
+      "option_explanations_zh": [
+        "「棄権」表示弃权、放弃参赛或投票权；不符合本题已经限定的句意或接续。",
+        "由组织正式认可纪录，用「公認される」。",
+        "「返済」表示偿还借款；不符合本题已经限定的句意或接续。",
+        "「寄贈」表示捐赠物品等；不符合本题已经限定的句意或接续。"
+      ]
+    }
+  ]
+}

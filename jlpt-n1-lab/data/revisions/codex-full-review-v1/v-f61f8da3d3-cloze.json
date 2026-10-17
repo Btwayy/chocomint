@@ -1,0 +1,49 @@
+{
+  "target_id": "v-f61f8da3d3",
+  "target_label": "課題",
+  "level": "N1",
+  "focus_zh": "需要解决的任务或问题",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "f61f8da3d3",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:35:14.656231Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-f61f8da3d3-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:35:14.656231Z",
+      "done_reason": "stop",
+      "eval_count": 240,
+      "eval_duration": 22304124000,
+      "prompt_eval_count": 542,
+      "prompt_eval_duration": 8327794000,
+      "load_duration": 824083,
+      "wall_seconds": 30.74
+    }
+  },
+  "review_status": "pending",
+  "stem": "環境問題の解決は、人類が直面する重要な（　）だ。",
+  "options": [
+    "課題",
+    "根拠",
+    "合意",
+    "経緯"
+  ],
+  "answer_index": 0,
+  "translation_zh": "解决环境问题，是人类面临的重要课题。",
+  "explanation_zh": "本句指待解决的难题。「課題」意为任务或问题；「経緯」指经过；「合意」指共识；「根拠」指依据。此处仅「課題」符合语境。",
+  "option_explanations_zh": [
+    "「課題」指需要解决的任务，符合环境问题的语境。",
+    "「根拠」指判断的依据或理由，无法填入表示任务的空位。",
+    "「合意」指双方达成的共识，与解决难题的语义不符。",
+    "「経緯」指事情的前后经过，不能指代待解决的问题本身。"
+  ],
+  "id": "v-f61f8da3d3-cloze",
+  "kind": "vocabulary"
+}

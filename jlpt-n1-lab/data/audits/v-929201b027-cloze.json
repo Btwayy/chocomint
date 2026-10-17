@@ -1,0 +1,27 @@
+{
+  "question_id": "v-929201b027-cloze",
+  "content_hash": "447a12f5a1acbbc27a98cb32c984e5e950c48c154a4ba8ea5fc1415ea1001dec",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "「融通」虽可指变通，但通常作自他动词或名词（如「融通する」「融通が利く」），此处需他动词形式「融通してもらう」搭配不当；其他选项语义均不契合语境。",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:54:59.350343Z",
+    "done_reason": "stop",
+    "eval_count": 69,
+    "eval_duration": 4377546000,
+    "prompt_eval_count": 183,
+    "prompt_eval_duration": 1193073000,
+    "load_duration": 571667,
+    "wall_seconds": 5.57,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:54:59.351379+00:00"
+}

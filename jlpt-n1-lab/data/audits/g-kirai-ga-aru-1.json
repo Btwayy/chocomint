@@ -1,0 +1,27 @@
+{
+  "question_id": "g-kirai-ga-aru-1",
+  "content_hash": "12e2ff1a8453954779376f768516e5378e9ba814b36eb61c87a4d3cdd3c6c8b0",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "「複雑な操作を要求する」はシステムの性質（特徴）を表すため、「特徴がある」が自然。「癖」「きらい」「傾向」という表現は文脈に合致せず、不自然。",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T13:05:01.008727Z",
+    "done_reason": "stop",
+    "eval_count": 64,
+    "eval_duration": 3905933000,
+    "prompt_eval_count": 192,
+    "prompt_eval_duration": 1218433000,
+    "load_duration": 617125,
+    "wall_seconds": 5.15,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T13:05:01.010252+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "target_id": "v-672ae372a7",
+  "target_label": "配慮",
+  "level": "N1",
+  "focus_zh": "顾及他人或情况、体谅",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "672ae372a7",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:27:13.52707Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-672ae372a7-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:27:13.52707Z",
+      "done_reason": "stop",
+      "eval_count": 237,
+      "eval_duration": 19314107000,
+      "prompt_eval_count": 530,
+      "prompt_eval_duration": 4563059000,
+      "load_duration": 952792,
+      "wall_seconds": 23.92
+    }
+  },
+  "review_status": "pending",
+  "stem": "住民の睡眠を妨げないよう、夜間の騒音に十分（　）する必要がある。",
+  "options": [
+    "把握",
+    "配慮",
+    "促進",
+    "排除"
+  ],
+  "answer_index": 1,
+  "translation_zh": "需要充分顾及夜间噪音的影响，以免妨碍居民睡眠。",
+  "explanation_zh": "「〜に配慮する」表示顾及某个对象或情况。本句要顾及噪音的影响；其余动词通常用「を」连接对象。",
+  "option_explanations_zh": [
+    "「把握」的对象通常接「を」，不能说「騒音に把握する」。",
+    "「騒音に配慮する」指顾及噪音对周围的影响。",
+    "「促進」表示促进，不能说「騒音に促進する」。",
+    "可以说「騒音を排除する」，本句的「に」不能这样连接。"
+  ],
+  "id": "v-672ae372a7-cloze",
+  "kind": "vocabulary",
+  "editorial_revision": {
+    "revision_id": "pilot-six-v1",
+    "actor": "Codex 主代理",
+    "created_at": "2026-10-17T13:02:04.328889+00:00",
+    "original_content_hash": "d54f92c0ff90fd915c31fe83b902971cd739a385afaf785cd6ce6a0effadd692",
+    "archive_file": "data/revisions/v-672ae372a7-cloze-before-pilot-six-v1.json",
+    "reason_zh": "修复明确的接续、助词、活用或填空未考查目标语法问题。修订不等于用户人工审核。"
+  }
+}

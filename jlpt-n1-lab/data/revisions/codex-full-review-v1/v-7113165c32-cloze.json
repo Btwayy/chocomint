@@ -1,0 +1,49 @@
+{
+  "target_id": "v-7113165c32",
+  "target_label": "拘束",
+  "level": "N1",
+  "focus_zh": "限制人身自由或行动时间",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "7113165c32",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:32:16.809751Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-7113165c32-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:32:16.809751Z",
+      "done_reason": "stop",
+      "eval_count": 267,
+      "eval_duration": 26257513000,
+      "prompt_eval_count": 545,
+      "prompt_eval_duration": 5442128000,
+      "load_duration": 708042,
+      "wall_seconds": 31.75
+    }
+  },
+  "review_status": "pending",
+  "stem": "裁判所は被告の身柄を（　）した。",
+  "options": [
+    "拘束",
+    "把握",
+    "補償",
+    "促進"
+  ],
+  "answer_index": 0,
+  "translation_zh": "法院对被告的人身进行了限制。",
+  "explanation_zh": "「拘束」指限制人身自由，符合语境。「促進」意为促进；「補償」指赔偿损失；「把握」指掌握情况，均不合逻辑。",
+  "option_explanations_zh": [
+    "正确选项：表示限制人身自由或行动，符合法院对被告采取强制措施的语境。",
+    "错误选项：指掌握情况或要领，无法搭配身柄表示限制自由这一具体动作。",
+    "错误选项：指给予金钱等补偿，与限制人身自由的动作含义完全不同。",
+    "错误选项：意为推动事物发展，不能用于描述限制人身自由的法律行为。"
+  ],
+  "id": "v-7113165c32-cloze",
+  "kind": "vocabulary"
+}

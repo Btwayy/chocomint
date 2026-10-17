@@ -1,0 +1,50 @@
+{
+  "target_id": "v-d71baf9f53",
+  "target_label": "滞る",
+  "level": "N1",
+  "focus_zh": "进度、支付或流通停滞",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "d71baf9f53",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:46:05.844878Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-d71baf9f53-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:46:05.844878Z",
+      "done_reason": "stop",
+      "eval_count": 249,
+      "eval_duration": 25829684000,
+      "prompt_eval_count": 540,
+      "prompt_eval_duration": 8732609000,
+      "load_duration": 759750,
+      "wall_seconds": 34.64
+    }
+  },
+  "review_status": "pending",
+  "id": "v-d71baf9f53-reading",
+  "kind": "reading",
+  "stem": "工事の遅れにより、物流が【滞る】恐れがある。",
+  "options": [
+    "とどこうる",
+    "とどごおる",
+    "たいおる",
+    "とどこおる"
+  ],
+  "answer_index": 3,
+  "translation_zh": "由于工程延误，物流可能会停滞。",
+  "explanation_zh": "「滞る」在底库中所列读音为「とどこおる」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「とどこおる」不一致。",
+    "与底库所列读音「とどこおる」不一致。",
+    "与底库所列读音「とどこおる」不一致。",
+    "与底库所列读音一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

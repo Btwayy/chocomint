@@ -1,0 +1,49 @@
+{
+  "target_id": "v-8bfa06b980",
+  "target_label": "手掛かり",
+  "level": "N1",
+  "focus_zh": "解决问题或调查的线索",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "8bfa06b980",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:53:35.871997Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-8bfa06b980-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:53:35.871997Z",
+      "done_reason": "stop",
+      "eval_count": 280,
+      "eval_duration": 52044459000,
+      "prompt_eval_count": 513,
+      "prompt_eval_duration": 10089279000,
+      "load_duration": 678084,
+      "wall_seconds": 62.2
+    }
+  },
+  "review_status": "pending",
+  "stem": "犯人の身元を特定する（　）を得た。",
+  "options": [
+    "意向",
+    "手掛かり",
+    "措置",
+    "課題"
+  ],
+  "answer_index": 1,
+  "translation_zh": "获得了确定犯人身份的线索。",
+  "explanation_zh": "「手掛かり」指调查的线索，符合语境。「意向」指意图，「措置」指应对措施，「課題」指待解决的问题，均无法与“特定身元”搭配表示线索来源。",
+  "option_explanations_zh": [
+    "「意向」指意图或想法，不能用作调查中发现的具体依据或痕迹。",
+    "「手掛かり」意为线索，此处指确定身份的依据，语意通顺且符合逻辑。",
+    "「措置」指采取的措施或手段，是行动而非发现的信息来源。",
+    "「課題」指需要解决的问题或任务，无法作为查明身份的依据使用。"
+  ],
+  "id": "v-8bfa06b980-cloze",
+  "kind": "vocabulary"
+}

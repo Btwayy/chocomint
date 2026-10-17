@@ -1,0 +1,49 @@
+{
+  "target_id": "g-to-aimatte",
+  "target_label": "〜と相まって",
+  "level": "N1",
+  "focus_zh": "两个因素相互作用，共同产生结果",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "to-aimatte",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:57:50.049171Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-to-aimatte-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:57:50.049171Z",
+      "done_reason": "stop",
+      "eval_count": 465,
+      "eval_duration": 53176313000,
+      "prompt_eval_count": 686,
+      "prompt_eval_duration": 10236750000,
+      "load_duration": 593791,
+      "wall_seconds": 63.47
+    }
+  },
+  "review_status": "pending",
+  "stem": "暖かい気候と豊かな自然が（　）、この町は観光地として名を馳せている。",
+  "options": [
+    "相まって",
+    "加えて",
+    "続いて",
+    "重なって"
+  ],
+  "answer_index": 0,
+  "translation_zh": "温暖的气候与丰富的自然资源相互结合，使这个城镇作为观光胜地闻名遐迩。",
+  "explanation_zh": "「相まって」强调两要素合力产生更强效果。「重なって」指重叠；「続いて」表接续；「加えて」仅表追加，皆不符语境中“共同促成”之意。",
+  "option_explanations_zh": [
+    "正确选项：两因素相辅相成，共同造就显著成果。",
+    "错误选项：仅表达在原有基础上增加一项，缺合力感。",
+    "错误选项：表示事件按顺序接连发生，无互动含义。",
+    "错误选项：侧重物理或抽象层面的重叠，非合力增强。"
+  ],
+  "id": "g-to-aimatte-2",
+  "kind": "grammar"
+}

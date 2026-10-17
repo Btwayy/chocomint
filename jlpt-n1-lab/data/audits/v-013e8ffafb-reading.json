@@ -1,0 +1,28 @@
+{
+  "question_id": "v-013e8ffafb-reading",
+  "content_hash": "9405abd9298d37d6f42d83886ab7c2fa242daf9632bb4dd3f158e42189da925e",
+  "passed": false,
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_indices": [
+      0,
+      3
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「認識」正确读音为「ねんしき」。选项 0 和 4（索引从 0 开始）均符合。其他选项读音错误。"
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:37:48.531741Z",
+    "done_reason": "stop",
+    "eval_count": 69,
+    "eval_duration": 4147609999,
+    "prompt_eval_count": 165,
+    "prompt_eval_duration": 1498202000,
+    "load_duration": 11444947791,
+    "wall_seconds": 17.11,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:37:48.533896+00:00"
+}

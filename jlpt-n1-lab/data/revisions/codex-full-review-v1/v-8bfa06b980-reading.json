@@ -1,0 +1,50 @@
+{
+  "target_id": "v-8bfa06b980",
+  "target_label": "手掛かり",
+  "level": "N1",
+  "focus_zh": "解决问题或调查的线索",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "8bfa06b980",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:53:35.871997Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-8bfa06b980-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:53:35.871997Z",
+      "done_reason": "stop",
+      "eval_count": 280,
+      "eval_duration": 52044459000,
+      "prompt_eval_count": 513,
+      "prompt_eval_duration": 10089279000,
+      "load_duration": 678084,
+      "wall_seconds": 62.2
+    }
+  },
+  "review_status": "pending",
+  "id": "v-8bfa06b980-reading",
+  "kind": "reading",
+  "stem": "事件の真相に迫るための【手掛かり】が一つも見つからなかった。",
+  "options": [
+    "てががり",
+    "でがかり",
+    "てかかり",
+    "てがかり"
+  ],
+  "answer_index": 3,
+  "translation_zh": "没有找到任何能逼近事件真相的线索。",
+  "explanation_zh": "「手掛かり」在底库中所列读音为「てがかり」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「てがかり」不一致。",
+    "与底库所列读音「てがかり」不一致。",
+    "与底库所列读音「てがかり」不一致。",
+    "与底库所列读音一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

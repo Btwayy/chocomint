@@ -1,0 +1,31 @@
+{
+  "question_id": "v-d71baf9f53-cloze",
+  "content_hash": "0e4a1631292d66aa9ab50bdfdfa782b3f47b6967c9911eaa53665409b228b66e",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "滞る"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "資金繰りが悪化すると支払が遅れるため、「滞る」が自然。「携わる」「賄う」「覆す」は文脈に合わない。",
+    "acceptable_indices": [
+      3
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:56:15.327352Z",
+    "done_reason": "stop",
+    "eval_count": 56,
+    "eval_duration": 3509334000,
+    "prompt_eval_count": 186,
+    "prompt_eval_duration": 1333618000,
+    "load_duration": 694208,
+    "wall_seconds": 4.85,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:56:15.328482+00:00"
+}

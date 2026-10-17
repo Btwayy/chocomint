@@ -1,0 +1,50 @@
+{
+  "target_id": "v-7113165c32",
+  "target_label": "拘束",
+  "level": "N1",
+  "focus_zh": "限制人身自由或行动时间",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "7113165c32",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:32:16.809751Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-7113165c32-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:32:16.809751Z",
+      "done_reason": "stop",
+      "eval_count": 267,
+      "eval_duration": 26257513000,
+      "prompt_eval_count": 545,
+      "prompt_eval_duration": 5442128000,
+      "load_duration": 708042,
+      "wall_seconds": 31.75
+    }
+  },
+  "review_status": "pending",
+  "id": "v-7113165c32-reading",
+  "kind": "reading",
+  "stem": "長時間の会議は参加者の自由な行動を【拘束】する。",
+  "options": [
+    "こそく",
+    "こうそく",
+    "こうしょく",
+    "こうぞく"
+  ],
+  "answer_index": 1,
+  "translation_zh": "长时间的会议限制了参与者自由的行动。",
+  "explanation_zh": "「拘束」在底库中所列读音为「こうそく」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「こうそく」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「こうそく」不一致。",
+    "与底库所列读音「こうそく」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

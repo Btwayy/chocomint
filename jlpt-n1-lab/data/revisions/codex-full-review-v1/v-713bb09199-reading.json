@@ -1,0 +1,50 @@
+{
+  "target_id": "v-713bb09199",
+  "target_label": "合意",
+  "level": "N1",
+  "focus_zh": "多方意见一致",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "713bb09199",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:36:11.700483Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-713bb09199-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:36:11.700483Z",
+      "done_reason": "stop",
+      "eval_count": 219,
+      "eval_duration": 20529022000,
+      "prompt_eval_count": 549,
+      "prompt_eval_duration": 5531924000,
+      "load_duration": 697292,
+      "wall_seconds": 26.33
+    }
+  },
+  "review_status": "pending",
+  "id": "v-713bb09199-reading",
+  "kind": "reading",
+  "stem": "両社は新製品の開発方針で【合意】した。",
+  "options": [
+    "ごい",
+    "ごうえ",
+    "ごうい",
+    "こうい"
+  ],
+  "answer_index": 2,
+  "translation_zh": "两家公司就新产品的开发方针达成了一致。",
+  "explanation_zh": "「合意」在底库中所列读音为「ごうい」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「ごうい」不一致。",
+    "与底库所列读音「ごうい」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「ごうい」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

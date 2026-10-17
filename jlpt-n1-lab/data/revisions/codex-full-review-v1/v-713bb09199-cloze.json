@@ -1,0 +1,49 @@
+{
+  "target_id": "v-713bb09199",
+  "target_label": "合意",
+  "level": "N1",
+  "focus_zh": "多方意见一致",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "713bb09199",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:36:11.700483Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-713bb09199-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:36:11.700483Z",
+      "done_reason": "stop",
+      "eval_count": 219,
+      "eval_duration": 20529022000,
+      "prompt_eval_count": 549,
+      "prompt_eval_duration": 5531924000,
+      "load_duration": 697292,
+      "wall_seconds": 26.33
+    }
+  },
+  "review_status": "pending",
+  "stem": "交渉の結果、双方は条件について（　）に達した。",
+  "options": [
+    "排除",
+    "抑制",
+    "合意",
+    "補償"
+  ],
+  "answer_index": 2,
+  "translation_zh": "谈判结果，双方就条件达成了共识。",
+  "explanation_zh": "本句强调多方意见达成一致。「合意」指共同同意；「補償」是赔偿；「排除」是剔除；「抑制」是压制，均不合语境。",
+  "option_explanations_zh": [
+    "排除：意为去除或排斥，无法与意见一致搭配。",
+    "抑制：意为压制或控制，不能用于描述达成一致。",
+    "合意：指双方或多方达成共识，符合句中谈判结果语境。",
+    "補償：意为补偿或赔偿，与达成一致的语义不符。"
+  ],
+  "id": "v-713bb09199-cloze",
+  "kind": "vocabulary"
+}

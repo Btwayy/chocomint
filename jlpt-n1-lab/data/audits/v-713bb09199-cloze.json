@@ -1,0 +1,31 @@
+{
+  "question_id": "v-713bb09199-cloze",
+  "content_hash": "978bf49c16e00cc33959daec2bbdc0d64b97413ed9922f5a7f63dc6649461499",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "合意"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「合意」与「交渉」「条件」搭配自然，表示达成一致意见。其他选项语义不符或无法构成通顺表达。",
+    "acceptable_indices": [
+      2
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:54:18.443938Z",
+    "done_reason": "stop",
+    "eval_count": 51,
+    "eval_duration": 3130887000,
+    "prompt_eval_count": 183,
+    "prompt_eval_duration": 1307068000,
+    "load_duration": 664459,
+    "wall_seconds": 4.44,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:54:18.445087+00:00"
+}

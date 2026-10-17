@@ -1,0 +1,27 @@
+{
+  "question_id": "v-0484e1a526-reading",
+  "content_hash": "c56e5823db6ba05551ee01bc2916a082508c80f9830a7f31103dc4d6c7562914",
+  "passed": false,
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_indices": [
+      2
+    ],
+    "natural_japanese": true,
+    "reason_zh": "抑制的正确读音为「よくさい」。其他选项均存在假名错误或汉字对应错误。"
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:37:57.343587Z",
+    "done_reason": "stop",
+    "eval_count": 50,
+    "eval_duration": 3043387000,
+    "prompt_eval_count": 157,
+    "prompt_eval_duration": 980470000,
+    "load_duration": 606583,
+    "wall_seconds": 4.03,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:37:57.344664+00:00"
+}

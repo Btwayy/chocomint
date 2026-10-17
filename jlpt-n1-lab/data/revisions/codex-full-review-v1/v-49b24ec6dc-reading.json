@@ -1,0 +1,50 @@
+{
+  "target_id": "v-49b24ec6dc",
+  "target_label": "実態",
+  "level": "N1",
+  "focus_zh": "事物实际的情况",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "49b24ec6dc",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:34:43.904146Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-49b24ec6dc-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:34:43.904146Z",
+      "done_reason": "stop",
+      "eval_count": 270,
+      "eval_duration": 25039243000,
+      "prompt_eval_count": 474,
+      "prompt_eval_duration": 4392838000,
+      "load_duration": 756583,
+      "wall_seconds": 29.47
+    }
+  },
+  "review_status": "pending",
+  "id": "v-49b24ec6dc-reading",
+  "kind": "reading",
+  "stem": "調査の結果、企業の過重労働という深刻な【実態】が明らかになった。",
+  "options": [
+    "じったい",
+    "じつたい",
+    "しったい",
+    "じったん"
+  ],
+  "answer_index": 0,
+  "translation_zh": "调查结果揭示了企业过度劳动这一严峻的实际情况。",
+  "explanation_zh": "「実態」在底库中所列读音为「じったい」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音一致。",
+    "与底库所列读音「じったい」不一致。",
+    "与底库所列读音「じったい」不一致。",
+    "与底库所列读音「じったい」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

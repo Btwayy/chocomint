@@ -1,0 +1,33 @@
+{
+  "question_id": "v-bd1e5daff0-cloze",
+  "content_hash": "65d15921ca7028ac8b0c59008c7fded59e354f238254ba8e065c4e8d733086e0",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "迅速",
+      "柔軟"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「迅速」与「柔軟」均能自然搭配，表示紧急情况下需要快速或灵活应对；「漠然」语义矛盾，「一律」在语境中不恰当。",
+    "acceptable_indices": [
+      0,
+      2
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:55:24.392787Z",
+    "done_reason": "stop",
+    "eval_count": 62,
+    "eval_duration": 3684569000,
+    "prompt_eval_count": 182,
+    "prompt_eval_duration": 1175016000,
+    "load_duration": 625125,
+    "wall_seconds": 4.86,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:55:24.393715+00:00"
+}

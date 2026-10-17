@@ -1,0 +1,49 @@
+{
+  "target_id": "v-5abe53229a",
+  "target_label": "携わる",
+  "level": "N1",
+  "focus_zh": "参与某项工作或事业",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "5abe53229a",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:45:31.192037Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-5abe53229a-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:45:31.192037Z",
+      "done_reason": "stop",
+      "eval_count": 198,
+      "eval_duration": 20536423000,
+      "prompt_eval_count": 552,
+      "prompt_eval_duration": 7410163000,
+      "load_duration": 775292,
+      "wall_seconds": 28.08
+    }
+  },
+  "review_status": "pending",
+  "stem": "環境保護活動に（　）志願者が集まった。",
+  "options": [
+    "携わる",
+    "賄う",
+    "凌ぐ",
+    "阻む"
+  ],
+  "answer_index": 0,
+  "translation_zh": "聚集了许多愿意参与环保活动的志愿者。",
+  "explanation_zh": "「携わる」指参与某项事业。「賄う」意为供给，「凌ぐ」是超过，「阻む」为阻碍，均不合语境。",
+  "option_explanations_zh": [
+    "表示投身或参与某项工作、活动。",
+    "指提供资金或物资，不用于参与活动。",
+    "意为超越或胜过，与参与之意不符。",
+    "表示阻挡或妨碍，无法填入此句。"
+  ],
+  "id": "v-5abe53229a-cloze",
+  "kind": "vocabulary"
+}

@@ -1,0 +1,49 @@
+{
+  "target_id": "v-16f829442e",
+  "target_label": "要請",
+  "level": "N1",
+  "focus_zh": "正式要求或请求",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "16f829442e",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:36:39.463141Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-16f829442e-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:36:39.463141Z",
+      "done_reason": "stop",
+      "eval_count": 239,
+      "eval_duration": 22459256000,
+      "prompt_eval_count": 521,
+      "prompt_eval_duration": 5196019000,
+      "load_duration": 754333,
+      "wall_seconds": 27.74
+    }
+  },
+  "review_status": "pending",
+  "stem": "専門家の助言を（　）する必要がある。",
+  "options": [
+    "要請",
+    "補足",
+    "把握",
+    "依存"
+  ],
+  "answer_index": 0,
+  "translation_zh": "有必要请求专家的建议。",
+  "explanation_zh": "本句需表达“正式提出请求”，故选要請。",
+  "option_explanations_zh": [
+    "要請：意为正式要求或请求，符合向专家寻求建议的语境。",
+    "補足：意为补充说明或缺失部分，不能用于表达提出请求之意。",
+    "把握：指掌握情况或理解现状，无法与助言搭配表示请求动作。",
+    "依存：指依赖某事物，此处需主动请求而非被动依赖关系。"
+  ],
+  "id": "v-16f829442e-cloze",
+  "kind": "vocabulary"
+}

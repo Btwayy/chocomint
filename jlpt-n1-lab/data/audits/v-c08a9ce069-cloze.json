@@ -1,0 +1,35 @@
+{
+  "question_id": "v-c08a9ce069-cloze",
+  "content_hash": "b1569733cfa9f345723e40bc2ecb306529d5ac7dcd49515e5eac1f4954f55443",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "迅速",
+      "柔軟",
+      "円滑"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「迅速」「柔軟」「円滑」填入后均符合语境，表示促进谈判进展所需的应对态度；「漠然」语义相反，不合逻辑。",
+    "acceptable_indices": [
+      0,
+      1,
+      2
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:55:33.473635Z",
+    "done_reason": "stop",
+    "eval_count": 61,
+    "eval_duration": 3899213000,
+    "prompt_eval_count": 188,
+    "prompt_eval_duration": 1161528000,
+    "load_duration": 701917,
+    "wall_seconds": 5.06,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:55:33.474920+00:00"
+}

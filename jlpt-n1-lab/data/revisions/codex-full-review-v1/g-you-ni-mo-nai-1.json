@@ -1,0 +1,49 @@
+{
+  "target_id": "g-you-ni-mo-nai",
+  "target_label": "〜(よ)うにも〜ない",
+  "level": "N1",
+  "focus_zh": "想做某事却因为客观条件无法做到；意志形+にも+可能否定等",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "you-ni-mo-nai",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T13:03:49.66273Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-you-ni-mo-nai-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T13:03:49.66273Z",
+      "done_reason": "stop",
+      "eval_count": 468,
+      "eval_duration": 52886216000,
+      "prompt_eval_count": 627,
+      "prompt_eval_duration": 12179928000,
+      "load_duration": 1827500,
+      "wall_seconds": 65.11
+    }
+  },
+  "review_status": "pending",
+  "stem": "財布を忘れたので、お昼を食べようにも（　）。",
+  "options": [
+    "食べられない",
+    "食べたかった",
+    "食べるべきだ",
+    "食べてしまう"
+  ],
+  "answer_index": 0,
+  "translation_zh": "因为忘了带钱包，想吃饭也吃不了。",
+  "explanation_zh": "「～ようにも～ない」表想做却因客观原因无法做到。后项需用可能态否定形。",
+  "option_explanations_zh": [
+    "正确选项：意志形+にも+可能否定，表示想吃饭但因没钱吃不了。",
+    "干扰项：过去式「たかった」仅表愿望，无法体现客观阻碍导致的不能做。",
+    "干扰项：「べきだ」表义务或建议，与句中因忘钱包而无法吃的语境不符。",
+    "干扰项：「てしまう」表遗憾或完成，不表示“想做却做不到”的无奈感。"
+  ],
+  "id": "g-you-ni-mo-nai-1",
+  "kind": "grammar"
+}

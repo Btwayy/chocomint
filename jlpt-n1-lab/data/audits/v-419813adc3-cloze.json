@@ -1,0 +1,27 @@
+{
+  "question_id": "v-419813adc3-cloze",
+  "content_hash": "6c6d2bf1faf5c9ce8c10ea6cace262a40e0a219f13eec71e7f6a30ee5b87e985",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "「意向があるかどうか」虽语法成立，但语境中“确认是否有签约意向”通常用「確認する必要がある」即可，无需加「顧客が契約を結ぶ（意向）があるかどうか」这种冗余表达。其他选项语义不通或搭配不当。",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:53:17.29231Z",
+    "done_reason": "stop",
+    "eval_count": 74,
+    "eval_duration": 4538180000,
+    "prompt_eval_count": 185,
+    "prompt_eval_duration": 1355319000,
+    "load_duration": 854667,
+    "wall_seconds": 5.9,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:53:17.293390+00:00"
+}

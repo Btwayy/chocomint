@@ -1,0 +1,134 @@
+{
+  "target_id": "v-0484e1a526",
+  "questions": [
+    {
+      "target_id": "v-0484e1a526",
+      "target_label": "抑制",
+      "level": "N1",
+      "focus_zh": "抑制增长、冲动或活动",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "0484e1a526",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:28:55.591496Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-0484e1a526-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:28:55.591496Z",
+          "done_reason": "stop",
+          "eval_count": 205,
+          "eval_duration": 16905476999,
+          "prompt_eval_count": 531,
+          "prompt_eval_duration": 4625970000,
+          "load_duration": 843417,
+          "wall_seconds": 26.31
+        }
+      },
+      "review_status": "pending",
+      "id": "v-0484e1a526-reading",
+      "kind": "reading",
+      "stem": "彼は深呼吸をして、感情の【抑制】に努めた。",
+      "options": [
+        "おくせい",
+        "よくせい",
+        "よくさい",
+        "よくしょう"
+      ],
+      "answer_index": 1,
+      "translation_zh": "他深呼吸，努力控制情绪。",
+      "explanation_zh": "逐一检查读音选项；本题「抑制」读「よくせい」，句中用于表示抑制、控制。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「よくせい」。",
+        "本题正确读音「よくせい」。",
+        "这不是本题标记词的正确读音；本题应选「よくせい」。",
+        "这不是本题标记词的正确读音；本题应选「よくせい」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.432453+00:00",
+        "original_content_hash": "9f34725cd449d2df2142301bf9f2c9fea360fc948ff672b6000bcc83add18886",
+        "archive_file": "data/revisions/codex-full-review-v1/v-0484e1a526-reading.json",
+        "changed_fields": [
+          "stem",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "逐一检查读音选项；本题「抑制」读「よくせい」，句中用于表示抑制、控制。"
+      }
+    },
+    {
+      "target_id": "v-0484e1a526",
+      "target_label": "抑制",
+      "level": "N1",
+      "focus_zh": "抑制增长、冲动或活动",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "0484e1a526",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:28:55.591496Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-0484e1a526-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:28:55.591496Z",
+          "done_reason": "stop",
+          "eval_count": 205,
+          "eval_duration": 16905476999,
+          "prompt_eval_count": 531,
+          "prompt_eval_duration": 4625970000,
+          "load_duration": 843417,
+          "wall_seconds": 26.31
+        }
+      },
+      "review_status": "pending",
+      "stem": "インフレ率が高すぎるため、政府は物価上昇を抑えようと、インフレの（　）に尽力している。",
+      "options": [
+        "補足",
+        "促進",
+        "抑制",
+        "委託"
+      ],
+      "answer_index": 2,
+      "translation_zh": "由于通胀率过高，政府正努力抑制通货膨胀，以控制物价上涨。",
+      "explanation_zh": "前文明说通胀过高、要抑制物价上涨，因此选择「抑制」；「促進」方向相反。",
+      "option_explanations_zh": [
+        "表示补充不足的内容；不符合本题完整句子的接续或明确语境。",
+        "表示促进、推动；不符合本题完整句子的接续或明确语境。",
+        "本题正确。前文明说通胀过高、要抑制物价上涨，因此选择「抑制」；「促進」方向相反。",
+        "表示委托他人办理；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-0484e1a526-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.432552+00:00",
+        "original_content_hash": "02308039c88da230cc5c6e5a3ed18d289adf3189da5a3115b9e548c34878574d",
+        "archive_file": "data/revisions/codex-full-review-v1/v-0484e1a526-cloze.json",
+        "changed_fields": [
+          "stem",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "前文明说通胀过高、要抑制物价上涨，因此选择「抑制」；「促進」方向相反。"
+      }
+    }
+  ]
+}

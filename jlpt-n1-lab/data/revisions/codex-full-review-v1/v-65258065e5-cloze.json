@@ -1,0 +1,49 @@
+{
+  "target_id": "v-65258065e5",
+  "target_label": "委託",
+  "level": "N1",
+  "focus_zh": "委托他人办理事务",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "65258065e5",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:31:45.04703Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-65258065e5-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:31:45.04703Z",
+      "done_reason": "stop",
+      "eval_count": 243,
+      "eval_duration": 22762715000,
+      "prompt_eval_count": 584,
+      "prompt_eval_duration": 5946838000,
+      "load_duration": 927084,
+      "wall_seconds": 28.77
+    }
+  },
+  "review_status": "pending",
+  "stem": "この作業は、経験豊富な担当者へ（　）する必要がある。",
+  "options": [
+    "委託",
+    "合意",
+    "補足",
+    "拘束"
+  ],
+  "answer_index": 0,
+  "translation_zh": "这项工作有必要委托给经验丰富的负责人办理。",
+  "explanation_zh": "「委託」指委托他人办事，符合语境。「補足」是补充，「拘束」是束缚，「合意」是达成共识，均不成立。",
+  "option_explanations_zh": [
+    "「委託」意为委托，接「する」构成他动词，表示请人代办事务。",
+    "「合意」指双方达成一致意见，无法直接接「する」表示委托动作。",
+    "「補足」指补充说明或不足部分，不能用于将任务交给他人办理。",
+    "「拘束」意为限制自由或束缚，与请求他人协助的语境完全相反。"
+  ],
+  "id": "v-65258065e5-cloze",
+  "kind": "vocabulary"
+}

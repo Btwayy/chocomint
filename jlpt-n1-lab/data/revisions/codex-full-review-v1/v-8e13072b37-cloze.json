@@ -1,0 +1,49 @@
+{
+  "target_id": "v-8e13072b37",
+  "target_label": "伴う",
+  "level": "N1",
+  "focus_zh": "伴随着某事发生",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "8e13072b37",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:46:36.147787Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-8e13072b37-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:46:36.147787Z",
+      "done_reason": "stop",
+      "eval_count": 210,
+      "eval_duration": 21746431000,
+      "prompt_eval_count": 567,
+      "prompt_eval_duration": 8485620999,
+      "load_duration": 676500,
+      "wall_seconds": 30.29
+    }
+  },
+  "review_status": "pending",
+  "stem": "このプロジェクトは大きなリスクが（　）ため、慎重に進める必要がある。",
+  "options": [
+    "凌ぐ",
+    "滞る",
+    "携わる",
+    "伴う"
+  ],
+  "answer_index": 3,
+  "translation_zh": "由于该项目伴随着巨大风险，需要谨慎推进。",
+  "explanation_zh": "「伴う」表示伴随发生。「携わる」指参与；「凌ぐ」指超过；「滞る」指停滞，均不合语境。",
+  "option_explanations_zh": [
+    "错误：意为超越、胜过，不用于描述伴随关系。",
+    "错误：意为停滞不前，与句中风险并存的逻辑不符。",
+    "错误：意为参与、从事，主语通常是人而非风险。",
+    "正确：表示某事发生时同时出现另一情况。"
+  ],
+  "id": "v-8e13072b37-cloze",
+  "kind": "vocabulary"
+}

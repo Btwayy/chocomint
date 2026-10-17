@@ -1,0 +1,81 @@
+{
+  "target_id": "v-1523ebeef5",
+  "questions": [
+    {
+      "target_id": "v-1523ebeef5",
+      "target_label": "不当",
+      "level": "N1",
+      "focus_zh": "不正当、不合理",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "1523ebeef5",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.665446+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-1523ebeef5-reading",
+      "kind": "reading",
+      "stem": "合理的な理由もなく解雇するのは【不当】だとして、彼は会社に抗議した。",
+      "options": [
+        "ふと",
+        "ぶとう",
+        "ふどう",
+        "ふとう"
+      ],
+      "answer_index": 3,
+      "translation_zh": "他认为毫无合理理由就解雇是不正当的，因此向公司抗议。",
+      "explanation_zh": "「不当」本题读「ふとう」，句中表示不正当、不合理。",
+      "option_explanations_zh": [
+        "不是本题标记词的正确读音；这里应选「ふとう」。",
+        "不是本题标记词的正确读音；这里应选「ふとう」。",
+        "不是本题标记词的正确读音；这里应选「ふとう」。",
+        "正确：本题标记词读「ふとう」。"
+      ]
+    },
+    {
+      "target_id": "v-1523ebeef5",
+      "target_label": "不当",
+      "level": "N1",
+      "focus_zh": "不正当、不合理",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "1523ebeef5",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.665442+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-1523ebeef5-cloze",
+      "kind": "vocabulary",
+      "stem": "合理的な理由もなく解雇するのは（　）だとして、彼は会社に抗議した。",
+      "options": [
+        "不当",
+        "円満",
+        "頑丈",
+        "精密"
+      ],
+      "answer_index": 0,
+      "translation_zh": "他认为毫无合理理由就解雇是不正当的，因此向公司抗议。",
+      "explanation_zh": "缺乏合理根据、处理不公，用「不当」。这是虚构语境中的当事人主张。",
+      "option_explanations_zh": [
+        "缺乏合理根据、处理不公，用「不当」。这是虚构语境中的当事人主张。",
+        "「円満」表示圆满、和睦；不符合本题已经限定的句意或接续。",
+        "「頑丈」表示结实、牢固；不符合本题已经限定的句意或接续。",
+        "「精密」表示精密；不符合本题已经限定的句意或接续。"
+      ]
+    }
+  ]
+}

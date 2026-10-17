@@ -1,0 +1,27 @@
+{
+  "question_id": "v-371c591e26-reading",
+  "content_hash": "a57b86cde992342fd9396428a36f54311b10b747586a5d6f392f1a3c5af7035d",
+  "passed": false,
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_indices": [
+      2
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「妥協」正确读音为「だっきょう」。选项 0、1 平假名错误，选项 3 缺少促音。"
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:38:38.627082Z",
+    "done_reason": "stop",
+    "eval_count": 62,
+    "eval_duration": 3835903000,
+    "prompt_eval_count": 164,
+    "prompt_eval_duration": 1077440000,
+    "load_duration": 693750,
+    "wall_seconds": 4.92,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:38:38.628174+00:00"
+}

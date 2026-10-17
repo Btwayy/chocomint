@@ -1,0 +1,135 @@
+{
+  "target_id": "g-o-yogi-naku-sareru",
+  "questions": [
+    {
+      "target_id": "g-o-yogi-naku-sareru",
+      "target_label": "〜を余儀なくされる",
+      "level": "N1",
+      "focus_zh": "因外部原因被迫做某事，动作名词+を余儀なくされる",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "o-yogi-naku-sareru",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T13:02:44.529756Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-g-o-yogi-naku-sareru-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T13:02:44.529756Z",
+          "done_reason": "stop",
+          "eval_count": 583,
+          "eval_duration": 70022727000,
+          "prompt_eval_count": 671,
+          "prompt_eval_duration": 6891963000,
+          "load_duration": 886292,
+          "wall_seconds": 76.98
+        }
+      },
+      "review_status": "pending",
+      "stem": "会社は新事業の継続を強く望んでいたが、予算が大幅に削減され、中止を（　）。",
+      "options": [
+        "心待ちにしていた",
+        "楽しみにしていた",
+        "余儀なくされた",
+        "待ち望んでいた"
+      ],
+      "answer_index": 2,
+      "translation_zh": "公司强烈希望继续这项新事业，却因预算大幅削减而被迫取消。",
+      "explanation_zh": "「中止を余儀なくされた」表示并不愿意却被迫取消。前文明示希望继续，与后面因预算被迫取消构成转折。原题「避けられない」也成立，已更换干扰项。",
+      "option_explanations_zh": [
+        "表示一直期待取消，与强烈希望继续且用「が」转折的语境不合。",
+        "表示把取消当作盼望的事，与本句的无奈转折不符。",
+        "表示违背继续事业的愿望，被外部条件迫使取消。",
+        "表示盼望取消，不符合前文明说希望继续的语境。"
+      ],
+      "id": "g-o-yogi-naku-sareru-1",
+      "kind": "grammar",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:25:37.903696+00:00",
+        "original_content_hash": "7163a9ee86ade97b9cedfb7f4ae9d101ea0f25e0138cb7e573791b21b7e32f29",
+        "archive_file": "data/revisions/codex-full-review-v1/g-o-yogi-naku-sareru-1.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "「中止を余儀なくされた」表示并不愿意却被迫取消。前文明示希望继续，与后面因预算被迫取消构成转折。原题「避けられない」也成立，已更换干扰项。"
+      }
+    },
+    {
+      "target_id": "g-o-yogi-naku-sareru",
+      "target_label": "〜を余儀なくされる",
+      "level": "N1",
+      "focus_zh": "因外部原因被迫做某事，动作名词+を余儀なくされる",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "o-yogi-naku-sareru",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T13:02:44.529756Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-g-o-yogi-naku-sareru-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T13:02:44.529756Z",
+          "done_reason": "stop",
+          "eval_count": 583,
+          "eval_duration": 70022727000,
+          "prompt_eval_count": 671,
+          "prompt_eval_duration": 6891963000,
+          "load_duration": 886292,
+          "wall_seconds": 76.98
+        }
+      },
+      "review_status": "pending",
+      "stem": "天候が急変し、登山隊は下山（　）。",
+      "options": [
+        "を余儀なくされた",
+        "と余儀なくされた",
+        "が余儀なくされた",
+        "に余儀なくされた"
+      ],
+      "answer_index": 0,
+      "translation_zh": "天气突变，登山队被迫下山。",
+      "explanation_zh": "考查「動作名詞＋を余儀なくされる」的助词。无需把也可能表示外部强迫的「強制される」强判为错。",
+      "option_explanations_zh": [
+        "「下山を余儀なくされた」接续正确。",
+        "此固定结构的动作名词不用「と」标记。",
+        "「登山隊は」已指被迫者，「下山」这个动作名词用「を」。",
+        "此固定结构的动作名词不用「に」标记。"
+      ],
+      "id": "g-o-yogi-naku-sareru-2",
+      "kind": "grammar",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.430502+00:00",
+        "original_content_hash": "2ea6a9a7d7f33c5461d94e735f9619e218a4ff52da9227cfaf7e828db23b2b1a",
+        "archive_file": "data/revisions/codex-full-review-v1/g-o-yogi-naku-sareru-2.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "考查「動作名詞＋を余儀なくされる」的助词。无需把也可能表示外部强迫的「強制される」强判为错。"
+      }
+    }
+  ]
+}

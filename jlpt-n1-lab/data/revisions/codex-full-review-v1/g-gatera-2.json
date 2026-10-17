@@ -1,0 +1,49 @@
+{
+  "target_id": "g-gatera",
+  "target_label": "〜がてら",
+  "level": "N1",
+  "focus_zh": "借一次外出顺便做另一件事；名词或动词ます形去ます接がてら",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "gatera",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:55:15.458701Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-gatera-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:55:15.458701Z",
+      "done_reason": "stop",
+      "eval_count": 476,
+      "eval_duration": 89094103000,
+      "prompt_eval_count": 546,
+      "prompt_eval_duration": 10428447000,
+      "load_duration": 747250,
+      "wall_seconds": 99.57
+    }
+  },
+  "review_status": "pending",
+  "stem": "友人を空港まで見送りが（　）、帰りに花屋でバラを買った。",
+  "options": [
+    "まま",
+    "ため",
+    "てら",
+    "あと"
+  ],
+  "answer_index": 2,
+  "translation_zh": "我送朋友去机场，顺便在回来的路上从花店买了玫瑰。",
+  "explanation_zh": "「がてら」接动词ます形去ます，表借机顺带做他事。「ため」表目的；「まま」表状态持续；「あと」表先后顺序，均不合逻辑。",
+  "option_explanations_zh": [
+    "表示保持送别时的状态去买花，逻辑不通。",
+    "表示为了送别而买花，但语境是顺路而非目的。",
+    "正确选项，与「見送り」接续构成「がてら」，表顺便之意。",
+    "仅表示时间先后，无法体现借机做另一事的语感。"
+  ],
+  "id": "g-gatera-2",
+  "kind": "grammar"
+}

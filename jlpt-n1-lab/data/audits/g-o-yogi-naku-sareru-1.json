@@ -1,0 +1,31 @@
+{
+  "question_id": "g-o-yogi-naku-sareru-1",
+  "content_hash": "b256ac5cd6139f6e41d0392832618fd2c43c084f3ab794f2064eb30ea616b171",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "避けられない"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「余儀なくされる」需接动词辞书形，选项为连体形不成立；「見送られる」语义不符且被动语态在此处生硬；「逃れられる」语法错误。仅「避けられない」自然成立。",
+    "acceptable_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T13:02:55.39624Z",
+    "done_reason": "stop",
+    "eval_count": 76,
+    "eval_duration": 4784835000,
+    "prompt_eval_count": 191,
+    "prompt_eval_duration": 1146880000,
+    "load_duration": 903292,
+    "wall_seconds": 5.95,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T13:02:55.397816+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "target_id": "v-39fb8eb64c",
+  "target_label": "是正",
+  "level": "N1",
+  "focus_zh": "纠正不合理的制度或偏差",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "39fb8eb64c",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:28:00.576351Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-39fb8eb64c-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:28:00.576351Z",
+      "done_reason": "stop",
+      "eval_count": 270,
+      "eval_duration": 21861011000,
+      "prompt_eval_count": 395,
+      "prompt_eval_duration": 3340330000,
+      "load_duration": 897125,
+      "wall_seconds": 25.25
+    }
+  },
+  "review_status": "pending",
+  "stem": "政府は、長年の歪みを（　）する方針を示した。",
+  "options": [
+    "依存",
+    "是正",
+    "委託",
+    "促進"
+  ],
+  "answer_index": 1,
+  "translation_zh": "政府表明了纠正长期偏差的方针。",
+  "explanation_zh": "「是正」指纠正制度或偏差，符合语境。「促進」意为促进，对象不符。「依存」指依赖，逻辑不通。「委託」指委托他人，语意错误。",
+  "option_explanations_zh": [
+    "「依存」指依赖某物，无法表达纠正错误的含义。",
+    "「是正」意为纠正不合理之处，与“歪み”搭配恰当。",
+    "「委託」指委托他人办理，与修正自身问题无关。",
+    "「促進」意为推动发展，不能用于消除偏差或扭曲。"
+  ],
+  "id": "v-39fb8eb64c-cloze",
+  "kind": "vocabulary"
+}

@@ -1,0 +1,133 @@
+{
+  "target_id": "v-5e7cd7436c",
+  "questions": [
+    {
+      "target_id": "v-5e7cd7436c",
+      "target_label": "見通し",
+      "level": "N1",
+      "focus_zh": "对将来发展的预测或前景",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "5e7cd7436c",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:50:35.346324Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-5e7cd7436c-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:50:35.346324Z",
+          "done_reason": "stop",
+          "eval_count": 256,
+          "eval_duration": 23860643000,
+          "prompt_eval_count": 548,
+          "prompt_eval_duration": 7526672000,
+          "load_duration": 745917,
+          "wall_seconds": 31.44
+        }
+      },
+      "review_status": "pending",
+      "id": "v-5e7cd7436c-reading",
+      "kind": "reading",
+      "stem": "新製品の発売により、来期の売上は大幅に増える【見通し】だ。",
+      "options": [
+        "みどおし",
+        "みとし",
+        "みとうし",
+        "みとおし"
+      ],
+      "answer_index": 3,
+      "translation_zh": "由于新产品的发布，预计下期销售额将大幅增加。",
+      "explanation_zh": "逐一检查读音选项；本题「見通し」读「みとおし」，句中用于表示预测、展望。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「みとおし」。",
+        "这不是本题标记词的正确读音；本题应选「みとおし」。",
+        "这不是本题标记词的正确读音；本题应选「みとおし」。",
+        "本题正确读音「みとおし」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.441277+00:00",
+        "original_content_hash": "dba942224fc573e368e9fd5e131196e7b1f793d82650326b770bec04cc701271",
+        "archive_file": "data/revisions/codex-full-review-v1/v-5e7cd7436c-reading.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "逐一检查读音选项；本题「見通し」读「みとおし」，句中用于表示预测、展望。"
+      }
+    },
+    {
+      "target_id": "v-5e7cd7436c",
+      "target_label": "見通し",
+      "level": "N1",
+      "focus_zh": "对将来发展的预测或前景",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "5e7cd7436c",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:50:35.346324Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-5e7cd7436c-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:50:35.346324Z",
+          "done_reason": "stop",
+          "eval_count": 256,
+          "eval_duration": 23860643000,
+          "prompt_eval_count": 548,
+          "prompt_eval_duration": 7526672000,
+          "load_duration": 745917,
+          "wall_seconds": 31.44
+        }
+      },
+      "review_status": "pending",
+      "stem": "来年は景気が回復するだろうという（　）を、専門家が示した。",
+      "options": [
+        "見通し",
+        "措置",
+        "経緯",
+        "余地"
+      ],
+      "answer_index": 0,
+      "translation_zh": "专家提出了明年景气可能恢复的预测。",
+      "explanation_zh": "对明年景气如何发展的预测是「見通し」；现已补充具体预测内容。",
+      "option_explanations_zh": [
+        "本题正确。对明年景气如何发展的预测是「見通し」；现已补充具体预测内容。",
+        "表示应对措施；不符合本题完整句子的接续或明确语境。",
+        "表示事情的经过；不符合本题完整句子的接续或明确语境。",
+        "表示剩余空间、可能性；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-5e7cd7436c-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.441404+00:00",
+        "original_content_hash": "60cd905f85e59a814ce081c233499790405a81b23ed86e902e2dbc02d9429ec9",
+        "archive_file": "data/revisions/codex-full-review-v1/v-5e7cd7436c-cloze.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "对明年景气如何发展的预测是「見通し」；现已补充具体预测内容。"
+      }
+    }
+  ]
+}

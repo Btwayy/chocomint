@@ -1,0 +1,31 @@
+{
+  "question_id": "g-nara-de-wa-1",
+  "content_hash": "808eb412a09b90d8a68b283bb31962ccd08d9de902f3e6ee09478b7803afb51b",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "ならではの"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「～ならではの」表示独有特征，符合语境；其他选项助词搭配或语法结构错误，无法构成自然句子。",
+    "acceptable_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:58:51.669617Z",
+    "done_reason": "stop",
+    "eval_count": 48,
+    "eval_duration": 2773340000,
+    "prompt_eval_count": 190,
+    "prompt_eval_duration": 1209220000,
+    "load_duration": 629167,
+    "wall_seconds": 4.0,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:58:51.671380+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "question_id": "v-912c2148b4-cloze",
+  "content_hash": "fa44b14a42ac4f41bdc28756467d1a806d1247d00d369cd36b038dbec2920084",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "模索"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「次の手を模索する」为固定搭配，意为寻找对策；其他选项与语境或语法搭配不当。",
+    "acceptable_indices": [
+      1
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:54:53.754042Z",
+    "done_reason": "stop",
+    "eval_count": 47,
+    "eval_duration": 2874652000,
+    "prompt_eval_count": 184,
+    "prompt_eval_duration": 1283117000,
+    "load_duration": 614333,
+    "wall_seconds": 4.16,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:54:53.755029+00:00"
+}

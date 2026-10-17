@@ -1,0 +1,50 @@
+{
+  "target_id": "v-68a47d4c28",
+  "target_label": "辛うじて",
+  "level": "N1",
+  "focus_zh": "勉强达到、好不容易做到",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "68a47d4c28",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:43:24.31215Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-68a47d4c28-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:43:24.31215Z",
+      "done_reason": "stop",
+      "eval_count": 230,
+      "eval_duration": 23726154000,
+      "prompt_eval_count": 551,
+      "prompt_eval_duration": 6640265000,
+      "load_duration": 896792,
+      "wall_seconds": 30.42
+    }
+  },
+  "review_status": "pending",
+  "id": "v-68a47d4c28-reading",
+  "kind": "reading",
+  "stem": "予算が不足していたが、【辛うじて】計画を完了させた。",
+  "options": [
+    "かろうじて",
+    "かろうして",
+    "からうじて",
+    "かろじて"
+  ],
+  "answer_index": 0,
+  "translation_zh": "虽然预算不足，但好歹勉强完成了计划。",
+  "explanation_zh": "「辛うじて」在底库中所列读音为「かろうじて」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音一致。",
+    "与底库所列读音「かろうじて」不一致。",
+    "与底库所列读音「かろうじて」不一致。",
+    "与底库所列读音「かろうじて」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

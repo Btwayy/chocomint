@@ -1,0 +1,132 @@
+{
+  "target_id": "v-419813adc3",
+  "questions": [
+    {
+      "target_id": "v-419813adc3",
+      "target_label": "意向",
+      "level": "N1",
+      "focus_zh": "本人或组织的意愿",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "419813adc3",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:35:45.349715Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-419813adc3-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:35:45.349715Z",
+          "done_reason": "stop",
+          "eval_count": 281,
+          "eval_duration": 25771114000,
+          "prompt_eval_count": 520,
+          "prompt_eval_duration": 4876239000,
+          "load_duration": 684209,
+          "wall_seconds": 30.69
+        }
+      },
+      "review_status": "pending",
+      "id": "v-419813adc3-reading",
+      "kind": "reading",
+      "stem": "新プロジェクトの開始について、部長は明確な【意向】を示した。",
+      "options": [
+        "いごう",
+        "いっこう",
+        "いこう",
+        "いこ"
+      ],
+      "answer_index": 2,
+      "translation_zh": "关于新项目的启动，部门主管表明了明确的意愿。",
+      "explanation_zh": "逐一检查读音选项；本题「意向」读「いこう」，句中用于表示意愿、打算。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「いこう」。",
+        "这不是本题标记词的正确读音；本题应选「いこう」。",
+        "本题正确读音「いこう」。",
+        "这不是本题标记词的正确读音；本题应选「いこう」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:25:37.909156+00:00",
+        "original_content_hash": "1daffe20a8fa65690e7a5b1fbdf3fa33b284bb9216e1431e2524056128d3b2f1",
+        "archive_file": "data/revisions/codex-full-review-v1/v-419813adc3-reading.json",
+        "changed_fields": [
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "逐一检查读音选项；本题「意向」读「いこう」，句中用于表示意愿、打算。"
+      }
+    },
+    {
+      "target_id": "v-419813adc3",
+      "target_label": "意向",
+      "level": "N1",
+      "focus_zh": "本人或组织的意愿",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "419813adc3",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:35:45.349715Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-419813adc3-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:35:45.349715Z",
+          "done_reason": "stop",
+          "eval_count": 281,
+          "eval_duration": 25771114000,
+          "prompt_eval_count": 520,
+          "prompt_eval_duration": 4876239000,
+          "load_duration": 684209,
+          "wall_seconds": 30.69
+        }
+      },
+      "review_status": "pending",
+      "stem": "顧客が契約を結ぶ（　）があるかどうかを確認する必要がある。",
+      "options": [
+        "経緯",
+        "実態",
+        "意向",
+        "措置"
+      ],
+      "answer_index": 2,
+      "translation_zh": "有必要确认客户是否有缔结合同的意愿。",
+      "explanation_zh": "「契約を結ぶ意向」表示签约意愿；本题已更换可能引出另一种读法的干扰项。",
+      "option_explanations_zh": [
+        "表示事情的经过；不符合本题完整句子的接续或明确语境。",
+        "表示真实情况；不符合本题完整句子的接续或明确语境。",
+        "本题正确。「契約を結ぶ意向」表示签约意愿；本题已更换可能引出另一种读法的干扰项。",
+        "表示应对措施；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-419813adc3-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.438429+00:00",
+        "original_content_hash": "1ff5a31a840a1dabde40ef89df1deaaf4d084a02fc3e769b6b68de992de0f9bb",
+        "archive_file": "data/revisions/codex-full-review-v1/v-419813adc3-cloze.json",
+        "changed_fields": [
+          "options",
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "「契約を結ぶ意向」表示签约意愿；本题已更换可能引出另一种读法的干扰项。"
+      }
+    }
+  ]
+}

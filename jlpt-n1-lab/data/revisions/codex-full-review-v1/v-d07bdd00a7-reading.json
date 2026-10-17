@@ -1,0 +1,50 @@
+{
+  "target_id": "v-d07bdd00a7",
+  "target_label": "契機",
+  "level": "N1",
+  "focus_zh": "促使变化发生的契机",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "d07bdd00a7",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:44:30.138Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-d07bdd00a7-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:44:30.138Z",
+      "done_reason": "stop",
+      "eval_count": 274,
+      "eval_duration": 29303683000,
+      "prompt_eval_count": 529,
+      "prompt_eval_duration": 6102744000,
+      "load_duration": 619166,
+      "wall_seconds": 35.48
+    }
+  },
+  "review_status": "pending",
+  "id": "v-d07bdd00a7-reading",
+  "kind": "reading",
+  "stem": "今回の失敗を【契機】に、経営方針を見直した。",
+  "options": [
+    "けいぎ",
+    "けっき",
+    "けいき",
+    "かいき"
+  ],
+  "answer_index": 2,
+  "translation_zh": "以此次失败为契机，重新审视了经营方针。",
+  "explanation_zh": "「契機」在底库中所列读音为「けいき」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「けいき」不一致。",
+    "与底库所列读音「けいき」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「けいき」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

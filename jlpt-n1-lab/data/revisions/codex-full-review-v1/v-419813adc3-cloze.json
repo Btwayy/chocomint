@@ -1,0 +1,49 @@
+{
+  "target_id": "v-419813adc3",
+  "target_label": "意向",
+  "level": "N1",
+  "focus_zh": "本人或组织的意愿",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "419813adc3",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:35:45.349715Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-419813adc3-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:35:45.349715Z",
+      "done_reason": "stop",
+      "eval_count": 281,
+      "eval_duration": 25771114000,
+      "prompt_eval_count": 520,
+      "prompt_eval_duration": 4876239000,
+      "load_duration": 684209,
+      "wall_seconds": 30.69
+    }
+  },
+  "review_status": "pending",
+  "stem": "顧客が契約を結ぶ（　）があるかどうかを確認する必要がある。",
+  "options": [
+    "経緯",
+    "実態",
+    "意向",
+    "根拠"
+  ],
+  "answer_index": 2,
+  "translation_zh": "有必要确认客户是否有缔结合同的意愿。",
+  "explanation_zh": "本句需表达“意愿”，仅「意向」符合语境。「経緯」指经过，「根拠」指依据，「実態」指实情，均不表示主观愿望。",
+  "option_explanations_zh": [
+    "「経緯」指事情的前后经过，不能用于表达缔结合同的意愿。",
+    "「実態」指事物的真实状况，无法体现客户主观想签约的意图。",
+    "「意向」指本人的想法或愿望，与后文「～がある」搭配自然成立。",
+    "「根拠」指判断的依据或理由，此处并非询问是否有依据。"
+  ],
+  "id": "v-419813adc3-cloze",
+  "kind": "vocabulary"
+}

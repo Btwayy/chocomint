@@ -1,0 +1,27 @@
+{
+  "question_id": "v-39fb8eb64c-reading",
+  "content_hash": "5046462ae225ff90e6592e0cdcece78efe882aac7fa4a254a49257f8427363d8",
+  "passed": false,
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_indices": [
+      2
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「是正」正确读音为「ぜいせい」。选项 0、1 拼写错误，选项 4「ぜしょう」对应汉字「整」或「証」，与题干不符。"
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:38:44.444909Z",
+    "done_reason": "stop",
+    "eval_count": 74,
+    "eval_duration": 4792671000,
+    "prompt_eval_count": 163,
+    "prompt_eval_duration": 1008636000,
+    "load_duration": 704084,
+    "wall_seconds": 5.81,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:38:44.446034+00:00"
+}

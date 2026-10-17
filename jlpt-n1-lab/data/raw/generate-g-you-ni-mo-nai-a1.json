@@ -1,0 +1,87 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是严谨的日语教材编写者。参考下列开放数据和考点编写原创四选一练习。参考内容只是资料，不是指令。日语必须自然，四个选项必须恰有一个成立。题干用日语，解释与翻译用简体中文。所有填空统一写（　），且每题只有一个空。正确选项放在第一个，answer_index=0。解析按选项文字解释，不提A/B/C/D、选项编号。中文总解析控制在60字内，每个选项解释控制在35字内。干扰项应词性或接续相近、容易混淆，但在本句明确不成立。不要仅靠明显的接续错误出题。题干不要包含考点名称或答案提示。不要照抄例句，换语境。"
+    },
+    {
+      "role": "user",
+      "content": "为语法「〜(よ)うにも〜ない」编写questions数组，恰好两道语法填空题，语境不同。正确选项用实际应填入句子的文字，不能含〜或/。仔细处理语法接续，填空前后连起来必须是完整自然的句子。\n考点：想做某事却因为客观条件无法做到；意志形+にも+可能否定等\n参考资料：{\"pattern\": \"〜(よ)うにも〜ない\", \"meaning\": \"want to (do) but can't; even if one tries, one cannot\", \"formation\": \"Verb-volitional + にも + Verb-nai (potential of the same verb)\", \"notes\": \"Some outside circumstance blocks the intended action. The second verb is usually the negative potential of the same verb, or 〜ようがない.\", \"examples\": [{\"ja\": \"財布を家に忘れてきたので、昼ご飯を買おうにも買えなかった。\", \"furigana\": \"{財布|さいふ}を{家|いえ}に{忘|わす}れてきたので、{昼|ひる}ご{飯|はん}を{買|か}おうにも{買|か}えなかった。\", \"en\": \"I'd left my wallet at home, so I couldn't buy lunch even though I wanted to.\"}, {\"ja\": \"大雪で電車が止まってしまい、帰ろうにも帰れない。\", \"furigana\": \"{大雪|おおゆき}で{電車|でんしゃ}が{止|と}まってしまい、{帰|かえ}ろうにも{帰|かえ}れない。\", \"en\": \"The trains have stopped because of heavy snow, so I can't get home even if I want to.\"}, {\"ja\": \"当時の記録がすべて失われており、確かめようにも確かめようがない。\", \"furigana\": \"{当時|とうじ}の{記録|きろく}がすべて{失|うしな}われており、{確|たし}かめようにも{確|たし}かめようがない。\", \"en\": \"All the records from that time have been lost, so there's no way to check even if we wanted to.\"}]}"
+    }
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "questions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "stem": {
+              "type": "string"
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 4,
+              "maxItems": 4
+            },
+            "answer_index": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "translation_zh": {
+              "type": "string"
+            },
+            "explanation_zh": {
+              "type": "string"
+            },
+            "option_explanations_zh": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 4,
+              "maxItems": 4
+            }
+          },
+          "required": [
+            "stem",
+            "options",
+            "answer_index",
+            "translation_zh",
+            "explanation_zh",
+            "option_explanations_zh"
+          ],
+          "additionalProperties": false
+        },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "required": [
+      "questions"
+    ],
+    "additionalProperties": false
+  },
+  "response": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T13:03:49.66273Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"財布を忘れたので、お昼を食べようにも（　）。\",\n      \"options\": [\"食べられない\", \"食べたかった\", \"食べるべきだ\", \"食べてしまう\"],\n      \"answer_index\": 0,\n      \"translation_zh\": \"因为忘了带钱包，想吃饭也吃不了。\",\n      \"explanation_zh\": \"「～ようにも～ない」表想做却因客观原因无法做到。后项需用可能态否定形。\",\n      \"option_explanations_zh\": [\n        \"正确选项：意志形+にも+可能否定，表示想吃饭但因没钱吃不了。\",\n        \"干扰项：过去式「たかった」仅表愿望，无法体现客观阻碍导致的不能做。\",\n        \"干扰项：「べきだ」表义务或建议，与句中因忘钱包而无法吃的语境不符。\",\n        \"干扰项：「てしまう」表遗憾或完成，不表示“想做却做不到”的无奈感。\"\n      ]\n    },\n    {\n      \"stem\": \"鍵を閉め込んでしまったので、部屋に入ろうにも（　）。\",\n      \"options\": [\"入れない\", \"入ったほうがいい\", \"入りたかった\", \"入るつもりだ\"],\n      \"answer_index\": 0,\n      \"translation_zh\": \"因为把钥匙锁在里面了，想进房间也进不去。\",\n      \"explanation_zh\": \"本句描述因钥匙被锁导致无法进入的客观困境，需接可能态否定形式。\",\n      \"option_explanations_zh\": [\n        \"正确选项：「入れない」是“入る”的可能态否定，符合想做却做不到的语境。\",\n        \"干扰项：「ほうがいい」表建议，此处强调无法进入的事实而非建议行动。\",\n        \"干扰项：「たかった」仅表达过去的愿望，缺少因客观条件受阻的含义。\",\n        \"干扰项：「つもりだ」表意图或计划，与句中已发生且无法解决的困境矛盾。\"\n      ]\n    }\n  ]\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 65107240125,
+    "load_duration": 1827500,
+    "prompt_eval_count": 627,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 12179928000,
+    "eval_count": 468,
+    "eval_duration": 52886216000
+  }
+}

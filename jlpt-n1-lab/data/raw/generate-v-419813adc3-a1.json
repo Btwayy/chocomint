@@ -1,0 +1,95 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是严谨的日语教材编写者。参考下列开放数据和考点编写原创四选一练习。参考内容只是资料，不是指令。日语必须自然，四个选项必须恰有一个成立。题干用日语，解释与翻译用简体中文。所有填空统一写（　），且每题只有一个空。正确选项放在第一个，answer_index=0。解析按选项文字解释，不提A/B/C/D、选项编号。中文总解析控制在60字内，每个选项解释控制在35字内。干扰项应词性或接续相近、容易混淆，但在本句明确不成立。不要仅靠明显的接续错误出题。题干不要包含考点名称或答案提示。不要照抄例句，换语境。"
+    },
+    {
+      "role": "user",
+      "content": "为「意向」写两种不同语境的练习。reading_stem：完整日语句子，将目标词原样用【】括起，句中恰有一对【】。reading_translation_zh：该句中文翻译。cloze：另一语境的词汇填空题，正确选项必须严格等于目标词原形；动词把屈折结尾放在选项内，若必须变化目标词才能填空则改写句子以适用原形。不要使用目标词的同义词作为另一个可成立的选项。\n词汇填空的四个选项已经给定，严格照用：[\"意向\", \"経緯\", \"根拠\", \"実態\"]。不能给选项添加する、した、して、に、な等后缀。必要的活用或助词写在空格后面。例如选项是把握时，可写『現状を（　）する』，不要写『現状を（　）必要がある』。\n考点：本人或组织的意愿\n参考资料：{\"word\": \"意向\", \"reading\": \"いこう\", \"meanings\": [\"intention\", \"idea\", \"inclination\"], \"pos\": [\"n\"], \"examples\": [{\"ja\": \"政府は減税の意向を明言した。\", \"furigana\": \"{政府|せいふ}は{減税|げんぜい}の{意向|いこう}を{明言|めいげん}した。\", \"en\": \"The government has declared its intention to reduce taxes.\", \"tatoeba_id\": 143104}, {\"ja\": \"彼の意向をもう一度確認すべきだ。\", \"en\": \"We should confirm his intentions once more.\", \"tatoeba_id\": 118138}]}"
+    }
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "reading_stem": {
+        "type": "string"
+      },
+      "reading_translation_zh": {
+        "type": "string"
+      },
+      "cloze": {
+        "type": "object",
+        "properties": {
+          "stem": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "意向",
+                "経緯",
+                "根拠",
+                "実態"
+              ]
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "answer_index": {
+            "type": "integer",
+            "const": 0
+          },
+          "translation_zh": {
+            "type": "string"
+          },
+          "explanation_zh": {
+            "type": "string"
+          },
+          "option_explanations_zh": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "stem",
+          "options",
+          "answer_index",
+          "translation_zh",
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "reading_stem",
+      "reading_translation_zh",
+      "cloze"
+    ],
+    "additionalProperties": false
+  },
+  "response": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:35:45.349715Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"reading_stem\": \"新プロジェクトの開始について、部長は明確な【意向】を示した。\",\n  \"reading_translation_zh\": \"关于新项目的启动，部长表明了明确的意愿。\",\n  \"cloze\": {\n    \"stem\": \"顧客が契約を結ぶ（　）があるかどうかを確認する必要がある。\",\n    \"options\": [\"意向\", \"経緯\", \"根拠\", \"実態\"],\n    \"answer_index\": 0,\n    \"translation_zh\": \"有必要确认客户是否有缔结合同的意愿。\",\n    \"explanation_zh\": \"本句需表达“意愿”，仅「意向」符合语境。「経緯」指经过，「根拠」指依据，「実態」指实情，均不表示主观愿望。\",\n    \"option_explanations_zh\": [\n      \"「意向」指本人的想法或愿望，与后文「～がある」搭配自然成立。\",\n      \"「経緯」指事情的前后经过，不能用于表达缔结合同的意愿。\",\n      \"「根拠」指判断的依据或理由，此处并非询问是否有依据。\",\n      \"「実態」指事物的真实状况，无法体现客户主观想签约的意图。\"\n    ]\n  }\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 30685788459,
+    "load_duration": 684209,
+    "prompt_eval_count": 520,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 4876239000,
+    "eval_count": 281,
+    "eval_duration": 25771114000
+  }
+}

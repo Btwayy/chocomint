@@ -1,0 +1,31 @@
+{
+  "question_id": "v-d5de1db218-cloze",
+  "content_hash": "577d583a1ef3557bc977dc90b81ed30077e7b608941544dd4b082512947b94ff",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "補足"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「説明が不十分」の文脈では、不足している部分を埋める「補足」が自然。「補償」「委託」「排除」は意味が不適切。",
+    "acceptable_indices": [
+      3
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:56:10.455437Z",
+    "done_reason": "stop",
+    "eval_count": 59,
+    "eval_duration": 3590592000,
+    "prompt_eval_count": 183,
+    "prompt_eval_duration": 1201414000,
+    "load_duration": 657042,
+    "wall_seconds": 4.8,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:56:10.456555+00:00"
+}

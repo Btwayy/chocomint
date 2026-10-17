@@ -1,0 +1,49 @@
+{
+  "target_id": "g-o-mono-tomo-sezu",
+  "target_label": "〜をものともせず",
+  "level": "N1",
+  "focus_zh": "面对不利条件毫不畏惧、克服困难去做某事",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "o-mono-tomo-sezu",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T13:06:56.479552Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-o-mono-tomo-sezu-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T13:06:56.479552Z",
+      "done_reason": "stop",
+      "eval_count": 456,
+      "eval_duration": 45415881000,
+      "prompt_eval_count": 628,
+      "prompt_eval_duration": 10513478000,
+      "load_duration": 675833,
+      "wall_seconds": 55.99
+    }
+  },
+  "review_status": "pending",
+  "stem": "彼は周囲の批判を（　）、新しい事業に挑戦した。",
+  "options": [
+    "もののせいで",
+    "ものをし",
+    "ものともせず",
+    "ものとして"
+  ],
+  "answer_index": 2,
+  "translation_zh": "他毫不理会周围的批评，挑战了新事业。",
+  "explanation_zh": "「をものともせず」形容无视阻碍勇往直前。「ものをし」无此用法。「ものとして」表身份或条件。「もののせいで」表负面原因，不合语境。",
+  "option_explanations_zh": [
+    "option_explanations_zh_2nd_question_part2",
+    "接续错误，「をものともせず」是固定搭配，此形不成立。意为“作为……",
+    "正确选项，表示无视批评这一障碍去挑战新事业。",
+    "无法表达无视困难继续行动的含义。表原因，暗示因批评而失败或受阻，与句意相反。"
+  ],
+  "id": "g-o-mono-tomo-sezu-2",
+  "kind": "grammar"
+}

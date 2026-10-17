@@ -1,0 +1,31 @@
+{
+  "question_id": "v-cb43087881-cloze",
+  "content_hash": "84d48cbf49003cbe334c85e242cacd753601f1ed5cdb40b129c7fd6f00bf6ec7",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "損なう"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「生活費を工面して家計を損なう」意为即使努力筹措生活费，仍无法避免损害家庭财务（如储蓄减少或负债），逻辑通顺。其他选项语义不符或不自然。",
+    "acceptable_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:56:00.450098Z",
+    "done_reason": "stop",
+    "eval_count": 68,
+    "eval_duration": 4410273000,
+    "prompt_eval_count": 189,
+    "prompt_eval_duration": 1354786000,
+    "load_duration": 678917,
+    "wall_seconds": 5.77,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:56:00.451049+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "target_id": "v-241f51574c",
+  "target_label": "著しい",
+  "level": "N1",
+  "focus_zh": "变化或差异显著",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "241f51574c",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:42:53.880522Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-241f51574c-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:42:53.880522Z",
+      "done_reason": "stop",
+      "eval_count": 215,
+      "eval_duration": 21258738000,
+      "prompt_eval_count": 541,
+      "prompt_eval_duration": 7462093000,
+      "load_duration": 615500,
+      "wall_seconds": 28.79
+    }
+  },
+  "review_status": "pending",
+  "stem": "利用者が一日数人から千人以上へ増え、施設は深刻な混雑に悩まされている。その増加は（　）。",
+  "options": [
+    "乏しい",
+    "著しい",
+    "たやすい",
+    "好ましい"
+  ],
+  "answer_index": 1,
+  "translation_zh": "使用人数从每天几人增加到上千人，设施深受严重拥挤之苦，增幅十分显著。",
+  "explanation_zh": "人数大幅增加对应「著しい」。句末直接用形容词原形；严重拥挤也排除了表示理想、可喜的「好ましい」。",
+  "option_explanations_zh": [
+    "「乏しい」表示缺乏、很少，与数人增至千人的幅度矛盾。",
+    "「著しい」表示变化显著，符合人数大幅增加的事实。",
+    "「たやすい」表示容易，不能用来形容这里增幅的大小。",
+    "「好ましい」表示理想、可喜，与深受严重拥挤之苦的评价不符。"
+  ],
+  "id": "v-241f51574c-cloze",
+  "kind": "vocabulary",
+  "editorial_revision": {
+    "revision_id": "pilot-six-v1",
+    "actor": "Codex 主代理",
+    "created_at": "2026-10-17T13:02:04.334577+00:00",
+    "original_content_hash": "f088d3dbc18bf90cdae1712968728d4dab6b6f0c7bbd68cdfe49ddcb6389a691",
+    "archive_file": "data/revisions/v-241f51574c-cloze-before-pilot-six-v1.json",
+    "reason_zh": "修复明确的接续、助词、活用或填空未考查目标语法问题。修订不等于用户人工审核。"
+  }
+}

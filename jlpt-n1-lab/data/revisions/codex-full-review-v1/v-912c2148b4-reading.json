@@ -1,0 +1,50 @@
+{
+  "target_id": "v-912c2148b4",
+  "target_label": "模索",
+  "level": "N1",
+  "focus_zh": "摸索尚不明确的方法",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "912c2148b4",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:29:59.023161Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-912c2148b4-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:29:59.023161Z",
+      "done_reason": "stop",
+      "eval_count": 281,
+      "eval_duration": 23621418000,
+      "prompt_eval_count": 441,
+      "prompt_eval_duration": 3686461000,
+      "load_duration": 702042,
+      "wall_seconds": 32.21
+    }
+  },
+  "review_status": "pending",
+  "id": "v-912c2148b4-reading",
+  "kind": "reading",
+  "stem": "新しい市場戦略を【模索】する中で、数多くの試行錯誤を重ねた。",
+  "options": [
+    "もさく",
+    "もざく",
+    "ぼさく",
+    "もしゃく"
+  ],
+  "answer_index": 0,
+  "translation_zh": "在摸索新的市场战略过程中，我们进行了无数次的尝试与错误。",
+  "explanation_zh": "「模索」在底库中所列读音为「もさく」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音一致。",
+    "与底库所列读音「もさく」不一致。",
+    "与底库所列读音「もさく」不一致。",
+    "与底库所列读音「もさく」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

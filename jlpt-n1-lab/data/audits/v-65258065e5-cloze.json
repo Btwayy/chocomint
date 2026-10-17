@@ -1,0 +1,27 @@
+{
+  "question_id": "v-65258065e5-cloze",
+  "content_hash": "97944735df4e1c920ee6017c0644b1ace900cb5421642abb7415385e4871d4b3",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "「～に委託する」虽语法成立，但语境中“经验丰富的担当者”通常指内部人员而非外部委托对象；且“経験豊富な担当者へ（）する",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:53:55.392602Z",
+    "done_reason": "stop",
+    "eval_count": 57,
+    "eval_duration": 3622384000,
+    "prompt_eval_count": 184,
+    "prompt_eval_duration": 1331664000,
+    "load_duration": 618791,
+    "wall_seconds": 4.96,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:53:55.393506+00:00"
+}

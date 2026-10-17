@@ -1,0 +1,49 @@
+{
+  "target_id": "v-5e7cd7436c",
+  "target_label": "見通し",
+  "level": "N1",
+  "focus_zh": "对将来发展的预测或前景",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "5e7cd7436c",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:50:35.346324Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-5e7cd7436c-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:50:35.346324Z",
+      "done_reason": "stop",
+      "eval_count": 256,
+      "eval_duration": 23860643000,
+      "prompt_eval_count": 548,
+      "prompt_eval_duration": 7526672000,
+      "load_duration": 745917,
+      "wall_seconds": 31.44
+    }
+  },
+  "review_status": "pending",
+  "stem": "今後の経済情勢について、専門家の（　）が示された。",
+  "options": [
+    "見通し",
+    "経緯",
+    "根拠",
+    "合意"
+  ],
+  "answer_index": 0,
+  "translation_zh": "关于今后的经济形势，专家提出了预测。",
+  "explanation_zh": "此处指对未来的预测前景。\n見通し：符合语境，表示对未来发展的预测或展望。\n根拠：指事实依据，不直接表达未来趋势的预测。\n合意：指双方达成一致意见，与单方面预测不符。\n経緯：指事情经过的过程，不涉及未来展望。",
+  "option_explanations_zh": [
+    "見通し：正确选项，表示对未来的预测或前景。",
+    "経緯：指事件发展过程，不包含未来展望含义。",
+    "根拠：指支持结论的事实依据，非预测本身。",
+    "合意：指达成共识，不适用于专家单方面预测。"
+  ],
+  "id": "v-5e7cd7436c-cloze",
+  "kind": "vocabulary"
+}

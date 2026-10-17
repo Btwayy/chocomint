@@ -1,0 +1,49 @@
+{
+  "target_id": "v-4fe941663c",
+  "target_label": "打開",
+  "level": "N1",
+  "focus_zh": "打开僵局、寻求突破",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "4fe941663c",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:30:22.105386Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-4fe941663c-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:30:22.105386Z",
+      "done_reason": "stop",
+      "eval_count": 215,
+      "eval_duration": 18666399000,
+      "prompt_eval_count": 472,
+      "prompt_eval_duration": 4343628000,
+      "load_duration": 678416,
+      "wall_seconds": 23.07
+    }
+  },
+  "review_status": "pending",
+  "stem": "現状を（　）する",
+  "options": [
+    "委託",
+    "打開",
+    "抑制",
+    "認識"
+  ],
+  "answer_index": 1,
+  "translation_zh": "需要打破现状。",
+  "explanation_zh": "「打開」指打破僵局，符合语境。「委託」是委托，「抑制」是压制，「認識」是认知，均不搭配「現状を」。",
+  "option_explanations_zh": [
+    "「委託」意为委托他人办理，不能用于描述改变现状的动作。",
+    "「打開」意为打破僵局，与「現状を」搭配表示寻求突破。",
+    "「抑制」意为压制或控制，与打破僵局的语境相反。",
+    "「認識」意为认知或理解，无法表达主动改变局面的含义。"
+  ],
+  "id": "v-4fe941663c-cloze",
+  "kind": "vocabulary"
+}

@@ -1,0 +1,49 @@
+{
+  "target_id": "v-0484e1a526",
+  "target_label": "抑制",
+  "level": "N1",
+  "focus_zh": "抑制增长、冲动或活动",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "0484e1a526",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:28:55.591496Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-0484e1a526-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:28:55.591496Z",
+      "done_reason": "stop",
+      "eval_count": 205,
+      "eval_duration": 16905476999,
+      "prompt_eval_count": 531,
+      "prompt_eval_duration": 4625970000,
+      "load_duration": 843417,
+      "wall_seconds": 26.31
+    }
+  },
+  "review_status": "pending",
+  "stem": "政府はインフレの（　）に尽力している。",
+  "options": [
+    "補足",
+    "促進",
+    "抑制",
+    "委託"
+  ],
+  "answer_index": 2,
+  "translation_zh": "政府正致力于抑制通货膨胀。",
+  "explanation_zh": "句意为控制通胀，需选“抑制”。“促进”相反，“委托”与“补充”语义不符。",
+  "option_explanations_zh": [
+    "補足：意为补充不足，不能用于描述对增长的遏制。",
+    "促進：意为推动发展，与控制通胀的语意完全相反。",
+    "抑制：表示压制或控制增长、冲动等，符合语境。",
+    "委託：指将事务托付他人，无法搭配经济现象的控制。"
+  ],
+  "id": "v-0484e1a526-cloze",
+  "kind": "vocabulary"
+}

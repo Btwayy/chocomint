@@ -1,0 +1,31 @@
+{
+  "question_id": "v-128e858d57-cloze",
+  "content_hash": "2a98c08842bd943759d50e038dedcc1a43f246d74b58b7d0489952c68d235bec",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "把握"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「市場動向を把握する」为固定搭配，意为掌握市场动向。「補足」「配慮」「排除」与「市場動向」搭配均不自然或语义不通。",
+    "acceptable_indices": [
+      3
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:52:21.025147Z",
+    "done_reason": "stop",
+    "eval_count": 60,
+    "eval_duration": 3966412000,
+    "prompt_eval_count": 178,
+    "prompt_eval_duration": 128146999,
+    "load_duration": 587000,
+    "wall_seconds": 9.06,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:52:21.026268+00:00"
+}

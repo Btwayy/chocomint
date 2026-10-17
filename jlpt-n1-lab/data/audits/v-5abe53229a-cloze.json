@@ -1,0 +1,27 @@
+{
+  "question_id": "v-5abe53229a-cloze",
+  "content_hash": "8f5eaff82ee8229e2c7f24616280287001f81ea963b22f37a5f07e7e2e624ef8",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "题干意为“聚集了参加环保活动的志愿者”。选项“携わる”需接“を”，此处缺宾语助词；“賄う”（包办）、“凌ぐ”（超越）、“阻む”（阻碍）均与语境逻辑不符，故无正确选项。",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:53:33.461071Z",
+    "done_reason": "stop",
+    "eval_count": 80,
+    "eval_duration": 5204094000,
+    "prompt_eval_count": 185,
+    "prompt_eval_duration": 1299824000,
+    "load_duration": 720917,
+    "wall_seconds": 6.51,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:53:33.462086+00:00"
+}

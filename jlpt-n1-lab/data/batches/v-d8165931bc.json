@@ -1,0 +1,81 @@
+{
+  "target_id": "v-d8165931bc",
+  "questions": [
+    {
+      "target_id": "v-d8165931bc",
+      "target_label": "頻繁",
+      "level": "N1",
+      "focus_zh": "频繁",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "d8165931bc",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.657294+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-d8165931bc-reading",
+      "kind": "reading",
+      "stem": "この時間帯は列車が【頻繁】に来るので、長く待つ必要はない。",
+      "options": [
+        "ひんばん",
+        "びんぱん",
+        "ひばん",
+        "ひんぱん"
+      ],
+      "answer_index": 3,
+      "translation_zh": "这个时段列车来得很频繁，无需久等。",
+      "explanation_zh": "「頻繁」本题读「ひんぱん」，句中表示频繁。",
+      "option_explanations_zh": [
+        "不是本题标记词的正确读音；这里应选「ひんぱん」。",
+        "不是本题标记词的正确读音；这里应选「ひんぱん」。",
+        "不是本题标记词的正确读音；这里应选「ひんぱん」。",
+        "正确：本题标记词读「ひんぱん」。"
+      ]
+    },
+    {
+      "target_id": "v-d8165931bc",
+      "target_label": "頻繁",
+      "level": "N1",
+      "focus_zh": "频繁",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "d8165931bc",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.657290+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-d8165931bc-cloze",
+      "kind": "vocabulary",
+      "stem": "この時間帯は列車が（　）に来るので、長く待つ必要はない。",
+      "options": [
+        "頻繁",
+        "頑丈",
+        "質素",
+        "寛容"
+      ],
+      "answer_index": 0,
+      "translation_zh": "这个时段列车来得很频繁，无需久等。",
+      "explanation_zh": "反复发生且次数多，用「頻繁に」。",
+      "option_explanations_zh": [
+        "反复发生且次数多，用「頻繁に」。",
+        "「頑丈」表示结实、牢固；不符合本题已经限定的句意或接续。",
+        "「質素」表示朴素、节俭；不符合本题已经限定的句意或接续。",
+        "「寛容」表示宽容；不符合本题已经限定的句意或接续。"
+      ]
+    }
+  ]
+}

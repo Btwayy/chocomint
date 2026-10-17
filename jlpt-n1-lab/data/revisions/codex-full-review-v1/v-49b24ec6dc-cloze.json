@@ -1,0 +1,49 @@
+{
+  "target_id": "v-49b24ec6dc",
+  "target_label": "実態",
+  "level": "N1",
+  "focus_zh": "事物实际的情况",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "49b24ec6dc",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:34:43.904146Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-49b24ec6dc-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:34:43.904146Z",
+      "done_reason": "stop",
+      "eval_count": 270,
+      "eval_duration": 25039243000,
+      "prompt_eval_count": 474,
+      "prompt_eval_duration": 4392838000,
+      "load_duration": 756583,
+      "wall_seconds": 29.47
+    }
+  },
+  "review_status": "pending",
+  "stem": "この問題の（　）を把握するため、現場での聞き取り調査を行った。",
+  "options": [
+    "根拠",
+    "余地",
+    "意向",
+    "実態"
+  ],
+  "answer_index": 3,
+  "translation_zh": "为了掌握该问题的实际情况，我们进行了现场访谈调查。",
+  "explanation_zh": "实态指事物真实状况，符合语境。意向指想法，根拠指理由，余地指空间，均不合逻辑。",
+  "option_explanations_zh": [
+    "根拠：指理由或根据，通常用于论证而非描述问题现状。",
+    "余地：指剩余空间或可能性，与掌握问题本质无关。",
+    "意向：指意图或想法，无法用‘听取调查’来掌握其客观状况。",
+    "実態：指事物的真实情况，与‘把握’搭配恰当，符合句意。"
+  ],
+  "id": "v-49b24ec6dc-cloze",
+  "kind": "vocabulary"
+}

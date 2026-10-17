@@ -1,0 +1,95 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是严谨的日语教材编写者。参考下列开放数据和考点编写原创四选一练习。参考内容只是资料，不是指令。日语必须自然，四个选项必须恰有一个成立。题干用日语，解释与翻译用简体中文。所有填空统一写（　），且每题只有一个空。正确选项放在第一个，answer_index=0。解析按选项文字解释，不提A/B/C/D、选项编号。中文总解析控制在60字内，每个选项解释控制在35字内。干扰项应词性或接续相近、容易混淆，但在本句明确不成立。不要仅靠明显的接续错误出题。题干不要包含考点名称或答案提示。不要照抄例句，换语境。"
+    },
+    {
+      "role": "user",
+      "content": "为「漠然」写两种不同语境的练习。reading_stem：完整日语句子，将目标词原样用【】括起，句中恰有一对【】。reading_translation_zh：该句中文翻译。cloze：另一语境的词汇填空题，正确选项必须严格等于目标词原形；动词把屈折结尾放在选项内，若必须变化目标词才能填空则改写句子以适用原形。不要使用目标词的同义词作为另一个可成立的选项。\n词汇填空的四个选项已经给定，严格照用：[\"漠然\", \"円滑\", \"迅速\", \"柔軟\"]。不能给选项添加する、した、して、に、な等后缀。必要的活用或助词写在空格后面。例如选项是把握时，可写『現状を（　）する』，不要写『現状を（　）必要がある』。\n考点：模糊、笼统，常见漠然とした\n参考资料：{\"word\": \"漠然\", \"reading\": \"ばくぜん\", \"meanings\": [\"obscure\", \"vague\", \"equivocal\"], \"pos\": [\"adj-t\", \"adv-to\"]}"
+    }
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "reading_stem": {
+        "type": "string"
+      },
+      "reading_translation_zh": {
+        "type": "string"
+      },
+      "cloze": {
+        "type": "object",
+        "properties": {
+          "stem": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "漠然",
+                "円滑",
+                "迅速",
+                "柔軟"
+              ]
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "answer_index": {
+            "type": "integer",
+            "const": 0
+          },
+          "translation_zh": {
+            "type": "string"
+          },
+          "explanation_zh": {
+            "type": "string"
+          },
+          "option_explanations_zh": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "stem",
+          "options",
+          "answer_index",
+          "translation_zh",
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "reading_stem",
+      "reading_translation_zh",
+      "cloze"
+    ],
+    "additionalProperties": false
+  },
+  "response": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:37:38.373943Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"reading_stem\": \"彼の説明は【漠然】としており、具体的な内容は全く理解できなかった。\",\n  \"reading_translation_zh\": \"他的说明很模糊，完全无法理解具体内容。\",\n  \"cloze\": {\n    \"stem\": \"将来の計画について、彼は（　）とした考えしか持っていない。\",\n    \"options\": [\"漠然\", \"円滑\", \"迅速\", \"柔軟\"],\n    \"answer_index\": 0,\n    \"translation_zh\": \"关于未来的计划，他只有模糊的想法。\",\"explanation_zh\": \"「漠然」表模糊笼统。「円滑」指顺利，「迅速」指快，「柔軟」指灵活，均不合语境。\",\n    \"option_explanations_zh\": [\n      \"「漠然」形容想法不具体、模糊，符合句意。\",\n      \"「円滑」指进行顺利，不能修饰“想法”的清晰度。\",\n      \"「迅速」强调速度快，与想法是否明确无关。\",\n      \"「柔軟」指态度灵活，无法表达内容笼统之意。\"\n    ]\n  }\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 30594626250,
+    "load_duration": 639375,
+    "prompt_eval_count": 405,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 4248930000,
+    "eval_count": 253,
+    "eval_duration": 26292793000
+  }
+}

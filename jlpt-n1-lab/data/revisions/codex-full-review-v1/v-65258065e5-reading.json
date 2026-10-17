@@ -1,0 +1,50 @@
+{
+  "target_id": "v-65258065e5",
+  "target_label": "委託",
+  "level": "N1",
+  "focus_zh": "委托他人办理事务",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "65258065e5",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:31:45.04703Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-65258065e5-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:31:45.04703Z",
+      "done_reason": "stop",
+      "eval_count": 243,
+      "eval_duration": 22762715000,
+      "prompt_eval_count": 584,
+      "prompt_eval_duration": 5946838000,
+      "load_duration": 927084,
+      "wall_seconds": 28.77
+    }
+  },
+  "review_status": "pending",
+  "id": "v-65258065e5-reading",
+  "kind": "reading",
+  "stem": "会社は新製品の販売を専門業者に【委託】することにした。",
+  "options": [
+    "いだく",
+    "いたく",
+    "えたく",
+    "いたっく"
+  ],
+  "answer_index": 1,
+  "translation_zh": "公司决定将新产品的销售委托给专业商社。",
+  "explanation_zh": "「委託」在底库中所列读音为「いたく」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「いたく」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「いたく」不一致。",
+    "与底库所列读音「いたく」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

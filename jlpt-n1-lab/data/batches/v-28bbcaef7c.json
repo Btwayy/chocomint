@@ -1,0 +1,81 @@
+{
+  "target_id": "v-28bbcaef7c",
+  "questions": [
+    {
+      "target_id": "v-28bbcaef7c",
+      "target_label": "弁償",
+      "level": "N1",
+      "focus_zh": "赔偿他人物品等损失",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "28bbcaef7c",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.662017+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-28bbcaef7c-reading",
+      "kind": "reading",
+      "stem": "借りていたカメラを壊してしまったので、自分のお金で【弁償】した。",
+      "options": [
+        "べんじょう",
+        "べんしょう",
+        "べしょう",
+        "へんしょう"
+      ],
+      "answer_index": 1,
+      "translation_zh": "弄坏了借来的相机，所以自己出钱赔偿。",
+      "explanation_zh": "「弁償」本题读「べんしょう」，句中表示赔偿他人物品等损失。",
+      "option_explanations_zh": [
+        "不是本题标记词的正确读音；这里应选「べんしょう」。",
+        "正确：本题标记词读「べんしょう」。",
+        "不是本题标记词的正确读音；这里应选「べんしょう」。",
+        "不是本题标记词的正确读音；这里应选「べんしょう」。"
+      ]
+    },
+    {
+      "target_id": "v-28bbcaef7c",
+      "target_label": "弁償",
+      "level": "N1",
+      "focus_zh": "赔偿他人物品等损失",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "28bbcaef7c",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.662013+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-28bbcaef7c-cloze",
+      "kind": "vocabulary",
+      "stem": "借りていたカメラを壊してしまったので、自分のお金で（　）した。",
+      "options": [
+        "補充",
+        "弁償",
+        "朗読",
+        "棄権"
+      ],
+      "answer_index": 1,
+      "translation_zh": "弄坏了借来的相机，所以自己出钱赔偿。",
+      "explanation_zh": "损坏他人的物品后补偿损失，选择「弁償」。",
+      "option_explanations_zh": [
+        "「補充」表示补充数量、人员等；不符合本题已经限定的句意或接续。",
+        "损坏他人的物品后补偿损失，选择「弁償」。",
+        "「朗読」表示朗读；不符合本题已经限定的句意或接续。",
+        "「棄権」表示弃权、放弃参赛或投票权；不符合本题已经限定的句意或接续。"
+      ]
+    }
+  ]
+}

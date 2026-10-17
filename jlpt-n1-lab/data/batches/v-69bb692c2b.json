@@ -1,0 +1,133 @@
+{
+  "target_id": "v-69bb692c2b",
+  "questions": [
+    {
+      "target_id": "v-69bb692c2b",
+      "target_label": "敢えて",
+      "level": "N1",
+      "focus_zh": "明知困难或风险仍特意去做",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "69bb692c2b",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:41:52.897313Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-69bb692c2b-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:41:52.897313Z",
+          "done_reason": "stop",
+          "eval_count": 239,
+          "eval_duration": 23219090000,
+          "prompt_eval_count": 528,
+          "prompt_eval_duration": 7535869000,
+          "load_duration": 606458,
+          "wall_seconds": 30.84
+        }
+      },
+      "review_status": "pending",
+      "id": "v-69bb692c2b-reading",
+      "kind": "reading",
+      "stem": "彼は【敢えて】困難な課題に挑戦した。",
+      "options": [
+        "かえて",
+        "あえて",
+        "こえて",
+        "あえって"
+      ],
+      "answer_index": 1,
+      "translation_zh": "他特意挑战了困难的课题。",
+      "explanation_zh": "逐一检查读音选项；本题「敢えて」读「あえて」，句中用于表示明知困难仍有意去做。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「あえて」。",
+        "本题正确读音「あえて」。",
+        "这不是本题标记词的正确读音；本题应选「あえて」。",
+        "这不是本题标记词的正确读音；本题应选「あえて」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.444019+00:00",
+        "original_content_hash": "35f10995da6ca360f0f526dcafa3ae70af224cab77f552b27852ae39ccd9a7f5",
+        "archive_file": "data/revisions/codex-full-review-v1/v-69bb692c2b-reading.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "逐一检查读音选项；本题「敢えて」读「あえて」，句中用于表示明知困难仍有意去做。"
+      }
+    },
+    {
+      "target_id": "v-69bb692c2b",
+      "target_label": "敢えて",
+      "level": "N1",
+      "focus_zh": "明知困难或风险仍特意去做",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "69bb692c2b",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:41:52.897313Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-69bb692c2b-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:41:52.897313Z",
+          "done_reason": "stop",
+          "eval_count": 239,
+          "eval_duration": 23219090000,
+          "prompt_eval_count": 528,
+          "prompt_eval_duration": 7535869000,
+          "load_duration": 606458,
+          "wall_seconds": 30.84
+        }
+      },
+      "review_status": "pending",
+      "stem": "反発を招くと承知していながら、彼は（　）反対意見を述べた。",
+      "options": [
+        "敢えて",
+        "決して",
+        "一概に",
+        "滅多に"
+      ],
+      "answer_index": 0,
+      "translation_zh": "明知会招致反对，他仍有意提出了反对意见。",
+      "explanation_zh": "明知会遭反对仍主动表达，用「敢えて」；现有其他选项不能在这句肯定叙述中表达该行动。",
+      "option_explanations_zh": [
+        "本题正确。明知会遭反对仍主动表达，用「敢えて」；现有其他选项不能在这句肯定叙述中表达该行动。",
+        "表示绝不，通常呼应否定；不符合本题完整句子的接续或明确语境。",
+        "表示不加区分地、笼统地；不符合本题完整句子的接续或明确语境。",
+        "表示很少，通常呼应否定；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-69bb692c2b-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.444134+00:00",
+        "original_content_hash": "077ec8cc4ed02d7ebd90c576278665bb12d3f3db5aac27f8d98bb9ac328927d2",
+        "archive_file": "data/revisions/codex-full-review-v1/v-69bb692c2b-cloze.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "明知会遭反对仍主动表达，用「敢えて」；现有其他选项不能在这句肯定叙述中表达该行动。"
+      }
+    }
+  ]
+}

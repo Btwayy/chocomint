@@ -1,0 +1,33 @@
+{
+  "question_id": "g-ni-todomarazu-1",
+  "content_hash": "0c2338c39c8c59d89374c514871b2b85351dc828c60a5c72c191686013ee0faf",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "を通じて",
+      "を越えて"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「を通じて」表示手段或范围延伸，「を越えて」表示超出原有领域，均符合句意。后两项逻辑不通。",
+    "acceptable_indices": [
+      0,
+      1
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T13:06:06.976994Z",
+    "done_reason": "stop",
+    "eval_count": 56,
+    "eval_duration": 3321749000,
+    "prompt_eval_count": 191,
+    "prompt_eval_duration": 1152996000,
+    "load_duration": 569250,
+    "wall_seconds": 4.49,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T13:06:06.978725+00:00"
+}

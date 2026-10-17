@@ -1,0 +1,50 @@
+{
+  "target_id": "v-371c591e26",
+  "target_label": "妥協",
+  "level": "N1",
+  "focus_zh": "双方让步达成妥协",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "371c591e26",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:27:35.321304Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-371c591e26-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:27:35.321304Z",
+      "done_reason": "stop",
+      "eval_count": 209,
+      "eval_duration": 17089700000,
+      "prompt_eval_count": 526,
+      "prompt_eval_duration": 4654919000,
+      "load_duration": 736458,
+      "wall_seconds": 21.79
+    }
+  },
+  "review_status": "pending",
+  "id": "v-371c591e26-reading",
+  "kind": "reading",
+  "stem": "交渉は難航したが、双方が歩み寄って【妥協】した。",
+  "options": [
+    "たきょう",
+    "だきょう",
+    "だっきょう",
+    "だきょ"
+  ],
+  "answer_index": 1,
+  "translation_zh": "谈判虽不顺利，但双方互相让步达成了妥协。",
+  "explanation_zh": "「妥協」在底库中所列读音为「だきょう」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「だきょう」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「だきょう」不一致。",
+    "与底库所列读音「だきょう」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

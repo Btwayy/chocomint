@@ -1,0 +1,49 @@
+{
+  "target_id": "v-794e0d078e",
+  "target_label": "余地",
+  "level": "N1",
+  "focus_zh": "可供讨论、改善等的余地",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "794e0d078e",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:37:07.761135Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-794e0d078e-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:37:07.761135Z",
+      "done_reason": "stop",
+      "eval_count": 244,
+      "eval_duration": 22899743000,
+      "prompt_eval_count": 544,
+      "prompt_eval_duration": 5272279000,
+      "load_duration": 677875,
+      "wall_seconds": 28.28
+    }
+  },
+  "review_status": "pending",
+  "stem": "彼の説明は論理的で、反論の（　）がまったくない。",
+  "options": [
+    "経緯",
+    "根拠",
+    "余地",
+    "措置"
+  ],
+  "answer_index": 2,
+  "translation_zh": "他的说明合乎逻辑，完全没有反驳的余地。",
+  "explanation_zh": "「余地」指可讨论或改善的空间，此处否定形式表示无可辩驳。「経緯」指经过，不合语境。「根拠」指依据，与反论搭配不当。「措置」指措施，词义不符。",
+  "option_explanations_zh": [
+    "「経緯」指事情的前后经过，无法用于否定反驳空间。",
+    "「根拠」指理由或依据，不能与反论搭配表示无空间。",
+    "「余地」表示可供反驳或改善的余量，符合句意。",
+    "「措置」指应对手段，词义与句中逻辑关系不符。"
+  ],
+  "id": "v-794e0d078e-cloze",
+  "kind": "vocabulary"
+}

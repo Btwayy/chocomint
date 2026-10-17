@@ -1,0 +1,27 @@
+{
+  "question_id": "v-16f829442e-cloze",
+  "content_hash": "703a2be3be7ba05cb5d54f371b9d5f7060d41235047b42cbeb0bc231888d225c",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "「要請」与「補足」「把握」「依存」均无法填入使句子自然成立。专业建议通常用「求める」或「受ける」，此处搭配不当且语义不通。",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:52:37.875868Z",
+    "done_reason": "stop",
+    "eval_count": 61,
+    "eval_duration": 3922161000,
+    "prompt_eval_count": 180,
+    "prompt_eval_duration": 134103000,
+    "load_duration": 636334,
+    "wall_seconds": 9.05,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:52:37.877150+00:00"
+}

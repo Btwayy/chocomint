@@ -1,0 +1,31 @@
+{
+  "question_id": "v-c5e616bbf8-cloze",
+  "content_hash": "c97180b5e322e45e6d9caa2626527065b9c1c7453ec5e6156e9048b6ca80e9f8",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "専ら"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「専ら」意为“专门、仅仅”，填入后表示他的兴趣仅限于学问，句意通顺自然。其他选项语义或语法均不契合语境。",
+    "acceptable_indices": [
+      1
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:55:54.658909Z",
+    "done_reason": "stop",
+    "eval_count": 57,
+    "eval_duration": 3474806000,
+    "prompt_eval_count": 185,
+    "prompt_eval_duration": 1139023000,
+    "load_duration": 766875,
+    "wall_seconds": 4.62,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:55:54.660005+00:00"
+}

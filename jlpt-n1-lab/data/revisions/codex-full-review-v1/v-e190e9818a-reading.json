@@ -1,0 +1,50 @@
+{
+  "target_id": "v-e190e9818a",
+  "target_label": "一律",
+  "level": "N1",
+  "focus_zh": "不作区别地统一对待",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "e190e9818a",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:40:46.604656Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-e190e9818a-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:40:46.604656Z",
+      "done_reason": "stop",
+      "eval_count": 233,
+      "eval_duration": 26918114000,
+      "prompt_eval_count": 408,
+      "prompt_eval_duration": 8403351000,
+      "load_duration": 759292,
+      "wall_seconds": 35.42
+    }
+  },
+  "review_status": "pending",
+  "id": "v-e190e9818a-reading",
+  "kind": "reading",
+  "stem": "この施設では、入場料は年齢に関係なく【一律】500円です。",
+  "options": [
+    "いちりち",
+    "いちれつ",
+    "いちりつ",
+    "いっりつ"
+  ],
+  "answer_index": 2,
+  "translation_zh": "该设施入场费不论年龄，统一为500日元。",
+  "explanation_zh": "「一律」在底库中所列读音为「いちりつ」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「いちりつ」不一致。",
+    "与底库所列读音「いちりつ」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「いちりつ」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

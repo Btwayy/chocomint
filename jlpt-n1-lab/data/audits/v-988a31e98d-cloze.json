@@ -1,0 +1,27 @@
+{
+  "question_id": "v-988a31e98d-cloze",
+  "content_hash": "c5cbc37c5774bfa41011f1383da5ef5ed64a65e3f75a4a59334c68318796ed36",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "「～とした考え」搭配不当，应为「～という考え」。且“只有模糊的想法”符合语境，“迅速、円滑、柔軟”填入后语义不通或逻辑矛盾。",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:55:10.059817Z",
+    "done_reason": "stop",
+    "eval_count": 58,
+    "eval_duration": 3782819000,
+    "prompt_eval_count": 184,
+    "prompt_eval_duration": 1292528000,
+    "load_duration": 605209,
+    "wall_seconds": 5.08,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:55:10.061153+00:00"
+}

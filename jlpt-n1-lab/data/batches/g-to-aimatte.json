@@ -1,0 +1,135 @@
+{
+  "target_id": "g-to-aimatte",
+  "questions": [
+    {
+      "target_id": "g-to-aimatte",
+      "target_label": "〜と相まって",
+      "level": "N1",
+      "focus_zh": "两个因素相互作用，共同产生结果",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "to-aimatte",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:57:50.049171Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-g-to-aimatte-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:57:50.049171Z",
+          "done_reason": "stop",
+          "eval_count": 465,
+          "eval_duration": 53176313000,
+          "prompt_eval_count": 686,
+          "prompt_eval_duration": 10236750000,
+          "load_duration": 593791,
+          "wall_seconds": 63.47
+        }
+      },
+      "review_status": "pending",
+      "stem": "この製品の使いやすさは、洗練されたデザインと（　）、高い評価につながっている。",
+      "options": [
+        "反して",
+        "相まって",
+        "異なって",
+        "引き換えに"
+      ],
+      "answer_index": 1,
+      "translation_zh": "这款产品的易用性与精美设计共同作用，使其获得了很高评价。",
+      "explanation_zh": "「AはBと相まって」表示两个因素共同产生结果；不是单纯说明不同、交换或反对。",
+      "option_explanations_zh": [
+        "「反して」通常与「に」连接，此处「と反して」接续不合。",
+        "易用性与设计共同促成好评。",
+        "表示与设计不同，本句没有可据以判断差异的比较标准。",
+        "「と引き換えに」表示交换代价，易用性与设计不是取舍交换。"
+      ],
+      "id": "g-to-aimatte-1",
+      "kind": "grammar",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.430955+00:00",
+        "original_content_hash": "4d4355c697746f100622a1dad1097d6a96a8fc88bc859290afda4529baa5abae",
+        "archive_file": "data/revisions/codex-full-review-v1/g-to-aimatte-1.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "「AはBと相まって」表示两个因素共同产生结果；不是单纯说明不同、交换或反对。"
+      }
+    },
+    {
+      "target_id": "g-to-aimatte",
+      "target_label": "〜と相まって",
+      "level": "N1",
+      "focus_zh": "两个因素相互作用，共同产生结果",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "to-aimatte",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:57:50.049171Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-g-to-aimatte-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:57:50.049171Z",
+          "done_reason": "stop",
+          "eval_count": 465,
+          "eval_duration": 53176313000,
+          "prompt_eval_count": 686,
+          "prompt_eval_duration": 10236750000,
+          "load_duration": 593791,
+          "wall_seconds": 63.47
+        }
+      },
+      "review_status": "pending",
+      "stem": "この町の温暖な気候は、豊かな自然と（　）、観光客を引きつけている。",
+      "options": [
+        "相まって",
+        "反して",
+        "異なって",
+        "引き換えに"
+      ],
+      "answer_index": 0,
+      "translation_zh": "这个城镇温暖的气候与丰富的自然环境相结合，吸引着游客。",
+      "explanation_zh": "气候与自然共同吸引游客，用「相まって」。原题的「重なって」也能表达因素叠加，不能仅凭近义差别排除，现已替换。",
+      "option_explanations_zh": [
+        "表示两方面的长处共同发挥作用。",
+        "「と反して」不合这里的接续，且不是相反关系。",
+        "气候与自然环境不是这里要比较差异的同类项目。",
+        "不表示拿气候交换自然环境。"
+      ],
+      "id": "g-to-aimatte-2",
+      "kind": "grammar",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.431059+00:00",
+        "original_content_hash": "43dbeca4941af9573384407416104469a383ab9a6a3c268b8cac7c72d0acfdbf",
+        "archive_file": "data/revisions/codex-full-review-v1/g-to-aimatte-2.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "气候与自然共同吸引游客，用「相まって」。原题的「重なって」也能表达因素叠加，不能仅凭近义差别排除，现已替换。"
+      }
+    }
+  ]
+}

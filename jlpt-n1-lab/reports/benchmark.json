@@ -1,0 +1,56 @@
+{
+  "hardware": "Apple M1 Max / 64 GiB",
+  "generation_model": "qwen3.5:27b-q4_K_M",
+  "review_model": "qwen3.5:9b-q4_K_M",
+  "settings": {
+    "think": false,
+    "num_ctx": 6144
+  },
+  "note": "耗时是在本次任务中测得，部分请求并行竞争GPU；累计耗时不等于实际经过时间。",
+  "generation": {
+    "vocabulary": {
+      "knowledge_points": 50,
+      "questions": 100,
+      "mean_seconds_per_two_questions": 32.57,
+      "median_seconds_per_two_questions": 30.79,
+      "recorded_successful_seconds": 1628.4
+    },
+    "grammar": {
+      "knowledge_points": 10,
+      "questions": 20,
+      "mean_seconds_per_two_questions": 68.93,
+      "median_seconds_per_two_questions": 64.38,
+      "recorded_successful_seconds": 689.31
+    }
+  },
+  "blind_check": {
+    "active_checks": 70,
+    "mean_seconds_per_question": 5.49,
+    "recorded_seconds": 384.39
+  },
+  "outcome": {
+    "generated": 120,
+    "by_kind": {
+      "grammar": 20,
+      "reading": 50,
+      "vocabulary": 50
+    },
+    "quality_status": {
+      "model_flagged": 20,
+      "model_screened": 43,
+      "editorial_flagged": 8,
+      "dictionary_checked": 49
+    },
+    "dictionary_checked": 50,
+    "blind_check_counts": {
+      "passed": 47,
+      "flagged": 23,
+      "not_run": 0,
+      "not_applicable": 50
+    },
+    "editorial_flags": 8,
+    "codex_revised": 6,
+    "human_approved": 0,
+    "api_spend": 0
+  }
+}

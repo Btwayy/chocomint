@@ -1,0 +1,49 @@
+{
+  "target_id": "v-bd1e5daff0",
+  "target_label": "迅速",
+  "level": "N1",
+  "focus_zh": "处理或行动迅速",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "bd1e5daff0",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:39:22.652845Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-bd1e5daff0-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:39:22.652845Z",
+      "done_reason": "stop",
+      "eval_count": 212,
+      "eval_duration": 39024197000,
+      "prompt_eval_count": 481,
+      "prompt_eval_duration": 9546056000,
+      "load_duration": 794167,
+      "wall_seconds": 48.67
+    }
+  },
+  "review_status": "pending",
+  "stem": "この緊急事態には、（　）な対応が求められます。",
+  "options": [
+    "迅速",
+    "漠然",
+    "柔軟",
+    "一律"
+  ],
+  "answer_index": 0,
+  "translation_zh": "面对这一紧急事态，需要迅速的应对。",
+  "explanation_zh": "本句强调行动快慢，“迅速”最贴切。“漠然”指冷淡；“一律”指无差别；“柔软”指灵活，均不合语境。",
+  "option_explanations_zh": [
+    "迅速：形容动作快，符合紧急应对需求。",
+    "漠然：意为冷淡或不在意，与紧急行动矛盾。",
+    "柔軟：侧重灵活变通，非强调速度之词。",
+    "一律：表示全部相同，不涉及速度快慢。"
+  ],
+  "id": "v-bd1e5daff0-cloze",
+  "kind": "vocabulary"
+}

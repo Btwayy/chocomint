@@ -1,0 +1,49 @@
+{
+  "target_id": "g-ni-todomarazu",
+  "target_label": "〜にとどまらず",
+  "level": "N1",
+  "focus_zh": "不止于某范围，进一步扩展到更大范围",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "ni-todomarazu",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T13:06:00.458595Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-ni-todomarazu-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T13:06:00.458595Z",
+      "done_reason": "stop",
+      "eval_count": 522,
+      "eval_duration": 56062776000,
+      "prompt_eval_count": 643,
+      "prompt_eval_duration": 10975443000,
+      "load_duration": 593958,
+      "wall_seconds": 67.09
+    }
+  },
+  "review_status": "pending",
+  "stem": "この新技術は医療分野（　）、農業や建築業界でも活用が期待されている。",
+  "options": [
+    "を通じて",
+    "を越えて",
+    "に限らず",
+    "にとどまらず"
+  ],
+  "answer_index": 3,
+  "translation_zh": "这项新技术不仅限于医疗领域，在农业和建筑业界也被期待得到应用。",
+  "explanation_zh": "「にとどまらず」强调范围扩展至更大领域，符合语境。「に限らず」虽意近但语气较弱；「を越えて」多指跨越界限而非范围延伸；「を通じて」意为“通过”，逻辑不符。",
+  "option_explanations_zh": [
+    "干扰项：意为“通过……途径”，与后文扩展范围的逻辑不符。",
+    "干扰项：多指跨越物理或抽象界限，此处侧重范围扩大而非跨越。",
+    "干扰项：虽表“不仅限于”，但强调程度不如本考点强烈，语感稍弱。",
+    "正确选项：表示不限于某范围而扩展至更广领域，接续名词自然。"
+  ],
+  "id": "g-ni-todomarazu-1",
+  "kind": "grammar"
+}

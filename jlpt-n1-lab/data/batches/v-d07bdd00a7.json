@@ -1,0 +1,130 @@
+{
+  "target_id": "v-d07bdd00a7",
+  "questions": [
+    {
+      "target_id": "v-d07bdd00a7",
+      "target_label": "契機",
+      "level": "N1",
+      "focus_zh": "促使变化发生的契机",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "d07bdd00a7",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:44:30.138Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-d07bdd00a7-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:44:30.138Z",
+          "done_reason": "stop",
+          "eval_count": 274,
+          "eval_duration": 29303683000,
+          "prompt_eval_count": 529,
+          "prompt_eval_duration": 6102744000,
+          "load_duration": 619166,
+          "wall_seconds": 35.48
+        }
+      },
+      "review_status": "pending",
+      "id": "v-d07bdd00a7-reading",
+      "kind": "reading",
+      "stem": "今回の失敗を【契機】に、経営方針を見直した。",
+      "options": [
+        "けいぎ",
+        "けっき",
+        "けいき",
+        "かいき"
+      ],
+      "answer_index": 2,
+      "translation_zh": "以此次失败为契机，重新审视了经营方针。",
+      "explanation_zh": "逐一检查读音选项；本题「契機」读「けいき」，句中用于表示促成变化的契机。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「けいき」。",
+        "这不是本题标记词的正确读音；本题应选「けいき」。",
+        "本题正确读音「けいき」。",
+        "这不是本题标记词的正确读音；本题应选「けいき」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.455598+00:00",
+        "original_content_hash": "05eff2abe13d39986f6a4b73f273a5c8df760b15c77518c9028c01736707e5e2",
+        "archive_file": "data/revisions/codex-full-review-v1/v-d07bdd00a7-reading.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "逐一检查读音选项；本题「契機」读「けいき」，句中用于表示促成变化的契机。"
+      }
+    },
+    {
+      "target_id": "v-d07bdd00a7",
+      "target_label": "契機",
+      "level": "N1",
+      "focus_zh": "促使变化发生的契机",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "d07bdd00a7",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:44:30.138Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-d07bdd00a7-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:44:30.138Z",
+          "done_reason": "stop",
+          "eval_count": 274,
+          "eval_duration": 29303683000,
+          "prompt_eval_count": 529,
+          "prompt_eval_duration": 6102744000,
+          "load_duration": 619166,
+          "wall_seconds": 35.48
+        }
+      },
+      "review_status": "pending",
+      "stem": "この出来事は、彼が人生を変える大きな（　）になった。",
+      "options": [
+        "根拠",
+        "余地",
+        "実態",
+        "契機"
+      ],
+      "answer_index": 3,
+      "translation_zh": "这件事成为了他改变人生的重大契机。",
+      "explanation_zh": "这件事触发人生改变，选择表示转折诱因的「契機」。",
+      "option_explanations_zh": [
+        "表示依据、根据；不符合本题完整句子的接续或明确语境。",
+        "表示剩余空间、可能性；不符合本题完整句子的接续或明确语境。",
+        "表示真实情况；不符合本题完整句子的接续或明确语境。",
+        "本题正确。这件事触发人生改变，选择表示转折诱因的「契機」。"
+      ],
+      "id": "v-d07bdd00a7-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.455711+00:00",
+        "original_content_hash": "3023ac64578c721693701247914f8951b1f3a38eaafed8c8dfefeeaaa39cb4cf",
+        "archive_file": "data/revisions/codex-full-review-v1/v-d07bdd00a7-cloze.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "这件事触发人生改变，选择表示转折诱因的「契機」。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "target_id": "v-a5e340a2e7",
+  "questions": [
+    {
+      "target_id": "v-a5e340a2e7",
+      "target_label": "至って",
+      "level": "N1",
+      "focus_zh": "极其、非常",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "a5e340a2e7",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.657985+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-a5e340a2e7-reading",
+      "kind": "reading",
+      "stem": "検査の結果、体調には問題がなく、本人も【至って】元気だと言っている。",
+      "options": [
+        "いたて",
+        "いたって",
+        "いだって",
+        "いたっで"
+      ],
+      "answer_index": 1,
+      "translation_zh": "检查发现身体没有问题，本人也说自己非常健康。",
+      "explanation_zh": "「至って」本题读「いたって」，句中表示极其、非常。",
+      "option_explanations_zh": [
+        "不是本题标记词的正确读音；这里应选「いたって」。",
+        "正确：本题标记词读「いたって」。",
+        "不是本题标记词的正确读音；这里应选「いたって」。",
+        "不是本题标记词的正确读音；这里应选「いたって」。"
+      ]
+    },
+    {
+      "target_id": "v-a5e340a2e7",
+      "target_label": "至って",
+      "level": "N1",
+      "focus_zh": "极其、非常",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "a5e340a2e7",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.657981+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-a5e340a2e7-cloze",
+      "kind": "vocabulary",
+      "stem": "検査の結果、体調には問題がなく、本人も（　）元気だと言っている。",
+      "options": [
+        "一概に",
+        "至って",
+        "滅多に",
+        "決して"
+      ],
+      "answer_index": 1,
+      "translation_zh": "检查发现身体没有问题，本人也说自己非常健康。",
+      "explanation_zh": "「至って元気だ」表示十分健康；其他选项不能构成这里的肯定叙述。",
+      "option_explanations_zh": [
+        "「一概に」表示一概、不加区分地；不符合本题已经限定的句意或接续。",
+        "「至って元気だ」表示十分健康；其他选项不能构成这里的肯定叙述。",
+        "「滅多に」表示很少（通常与否定呼应）；不符合本题已经限定的句意或接续。",
+        "「決して」表示绝不（通常与否定呼应）；不符合本题已经限定的句意或接续。"
+      ]
+    }
+  ]
+}

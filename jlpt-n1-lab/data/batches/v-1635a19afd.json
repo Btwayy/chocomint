@@ -1,0 +1,81 @@
+{
+  "target_id": "v-1635a19afd",
+  "questions": [
+    {
+      "target_id": "v-1635a19afd",
+      "target_label": "紛らわしい",
+      "level": "N1",
+      "focus_zh": "容易混淆的",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "1635a19afd",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.651816+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-1635a19afd-reading",
+      "kind": "reading",
+      "stem": "二つの薬は包装がよく似ていて【紛らわしい】ので、取り違えないよう注意が必要だ。",
+      "options": [
+        "まきらわしい",
+        "まぎらばしい",
+        "まぎわらしい",
+        "まぎらわしい"
+      ],
+      "answer_index": 3,
+      "translation_zh": "两种药包装很相似，容易混淆，需要注意不要拿错。",
+      "explanation_zh": "「紛らわしい」本题读「まぎらわしい」，句中表示容易混淆的。",
+      "option_explanations_zh": [
+        "不是本题标记词的正确读音；这里应选「まぎらわしい」。",
+        "不是本题标记词的正确读音；这里应选「まぎらわしい」。",
+        "不是本题标记词的正确读音；这里应选「まぎらわしい」。",
+        "正确：本题标记词读「まぎらわしい」。"
+      ]
+    },
+    {
+      "target_id": "v-1635a19afd",
+      "target_label": "紛らわしい",
+      "level": "N1",
+      "focus_zh": "容易混淆的",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "1635a19afd",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.651809+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-1635a19afd-cloze",
+      "kind": "vocabulary",
+      "stem": "二つの薬は包装がよく似ていて（　）ので、取り違えないよう注意が必要だ。",
+      "options": [
+        "著しい",
+        "紛らわしい",
+        "好ましい",
+        "たやすい"
+      ],
+      "answer_index": 1,
+      "translation_zh": "两种药包装很相似，容易混淆，需要注意不要拿错。",
+      "explanation_zh": "相似而容易弄错，用「紛らわしい」。",
+      "option_explanations_zh": [
+        "「著しい」表示变化或差异显著；不符合本题已经限定的句意或接续。",
+        "相似而容易弄错，用「紛らわしい」。",
+        "「好ましい」表示可喜、理想；不符合本题已经限定的句意或接续。",
+        "「たやすい」表示容易；不符合本题已经限定的句意或接续。"
+      ]
+    }
+  ]
+}

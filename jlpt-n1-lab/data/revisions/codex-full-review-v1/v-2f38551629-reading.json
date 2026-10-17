@@ -1,0 +1,50 @@
+{
+  "target_id": "v-2f38551629",
+  "target_label": "一概に",
+  "level": "N1",
+  "focus_zh": "一概而论，通常与否定表达搭配",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "2f38551629",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:41:22.039464Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-2f38551629-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:41:22.039464Z",
+      "done_reason": "stop",
+      "eval_count": 280,
+      "eval_duration": 28130480000,
+      "prompt_eval_count": 439,
+      "prompt_eval_duration": 7207237000,
+      "load_duration": 984541,
+      "wall_seconds": 35.42
+    }
+  },
+  "review_status": "pending",
+  "id": "v-2f38551629-reading",
+  "kind": "reading",
+  "stem": "個人の能力を【一概に】比較することはできません。",
+  "options": [
+    "いちがいに",
+    "いっがいに",
+    "いちかいに",
+    "いちがに"
+  ],
+  "answer_index": 0,
+  "translation_zh": "无法将个人的能力一概而论地进行比较。",
+  "explanation_zh": "「一概に」在底库中所列读音为「いちがいに」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音一致。",
+    "与底库所列读音「いちがいに」不一致。",
+    "与底库所列读音「いちがいに」不一致。",
+    "与底库所列读音「いちがいに」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

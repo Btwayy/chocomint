@@ -1,0 +1,31 @@
+{
+  "question_id": "g-o-mono-tomo-sezu-1",
+  "content_hash": "4b0704da38eace43a4c431d51eef22644acf0938e133b0437fdb814d479b502c",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "ものともせず"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「猛暑をものともせず」意为“不顾酷暑”，符合语境。其他选项语法错误或搭配不当，无法使句子成立。",
+    "acceptable_indices": [
+      3
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T13:06:59.475717Z",
+    "done_reason": "stop",
+    "eval_count": 52,
+    "eval_duration": 1299844000,
+    "prompt_eval_count": 185,
+    "prompt_eval_duration": 516787000,
+    "load_duration": 789084,
+    "wall_seconds": 1.85,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T13:06:59.476940+00:00"
+}

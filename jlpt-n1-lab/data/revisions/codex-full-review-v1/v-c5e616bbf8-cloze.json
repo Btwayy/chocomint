@@ -1,0 +1,49 @@
+{
+  "target_id": "v-c5e616bbf8",
+  "target_label": "専ら",
+  "level": "N1",
+  "focus_zh": "主要、专门从事某事",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "c5e616bbf8",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:51:06.977138Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-c5e616bbf8-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:51:06.977138Z",
+      "done_reason": "stop",
+      "eval_count": 261,
+      "eval_duration": 24110753000,
+      "prompt_eval_count": 533,
+      "prompt_eval_duration": 7451687000,
+      "load_duration": 666875,
+      "wall_seconds": 31.62
+    }
+  },
+  "review_status": "pending",
+  "stem": "彼の関心は（　）学問的なことに限られている。",
+  "options": [
+    "予め",
+    "専ら",
+    "敢えて",
+    "辛うじて"
+  ],
+  "answer_index": 1,
+  "translation_zh": "他的兴趣仅限于学术方面。",
+  "explanation_zh": "専ら表示专门、主要；预先准备用予め；勉强达成用辛うじて；故意做某事用敢えて。",
+  "option_explanations_zh": [
+    "予め：指事先做好准备，与兴趣范围无关，此处不成立。",
+    "専ら：意为专门或主要，符合句中兴趣仅限于学术的语境。",
+    "敢えて：强调故意做某事，通常含挑战意味，不符合此句逻辑。",
+    "辛うじて：表示勉强达成某种状态，无法修饰兴趣的专注度。"
+  ],
+  "id": "v-c5e616bbf8-cloze",
+  "kind": "vocabulary"
+}

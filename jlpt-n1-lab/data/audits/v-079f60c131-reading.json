@@ -1,0 +1,27 @@
+{
+  "question_id": "v-079f60c131-reading",
+  "content_hash": "568ccd090f58653ad0db17a6b222dc6c8be512dbbadecbc17096e3cd6ca8b133",
+  "passed": true,
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_indices": [
+      3
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「促進」正确读音为「そくしん」。选项 0、1、2 均存在假名或清浊音错误。"
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:38:05.975366Z",
+    "done_reason": "stop",
+    "eval_count": 52,
+    "eval_duration": 3127520000,
+    "prompt_eval_count": 165,
+    "prompt_eval_duration": 1110148000,
+    "load_duration": 1703083,
+    "wall_seconds": 4.24,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:38:05.976394+00:00"
+}

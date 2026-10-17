@@ -1,0 +1,133 @@
+{
+  "target_id": "v-4fe941663c",
+  "questions": [
+    {
+      "target_id": "v-4fe941663c",
+      "target_label": "打開",
+      "level": "N1",
+      "focus_zh": "打开僵局、寻求突破",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "4fe941663c",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:30:22.105386Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-4fe941663c-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:30:22.105386Z",
+          "done_reason": "stop",
+          "eval_count": 215,
+          "eval_duration": 18666399000,
+          "prompt_eval_count": 472,
+          "prompt_eval_duration": 4343628000,
+          "load_duration": 678416,
+          "wall_seconds": 23.07
+        }
+      },
+      "review_status": "pending",
+      "id": "v-4fe941663c-reading",
+      "kind": "reading",
+      "stem": "交渉が停滞しているため、早急に局面の【打開】を図る必要がある。",
+      "options": [
+        "たかい",
+        "だっかい",
+        "だがい",
+        "だかい"
+      ],
+      "answer_index": 3,
+      "translation_zh": "由于谈判陷入停滞，必须尽早寻求打破僵局。",
+      "explanation_zh": "逐一检查读音选项；本题「打開」读「だかい」，句中用于表示打开局面、突破困境。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「だかい」。",
+        "这不是本题标记词的正确读音；本题应选「だかい」。",
+        "这不是本题标记词的正确读音；本题应选「だかい」。",
+        "本题正确读音「だかい」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.439276+00:00",
+        "original_content_hash": "47fac4235cd968c76acae7e9a383f602fdc7464953fda667d2e475cc85ecff46",
+        "archive_file": "data/revisions/codex-full-review-v1/v-4fe941663c-reading.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "逐一检查读音选项；本题「打開」读「だかい」，句中用于表示打开局面、突破困境。"
+      }
+    },
+    {
+      "target_id": "v-4fe941663c",
+      "target_label": "打開",
+      "level": "N1",
+      "focus_zh": "打开僵局、寻求突破",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "4fe941663c",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:30:22.105386Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-4fe941663c-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:30:22.105386Z",
+          "done_reason": "stop",
+          "eval_count": 215,
+          "eval_duration": 18666399000,
+          "prompt_eval_count": 472,
+          "prompt_eval_duration": 4343628000,
+          "load_duration": 678416,
+          "wall_seconds": 23.07
+        }
+      },
+      "review_status": "pending",
+      "stem": "交渉は行き詰まっている。この膠着した局面を（　）するため、新たな提案を示した。",
+      "options": [
+        "委託",
+        "打開",
+        "補償",
+        "抑制"
+      ],
+      "answer_index": 1,
+      "translation_zh": "谈判陷入僵局。为打开这一局面，提出了新的方案。",
+      "explanation_zh": "「膠着した局面を打開する」表示突破僵局；原稿「現状を認識する」同样成立，已换题。",
+      "option_explanations_zh": [
+        "表示委托他人办理；不符合本题完整句子的接续或明确语境。",
+        "本题正确。「膠着した局面を打開する」表示突破僵局；原稿「現状を認識する」同样成立，已换题。",
+        "表示弥补损失、补偿；不符合本题完整句子的接续或明确语境。",
+        "表示抑制、控制；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-4fe941663c-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.439374+00:00",
+        "original_content_hash": "34fb72f8c47cfc1cc38a49f466c9657d6cc3c1e98e90185f6dea89c86a353c24",
+        "archive_file": "data/revisions/codex-full-review-v1/v-4fe941663c-cloze.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "「膠着した局面を打開する」表示突破僵局；原稿「現状を認識する」同样成立，已换题。"
+      }
+    }
+  ]
+}

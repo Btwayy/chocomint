@@ -1,0 +1,31 @@
+{
+  "question_id": "g-o-yogi-naku-sareru-2",
+  "content_hash": "b141d94f08821a247d39679a5c684d1e92f843244c7f82d68c251adf1df44e52",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "余儀なくされる"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "天候悪化という不本意な理由で下山せざるを得ない状況を「余儀なくされる」が適切。「延期」「強制」「決定」は文脈や受動態の使い方が自然ではない。",
+    "acceptable_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T13:03:00.910183Z",
+    "done_reason": "stop",
+    "eval_count": 69,
+    "eval_duration": 4243582000,
+    "prompt_eval_count": 189,
+    "prompt_eval_duration": 1235633000,
+    "load_duration": 606667,
+    "wall_seconds": 5.48,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T13:03:00.911445+00:00"
+}

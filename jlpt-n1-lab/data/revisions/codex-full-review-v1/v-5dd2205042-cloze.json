@@ -1,0 +1,49 @@
+{
+  "target_id": "v-5dd2205042",
+  "target_label": "発足",
+  "level": "N1",
+  "focus_zh": "组织成立并开始运作",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "5dd2205042",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:49:28.563526Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-5dd2205042-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:49:28.563526Z",
+      "done_reason": "stop",
+      "eval_count": 281,
+      "eval_duration": 29024909000,
+      "prompt_eval_count": 395,
+      "prompt_eval_duration": 5288507000,
+      "load_duration": 609291,
+      "wall_seconds": 34.36
+    }
+  },
+  "review_status": "pending",
+  "stem": "新しい環境保護団体が来月（　）する予定だ。",
+  "options": [
+    "補償",
+    "抑制",
+    "発足",
+    "委託"
+  ],
+  "answer_index": 2,
+  "translation_zh": "新的环保团体预计将于下个月成立。",
+  "explanation_zh": "「発足」指组织成立并开始运作，符合语境。「委託」是委托他人处理；「補償」是赔偿损失；「抑制」是压制或控制，均不合句意。",
+  "option_explanations_zh": [
+    "「補償」指对损失进行赔偿，无法用于描述团体的建立过程。",
+    "「抑制」指压制或控制某种状态，不能用来表达组织的成立。",
+    "「発足」意为组织成立并启动，完全契合新团体开始的语境。",
+    "「委託」指将事务委托给他人，与组织自身成立的含义不符。"
+  ],
+  "id": "v-5dd2205042-cloze",
+  "kind": "vocabulary"
+}

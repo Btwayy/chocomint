@@ -1,0 +1,27 @@
+{
+  "question_id": "v-419813adc3-reading",
+  "content_hash": "cedc47d8540b9b190b4d5c5b89ca9e76de4eb9124256d15d71753bed43bb9a57",
+  "passed": false,
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_indices": [
+      0
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「意向」正确读音为「いこう」。其他选项读音错误。句子自然，意为部长表明了明确的态度或意图。"
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:38:54.928813Z",
+    "done_reason": "stop",
+    "eval_count": 57,
+    "eval_duration": 3448444000,
+    "prompt_eval_count": 159,
+    "prompt_eval_duration": 1034010000,
+    "load_duration": 612584,
+    "wall_seconds": 4.49,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:38:54.929792+00:00"
+}

@@ -1,0 +1,133 @@
+{
+  "target_id": "v-bd1e5daff0",
+  "questions": [
+    {
+      "target_id": "v-bd1e5daff0",
+      "target_label": "迅速",
+      "level": "N1",
+      "focus_zh": "处理或行动迅速",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "bd1e5daff0",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:39:22.652845Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-bd1e5daff0-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:39:22.652845Z",
+          "done_reason": "stop",
+          "eval_count": 212,
+          "eval_duration": 39024197000,
+          "prompt_eval_count": 481,
+          "prompt_eval_duration": 9546056000,
+          "load_duration": 794167,
+          "wall_seconds": 48.67
+        }
+      },
+      "review_status": "pending",
+      "id": "v-bd1e5daff0-reading",
+      "kind": "reading",
+      "stem": "事故発生後、消防隊は【迅速】に現場へ駆けつけた。",
+      "options": [
+        "じんぞく",
+        "じゅんそく",
+        "じんそく",
+        "しんそく"
+      ],
+      "answer_index": 2,
+      "translation_zh": "事故发生后，消防队迅速赶往现场。",
+      "explanation_zh": "逐一检查读音选项；本题「迅速」读「じんそく」，句中用于表示迅速、行动快。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「じんそく」。",
+        "这不是本题标记词的正确读音；本题应选「じんそく」。",
+        "本题正确读音「じんそく」。",
+        "这不是本题标记词的正确读音；本题应选「じんそく」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.451966+00:00",
+        "original_content_hash": "cfc12c4614188e08b072df5f1740a47b1f40abd711fbfd26f5d209b6df581964",
+        "archive_file": "data/revisions/codex-full-review-v1/v-bd1e5daff0-reading.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "逐一检查读音选项；本题「迅速」读「じんそく」，句中用于表示迅速、行动快。"
+      }
+    },
+    {
+      "target_id": "v-bd1e5daff0",
+      "target_label": "迅速",
+      "level": "N1",
+      "focus_zh": "处理或行动迅速",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "bd1e5daff0",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:39:22.652845Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-bd1e5daff0-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:39:22.652845Z",
+          "done_reason": "stop",
+          "eval_count": 212,
+          "eval_duration": 39024197000,
+          "prompt_eval_count": 481,
+          "prompt_eval_duration": 9546056000,
+          "load_duration": 794167,
+          "wall_seconds": 48.67
+        }
+      },
+      "review_status": "pending",
+      "stem": "一刻を争う緊急事態には、（　）な対応が求められる。",
+      "options": [
+        "迅速",
+        "漠然",
+        "一概に",
+        "辛うじて"
+      ],
+      "answer_index": 0,
+      "translation_zh": "刻不容缓的紧急事态需要迅速应对。",
+      "explanation_zh": "「迅速な対応」表示快速应对；已去掉原题同样可成立的「柔軟な対応」。",
+      "option_explanations_zh": [
+        "本题正确。「迅速な対応」表示快速应对；已去掉原题同样可成立的「柔軟な対応」。",
+        "表示模糊、不具体；不符合本题完整句子的接续或明确语境。",
+        "表示不加区分地、笼统地；不符合本题完整句子的接续或明确语境。",
+        "表示勉强、好不容易；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-bd1e5daff0-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.452074+00:00",
+        "original_content_hash": "df4cf9cea855bfb6b28f9fc7686ea9480ab3eda2112b9387d002720612b4f21c",
+        "archive_file": "data/revisions/codex-full-review-v1/v-bd1e5daff0-cloze.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "「迅速な対応」表示快速应对；已去掉原题同样可成立的「柔軟な対応」。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "question_id": "v-116afb9f88-cloze",
+  "content_hash": "d69d9a9f83384ca3b21f22f1156d827ed6483c6607f92a19696eb0fa6ecd31fe",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "措置"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「措置をとる」为固定搭配，意为采取对策；其他选项与动词「とる」搭配不当或语义不通。",
+    "acceptable_indices": [
+      1
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:52:11.943556Z",
+    "done_reason": "stop",
+    "eval_count": 49,
+    "eval_duration": 3090914000,
+    "prompt_eval_count": 185,
+    "prompt_eval_duration": 121646000,
+    "load_duration": 690375,
+    "wall_seconds": 7.4,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:52:11.944658+00:00"
+}

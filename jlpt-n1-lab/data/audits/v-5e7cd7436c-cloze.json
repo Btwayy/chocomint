@@ -1,0 +1,31 @@
+{
+  "question_id": "v-5e7cd7436c-cloze",
+  "content_hash": "40920a9ad76d7270859ca013b32d1d3b020c2eeb42368a573e4cfa75bd1076ca",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "見通し"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「見通し」指预测或展望，与“示された”搭配自然。其他选项“経緯”（经过）、“根拠”（依据）、“合意”（共识）均无法在语境中与“示された”构成合理表达。",
+    "acceptable_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:53:50.412722Z",
+    "done_reason": "stop",
+    "eval_count": 78,
+    "eval_duration": 4928483000,
+    "prompt_eval_count": 187,
+    "prompt_eval_duration": 1215654000,
+    "load_duration": 710916,
+    "wall_seconds": 6.15,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:53:50.413812+00:00"
+}

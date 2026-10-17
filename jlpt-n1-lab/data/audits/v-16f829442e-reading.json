@@ -1,0 +1,27 @@
+{
+  "question_id": "v-16f829442e-reading",
+  "content_hash": "40269017afcaa6d64bcee2d34264a7aa15998b9f4a8026592d55787d26e64c39",
+  "passed": false,
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_indices": [
+      1
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「要請」正确读音为「ようせい」。其他选项均不符合该词标准读法。"
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:38:29.282673Z",
+    "done_reason": "stop",
+    "eval_count": 52,
+    "eval_duration": 3268407000,
+    "prompt_eval_count": 159,
+    "prompt_eval_duration": 965563000,
+    "load_duration": 597708,
+    "wall_seconds": 4.24,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:38:29.283857+00:00"
+}

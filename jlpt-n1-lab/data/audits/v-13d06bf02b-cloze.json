@@ -1,0 +1,31 @@
+{
+  "question_id": "v-13d06bf02b-cloze",
+  "content_hash": "8172e8b0177d55b5cf858e1f17729eeb781c4f5e0fa884a8c24225fa488b1e13",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "排除"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「余地がない」故に可能性が「排除」される因果関係自然。「委託」「補足」「配慮」は文脈と矛盾。",
+    "acceptable_indices": [
+      3
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:52:28.805934Z",
+    "done_reason": "stop",
+    "eval_count": 51,
+    "eval_duration": 3363602000,
+    "prompt_eval_count": 183,
+    "prompt_eval_duration": 119485000,
+    "load_duration": 627958,
+    "wall_seconds": 7.76,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:52:28.807135+00:00"
+}

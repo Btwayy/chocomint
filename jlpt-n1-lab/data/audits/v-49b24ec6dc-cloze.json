@@ -1,0 +1,31 @@
+{
+  "question_id": "v-49b24ec6dc-cloze",
+  "content_hash": "7030bb29c9b5434715e3214565750ccd1ec44ddb68077ea922a6a59d334d447e",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "根拠"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「根拠」指依据，符合为把握问题依据而进行调查的逻辑。「余地」「意向」「实态」与题干语境搭配不自然或逻辑不通。",
+    "acceptable_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:53:22.308009Z",
+    "done_reason": "stop",
+    "eval_count": 56,
+    "eval_duration": 3629110000,
+    "prompt_eval_count": 186,
+    "prompt_eval_duration": 1362172000,
+    "load_duration": 746709,
+    "wall_seconds": 5.0,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:53:22.309395+00:00"
+}

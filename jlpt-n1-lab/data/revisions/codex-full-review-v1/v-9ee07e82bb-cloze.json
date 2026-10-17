@@ -1,0 +1,49 @@
+{
+  "target_id": "v-9ee07e82bb",
+  "target_label": "緩和",
+  "level": "N1",
+  "focus_zh": "缓和紧张、放宽限制",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "9ee07e82bb",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:29:26.805574Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-9ee07e82bb-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:29:26.805574Z",
+      "done_reason": "stop",
+      "eval_count": 267,
+      "eval_duration": 21865890000,
+      "prompt_eval_count": 488,
+      "prompt_eval_duration": 4109907000,
+      "load_duration": 781750,
+      "wall_seconds": 31.21
+    }
+  },
+  "review_status": "pending",
+  "stem": "政府は規制を（　）する方針を決めた。",
+  "options": [
+    "依存",
+    "把握",
+    "緩和",
+    "補償"
+  ],
+  "answer_index": 2,
+  "translation_zh": "政府决定放宽限制的方针。",
+  "explanation_zh": "「緩和」指减轻紧张或放宽限制，符合语境。「把握」意为掌握；「補償」是赔偿；「依存」为依赖，均不合句意。",
+  "option_explanations_zh": [
+    "「依存」意为依赖，常接对象，此处语法和语义均不成立。",
+    "「把握」多接具体事物或情况，不能与“放宽”之意连用。",
+    "「規制を緩和する」是固定搭配，表示放宽限制，语义通顺。",
+    "「補償」指赔偿损失，无法修饰“限制”，逻辑不通。"
+  ],
+  "id": "v-9ee07e82bb-cloze",
+  "kind": "vocabulary"
+}

@@ -1,0 +1,31 @@
+{
+  "question_id": "g-o-mono-tomo-sezu-2",
+  "content_hash": "7970405704ecbe3629580eb6becd8f6c1c0d62fa43187dfae1e7ee3f84f03617",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "ものともせず"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「ものともせず」意为“不顾”，填入后句意通顺，表示他无视周围批判而挑战新事业。其他选项语法或语义均不成立。",
+    "acceptable_indices": [
+      2
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T13:07:01.518688Z",
+    "done_reason": "stop",
+    "eval_count": 59,
+    "eval_duration": 1542122000,
+    "prompt_eval_count": 186,
+    "prompt_eval_duration": 472159000,
+    "load_duration": 543625,
+    "wall_seconds": 2.02,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T13:07:01.519947+00:00"
+}

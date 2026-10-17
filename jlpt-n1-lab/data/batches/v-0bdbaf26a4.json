@@ -1,0 +1,81 @@
+{
+  "target_id": "v-0bdbaf26a4",
+  "questions": [
+    {
+      "target_id": "v-0bdbaf26a4",
+      "target_label": "欠乏",
+      "level": "N1",
+      "focus_zh": "缺乏、不足",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "0bdbaf26a4",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.664788+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-0bdbaf26a4-reading",
+      "kind": "reading",
+      "stem": "干ばつが続き、この地域は深刻な水の【欠乏】に苦しんでいる。",
+      "options": [
+        "げつぼう",
+        "けつほう",
+        "けつぼう",
+        "けぼう"
+      ],
+      "answer_index": 2,
+      "translation_zh": "持续干旱使这个地区深受严重缺水之苦。",
+      "explanation_zh": "「欠乏」本题读「けつぼう」，句中表示缺乏、不足。",
+      "option_explanations_zh": [
+        "不是本题标记词的正确读音；这里应选「けつぼう」。",
+        "不是本题标记词的正确读音；这里应选「けつぼう」。",
+        "正确：本题标记词读「けつぼう」。",
+        "不是本题标记词的正确读音；这里应选「けつぼう」。"
+      ]
+    },
+    {
+      "target_id": "v-0bdbaf26a4",
+      "target_label": "欠乏",
+      "level": "N1",
+      "focus_zh": "缺乏、不足",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "0bdbaf26a4",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.664784+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-0bdbaf26a4-cloze",
+      "kind": "vocabulary",
+      "stem": "干ばつが続き、この地域は深刻な水の（　）に苦しんでいる。",
+      "options": [
+        "欠乏",
+        "返済",
+        "公募",
+        "朗読"
+      ],
+      "answer_index": 0,
+      "translation_zh": "持续干旱使这个地区深受严重缺水之苦。",
+      "explanation_zh": "所需资源严重不足，用「水の欠乏」。",
+      "option_explanations_zh": [
+        "所需资源严重不足，用「水の欠乏」。",
+        "「返済」表示偿还借款；不符合本题已经限定的句意或接续。",
+        "「公募」表示公开招募；不符合本题已经限定的句意或接续。",
+        "「朗読」表示朗读；不符合本题已经限定的句意或接续。"
+      ]
+    }
+  ]
+}

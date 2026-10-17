@@ -1,0 +1,31 @@
+{
+  "question_id": "v-8e13072b37-cloze",
+  "content_hash": "b2d5a9bab95601767bf1cad9b08d3b712903705a154c35c29f46128b130e8230",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "伴う"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「伴う」意为伴随，填入后表示因存在大风险需谨慎，逻辑通顺。其他选项“凌ぐ”（超过）、“滞る”（停滞）、“携わる”（参与）均无法构成合理的因果逻辑或搭配不当。",
+    "acceptable_indices": [
+      3
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:54:49.570082Z",
+    "done_reason": "stop",
+    "eval_count": 76,
+    "eval_duration": 4755057000,
+    "prompt_eval_count": 187,
+    "prompt_eval_duration": 1281896000,
+    "load_duration": 695375,
+    "wall_seconds": 6.04,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:54:49.571112+00:00"
+}

@@ -1,0 +1,132 @@
+{
+  "target_id": "v-7113165c32",
+  "questions": [
+    {
+      "target_id": "v-7113165c32",
+      "target_label": "拘束",
+      "level": "N1",
+      "focus_zh": "限制人身自由或行动时间",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "7113165c32",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:32:16.809751Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-7113165c32-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:32:16.809751Z",
+          "done_reason": "stop",
+          "eval_count": 267,
+          "eval_duration": 26257513000,
+          "prompt_eval_count": 545,
+          "prompt_eval_duration": 5442128000,
+          "load_duration": 708042,
+          "wall_seconds": 31.75
+        }
+      },
+      "review_status": "pending",
+      "id": "v-7113165c32-reading",
+      "kind": "reading",
+      "stem": "参加者は会議による長時間の【拘束】に不満を感じていた。",
+      "options": [
+        "こそく",
+        "こうそく",
+        "こうしょく",
+        "こうぞく"
+      ],
+      "answer_index": 1,
+      "translation_zh": "参加者对开会占用很长时间、限制行动感到不满。",
+      "explanation_zh": "逐一检查读音选项；本题「拘束」读「こうそく」，句中用于表示限制自由或行动。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「こうそく」。",
+        "本题正确读音「こうそく」。",
+        "这不是本题标记词的正确读音；本题应选「こうそく」。",
+        "这不是本题标记词的正确读音；本题应选「こうそく」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.444588+00:00",
+        "original_content_hash": "0f4e59e55ab4fe93927b33171074853703844d5f5020a152a7c1d6ef295c76d0",
+        "archive_file": "data/revisions/codex-full-review-v1/v-7113165c32-reading.json",
+        "changed_fields": [
+          "stem",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "逐一检查读音选项；本题「拘束」读「こうそく」，句中用于表示限制自由或行动。"
+      }
+    },
+    {
+      "target_id": "v-7113165c32",
+      "target_label": "拘束",
+      "level": "N1",
+      "focus_zh": "限制人身自由或行动时间",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "7113165c32",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:32:16.809751Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-7113165c32-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:32:16.809751Z",
+          "done_reason": "stop",
+          "eval_count": 267,
+          "eval_duration": 26257513000,
+          "prompt_eval_count": 545,
+          "prompt_eval_duration": 5442128000,
+          "load_duration": 708042,
+          "wall_seconds": 31.75
+        }
+      },
+      "review_status": "pending",
+      "stem": "裁判所は被告の身柄を（　）した。",
+      "options": [
+        "拘束",
+        "把握",
+        "補償",
+        "促進"
+      ],
+      "answer_index": 0,
+      "translation_zh": "法院对被告的人身进行了限制。",
+      "explanation_zh": "「身柄を拘束する」表示限制人身自由；其他选项不构成这一搭配。",
+      "option_explanations_zh": [
+        "本题正确。「身柄を拘束する」表示限制人身自由；其他选项不构成这一搭配。",
+        "表示掌握、了解；不符合本题完整句子的接续或明确语境。",
+        "表示弥补损失、补偿；不符合本题完整句子的接续或明确语境。",
+        "表示促进、推动；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-7113165c32-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.444694+00:00",
+        "original_content_hash": "12103ccb6290dc09637a4e16d3d437350ba5f3ff2efee6bcc21305597607e9e7",
+        "archive_file": "data/revisions/codex-full-review-v1/v-7113165c32-cloze.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "「身柄を拘束する」表示限制人身自由；其他选项不构成这一搭配。"
+      }
+    }
+  ]
+}

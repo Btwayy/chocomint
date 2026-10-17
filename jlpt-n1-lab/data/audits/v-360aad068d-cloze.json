@@ -1,0 +1,27 @@
+{
+  "question_id": "v-360aad068d-cloze",
+  "content_hash": "e1ced04c495f9c1e7f962975530bb06877587fc4a41f52c8abf9de8a29457319",
+  "passed": false,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [],
+    "natural_japanese": false,
+    "reason_zh": "题干意为“需注意不让法律阻碍年轻人活跃”。选项“阻む”（阻碍）填入后语义通顺，但原句结构为“～ことにならないよう”，通常接否定形式或表示避免的动词。此处若选“阻む”，句子变为“注意が必要だ",
+    "acceptable_indices": []
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:53:00.451562Z",
+    "done_reason": "stop",
+    "eval_count": 84,
+    "eval_duration": 5447645000,
+    "prompt_eval_count": 189,
+    "prompt_eval_duration": 1229473000,
+    "load_duration": 660541,
+    "wall_seconds": 6.7,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:53:00.453189+00:00"
+}

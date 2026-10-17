@@ -1,0 +1,49 @@
+{
+  "target_id": "v-116afb9f88",
+  "target_label": "措置",
+  "level": "N1",
+  "focus_zh": "针对问题采取的措施",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "116afb9f88",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:32:47.379817Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-116afb9f88-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:32:47.379817Z",
+      "done_reason": "stop",
+      "eval_count": 260,
+      "eval_duration": 25694296000,
+      "prompt_eval_count": 490,
+      "prompt_eval_duration": 4778537000,
+      "load_duration": 1571834,
+      "wall_seconds": 30.55
+    }
+  },
+  "review_status": "pending",
+  "stem": "この問題に対しては、早急に適切な（　）をとるべきだ。",
+  "options": [
+    "余地",
+    "措置",
+    "経緯",
+    "根拠"
+  ],
+  "answer_index": 1,
+  "translation_zh": "针对这个问题，应该尽早采取适当的措施。",
+  "explanation_zh": "「措置」指应对问题的具体手段。「根拠」是理由，「経緯」是过程，「余地」是空间，均不符合语境。",
+  "option_explanations_zh": [
+    "「余地」指剩余空间，语义上无法构成解决问题的动作。",
+    "「措置」意为应对措施，符合针对问题采取行动的搭配。",
+    "「経緯」指事情经过，无法作为主动采取的对策使用。",
+    "「根拠」指依据或理由，不能与“采取”搭配表示行动。"
+  ],
+  "id": "v-116afb9f88-cloze",
+  "kind": "vocabulary"
+}

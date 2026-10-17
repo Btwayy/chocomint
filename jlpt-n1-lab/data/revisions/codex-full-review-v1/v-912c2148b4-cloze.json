@@ -1,0 +1,49 @@
+{
+  "target_id": "v-912c2148b4",
+  "target_label": "模索",
+  "level": "N1",
+  "focus_zh": "摸索尚不明确的方法",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "912c2148b4",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:29:59.023161Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-912c2148b4-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:29:59.023161Z",
+      "done_reason": "stop",
+      "eval_count": 281,
+      "eval_duration": 23621418000,
+      "prompt_eval_count": 441,
+      "prompt_eval_duration": 3686461000,
+      "load_duration": 702042,
+      "wall_seconds": 32.21
+    }
+  },
+  "review_status": "pending",
+  "stem": "解決策が見えない状況で、私たちは次の手を（　）している。",
+  "options": [
+    "配慮",
+    "模索",
+    "把握",
+    "補償"
+  ],
+  "answer_index": 1,
+  "translation_zh": "在找不到解决方案的情况下，我们正在摸索下一步该怎么做。",
+  "explanation_zh": "本句表达在未知中探寻方法，唯有「模索」符合语境。「把握」指掌握已知事物；「配慮」指体贴考虑；「補償」指赔偿损失，均不成立。",
+  "option_explanations_zh": [
+    "配慮：指对他人的体贴与考虑，不适用于寻找对策的语境。",
+    "模索：指在不明朗情况下摸索寻找方法，契合句意。",
+    "把握：意为掌握或理解，对象通常为已明确的事物。",
+    "補償：指对损失进行赔偿，与探寻下一步行动无关。"
+  ],
+  "id": "v-912c2148b4-cloze",
+  "kind": "vocabulary"
+}

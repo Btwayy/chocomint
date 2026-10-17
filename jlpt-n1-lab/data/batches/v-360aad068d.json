@@ -1,0 +1,130 @@
+{
+  "target_id": "v-360aad068d",
+  "questions": [
+    {
+      "target_id": "v-360aad068d",
+      "target_label": "阻む",
+      "level": "N1",
+      "focus_zh": "阻碍发展或行动",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "360aad068d",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:47:44.741226Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-360aad068d-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:47:44.741226Z",
+          "done_reason": "stop",
+          "eval_count": 269,
+          "eval_duration": 27957092000,
+          "prompt_eval_count": 575,
+          "prompt_eval_duration": 8850867000,
+          "load_duration": 620834,
+          "wall_seconds": 36.88
+        }
+      },
+      "review_status": "pending",
+      "id": "v-360aad068d-reading",
+      "kind": "reading",
+      "stem": "不況が企業の成長を【阻む】恐れがある。",
+      "options": [
+        "ばばむ",
+        "そばむ",
+        "はばむ",
+        "はぼむ"
+      ],
+      "answer_index": 2,
+      "translation_zh": "经济萧条可能会阻碍企业的发展。",
+      "explanation_zh": "逐一检查读音选项；本题「阻む」读「はばむ」，句中用于表示阻碍。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「はばむ」。",
+        "这不是本题标记词的正确读音；本题应选「はばむ」。",
+        "本题正确读音「はばむ」。",
+        "这不是本题标记词的正确读音；本题应选「はばむ」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.436621+00:00",
+        "original_content_hash": "bcd1553c59481cf0b896d0a344d5b4e1594c1e0e3360cda25f850f174ffff35c",
+        "archive_file": "data/revisions/codex-full-review-v1/v-360aad068d-reading.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "逐一检查读音选项；本题「阻む」读「はばむ」，句中用于表示阻碍。"
+      }
+    },
+    {
+      "target_id": "v-360aad068d",
+      "target_label": "阻む",
+      "level": "N1",
+      "focus_zh": "阻碍发展或行动",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "360aad068d",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:47:44.741226Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-360aad068d-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:47:44.741226Z",
+          "done_reason": "stop",
+          "eval_count": 269,
+          "eval_duration": 27957092000,
+          "prompt_eval_count": 575,
+          "prompt_eval_duration": 8850867000,
+          "load_duration": 620834,
+          "wall_seconds": 36.88
+        }
+      },
+      "review_status": "pending",
+      "stem": "この法律は若者の活躍を（　）ことにならないよう注意が必要だ。",
+      "options": [
+        "携わる",
+        "賄う",
+        "凌ぐ",
+        "阻む"
+      ],
+      "answer_index": 3,
+      "translation_zh": "需要注意不要让这部法律阻碍年轻人的活跃表现。",
+      "explanation_zh": "「活躍を阻む」表示阻碍发挥作用；「携わる」通常用「〜に携わる」。",
+      "option_explanations_zh": [
+        "表示参与、从事；不符合本题完整句子的接续或明确语境。",
+        "表示支付、供给所需费用；不符合本题完整句子的接续或明确语境。",
+        "表示熬过难关；超过；不符合本题完整句子的接续或明确语境。",
+        "本题正确。「活躍を阻む」表示阻碍发挥作用；「携わる」通常用「〜に携わる」。"
+      ],
+      "id": "v-360aad068d-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.436716+00:00",
+        "original_content_hash": "327da2bfae2316c0df5c0329fee45efd2fe968ee05b5c1b62aecbcba5c55159e",
+        "archive_file": "data/revisions/codex-full-review-v1/v-360aad068d-cloze.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "「活躍を阻む」表示阻碍发挥作用；「携わる」通常用「〜に携わる」。"
+      }
+    }
+  ]
+}

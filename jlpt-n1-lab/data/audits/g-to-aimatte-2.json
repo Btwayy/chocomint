@@ -1,0 +1,31 @@
+{
+  "question_id": "g-to-aimatte-2",
+  "content_hash": "ec7b469bcf74e632e310eaa1b28125326626e982bb2d91bdd776dea764b53363",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "相まって"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "题干表示“温暖气候与丰富自然”共同促成“成为观光地”，需表并列因果的「相まって」。「加えて」侧重追加，「続いて」「重なって」语义不通。",
+    "acceptable_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T13:03:36.258348Z",
+    "done_reason": "stop",
+    "eval_count": 64,
+    "eval_duration": 3993059000,
+    "prompt_eval_count": 192,
+    "prompt_eval_duration": 1173922000,
+    "load_duration": 720667,
+    "wall_seconds": 5.17,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T13:03:36.259422+00:00"
+}

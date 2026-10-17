@@ -1,0 +1,133 @@
+{
+  "target_id": "v-16f829442e",
+  "questions": [
+    {
+      "target_id": "v-16f829442e",
+      "target_label": "要請",
+      "level": "N1",
+      "focus_zh": "正式要求或请求",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "16f829442e",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:36:39.463141Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-16f829442e-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:36:39.463141Z",
+          "done_reason": "stop",
+          "eval_count": 239,
+          "eval_duration": 22459256000,
+          "prompt_eval_count": 521,
+          "prompt_eval_duration": 5196019000,
+          "load_duration": 754333,
+          "wall_seconds": 27.74
+        }
+      },
+      "review_status": "pending",
+      "id": "v-16f829442e-reading",
+      "kind": "reading",
+      "stem": "政府は国際社会に対し、人道的支援の【要請】を行った。",
+      "options": [
+        "ようしょう",
+        "ようぜい",
+        "ようせん",
+        "ようせい"
+      ],
+      "answer_index": 3,
+      "translation_zh": "政府向国际社会提出了人道主义援助的请求。",
+      "explanation_zh": "逐一检查读音选项；本题「要請」读「ようせい」，句中用于表示正式请求、要求。",
+      "option_explanations_zh": [
+        "这不是本题标记词的正确读音；本题应选「ようせい」。",
+        "这不是本题标记词的正确读音；本题应选「ようせい」。",
+        "这不是本题标记词的正确读音；本题应选「ようせい」。",
+        "本题正确读音「ようせい」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.435176+00:00",
+        "original_content_hash": "b7563656d3a087e4046256495ef87082224013d9b4c197f934d62415587e2cff",
+        "archive_file": "data/revisions/codex-full-review-v1/v-16f829442e-reading.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "逐一检查读音选项；本题「要請」读「ようせい」，句中用于表示正式请求、要求。"
+      }
+    },
+    {
+      "target_id": "v-16f829442e",
+      "target_label": "要請",
+      "level": "N1",
+      "focus_zh": "正式要求或请求",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "16f829442e",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:36:39.463141Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-16f829442e-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:36:39.463141Z",
+          "done_reason": "stop",
+          "eval_count": 239,
+          "eval_duration": 22459256000,
+          "prompt_eval_count": 521,
+          "prompt_eval_duration": 5196019000,
+          "load_duration": 754333,
+          "wall_seconds": 27.74
+        }
+      },
+      "review_status": "pending",
+      "stem": "自社だけでは修理できないため、外部の専門家に技術支援を（　）した。",
+      "options": [
+        "要請",
+        "排除",
+        "拘束",
+        "依存"
+      ],
+      "answer_index": 0,
+      "translation_zh": "由于公司自己无法修理，向外部专家请求了技术支援。",
+      "explanation_zh": "「専門家に技術支援を要請する」表示向专家请求技术支援。原稿「助言を把握する／補足する」也可成立，已替换语境。",
+      "option_explanations_zh": [
+        "本题正确。「専門家に技術支援を要請する」表示向专家请求技术支援。原稿「助言を把握する／補足する」也可成立，已替换语境。",
+        "表示排除、去除；不符合本题完整句子的接续或明确语境。",
+        "表示限制自由或行动；不符合本题完整句子的接续或明确语境。",
+        "表示依靠、依赖；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-16f829442e-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.435288+00:00",
+        "original_content_hash": "ea0bdf8c8f415bbbeed2959c09c253764f10f10fdee17df734294eb43735738b",
+        "archive_file": "data/revisions/codex-full-review-v1/v-16f829442e-cloze.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "「専門家に技術支援を要請する」表示向专家请求技术支援。原稿「助言を把握する／補足する」也可成立，已替换语境。"
+      }
+    }
+  ]
+}

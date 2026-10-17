@@ -1,0 +1,31 @@
+{
+  "question_id": "v-2f38551629-cloze",
+  "content_hash": "afc924e4e891eab0792522e7444b368cacd5948570ddd7d480720d525374dceb",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "一概に"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「一概に」意为“笼统地、一律”，与“断定できない”搭配表示不能一概而论，符合语境。其他选项语义不通或逻辑矛盾。",
+    "acceptable_indices": [
+      1
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:52:53.481092Z",
+    "done_reason": "stop",
+    "eval_count": 57,
+    "eval_duration": 3584206000,
+    "prompt_eval_count": 188,
+    "prompt_eval_duration": 1330713000,
+    "load_duration": 646458,
+    "wall_seconds": 4.92,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:52:53.482268+00:00"
+}

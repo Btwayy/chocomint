@@ -1,0 +1,139 @@
+{
+  "question": {
+    "target_id": "g-katawara",
+    "target_label": "〜かたわら",
+    "level": "N1",
+    "focus_zh": "长期从事主要活动的同时兼做另一项活动",
+    "source": {
+      "project": "OpenJLPT",
+      "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+      "source_id": "katawara",
+      "source_file": "grammar-n1.json",
+      "license": "CC-BY-SA-4.0"
+    },
+    "generation": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:56:46.558455Z",
+      "attempt": 1,
+      "raw_file": "data/raw/generate-g-katawara-a1.json",
+      "metrics": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:56:46.558455Z",
+        "done_reason": "stop",
+        "eval_count": 480,
+        "eval_duration": 80347895000,
+        "prompt_eval_count": 545,
+        "prompt_eval_duration": 10669012000,
+        "load_duration": 865666,
+        "wall_seconds": 91.07
+      }
+    },
+    "review_status": "pending",
+    "stem": "母は家庭を顧みるかたわら、（　）も欠かさず行っている。",
+    "options": [
+      "地域の清掃活動",
+      "地域を清掃活動",
+      "地域清掃する",
+      "地域清掃活動"
+    ],
+    "answer_index": 0,
+    "translation_zh": "母亲在照顾家庭的同时，也从未间断地参与社区清洁活动。",
+    "explanation_zh": "「かたわら」前接动词连用形或名词+の。选项一为完整名词短语；二、三助词缺失或搭配不当；四动词形错误。",
+    "option_explanations_zh": [
+      "名词短语直接作主语，与かたわら前的结构形成自然并列关系。",
+      "「を」在此处多余，导致前后成分逻辑连接混乱。",
+      "动词原形不能直接置于此位置，需改为名词性表达才通顺。",
+      "缺少助词使名词修饰关系不明，不符合标准书面语习惯。"
+    ],
+    "id": "g-katawara-2",
+    "kind": "grammar"
+  },
+  "checks_at_revision": {
+    "target_id": "g-katawara",
+    "target_label": "〜かたわら",
+    "level": "N1",
+    "focus_zh": "长期从事主要活动的同时兼做另一项活动",
+    "source": {
+      "project": "OpenJLPT",
+      "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+      "source_id": "katawara",
+      "source_file": "grammar-n1.json",
+      "license": "CC-BY-SA-4.0"
+    },
+    "generation": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:56:46.558455Z",
+      "attempt": 1,
+      "raw_file": "data/raw/generate-g-katawara-a1.json",
+      "metrics": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:56:46.558455Z",
+        "done_reason": "stop",
+        "eval_count": 480,
+        "eval_duration": 80347895000,
+        "prompt_eval_count": 545,
+        "prompt_eval_duration": 10669012000,
+        "load_duration": 865666,
+        "wall_seconds": 91.07
+      }
+    },
+    "review_status": "pending",
+    "stem": "母は家庭を顧みるかたわら、（　）も欠かさず行っている。",
+    "options": [
+      "地域の清掃活動",
+      "地域を清掃活動",
+      "地域清掃する",
+      "地域清掃活動"
+    ],
+    "answer_index": 0,
+    "translation_zh": "母亲在照顾家庭的同时，也从未间断地参与社区清洁活动。",
+    "explanation_zh": "「かたわら」前接动词连用形或名词+の。选项一为完整名词短语；二、三助词缺失或搭配不当；四动词形错误。",
+    "option_explanations_zh": [
+      "名词短语直接作主语，与かたわら前的结构形成自然并列关系。",
+      "「を」在此处多余，导致前后成分逻辑连接混乱。",
+      "动词原形不能直接置于此位置，需改为名词性表达才通顺。",
+      "缺少助词使名词修饰关系不明，不符合标准书面语习惯。"
+    ],
+    "id": "g-katawara-2",
+    "kind": "grammar",
+    "content_hash": "2793c516df34567c936c098934bdeb0ec0360d003e44c1fb3d95aac8971e1467",
+    "structural_check": {
+      "passed": false,
+      "errors": [
+        "grammar_target_not_tested_by_blank"
+      ]
+    },
+    "blind_check": {
+      "question_id": "g-katawara-2",
+      "content_hash": "2793c516df34567c936c098934bdeb0ec0360d003e44c1fb3d95aac8971e1467",
+      "passed": true,
+      "answer_format": "literal_option_text_v2",
+      "method": "cross_model_blind_resolve",
+      "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+      "result": {
+        "acceptable_answers": [
+          "地域の清掃活動"
+        ],
+        "natural_japanese": true,
+        "reason_zh": "「～も欠かさず」需接名词，故排除动词形。定语修饰时应用助词「を」连接，仅“地域の清掃活動”语法正确且自然。",
+        "acceptable_indices": [
+          0
+        ]
+      },
+      "metrics": {
+        "model": "qwen3.5:9b-q4_K_M",
+        "created_at": "2026-10-17T12:57:04.522245Z",
+        "done_reason": "stop",
+        "eval_count": 62,
+        "eval_duration": 3982220000,
+        "prompt_eval_count": 196,
+        "prompt_eval_duration": 1324757000,
+        "load_duration": 698791,
+        "wall_seconds": 5.32,
+        "format_mode": "schema_constrained"
+      },
+      "created_at": "2026-10-17T12:57:04.523315+00:00"
+    },
+    "quality_status": "structural_failed"
+  }
+}

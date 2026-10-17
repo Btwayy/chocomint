@@ -1,0 +1,50 @@
+{
+  "target_id": "v-13d06bf02b",
+  "target_label": "排除",
+  "level": "N1",
+  "focus_zh": "排除不利因素或可能性",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "13d06bf02b",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:47:07.847282Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-13d06bf02b-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:47:07.847282Z",
+      "done_reason": "stop",
+      "eval_count": 218,
+      "eval_duration": 22959066000,
+      "prompt_eval_count": 553,
+      "prompt_eval_duration": 8674856000,
+      "load_duration": 756708,
+      "wall_seconds": 31.69
+    }
+  },
+  "review_status": "pending",
+  "id": "v-13d06bf02b-reading",
+  "kind": "reading",
+  "stem": "安全を確保するため、あらゆるリスク要因を【排除】する必要がある。",
+  "options": [
+    "はいじょ",
+    "はいしょ",
+    "ばいじょ",
+    "はいじょう"
+  ],
+  "answer_index": 0,
+  "translation_zh": "为了确保安全，有必要排除所有的风险因素。",
+  "explanation_zh": "「排除」在底库中所列读音为「はいじょ」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音一致。",
+    "与底库所列读音「はいじょ」不一致。",
+    "与底库所列读音「はいじょ」不一致。",
+    "与底库所列读音「はいじょ」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

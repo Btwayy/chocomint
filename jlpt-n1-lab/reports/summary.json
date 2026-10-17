@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-10-17T16:02:45.749907+00:00",
+  "planned": 360,
+  "generated": 360,
+  "targets_completed": 180,
+  "by_kind": {
+    "grammar": 60,
+    "reading": 150,
+    "vocabulary": 150
+  },
+  "quality_status": {
+    "codex_reviewed": 360
+  },
+  "codex_reviewed": 360,
+  "practice_available": 360,
+  "human_approved": 0,
+  "human_reviewed": 0,
+  "blind_check_counts": {
+    "passed": 0,
+    "flagged": 0,
+    "not_run": 210,
+    "not_applicable": 150
+  },
+  "dictionary_checked": 150,
+  "editorial_flags": 0,
+  "codex_revised": 120,
+  "answer_distribution": {
+    "3": 82,
+    "2": 94,
+    "1": 93,
+    "4": 91
+  },
+  "model_calls": 206,
+  "inference_wall_seconds": 3345.3,
+  "generated_tokens": 27375,
+  "api_spend": 0,
+  "api_spend_note": "原始出题与批量盲答仅调用本机 Ollama；此统计不包含当前 Codex 对话本身的使用成本、电费、下载流量或校对时间。",
+  "limitations": [
+    "社区N1标签，不代表完整考试范围或经标定的N1难度。",
+    "Codex 逐题复核属于 AI 编辑复核，不是教师或官方认证。",
+    "复核练习收录内容哈希匹配且结构通过的 Codex 复核题；用户不必审核，提出疑问后可暂时移出。",
+    "复核记录和用户个人收藏分开保存；不会伪造用户审核。"
+  ]
+}

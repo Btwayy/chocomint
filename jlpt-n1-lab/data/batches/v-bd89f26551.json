@@ -1,0 +1,130 @@
+{
+  "target_id": "v-bd89f26551",
+  "questions": [
+    {
+      "target_id": "v-bd89f26551",
+      "target_label": "依存",
+      "level": "N1",
+      "focus_zh": "依赖某种资源或对象",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "bd89f26551",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:31:16.271569Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-bd89f26551-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:31:16.271569Z",
+          "done_reason": "stop",
+          "eval_count": 209,
+          "eval_duration": 19163554000,
+          "prompt_eval_count": 553,
+          "prompt_eval_duration": 5490129000,
+          "load_duration": 873833,
+          "wall_seconds": 24.71
+        }
+      },
+      "review_status": "pending",
+      "id": "v-bd89f26551-reading",
+      "kind": "reading",
+      "stem": "このシステムは外部の電源に【依存】しており、停電すると機能しなくなる。",
+      "options": [
+        "いぞん",
+        "いぞ",
+        "えぞん",
+        "いぞう"
+      ],
+      "answer_index": 0,
+      "translation_zh": "这个系统依赖外部电源，停电后便无法运作。",
+      "explanation_zh": "逐一检查读音选项；本题「依存」读「いぞん」，句中用于表示依靠、依赖。「いそん」也是合法读法，本题没有把它设为错误选项。",
+      "option_explanations_zh": [
+        "本题正确读音「いぞん」。",
+        "这不是本题标记词的正确读音；本题应选「いぞん」。",
+        "这不是本题标记词的正确读音；本题应选「いぞん」。",
+        "这不是本题标记词的正确读音；本题应选「いぞん」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.452624+00:00",
+        "original_content_hash": "cd35f62b74d0369f3b43a23ce069da2557fb746df67151c82b228e39f36bd61e",
+        "archive_file": "data/revisions/codex-full-review-v1/v-bd89f26551-reading.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "逐一检查读音选项；本题「依存」读「いぞん」，句中用于表示依靠、依赖。「いそん」也是合法读法，本题没有把它设为错误选项。"
+      }
+    },
+    {
+      "target_id": "v-bd89f26551",
+      "target_label": "依存",
+      "level": "N1",
+      "focus_zh": "依赖某种资源或对象",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "bd89f26551",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:31:16.271569Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-bd89f26551-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:31:16.271569Z",
+          "done_reason": "stop",
+          "eval_count": 209,
+          "eval_duration": 19163554000,
+          "prompt_eval_count": 553,
+          "prompt_eval_duration": 5490129000,
+          "load_duration": 873833,
+          "wall_seconds": 24.71
+        }
+      },
+      "review_status": "pending",
+      "stem": "若者の生活スタイルがスマホに過度に（　）している現状がある。",
+      "options": [
+        "介入",
+        "依存",
+        "配慮",
+        "妥協"
+      ],
+      "answer_index": 1,
+      "translation_zh": "存在年轻人生活方式过度依赖智能手机的现状。",
+      "explanation_zh": "「スマホに依存する」表示依赖手机；与插手、关照或让步不同。",
+      "option_explanations_zh": [
+        "表示介入、插手；不符合本题完整句子的接续或明确语境。",
+        "本题正确。「スマホに依存する」表示依赖手机；与插手、关照或让步不同。",
+        "表示顾及、关照；不符合本题完整句子的接续或明确语境。",
+        "表示妥协、让步；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-bd89f26551-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.452719+00:00",
+        "original_content_hash": "adbee610d809849acf7b22bb6f75d65305ac1cac29e8c92235eb3ca95404d308",
+        "archive_file": "data/revisions/codex-full-review-v1/v-bd89f26551-cloze.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "「スマホに依存する」表示依赖手机；与插手、关照或让步不同。"
+      }
+    }
+  ]
+}

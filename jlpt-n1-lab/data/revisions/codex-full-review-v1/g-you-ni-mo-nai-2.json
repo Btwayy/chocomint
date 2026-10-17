@@ -1,0 +1,49 @@
+{
+  "target_id": "g-you-ni-mo-nai",
+  "target_label": "〜(よ)うにも〜ない",
+  "level": "N1",
+  "focus_zh": "想做某事却因为客观条件无法做到；意志形+にも+可能否定等",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "you-ni-mo-nai",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T13:03:49.66273Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-you-ni-mo-nai-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T13:03:49.66273Z",
+      "done_reason": "stop",
+      "eval_count": 468,
+      "eval_duration": 52886216000,
+      "prompt_eval_count": 627,
+      "prompt_eval_duration": 12179928000,
+      "load_duration": 1827500,
+      "wall_seconds": 65.11
+    }
+  },
+  "review_status": "pending",
+  "stem": "鍵を閉め込んでしまったので、部屋に入ろうにも（　）。",
+  "options": [
+    "入るつもりだ",
+    "入れない",
+    "入りたかった",
+    "入ったほうがいい"
+  ],
+  "answer_index": 1,
+  "translation_zh": "因为把钥匙锁在里面了，想进房间也进不去。",
+  "explanation_zh": "本句描述因钥匙被锁导致无法进入的客观困境，需接可能态否定形式。",
+  "option_explanations_zh": [
+    "干扰项：「つもりだ」表意图或计划，与句中已发生且无法解决的困境矛盾。",
+    "正确选项：「入れない」是“入る”的可能态否定，符合想做却做不到的语境。",
+    "干扰项：「たかった」仅表达过去的愿望，缺少因客观条件受阻的含义。",
+    "干扰项：「ほうがいい」表建议，此处强调无法进入的事实而非建议行动。"
+  ],
+  "id": "g-you-ni-mo-nai-2",
+  "kind": "grammar"
+}

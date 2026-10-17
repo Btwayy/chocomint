@@ -1,0 +1,50 @@
+{
+  "target_id": "v-988a31e98d",
+  "target_label": "漠然",
+  "level": "N1",
+  "focus_zh": "模糊、笼统，常见漠然とした",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "988a31e98d",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:37:38.373943Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-988a31e98d-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:37:38.373943Z",
+      "done_reason": "stop",
+      "eval_count": 253,
+      "eval_duration": 26292793000,
+      "prompt_eval_count": 405,
+      "prompt_eval_duration": 4248930000,
+      "load_duration": 639375,
+      "wall_seconds": 30.6
+    }
+  },
+  "review_status": "pending",
+  "id": "v-988a31e98d-reading",
+  "kind": "reading",
+  "stem": "彼の説明は【漠然】としており、具体的な内容は全く理解できなかった。",
+  "options": [
+    "はくぜん",
+    "ばくぜん",
+    "ばくねん",
+    "ばくせん"
+  ],
+  "answer_index": 1,
+  "translation_zh": "他的说明很模糊，完全无法理解具体内容。",
+  "explanation_zh": "「漠然」在底库中所列读音为「ばくぜん」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「ばくぜん」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「ばくぜん」不一致。",
+    "与底库所列读音「ばくぜん」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

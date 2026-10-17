@@ -1,0 +1,49 @@
+{
+  "target_id": "v-7c0fdd7d4f",
+  "target_label": "損なう",
+  "level": "N1",
+  "focus_zh": "损害健康、信任、利益等",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "7c0fdd7d4f",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:45:03.097697Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-7c0fdd7d4f-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:45:03.097697Z",
+      "done_reason": "stop",
+      "eval_count": 227,
+      "eval_duration": 23241836000,
+      "prompt_eval_count": 586,
+      "prompt_eval_duration": 9622598000,
+      "load_duration": 1056417,
+      "wall_seconds": 32.93
+    }
+  },
+  "review_status": "pending",
+  "stem": "信頼関係を（　）行為は許されない。",
+  "options": [
+    "損なう",
+    "携わる",
+    "賄う",
+    "滞る"
+  ],
+  "answer_index": 0,
+  "translation_zh": "不容许任何破坏信任关系的行为。",
+  "explanation_zh": "「損なう」意为损害，常接健康、信誉等抽象名词。「賄う」指供给；「携わる」指参与；「滞る」指停滞，均不合语境。",
+  "option_explanations_zh": [
+    "正确：表示对信任关系造成损害或破坏。",
+    "错误：意为从事某项工作，不能接关系作宾语。",
+    "错误：意为提供资金或物资，无法与关系搭配。",
+    "错误：意为流动不畅或停滞，不用于主动破坏关系。"
+  ],
+  "id": "v-7c0fdd7d4f-cloze",
+  "kind": "vocabulary"
+}

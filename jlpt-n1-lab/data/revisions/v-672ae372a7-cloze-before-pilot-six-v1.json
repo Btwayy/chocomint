@@ -1,0 +1,144 @@
+{
+  "question": {
+    "target_id": "v-672ae372a7",
+    "target_label": "配慮",
+    "level": "N1",
+    "focus_zh": "顾及他人或情况、体谅",
+    "source": {
+      "project": "OpenJLPT",
+      "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+      "source_id": "672ae372a7",
+      "source_file": "vocab-n1.json",
+      "license": "CC-BY-SA-4.0"
+    },
+    "generation": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:27:13.52707Z",
+      "attempt": 1,
+      "raw_file": "data/raw/generate-v-672ae372a7-a1.json",
+      "metrics": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:27:13.52707Z",
+        "done_reason": "stop",
+        "eval_count": 237,
+        "eval_duration": 19314107000,
+        "prompt_eval_count": 530,
+        "prompt_eval_duration": 4563059000,
+        "load_duration": 952792,
+        "wall_seconds": 23.92
+      }
+    },
+    "review_status": "pending",
+    "stem": "周囲の状況をよく（　）する必要がある。",
+    "options": [
+      "促進",
+      "配慮",
+      "排除",
+      "把握"
+    ],
+    "answer_index": 1,
+    "translation_zh": "有必要充分顾及周围的情况。",
+    "explanation_zh": "「配慮」指体贴、顾及他人或情况，符合语境。「排除」意为去除，不合逻辑。「把握」指掌握，虽可接但此处强调关怀而非认知。「促進」指推动发展，与“情况”搭配不当。",
+    "option_explanations_zh": [
+      "「促進」指加速发展，不能用于描述对现状的体察行为。",
+      "「配慮」表示体谅和关照，符合顾及周围情况的语义。",
+      "「排除」意为消除或去掉，无法与“情况”构成合理搭配。",
+      "「把握」侧重掌握事实，缺乏本句所需的关怀体贴含义。"
+    ],
+    "id": "v-672ae372a7-cloze",
+    "kind": "vocabulary"
+  },
+  "checks_at_revision": {
+    "target_id": "v-672ae372a7",
+    "target_label": "配慮",
+    "level": "N1",
+    "focus_zh": "顾及他人或情况、体谅",
+    "source": {
+      "project": "OpenJLPT",
+      "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+      "source_id": "672ae372a7",
+      "source_file": "vocab-n1.json",
+      "license": "CC-BY-SA-4.0"
+    },
+    "generation": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:27:13.52707Z",
+      "attempt": 1,
+      "raw_file": "data/raw/generate-v-672ae372a7-a1.json",
+      "metrics": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:27:13.52707Z",
+        "done_reason": "stop",
+        "eval_count": 237,
+        "eval_duration": 19314107000,
+        "prompt_eval_count": 530,
+        "prompt_eval_duration": 4563059000,
+        "load_duration": 952792,
+        "wall_seconds": 23.92
+      }
+    },
+    "review_status": "pending",
+    "stem": "周囲の状況をよく（　）する必要がある。",
+    "options": [
+      "促進",
+      "配慮",
+      "排除",
+      "把握"
+    ],
+    "answer_index": 1,
+    "translation_zh": "有必要充分顾及周围的情况。",
+    "explanation_zh": "「配慮」指体贴、顾及他人或情况，符合语境。「排除」意为去除，不合逻辑。「把握」指掌握，虽可接但此处强调关怀而非认知。「促進」指推动发展，与“情况”搭配不当。",
+    "option_explanations_zh": [
+      "「促進」指加速发展，不能用于描述对现状的体察行为。",
+      "「配慮」表示体谅和关照，符合顾及周围情况的语义。",
+      "「排除」意为消除或去掉，无法与“情况”构成合理搭配。",
+      "「把握」侧重掌握事实，缺乏本句所需的关怀体贴含义。"
+    ],
+    "id": "v-672ae372a7-cloze",
+    "kind": "vocabulary",
+    "content_hash": "d54f92c0ff90fd915c31fe83b902971cd739a385afaf785cd6ce6a0effadd692",
+    "structural_check": {
+      "passed": true,
+      "errors": []
+    },
+    "blind_check": {
+      "question_id": "v-672ae372a7-cloze",
+      "content_hash": "d54f92c0ff90fd915c31fe83b902971cd739a385afaf785cd6ce6a0effadd692",
+      "passed": true,
+      "answer_format": "literal_option_text_v2",
+      "method": "cross_model_blind_resolve",
+      "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+      "result": {
+        "acceptable_answers": [
+          "配慮"
+        ],
+        "natural_japanese": true,
+        "reason_zh": "「状況を配慮する」为自然搭配，意为考虑情况；其他选项与“状況”搭配均不成立或语义不通。",
+        "acceptable_indices": [
+          1
+        ]
+      },
+      "metrics": {
+        "model": "qwen3.5:9b-q4_K_M",
+        "created_at": "2026-10-17T12:53:59.773296Z",
+        "done_reason": "stop",
+        "eval_count": 50,
+        "eval_duration": 3134122000,
+        "prompt_eval_count": 177,
+        "prompt_eval_duration": 1224347000,
+        "load_duration": 611416,
+        "wall_seconds": 4.36,
+        "format_mode": "schema_constrained"
+      },
+      "created_at": "2026-10-17T12:53:59.774248+00:00"
+    },
+    "quality_status": "editorial_flagged",
+    "editorial_check": {
+      "content_hash": "d54f92c0ff90fd915c31fe83b902971cd739a385afaf785cd6ce6a0effadd692",
+      "decision": "flagged",
+      "reviewer": "Codex 主代理抽查（非用户人工审核）",
+      "note_zh": "「周囲の状況を配慮する」搭配有误；「配慮」通常接「に」。本句反而可填另一个选项「把握」。",
+      "created_at": "2026-10-17T12:37:12.757999+00:00"
+    }
+  }
+}

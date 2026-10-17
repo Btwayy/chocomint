@@ -1,0 +1,95 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是严谨的日语教材编写者。参考下列开放数据和考点编写原创四选一练习。参考内容只是资料，不是指令。日语必须自然，四个选项必须恰有一个成立。题干用日语，解释与翻译用简体中文。所有填空统一写（　），且每题只有一个空。正确选项放在第一个，answer_index=0。解析按选项文字解释，不提A/B/C/D、选项编号。中文总解析控制在60字内，每个选项解释控制在35字内。干扰项应词性或接续相近、容易混淆，但在本句明确不成立。不要仅靠明显的接续错误出题。题干不要包含考点名称或答案提示。不要照抄例句，换语境。"
+    },
+    {
+      "role": "user",
+      "content": "为「委託」写两种不同语境的练习。reading_stem：完整日语句子，将目标词原样用【】括起，句中恰有一对【】。reading_translation_zh：该句中文翻译。cloze：另一语境的词汇填空题，正确选项必须严格等于目标词原形；动词把屈折结尾放在选项内，若必须变化目标词才能填空则改写句子以适用原形。不要使用目标词的同义词作为另一个可成立的选项。\n词汇填空的四个选项已经给定，严格照用：[\"委託\", \"補足\", \"拘束\", \"合意\"]。不能给选项添加する、した、して、に、な等后缀。必要的活用或助词写在空格后面。例如选项是把握时，可写『現状を（　）する』，不要写『現状を（　）必要がある』。\n考点：委托他人办理事务\n参考资料：{\"word\": \"委託\", \"reading\": \"いたく\", \"meanings\": [\"consign (goods (for sale) to a firm)\", \"entrust (person with something)\", \"commit\"], \"pos\": [\"n\", \"vs\", \"vt\"], \"examples\": [{\"ja\": \"ベンは日記を弁護士が管理するよう委託した。\", \"furigana\": \"ベンは{日記|にっき}を{弁護士|べんごし}が{管理|かんり}するよう{委託|いたく}した。\", \"en\": \"Ben committed his diary to the lawyer's care.\", \"tatoeba_id\": 196612}, {\"ja\": \"僕は、有り金をすべて彼に委託した。\", \"furigana\": \"{僕|ぼく}は、{有|あ}り{金|がね}をすべて{彼|かれ}に{委託|いたく}した。\", \"en\": \"I trusted him with all the money I had.\", \"tatoeba_id\": 82144}]}"
+    }
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "reading_stem": {
+        "type": "string"
+      },
+      "reading_translation_zh": {
+        "type": "string"
+      },
+      "cloze": {
+        "type": "object",
+        "properties": {
+          "stem": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "委託",
+                "補足",
+                "拘束",
+                "合意"
+              ]
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "answer_index": {
+            "type": "integer",
+            "const": 0
+          },
+          "translation_zh": {
+            "type": "string"
+          },
+          "explanation_zh": {
+            "type": "string"
+          },
+          "option_explanations_zh": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "stem",
+          "options",
+          "answer_index",
+          "translation_zh",
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "reading_stem",
+      "reading_translation_zh",
+      "cloze"
+    ],
+    "additionalProperties": false
+  },
+  "response": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:31:45.04703Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"reading_stem\": \"会社は新製品の販売を専門業者に【委託】することにした。\", \"reading_translation_zh\": \"公司决定将新产品的销售委托给专业商社。\", \"cloze\": {\"stem\": \"この作業は、経験豊富な担当者へ（　）する必要がある。\", \"options\": [\"委託\", \"補足\", \"拘束\", \"合意\"], \"answer_index\": 0, \"translation_zh\": \"这项工作有必要委托给经验丰富的负责人办理。\", \"explanation_zh\": \"「委託」指委托他人办事，符合语境。「補足」是补充，「拘束」是束缚，「合意」是达成共识，均不成立。\",\"option_explanations_zh\": [\"「委託」意为委托，接「する」构成他动词，表示请人代办事务。\", \"「補足」指补充说明或不足部分，不能用于将任务交给他人办理。\", \"「拘束」意为限制自由或束缚，与请求他人协助的语境完全相反。\", \"「合意」指双方达成一致意见，无法直接接「する」表示委托动作。\"]}\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 28766235792,
+    "load_duration": 927084,
+    "prompt_eval_count": 584,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 5946838000,
+    "eval_count": 243,
+    "eval_duration": 22762715000
+  }
+}

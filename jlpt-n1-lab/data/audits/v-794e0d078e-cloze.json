@@ -1,0 +1,31 @@
+{
+  "question_id": "v-794e0d078e-cloze",
+  "content_hash": "9e5729b8a0ebf3b48717e75b6d4091319e9fe24602afc75a5fc8d30d3b856c74",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "余地"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「反論の余地がない」为固定搭配，意为“无法反驳”。其他选项与语境不符：经緯指过程，根拠指依据，措施指对策。",
+    "acceptable_indices": [
+      2
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:54:27.984495Z",
+    "done_reason": "stop",
+    "eval_count": 58,
+    "eval_duration": 3583660000,
+    "prompt_eval_count": 186,
+    "prompt_eval_duration": 1181841000,
+    "load_duration": 705416,
+    "wall_seconds": 4.77,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:54:27.985779+00:00"
+}

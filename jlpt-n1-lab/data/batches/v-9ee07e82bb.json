@@ -1,0 +1,135 @@
+{
+  "target_id": "v-9ee07e82bb",
+  "questions": [
+    {
+      "target_id": "v-9ee07e82bb",
+      "target_label": "緩和",
+      "level": "N1",
+      "focus_zh": "缓和紧张、放宽限制",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "9ee07e82bb",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:29:26.805574Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-9ee07e82bb-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:29:26.805574Z",
+          "done_reason": "stop",
+          "eval_count": 267,
+          "eval_duration": 21865890000,
+          "prompt_eval_count": 488,
+          "prompt_eval_duration": 4109907000,
+          "load_duration": 781750,
+          "wall_seconds": 31.21
+        }
+      },
+      "review_status": "pending",
+      "id": "v-9ee07e82bb-reading",
+      "kind": "reading",
+      "stem": "両国間の緊張が【緩和】され、会談は順調に進んだ。",
+      "options": [
+        "かんわ",
+        "がんわ",
+        "かんか",
+        "かんば"
+      ],
+      "answer_index": 0,
+      "translation_zh": "两国间的紧张得到缓和，会谈顺利进行。",
+      "explanation_zh": "逐一检查读音选项；本题「緩和」读「かんわ」，句中用于表示缓和、放宽。",
+      "option_explanations_zh": [
+        "本题正确读音「かんわ」。",
+        "这不是本题标记词的正确读音；本题应选「かんわ」。",
+        "这不是本题标记词的正确读音；本题应选「かんわ」。",
+        "这不是本题标记词的正确读音；本题应选「かんわ」。"
+      ],
+      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.450754+00:00",
+        "original_content_hash": "c7ebd8f2c5e94c11cc04381f7d0fc172aeccfb26b9e0fa87249d14d83d011c09",
+        "archive_file": "data/revisions/codex-full-review-v1/v-9ee07e82bb-reading.json",
+        "changed_fields": [
+          "stem",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "逐一检查读音选项；本题「緩和」读「かんわ」，句中用于表示缓和、放宽。"
+      }
+    },
+    {
+      "target_id": "v-9ee07e82bb",
+      "target_label": "緩和",
+      "level": "N1",
+      "focus_zh": "缓和紧张、放宽限制",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "9ee07e82bb",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:29:26.805574Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-9ee07e82bb-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:29:26.805574Z",
+          "done_reason": "stop",
+          "eval_count": 267,
+          "eval_duration": 21865890000,
+          "prompt_eval_count": 488,
+          "prompt_eval_duration": 4109907000,
+          "load_duration": 781750,
+          "wall_seconds": 31.21
+        }
+      },
+      "review_status": "pending",
+      "stem": "企業の負担を軽くするため、政府は厳しすぎる規制を（　）する方針を決めた。",
+      "options": [
+        "依存",
+        "委託",
+        "緩和",
+        "補償"
+      ],
+      "answer_index": 2,
+      "translation_zh": "为减轻企业负担，政府决定放宽过严的规制。",
+      "explanation_zh": "为减轻企业负担而放宽过严的规制，用「緩和する」；已加入明确目的，避免只凭猜测选择。",
+      "option_explanations_zh": [
+        "表示依靠、依赖；不符合本题完整句子的接续或明确语境。",
+        "表示委托他人办理；不符合本题完整句子的接续或明确语境。",
+        "本题正确。为减轻企业负担而放宽过严的规制，用「緩和する」；已加入明确目的，避免只凭猜测选择。",
+        "表示弥补损失、补偿；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-9ee07e82bb-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.450899+00:00",
+        "original_content_hash": "476e4a6ceb9c66cb0e61aae5aad43864cbf4ca6f33a44b14afca038d892c745c",
+        "archive_file": "data/revisions/codex-full-review-v1/v-9ee07e82bb-cloze.json",
+        "changed_fields": [
+          "stem",
+          "options",
+          "explanation_zh",
+          "translation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": true,
+        "reason_zh": "为减轻企业负担而放宽过严的规制，用「緩和する」；已加入明确目的，避免只凭猜测选择。"
+      }
+    }
+  ]
+}

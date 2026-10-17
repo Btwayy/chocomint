@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="本地 N1 知识点巩固：经 Codex 逐题复核的练习与中文解析。">
+  <title>余白 · N1 题库实验室</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/"><span class="brand-mark">余</span><span>余白 <small>N1 LAB / LOCAL</small></span></a>
+    <p class="nav-label">学习工作台</p>
+    <button class="nav active" data-mode="daily"><span>01</span> 日期练习 <b id="daily-count">30</b></button>
+    <button class="nav" data-mode="approved"><span>02</span> 自由练习 <b id="approved-count">0</b></button>
+    <button class="nav" data-mode="candidate"><span>03</span> 全部题目 <b id="candidate-count">0</b></button>
+    <div class="side-note"><span class="dot"></span> 数据保存在这台 Mac<p>每天练一点，<br>留意犹豫的地方。</p></div>
+    <div class="side-footer"><p>资料来源：OpenJLPT、JMdict、Jonathan Waller、Tatoeba。</p><a href="https://github.com/evanclan/OpenJLPT" target="_blank" rel="noreferrer">来源与 CC BY-SA 4.0 ↗</a></div>
+  </aside>
+  <main>
+    <header><div class="eyebrow">日本語能力試験 / N1</div><div class="header-actions"><span class="local-badge"><span class="dot"></span> LOCAL · 本地题库</span><button id="refresh" class="button quiet" aria-label="刷新题库">刷新进度 ↻</button></div></header>
+    <section class="intro"><div><h1 id="page-title">每天三十题，循序巩固。</h1><p id="page-description">10 月 17 日至 12 月 7 日 · 题目已预先备好并经 AI 编辑复核，不需要你审核。</p></div></section>
+    <section id="study-card" class="study-card" aria-label="日期练习计划">
+      <div class="study-top"><div><span class="eyebrow">52 DAYS / N1 PRACTICE</span><h2 id="day-title">52 天复习计划</h2></div><div class="date-controls"><button id="date-previous" class="button quiet" aria-label="前一天">←</button><input id="study-date" type="date" aria-label="练习日期"><button id="date-next" class="button quiet" aria-label="后一天">→</button><button id="date-today" class="button quiet">今天</button></div></div>
+      <p id="day-description"></p><div class="day-progress-row"><span id="day-progress">0 / 30 已完成</span><div class="progress"><i id="day-progress-bar"></i></div></div><p id="day-message" class="help"></p>
+    </section>
+    <details id="bank-overview" class="bank-overview" open><summary>题库概况 · <span id="overview-count">360</span> 道已复核</summary>
+    <section class="stats" aria-label="题库进度">
+      <div><span>本批题目</span><strong id="stat-generated">0<small> / 360</small></strong><div class="progress"><i id="progress-bar"></i></div></div>
+      <div><span>Codex 已复核</span><strong id="stat-screened">0</strong><small>逐题检查 · AI 编辑复核</small></div>
+      <div><span>暂不练习</span><strong id="stat-flagged">0</strong><small>未复核或你已报告疑问</small></div>
+      <div><span>可直接练习</span><strong id="stat-approved">0</strong><small>不需要你逐题审核</small></div>
+    </section>
+    </details>
+    <section class="filters" aria-label="筛选题目">
+      <div class="filter-types"><button class="chip active" data-kind="all">全部</button><button class="chip" data-kind="reading">读音</button><button class="chip" data-kind="vocabulary">词汇填空</button><button class="chip" data-kind="grammar">语法</button></div>
+      <div class="filter-extra"><select id="status-filter" aria-label="审核状态"><option value="all">全部状态</option><option value="screened">Codex 已复核</option><option value="approved">个人收藏</option><option value="rejected">我提出的疑问</option><option value="flagged">检查有疑点</option></select><input id="search" type="search" placeholder="搜索知识点或题干" aria-label="搜索知识点或题干"></div>
+    </section>
+    <section id="empty" class="empty" hidden><div>余</div><h2 id="empty-title">题目正在准备中</h2><p id="empty-description">生成完成的题目会陆续出现在这里。</p></section>
+    <div id="workspace" class="workspace" hidden>
+      <section class="question-panel">
+        <div class="question-top"><div><span id="question-type" class="type-badge">词汇填空</span><span id="candidate-badge" class="subtle">候选试做</span></div><span id="position" class="subtle">01 / 360</span></div>
+        <p id="instruction" class="instruction" lang="ja"></p><h2 id="stem" lang="ja"></h2>
+        <div id="options" class="options"></div>
+        <fieldset id="confidence"><legend>这次作答，你有多确定？</legend><label><input type="radio" name="confidence" value="sure">确定</label><label><input type="radio" name="confidence" value="unsure" checked>犹豫</label><label><input type="radio" name="confidence" value="guess">猜的</label></fieldset>
+        <div class="question-actions"><button id="reveal" class="button primary" disabled>查看答案与解析</button><span id="save-state" class="subtle" role="status"></span></div>
+        <section id="answer" class="answer" hidden><div id="result" class="result"></div><p id="translation"></p><p id="focus"></p><p id="explanation"></p><div id="option-explanations"></div></section>
+        <div class="question-bottom"><button id="previous" class="button quiet">← 上一题</button><span id="target-after" class="subtle"></span><button id="next" class="button quiet">下一题 →</button></div>
+      </section>
+      <aside class="review-panel">
+        <div class="review-heading"><span class="eyebrow">QUALITY NOTES</span><h2>题目检查</h2></div>
+        <div id="quality-badges" class="quality-badges"></div>
+        <p id="blind-note" class="blind-note">先试做，再查看检查结果。</p>
+        <details id="provenance"><summary>来源与生成记录</summary><dl id="source-details"></dl></details>
+        <div class="review-form"><label for="review-note">学习笔记或疑问（可选）</label><textarea id="review-note" rows="4" maxlength="3000" placeholder="记下不理解的表达，或报告你发现的问题……"></textarea><p class="help">题目已由 Codex 复核。你只需学习；有疑问时可记录并暂时移出练习。</p><button id="approve" class="button primary" disabled>加入个人收藏</button><div class="review-secondary"><button id="reject" class="button quiet">报告疑问，暂停本题</button><button id="reset-review" class="button quiet">清除个人标记</button></div><p id="review-state" class="subtle" role="status"></p></div>
+      </aside>
+    </div>
+    <footer><span>一点ずつ、確かな理解へ。</span><div><a href="/api/export/plan">导出 52 天题单</a><a href="/api/export/candidates">导出全部题目</a><a href="/api/export/reviewed">导出复核题库</a><a href="/api/export/approved">导出个人收藏</a><a href="/api/export/records">备份学习记录</a></div></footer>
+  </main><div id="toast" role="alert" hidden></div><script src="/app.js"></script>
+</body>
+</html>

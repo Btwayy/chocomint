@@ -1,0 +1,49 @@
+{
+  "target_id": "g-nara-de-wa",
+  "target_label": "〜ならでは",
+  "level": "N1",
+  "focus_zh": "只有该人或事物才有的特点；注意ならではの接名词、ならではだ结句",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "nara-de-wa",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:58:46.688363Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-nara-de-wa-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:58:46.688363Z",
+      "done_reason": "stop",
+      "eval_count": 493,
+      "eval_duration": 50192493000,
+      "prompt_eval_count": 601,
+      "prompt_eval_duration": 6353523000,
+      "load_duration": 1394375,
+      "wall_seconds": 56.61
+    }
+  },
+  "review_status": "pending",
+  "stem": "この山岳地帯（　）清冽な空気は、都会では決して味わえないものだ。",
+  "options": [
+    "ならではの",
+    "だけならの",
+    "しかない",
+    "しかできない"
+  ],
+  "answer_index": 0,
+  "translation_zh": "这片山区特有的清澈空气，是都市里绝对无法体验到的。",
+  "explanation_zh": "「ならでは」接名词表“只有…才有的”，修饰后文名词。「だけなら」接续错误；「しかできない」「しかない」需接动词或作谓语，不能直接修饰名词。",
+  "option_explanations_zh": [
+    "正确选项：接名词表示“唯有此处特有的”，自然修饰后文名词。",
+    "干扰项：「だけなら」接续错误，无法构成“只有…才有的”含义。",
+    "干扰项：同样需接动词或独立结句，此处语法功能不符。",
+    "干扰项：需接动词原形或作谓语，不能直接修饰名词短语。"
+  ],
+  "id": "g-nara-de-wa-1",
+  "kind": "grammar"
+}

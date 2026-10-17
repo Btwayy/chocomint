@@ -1,0 +1,49 @@
+{
+  "target_id": "v-988a31e98d",
+  "target_label": "漠然",
+  "level": "N1",
+  "focus_zh": "模糊、笼统，常见漠然とした",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "988a31e98d",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:37:38.373943Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-988a31e98d-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:37:38.373943Z",
+      "done_reason": "stop",
+      "eval_count": 253,
+      "eval_duration": 26292793000,
+      "prompt_eval_count": 405,
+      "prompt_eval_duration": 4248930000,
+      "load_duration": 639375,
+      "wall_seconds": 30.6
+    }
+  },
+  "review_status": "pending",
+  "stem": "将来の計画について、彼は（　）とした考えしか持っていない。",
+  "options": [
+    "漠然",
+    "迅速",
+    "円滑",
+    "柔軟"
+  ],
+  "answer_index": 0,
+  "translation_zh": "关于未来的计划，他只有模糊的想法。",
+  "explanation_zh": "「漠然」表模糊笼统。「円滑」指顺利，「迅速」指快，「柔軟」指灵活，均不合语境。",
+  "option_explanations_zh": [
+    "「漠然」形容想法不具体、模糊，符合句意。",
+    "「迅速」强调速度快，与想法是否明确无关。",
+    "「円滑」指进行顺利，不能修饰“想法”的清晰度。",
+    "「柔軟」指态度灵活，无法表达内容笼统之意。"
+  ],
+  "id": "v-988a31e98d-cloze",
+  "kind": "vocabulary"
+}

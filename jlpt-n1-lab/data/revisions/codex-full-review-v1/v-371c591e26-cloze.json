@@ -1,0 +1,49 @@
+{
+  "target_id": "v-371c591e26",
+  "target_label": "妥協",
+  "level": "N1",
+  "focus_zh": "双方让步达成妥协",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "371c591e26",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:27:35.321304Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-371c591e26-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:27:35.321304Z",
+      "done_reason": "stop",
+      "eval_count": 209,
+      "eval_duration": 17089700000,
+      "prompt_eval_count": 526,
+      "prompt_eval_duration": 4654919000,
+      "load_duration": 736458,
+      "wall_seconds": 21.79
+    }
+  },
+  "review_status": "pending",
+  "stem": "価格と品質で（　）を余儀なくされた。",
+  "options": [
+    "委託",
+    "抑制",
+    "妥協",
+    "補償"
+  ],
+  "answer_index": 2,
+  "translation_zh": "在价格与品质上被迫做出了妥协。",
+  "explanation_zh": "双方让步达成平衡，故选妥協。委託指委托他人处理事务。補償指对损失给予赔偿。抑制指控制或压制某种行为。",
+  "option_explanations_zh": [
+    "将事务托付给他人，与让步无关。",
+    "强行控制或限制某事，非双方协商结果。",
+    "双方互相让步以达成一致，符合语境。",
+    "对损害进行金钱或实物赔偿，不合句意。"
+  ],
+  "id": "v-371c591e26-cloze",
+  "kind": "vocabulary"
+}

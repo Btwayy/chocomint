@@ -1,0 +1,50 @@
+{
+  "target_id": "v-800e05bcf1",
+  "target_label": "補償",
+  "level": "N1",
+  "focus_zh": "对损失作出补偿",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "800e05bcf1",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:48:19.04201Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-800e05bcf1-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:48:19.04201Z",
+      "done_reason": "stop",
+      "eval_count": 247,
+      "eval_duration": 25652685000,
+      "prompt_eval_count": 552,
+      "prompt_eval_duration": 8570493000,
+      "load_duration": 665084,
+      "wall_seconds": 34.28
+    }
+  },
+  "review_status": "pending",
+  "id": "v-800e05bcf1-reading",
+  "kind": "reading",
+  "stem": "会社は従業員の被害に対する【補償】を約束した。",
+  "options": [
+    "ほそう",
+    "ぼしょう",
+    "ほしょう",
+    "ほしょ"
+  ],
+  "answer_index": 2,
+  "translation_zh": "公司承诺对员工的损失进行赔偿。",
+  "explanation_zh": "「補償」在底库中所列读音为「ほしょう」。注意：该题仍需检查句中用法及其他可能读音。",
+  "option_explanations_zh": [
+    "与底库所列读音「ほしょう」不一致。",
+    "与底库所列读音「ほしょう」不一致。",
+    "与底库所列读音一致。",
+    "与底库所列读音「ほしょう」不一致。"
+  ],
+  "distractor_method": "curated_by_codex_then_deterministically_shuffled"
+}

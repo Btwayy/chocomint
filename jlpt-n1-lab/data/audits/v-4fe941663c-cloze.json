@@ -1,0 +1,31 @@
+{
+  "question_id": "v-4fe941663c-cloze",
+  "content_hash": "ba2d6c63ba1b82bab8f30d40ebbc47d0d050494344bad99ee1a2db829e50d0d4",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "打開"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「現状を開く」是固定搭配，意为打破现状。其他选项与「現状を」搭配均不自然或语义不通。",
+    "acceptable_indices": [
+      1
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:53:26.926441Z",
+    "done_reason": "stop",
+    "eval_count": 50,
+    "eval_duration": 3294321000,
+    "prompt_eval_count": 173,
+    "prompt_eval_duration": 1294834000,
+    "load_duration": 805375,
+    "wall_seconds": 4.59,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:53:26.927721+00:00"
+}

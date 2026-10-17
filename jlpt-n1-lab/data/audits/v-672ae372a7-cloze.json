@@ -1,0 +1,31 @@
+{
+  "question_id": "v-672ae372a7-cloze",
+  "content_hash": "eeb0760bfb8a91ee7785526cfc34d22c822726cf99420779598c42543d2bdf24",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "配慮"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「配慮する」意为考虑他人感受，符合语境；「把握」指掌握情况，「促进」与「排除」搭配不当或语义不通。",
+    "acceptable_indices": [
+      1
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T13:02:49.204281Z",
+    "done_reason": "stop",
+    "eval_count": 54,
+    "eval_duration": 3344028000,
+    "prompt_eval_count": 188,
+    "prompt_eval_duration": 1244514000,
+    "load_duration": 959125,
+    "wall_seconds": 4.59,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T13:02:49.205302+00:00"
+}

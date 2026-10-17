@@ -1,0 +1,49 @@
+{
+  "target_id": "v-013e8ffafb",
+  "target_label": "認識",
+  "level": "N1",
+  "focus_zh": "对事实的认识或认知",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "013e8ffafb",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:33:11.579697Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-013e8ffafb-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:33:11.579697Z",
+      "done_reason": "stop",
+      "eval_count": 203,
+      "eval_duration": 18598338000,
+      "prompt_eval_count": 556,
+      "prompt_eval_duration": 5537799000,
+      "load_duration": 816458,
+      "wall_seconds": 24.19
+    }
+  },
+  "review_status": "pending",
+  "stem": "新しい技術の価値を正しく（　）する必要がある。",
+  "options": [
+    "委託",
+    "認識",
+    "拘束",
+    "補償"
+  ],
+  "answer_index": 1,
+  "translation_zh": "有必要正确认识新技术的价值。",
+  "explanation_zh": "本句需表达‘认知/理解’之意，仅‘認識’符合语境与词性。",
+  "option_explanations_zh": [
+    "「委託」指委托他人办理，不能用于对价值的认知。",
+    "「認識」意为认识、认知，此处搭配正确。",
+    "「拘束」指束缚或限制，语义与句意完全相反。",
+    "「補償」指赔偿或补偿，无法与价值搭配表示理解。"
+  ],
+  "id": "v-013e8ffafb-cloze",
+  "kind": "vocabulary"
+}

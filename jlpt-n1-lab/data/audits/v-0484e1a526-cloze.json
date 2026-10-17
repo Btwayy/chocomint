@@ -1,0 +1,31 @@
+{
+  "question_id": "v-0484e1a526-cloze",
+  "content_hash": "9a03eb605918d792dfee345fae8bee45d8c921c5ac6a217b3d84715188a4cf80",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "抑制"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "“インフレ”指通货膨胀，政府通常采取“抑制”措施以稳定物价。“促进”会加剧通胀，“补足”和“委托”与语境不符。",
+    "acceptable_indices": [
+      2
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:51:54.96086Z",
+    "done_reason": "stop",
+    "eval_count": 57,
+    "eval_duration": 3728681000,
+    "prompt_eval_count": 180,
+    "prompt_eval_duration": 127737000,
+    "load_duration": 655833,
+    "wall_seconds": 8.33,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:51:54.963683+00:00"
+}

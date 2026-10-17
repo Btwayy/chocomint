@@ -1,0 +1,81 @@
+{
+  "target_id": "v-4fb12cffa9",
+  "questions": [
+    {
+      "target_id": "v-4fb12cffa9",
+      "target_label": "阻止",
+      "level": "N1",
+      "focus_zh": "阻止",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "4fb12cffa9",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.660783+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-4fb12cffa9-reading",
+      "kind": "reading",
+      "stem": "被害がさらに広がるのを【阻止】するため、直ちに対策を取った。",
+      "options": [
+        "ぞし",
+        "そしい",
+        "そじ",
+        "そし"
+      ],
+      "answer_index": 3,
+      "translation_zh": "为阻止损害进一步扩大，立即采取了措施。",
+      "explanation_zh": "「阻止」本题读「そし」，句中表示阻止。",
+      "option_explanations_zh": [
+        "不是本题标记词的正确读音；这里应选「そし」。",
+        "不是本题标记词的正确读音；这里应选「そし」。",
+        "不是本题标记词的正确读音；这里应选「そし」。",
+        "正确：本题标记词读「そし」。"
+      ]
+    },
+    {
+      "target_id": "v-4fb12cffa9",
+      "target_label": "阻止",
+      "level": "N1",
+      "focus_zh": "阻止",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "4fb12cffa9",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.660779+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-4fb12cffa9-cloze",
+      "kind": "vocabulary",
+      "stem": "被害がさらに広がるのを（　）するため、直ちに対策を取った。",
+      "options": [
+        "促進",
+        "返済",
+        "阻止",
+        "寄贈"
+      ],
+      "answer_index": 2,
+      "translation_zh": "为阻止损害进一步扩大，立即采取了措施。",
+      "explanation_zh": "明确要防止进一步扩大，用「阻止」；「促進」方向相反。",
+      "option_explanations_zh": [
+        "「促進」表示促进发展或进程；不符合本题已经限定的句意或接续。",
+        "「返済」表示偿还借款；不符合本题已经限定的句意或接续。",
+        "明确要防止进一步扩大，用「阻止」；「促進」方向相反。",
+        "「寄贈」表示捐赠物品等；不符合本题已经限定的句意或接续。"
+      ]
+    }
+  ]
+}

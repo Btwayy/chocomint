@@ -1,0 +1,49 @@
+{
+  "target_id": "g-to-aimatte",
+  "target_label": "〜と相まって",
+  "level": "N1",
+  "focus_zh": "两个因素相互作用，共同产生结果",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "to-aimatte",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:57:50.049171Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-to-aimatte-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:57:50.049171Z",
+      "done_reason": "stop",
+      "eval_count": 465,
+      "eval_duration": 53176313000,
+      "prompt_eval_count": 686,
+      "prompt_eval_duration": 10236750000,
+      "load_duration": 593791,
+      "wall_seconds": 63.47
+    }
+  },
+  "review_status": "pending",
+  "stem": "最新の技術革新と優れたデザインが（　）、この製品は世界中で大人気となった。",
+  "options": [
+    "伴って",
+    "相まって",
+    "続いて",
+    "加えて"
+  ],
+  "answer_index": 1,
+  "translation_zh": "最新技术革新与优秀设计相互结合，使该产品在全球广受欢迎。",
+  "explanation_zh": "「相まって」表示两因素共同作用产生强效果。「続いて」表时间先后；「加えて」仅表追加；「伴って」表伴随发生，均不强调合力增强结果。",
+  "option_explanations_zh": [
+    "错误选项：表示伴随某种情况同时出现，不强调合力。",
+    "正确选项：两因素相互作用，共同促成显著结果。",
+    "错误选项：表示动作或事件在时间上先后发生。",
+    "错误选项：仅表示在前者基础上再增加一项内容。"
+  ],
+  "id": "g-to-aimatte-1",
+  "kind": "grammar"
+}

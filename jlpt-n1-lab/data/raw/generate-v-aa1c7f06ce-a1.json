@@ -1,0 +1,95 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是严谨的日语教材编写者。参考下列开放数据和考点编写原创四选一练习。参考内容只是资料，不是指令。日语必须自然，四个选项必须恰有一个成立。题干用日语，解释与翻译用简体中文。所有填空统一写（　），且每题只有一个空。正确选项放在第一个，answer_index=0。解析按选项文字解释，不提A/B/C/D、选项编号。中文总解析控制在60字内，每个选项解释控制在35字内。干扰项应词性或接续相近、容易混淆，但在本句明确不成立。不要仅靠明显的接续错误出题。题干不要包含考点名称或答案提示。不要照抄例句，换语境。"
+    },
+    {
+      "role": "user",
+      "content": "为「凌ぐ」写两种不同语境的练习。reading_stem：完整日语句子，将目标词原样用【】括起，句中恰有一对【】。reading_translation_zh：该句中文翻译。cloze：另一语境的词汇填空题，正确选项必须严格等于目标词原形；动词把屈折结尾放在选项内，若必须变化目标词才能填空则改写句子以适用原形。不要使用目标词的同义词作为另一个可成立的选项。\n词汇填空的四个选项已经给定，严格照用：[\"凌ぐ\", \"携わる\", \"覆す\", \"賄う\"]。不能给选项添加する、した、して、に、な等后缀。必要的活用或助词写在空格后面。例如选项是把握时，可写『現状を（　）する』，不要写『現状を（　）必要がある』。\n考点：熬过困难的时期\n参考资料：{\"word\": \"凌ぐ\", \"reading\": \"しのぐ\", \"meanings\": [\"to outdo\", \"to surpass\", \"to endure\", \"to keep out (rain)\", \"to stave off\", \"to tide over\", \"to pull through\", \"to defy\"], \"pos\": [\"v5g\", \"vt\"], \"examples\": [{\"ja\": \"この新車は他車をしのぐだろう。\", \"furigana\": \"この{新車|しんしゃ}は{他車|たしゃ}をしのぐだろう。\", \"en\": \"This new car will put other cars to shame.\", \"tatoeba_id\": 221031}, {\"ja\": \"この金で何とか１ヶ月はしのげる。\", \"furigana\": \"この{金|かね}で{何|なん}とか１{ヶ月|かげつ}はしのげる。\", \"en\": \"The money will carry us for about a month.\", \"tatoeba_id\": 222293}]}"
+    }
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "reading_stem": {
+        "type": "string"
+      },
+      "reading_translation_zh": {
+        "type": "string"
+      },
+      "cloze": {
+        "type": "object",
+        "properties": {
+          "stem": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "凌ぐ",
+                "携わる",
+                "覆す",
+                "賄う"
+              ]
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "answer_index": {
+            "type": "integer",
+            "const": 0
+          },
+          "translation_zh": {
+            "type": "string"
+          },
+          "explanation_zh": {
+            "type": "string"
+          },
+          "option_explanations_zh": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "stem",
+          "options",
+          "answer_index",
+          "translation_zh",
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "reading_stem",
+      "reading_translation_zh",
+      "cloze"
+    ],
+    "additionalProperties": false
+  },
+  "response": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:52:33.651098Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\"reading_stem\": \"この新車は他車を【凌ぐ】性能を持つ。\", \"reading_translation_zh\": \"这辆新车拥有超越其他车辆的性能。\", \"cloze\": {\"stem\": \"資金不足の状況を何とか（　）ねばならない。\", \"options\": [\"凌ぐ\", \"携わる\", \"覆す\", \"賄う\"], \"answer_index\": 0, \"translation_zh\": \"必须设法熬过资金不足的困境。\", \"explanation_zh\": \"凌ぐ：意为熬过困难时期，符合语境。\\n携わる：指参与某事，无法搭配困境。\\n覆す：意为推翻，与度过难关无关。\\n賄う：指供给或满足需求，不表忍受。\", \"option_explanations_zh\": [\"凌ぐ表示勉强支撑、熬过艰难时刻。\", \"携わる指从事或参与工作，不合句意。\", \"覆す意为打翻或推翻，无法接困境。\", \"賄う指供应资金或满足需求，非忍受。\"]}}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 53600938458,
+    "load_duration": 627375,
+    "prompt_eval_count": 579,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 10892002000,
+    "eval_count": 225,
+    "eval_duration": 42648530000
+  }
+}

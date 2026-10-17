@@ -1,0 +1,49 @@
+{
+  "target_id": "v-13d06bf02b",
+  "target_label": "排除",
+  "level": "N1",
+  "focus_zh": "排除不利因素或可能性",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "13d06bf02b",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:47:07.847282Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-13d06bf02b-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:47:07.847282Z",
+      "done_reason": "stop",
+      "eval_count": 218,
+      "eval_duration": 22959066000,
+      "prompt_eval_count": 553,
+      "prompt_eval_duration": 8674856000,
+      "load_duration": 756708,
+      "wall_seconds": 31.69
+    }
+  },
+  "review_status": "pending",
+  "stem": "交渉の余地がないため、失敗の可能性は完全に（　）された。",
+  "options": [
+    "委託",
+    "補足",
+    "配慮",
+    "排除"
+  ],
+  "answer_index": 3,
+  "translation_zh": "由于没有谈判的余地，失败的可能性被完全排除了。",
+  "explanation_zh": "句意需表达消除可能性。「排除」指去除不利因素；「補足」是补充说明；「配慮」是顾及他人；「委託」是委托他人。",
+  "option_explanations_zh": [
+    "「委託」指托付任务，不能用于抽象的可能性。",
+    "「補足」指增添内容，无法搭配消除可能性。",
+    "「配慮」指体贴照顾，与消除风险无关。",
+    "「排除」意为去除，符合消除可能性的语境。"
+  ],
+  "id": "v-13d06bf02b-cloze",
+  "kind": "vocabulary"
+}

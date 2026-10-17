@@ -1,0 +1,49 @@
+{
+  "target_id": "v-ef8415130d",
+  "target_label": "覆す",
+  "level": "N1",
+  "focus_zh": "推翻既有判断或常识",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "ef8415130d",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:43:54.645349Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-ef8415130d-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:43:54.645349Z",
+      "done_reason": "stop",
+      "eval_count": 224,
+      "eval_duration": 22728533000,
+      "prompt_eval_count": 591,
+      "prompt_eval_duration": 7522999000,
+      "load_duration": 630708,
+      "wall_seconds": 30.32
+    }
+  },
+  "review_status": "pending",
+  "stem": "長年の常識を（　）新たな理論が発表された。",
+  "options": [
+    "滞る",
+    "覆す",
+    "携わる",
+    "賄う"
+  ],
+  "answer_index": 1,
+  "translation_zh": "推翻了长期常识的新理论被发表了。",
+  "explanation_zh": "「覆す」指推翻旧有结论或常识，符合语境。「携わる」意为参与，「賄う」意为供给，「滞る」意为停滞，均无法与“常识”搭配表示推翻之意。",
+  "option_explanations_zh": [
+    "指流动停止，无法表达推翻旧观念的含义",
+    "推翻既有判断，符合新理论颠覆常识的语境",
+    "指参与某事，不能接在‘常识’后表示改变",
+    "指提供物资或金钱，与抽象概念不搭"
+  ],
+  "id": "v-ef8415130d-cloze",
+  "kind": "vocabulary"
+}

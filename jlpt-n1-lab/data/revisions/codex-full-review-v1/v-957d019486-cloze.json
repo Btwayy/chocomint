@@ -1,0 +1,49 @@
+{
+  "target_id": "v-957d019486",
+  "target_label": "根拠",
+  "level": "N1",
+  "focus_zh": "判断或论述的依据",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "957d019486",
+    "source_file": "vocab-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T12:33:44.976589Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-v-957d019486-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T12:33:44.976589Z",
+      "done_reason": "stop",
+      "eval_count": 270,
+      "eval_duration": 28301383000,
+      "prompt_eval_count": 535,
+      "prompt_eval_duration": 5049082000,
+      "load_duration": 722375,
+      "wall_seconds": 33.39
+    }
+  },
+  "review_status": "pending",
+  "stem": "この結論を導き出すためには、確かな（　）が必要です。",
+  "options": [
+    "実態",
+    "根拠",
+    "課題",
+    "意向"
+  ],
+  "answer_index": 1,
+  "translation_zh": "要得出这个结论，需要确凿的依据。",
+  "explanation_zh": "本句强调判断所需的依据。「根拠」指理由或基础；「実態」指实际情况；「意向」指意图；「課題」指问题或任务。此处仅「根拠」符合语境。",
+  "option_explanations_zh": [
+    "実態：指事物的真实状况，无法作为推导结论的直接理由。",
+    "根拠：指判断或论述所依赖的理由与基础，符合句意。",
+    "課題：指需要解决的问题或任务，与得出结论的逻辑不符。",
+    "意向：指人的想法或意图，不能作为客观结论的支撑。"
+  ],
+  "id": "v-957d019486-cloze",
+  "kind": "vocabulary"
+}

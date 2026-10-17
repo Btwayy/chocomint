@@ -1,0 +1,31 @@
+{
+  "question_id": "v-68a47d4c28-cloze",
+  "content_hash": "825f70948486007f18ba7a1968459f0990ad9ac6ad88a6944f4af7d8426c8943",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "辛うじて"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "题干表示资金耗尽却仍能继续事业，需填“勉强”之意。",
+    "acceptable_indices": [
+      0
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:54:03.724488Z",
+    "done_reason": "stop",
+    "eval_count": 42,
+    "eval_duration": 2759254000,
+    "prompt_eval_count": 187,
+    "prompt_eval_duration": 1169150000,
+    "load_duration": 583667,
+    "wall_seconds": 3.93,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:54:03.725446+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "question_id": "v-d07bdd00a7-cloze",
+  "content_hash": "e637b81b8d836074074697d09c8086443404388587ed564ac2aadca533f87d26",
+  "passed": true,
+  "answer_format": "literal_option_text_v2",
+  "method": "cross_model_blind_resolve",
+  "limitations": "另一模型隐藏答案复答；同家族模型可能共同出错，不能替代人工审校。",
+  "result": {
+    "acceptable_answers": [
+      "契機"
+    ],
+    "natural_japanese": true,
+    "reason_zh": "「根拠」「余地」「実態」填入后语义不通或搭配不当。唯有「契機」（契机）与「人生を変える」构成自然且逻辑正确的固定搭配，表示转折点。",
+    "acceptable_indices": [
+      3
+    ]
+  },
+  "metrics": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "created_at": "2026-10-17T12:56:05.635465Z",
+    "done_reason": "stop",
+    "eval_count": 63,
+    "eval_duration": 3877397000,
+    "prompt_eval_count": 184,
+    "prompt_eval_duration": 1283056000,
+    "load_duration": 676292,
+    "wall_seconds": 5.16,
+    "format_mode": "schema_constrained"
+  },
+  "created_at": "2026-10-17T12:56:05.636541+00:00"
+}

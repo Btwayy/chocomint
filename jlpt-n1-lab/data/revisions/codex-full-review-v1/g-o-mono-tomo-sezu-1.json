@@ -1,0 +1,49 @@
+{
+  "target_id": "g-o-mono-tomo-sezu",
+  "target_label": "〜をものともせず",
+  "level": "N1",
+  "focus_zh": "面对不利条件毫不畏惧、克服困难去做某事",
+  "source": {
+    "project": "OpenJLPT",
+    "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+    "source_id": "o-mono-tomo-sezu",
+    "source_file": "grammar-n1.json",
+    "license": "CC-BY-SA-4.0"
+  },
+  "generation": {
+    "model": "qwen3.5:27b-q4_K_M",
+    "created_at": "2026-10-17T13:06:56.479552Z",
+    "attempt": 1,
+    "raw_file": "data/raw/generate-g-o-mono-tomo-sezu-a1.json",
+    "metrics": {
+      "model": "qwen3.5:27b-q4_K_M",
+      "created_at": "2026-10-17T13:06:56.479552Z",
+      "done_reason": "stop",
+      "eval_count": 456,
+      "eval_duration": 45415881000,
+      "prompt_eval_count": 628,
+      "prompt_eval_duration": 10513478000,
+      "load_duration": 675833,
+      "wall_seconds": 55.99
+    }
+  },
+  "review_status": "pending",
+  "stem": "選手たちは猛暑を（　）、試合に臨んだ。",
+  "options": [
+    "もののせいで",
+    "ものをし",
+    "ものとして",
+    "ものともせず"
+  ],
+  "answer_index": 3,
+  "translation_zh": "选手们毫不畏惧酷暑，投入了比赛。",
+  "explanation_zh": "「をものともせず」表示无视困难坚持行动。「ものとして」意为“作为”，语义不通。「ものをし」接续错误且无此用法。「もののせいで」表原因，与句意矛盾。",
+  "option_explanations_zh": [
+    "接续错误，「をものともせず」是固定语法形式。此形不成立。该词组表原因，与句意中克服困难的语境不符。",
+    "接名词后无法表达克服困难之意。",
+    "意为“当作……",
+    "正确选项，表示无视酷暑这一不利条件继续比赛。"
+  ],
+  "id": "g-o-mono-tomo-sezu-1",
+  "kind": "grammar"
+}

@@ -1,0 +1,81 @@
+{
+  "target_id": "v-a75a59840b",
+  "questions": [
+    {
+      "target_id": "v-a75a59840b",
+      "target_label": "突破",
+      "level": "N1",
+      "focus_zh": "突破",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "a75a59840b",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.660259+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-a75a59840b-reading",
+      "kind": "reading",
+      "stem": "売上が初めて一億円の大台を【突破】した。",
+      "options": [
+        "どっぱ",
+        "とぱ",
+        "とっば",
+        "とっぱ"
+      ],
+      "answer_index": 3,
+      "translation_zh": "销售额首次突破了一亿日元大关。",
+      "explanation_zh": "「突破」本题读「とっぱ」，句中表示突破。",
+      "option_explanations_zh": [
+        "不是本题标记词的正确读音；这里应选「とっぱ」。",
+        "不是本题标记词的正确读音；这里应选「とっぱ」。",
+        "不是本题标记词的正确读音；这里应选「とっぱ」。",
+        "正确：本题标记词读「とっぱ」。"
+      ]
+    },
+    {
+      "target_id": "v-a75a59840b",
+      "target_label": "突破",
+      "level": "N1",
+      "focus_zh": "突破",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "a75a59840b",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.660255+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-a75a59840b-cloze",
+      "kind": "vocabulary",
+      "stem": "売上が初めて一億円の大台を（　）した。",
+      "options": [
+        "突破",
+        "寄贈",
+        "返済",
+        "補充"
+      ],
+      "answer_index": 0,
+      "translation_zh": "销售额首次突破了一亿日元大关。",
+      "explanation_zh": "超过某个界限，用「大台を突破する」。",
+      "option_explanations_zh": [
+        "超过某个界限，用「大台を突破する」。",
+        "「寄贈」表示捐赠物品等；不符合本题已经限定的句意或接续。",
+        "「返済」表示偿还借款；不符合本题已经限定的句意或接续。",
+        "「補充」表示补充数量、人员等；不符合本题已经限定的句意或接续。"
+      ]
+    }
+  ]
+}
