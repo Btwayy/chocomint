@@ -2,7 +2,7 @@
 
 个人网页与学习工具。
 
-## 日语 N1 本地复习工具
+## 日语 N1 复习工具
 
 [项目说明](jlpt-n1-lab/README.md) · [52 天计划](jlpt-n1-lab/reports/study-plan.md) · [题库数据](jlpt-n1-lab/data/reviewed.json)
 
@@ -17,6 +17,8 @@ python3 server.py
 
 打开 <http://127.0.0.1:8765/>。Mac 也可双击项目中的 `启动题库.command`。
 
-此应用包含 Python/SQLite 后端，GitHub Pages 不运行这个服务；GitHub 上保存的是可在本地运行的完整项目。原有个人网页保留在仓库根目录。
+线上入口：[余白 N1 练习](https://mintbtw.vercel.app/jlpt-n1-lab/web/)。静态网页直接读取预生成题库，作答和收藏保存在当前设备的浏览器中；设备之间不会自动同步，请使用“备份学习记录”导出。Vercel 与 GitHub Pages 均可直接提供此静态页面。
+
+上面的 Python 启动方式仍可使用，数据保存到本机 SQLite；这份记录与线上浏览器记录分开。原有个人网页保留在仓库根目录。
 
 题库来源、许可和 AI 复核边界见项目说明。个人学习记录仅保存在本地 `data/lab.sqlite`，不纳入公开 Git 历史。

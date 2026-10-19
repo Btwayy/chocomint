@@ -14,9 +14,17 @@
 
 本项目现保存于 `~/Documents/repo/chocomint/jlpt-n1-lab`；原 `~/Documents/personal/jlpt-n1-lab` 作为迁移时备份保留。今后请从新目录启动，学习记录写入新目录。
 
-320、375、390像素手机视口已检查并修复布局；验证范围与截图见 [迁移和手机检查报告](reports/migration-mobile.md)。GitHub Pages不能运行Python后端，本项目需要在本机启动。
+320、375、390像素手机视口已检查并修复布局；验证范围与截图见 [迁移和手机检查报告](reports/migration-mobile.md)。现已同时支持 Vercel/GitHub Pages 静态访问与本机 Python 服务；访问方式见下文。
 
 公开Git包含题库、计划、原始生成响应与修订记录。SQLite学习记录、日志和会话检查点在本地完整保存，按 `.gitignore` 排除；克隆仓库后首次启动会创建自己的空数据库。
+
+## 线上静态版（Vercel / GitHub Pages）
+
+访问 [余白 N1 练习](https://mintbtw.vercel.app/jlpt-n1-lab/web/)。保留仓库目录结构即可，入口是 `jlpt-n1-lab/web/index.html`，CSS、脚本和静态题库均使用相对路径；无需运行Python、配置模型API或启用数据库服务。
+
+静态版直接读取 `data/candidates.json` 与 `data/study-plan.json`。作答、收藏和疑问保存于当前站点的浏览器localStorage，**不会跨设备同步，也不会自动读取本机SQLite**。清除网站数据会删除浏览器记录，请定期点击“备份学习记录”导出JSON。浏览器拒绝存储或空间不足时会明确提示保存失败，不会假装保存成功。
+
+本机 `python3 server.py` 保留原有SQLite模式，访问 `http://127.0.0.1:8765/` 时自动使用它。题库本身和每日安排相同，两种方式的学习记录分开。
 
 ## 开始练习
 
@@ -111,6 +119,7 @@ python3 lab.py status
 ```sh
 python3 -m unittest discover -s tests -v
 node --check web/app.js
+node --test tests/storage.test.cjs
 ```
 
 测试使用临时数据库，不会将测试题或测试审核结果写入你的题库。

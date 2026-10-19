@@ -64,7 +64,7 @@ class Handler(BaseHTTPRequestHandler):
             with lab.connect() as db:
                 data = {"reviews": [dict(r) for r in db.execute("SELECT * FROM reviews")], "attempts": [dict(r) for r in db.execute("SELECT * FROM attempts")], "study_plan": study_plan.read_plan(), "exported_at": lab.now()}
             return self.send(200, json.dumps(data, ensure_ascii=False, indent=2).encode(), filename="n1-records.json")
-        files = {"/": "index.html", "/app.js": "app.js", "/style.css": "style.css"}
+        files = {"/": "index.html", "/app.js": "app.js", "/style.css": "style.css", "/storage.js": "storage.js"}
         if path in files:
             file = lab.ROOT / "web" / files[path]
             mime = mimetypes.guess_type(str(file))[0] or "application/octet-stream"

@@ -5,9 +5,11 @@ let app = { data: null, mode: "daily", date: null, kind: "all", status: "all", s
 function el(tag, text, className) { const n = document.createElement(tag); if (text !== undefined) n.textContent = text; if (className) n.className = className; return n; }
 function toast(text) { $("toast").textContent = text; $("toast").hidden = false; setTimeout(() => $("toast").hidden = true, 4000); }
 function current() { return app.list[app.index]; }
-async function post(path, body) { const r = await fetch(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }); const d = await r.json(); if (!r.ok) throw new Error(d.error || "保存失败"); return d; }
+const store = JLPTStorage.createStore({fetch:window.fetch.bind(window), baseURL:document.baseURI, getStorage:()=>window.localStorage,
+  backend:["localhost","127.0.0.1","[::1]"].includes(location.hostname) && location.pathname === "/"});
+async function post(path, body) { return store.post(path, body); }
 function reviewDecision(q) { return q.human_review?.decision || "pending"; }
-function practiceAvailable(q) { return q.structural_check.passed && q.editorial_check?.decision === "reviewed" && reviewDecision(q) !== "rejected"; }
+function practiceAvailable(q) { return q.structural_check.passed && q.editorial_check?.decision === "reviewed" && q.editorial_check.content_hash === q.content_hash && reviewDecision(q) !== "rejected"; }
 function day() { return app.data?.study_plan?.days.find(d => d.date === app.date); }
 function doneOnDate(q, date = app.date) { return app.data.attempts.some(a => a.plan_date === date && a.question_id === q.id && a.content_hash === q.content_hash); }
 function renderDay() {
@@ -110,7 +112,7 @@ async function reveal() {
     const attempt={question_id:q.id,content_hash:q.content_hash,selected_index:app.choice,confidence:document.querySelector('input[name="confidence"]:checked').value,elapsed_ms:Math.min(86400000,Math.round(performance.now()-app.started)),plan_date:app.mode === "daily" ? app.date : null};
     await post("/api/attempt", attempt);
     app.data.attempts.unshift(attempt); renderDay();
-    app.revealed = true; $("answer").hidden = false; $("save-state").textContent = "已保存到本机"; $("reveal").textContent = "已展开解析";
+    app.revealed = true; $("answer").hidden = false; $("save-state").textContent = store.mode === "browser" ? "已保存到当前浏览器" : "已保存到本机"; $("reveal").textContent = "已展开解析";
     const correct = app.choice === q.answer_index;
     $("result").textContent = `${correct ? "回答正确" : "本题答案"} · ${q.answer_index+1}. ${q.options[q.answer_index]}`;
     $("result").className = "result"+(correct ? "" : " wrong");
@@ -137,8 +139,12 @@ async function review(decision) {
 }
 async function load(initial = false) {
   $("refresh").disabled = true;
-  try { const r = await fetch("/api/state"); if(!r.ok) throw new Error("题库读取失败"); const data = await r.json(); const id = current()?.id; app.data = data; if(data.study_plan && !app.date) app.date=[data.study_plan.start_date,data.study_plan.today,data.study_plan.end_date].sort()[1]; renderStats(); filter(initial,id); if(!initial) toast("题库进度已刷新"); }
-  catch(e) { toast(e.message); }
+  try { const data = await store.load(); const id = current()?.id; app.data = data;
+    $("storage-summary").textContent = data.storage_mode === "browser" ? "学习记录保存在当前浏览器" : "学习记录保存在本地数据库";
+    $("storage-badge").textContent = data.storage_mode === "browser" ? "BROWSER · 预生成题库" : "LOCAL · 本地题库";
+    $("storage-info").textContent = data.storage_mode === "browser" ? "学习记录保存在当前设备和浏览器；不同设备不会自动同步，清除网站数据会丢失记录，请定期备份。" : "学习记录保存在本机 SQLite 数据库，与你在其他浏览器中的线上记录分开。";
+    if(data.study_plan && !app.date) app.date=[data.study_plan.start_date,data.study_plan.today,data.study_plan.end_date].sort()[1]; renderStats(); filter(initial,id); if(!initial) toast("题库进度已刷新"); }
+  catch(e) { toast(e.message); if(!app.data){$("empty").hidden=false;$("empty-title").textContent="题库加载失败";$("empty-description").textContent=e.message;} }
   finally { $("refresh").disabled = false; }
 }
 document.querySelectorAll("[data-mode]").forEach(n => n.onclick = () => { app.mode = n.dataset.mode; app.status="all"; $("status-filter").value="all"; document.querySelectorAll("[data-mode]").forEach(b => b.classList.toggle("active",b===n)); $("page-title").textContent=app.mode==="candidate"?"查看题目与复核记录。":app.mode==="daily"?"每天三十题，循序巩固。":"留一点时间，巩固理解。";$("page-description").textContent=app.mode==="candidate"?"可查看未复核或已提出疑问的题目；不需要你承担审核工作。":"10 月 17 日至 12 月 7 日 · 题目已预先备好并经 AI 编辑复核，不需要你审核。";if(app.data)filter(); });
@@ -153,6 +159,11 @@ $("search").oninput=e=>{app.search=e.target.value;if(app.data)filter();};
 $("previous").onclick=()=>{if(app.index>0){app.index--;renderQuestion();}};
 $("next").onclick=()=>{if(app.index<app.list.length-1){app.index++;renderQuestion();}};
 $("reveal").onclick=reveal;$("refresh").onclick=()=>load();$("approve").onclick=()=>review("approved");$("reject").onclick=()=>review("rejected");$("reset-review").onclick=()=>review("pending");
+document.querySelectorAll("[data-export]").forEach(link=>link.onclick=async event=>{
+  event.preventDefault();
+  try { const result=await store.exportData(link.dataset.export); const url=URL.createObjectURL(new Blob([JSON.stringify(result.data,null,2)],{type:"application/json"})); const a=el("a");a.href=url;a.download=result.filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000); }
+  catch(e){toast(e.message);}
+});
 const mobileOverview=window.matchMedia("(max-width:700px)");
 $("bank-overview").open=!mobileOverview.matches;
 mobileOverview.addEventListener("change",e=>$("bank-overview").open=!e.matches);

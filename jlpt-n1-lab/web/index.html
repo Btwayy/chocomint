@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="本地 N1 知识点巩固：经 Codex 逐题复核的练习与中文解析。">
-  <title>余白 · N1 题库实验室</title><link rel="stylesheet" href="/style.css">
+  <title>余白 · N1 题库实验室</title><link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <aside class="sidebar">
-    <a class="brand" href="/"><span class="brand-mark">余</span><span>余白 <small>N1 LAB / LOCAL</small></span></a>
+    <a class="brand" href="./"><span class="brand-mark">余</span><span>余白 <small>N1 LAB / LOCAL</small></span></a>
     <p class="nav-label">学习工作台</p>
     <button class="nav active" data-mode="daily"><span>01</span> 日期练习 <b id="daily-count">30</b></button>
     <button class="nav" data-mode="approved"><span>02</span> 自由练习 <b id="approved-count">0</b></button>
     <button class="nav" data-mode="candidate"><span>03</span> 全部题目 <b id="candidate-count">0</b></button>
-    <div class="side-note"><span class="dot"></span> 数据保存在这台 Mac<p>每天练一点，<br>留意犹豫的地方。</p></div>
+    <div class="side-note"><span class="dot"></span> <span id="storage-summary">学习记录保存在当前浏览器</span><p>每天练一点，<br>留意犹豫的地方。</p></div>
     <div class="side-footer"><p>资料来源：OpenJLPT、JMdict、Jonathan Waller、Tatoeba。</p><a href="https://github.com/evanclan/OpenJLPT" target="_blank" rel="noreferrer">来源与 CC BY-SA 4.0 ↗</a></div>
   </aside>
   <main>
-    <header><div class="eyebrow">日本語能力試験 / N1</div><div class="header-actions"><span class="local-badge"><span class="dot"></span> LOCAL · 本地题库</span><button id="refresh" class="button quiet" aria-label="刷新题库">刷新进度 ↻</button></div></header>
+    <header><div class="eyebrow">日本語能力試験 / N1</div><div class="header-actions"><span class="local-badge" id="storage-badge"><span class="dot"></span> BROWSER · 预生成题库</span><button id="refresh" class="button quiet" aria-label="刷新题库">刷新进度 ↻</button></div></header>
     <section class="intro"><div><h1 id="page-title">每天三十题，循序巩固。</h1><p id="page-description">10 月 17 日至 12 月 7 日 · 题目已预先备好并经 AI 编辑复核，不需要你审核。</p></div></section>
     <section id="study-card" class="study-card" aria-label="日期练习计划">
       <div class="study-top"><div><span class="eyebrow">52 DAYS / N1 PRACTICE</span><h2 id="day-title">52 天复习计划</h2></div><div class="date-controls"><button id="date-previous" class="button quiet" aria-label="前一天">←</button><input id="study-date" type="date" aria-label="练习日期"><button id="date-next" class="button quiet" aria-label="后一天">→</button><button id="date-today" class="button quiet">今天</button></div></div>
@@ -53,7 +53,8 @@
         <div class="review-form"><label for="review-note">学习笔记或疑问（可选）</label><textarea id="review-note" rows="4" maxlength="3000" placeholder="记下不理解的表达，或报告你发现的问题……"></textarea><p class="help">题目已由 Codex 复核。你只需学习；有疑问时可记录并暂时移出练习。</p><button id="approve" class="button primary" disabled>加入个人收藏</button><div class="review-secondary"><button id="reject" class="button quiet">报告疑问，暂停本题</button><button id="reset-review" class="button quiet">清除个人标记</button></div><p id="review-state" class="subtle" role="status"></p></div>
       </aside>
     </div>
-    <footer><span>一点ずつ、確かな理解へ。</span><div><a href="/api/export/plan">导出 52 天题单</a><a href="/api/export/candidates">导出全部题目</a><a href="/api/export/reviewed">导出复核题库</a><a href="/api/export/approved">导出个人收藏</a><a href="/api/export/records">备份学习记录</a></div></footer>
-  </main><div id="toast" role="alert" hidden></div><script src="/app.js"></script>
+    <p id="storage-info" class="help storage-info">学习记录保存在当前设备和浏览器；不同设备不会自动同步，请定期备份。</p>
+    <footer><span>一点ずつ、確かな理解へ。</span><div><a href="#export-plan" data-export="plan">导出 52 天题单</a><a href="#export-candidates" data-export="candidates">导出全部题目</a><a href="#export-reviewed" data-export="reviewed">导出复核题库</a><a href="#export-approved" data-export="approved">导出个人收藏</a><a href="#export-records" data-export="records">备份学习记录</a></div></footer>
+  </main><div id="toast" role="alert" hidden></div><script src="./storage.js"></script><script src="./app.js"></script>
 </body>
 </html>
