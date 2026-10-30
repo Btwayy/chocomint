@@ -238,7 +238,7 @@ function renderQuality() {
   tags.push(el("span", q.editorial_check?.decision === "reviewed" ? "✓ 经 Codex 逐题复核（AI）" : "○ 等待编辑复核", "quality-tag"));
   if (decision !== "pending") tags.push(el("span", {approved:"✓ 已加入个人收藏", rejected:"! 你已报告疑问 · 暂停练习"}[decision], `quality-tag ${decision === "rejected" ? "bad" : ""}`));
   $("quality-badges").replaceChildren(...tags);
-  $("blind-note").textContent = !app.revealed ? "先作答，再看解析与复核说明。无需你审核后才能练习。" : q.editorial_check?.note_zh || "尚未复核，暂不进入复核练习。";
+  $("blind-note").textContent = !app.revealed ? "先作答，再看解析与复核说明。无需你审核后才能练习。" : q.editorial_check ? "" : "尚未复核，暂不进入复核练习。";
   if (app.revealed && q.editorial_check) $("blind-note").textContent += " 这是 AI 编辑复核，用于知识点巩固，未经真实 N1 难度标定。";
   if (!q.structural_check.passed && app.revealed) $("blind-note").textContent += ` 结构问题：${q.structural_check.errors.join("、")}`;
   $("source-details").replaceChildren();
@@ -278,10 +278,25 @@ async function reveal() {
     const correct = app.choice === q.answer_index;
     $("result").textContent = `${correct ? "回答正确" : "本题答案"} · ${q.answer_index+1}. ${q.options[q.answer_index]}`;
     $("result").className = "result"+(correct ? "" : " wrong");
+    $("focus").hidden = q.kind === "grammar";
     $("translation").textContent = q.translation_zh; $("focus").textContent = `考点：${q.focus_zh}`; $("explanation").textContent = q.explanation_zh;
     // Reading questions already explain the answer above; avoid four repetitive rows.
     $("option-explanations").replaceChildren(...(q.kind === "reading" ? [] : q.option_explanations_zh.map((text,i) => {
       const d = el("div"), option = q.options[i];
+      if (q.kind === "grammar" && grammarOptionNotes[option]) {
+        const note = grammarOptionNotes[option], body = el("span", undefined, "grammar-option-note");
+        body.append(el("strong", `${option}${i === q.answer_index ? " · 本题正确" : ""}`),
+          el("span", note.usage), el("span", `例：${note.example}`, "grammar-example"),
+          el("span", note.translation, "grammar-translation"));
+        if (q.id === "g-ka-to-omoikiya-2") {
+          const reasons = {"をよそに":"本题不选：前面是「終わった」这个句子，不能直接接要求名词的「をよそに」。",
+            "かと思いきや":"本题选它：本以为已经结束，实际却又开了两小时，正好推翻原先判断。",
+            "につれて":"本题不选：这里没有两种变化逐渐相随，也不能直接接在「終わった」后。",
+            "がてら":"本题不选：不表示外出时顺便做另一件事，且前面不是名词或ます形词干。"};
+          body.append(el("span", reasons[option], "grammar-fit"));
+        }
+        d.append(el("b",String(i+1)),body); return d;
+      }
       const reading = q.kind === "vocabulary" ? optionReadings[option] : null;
       const label = reading && reading !== option ? `${option}（${reading}）` : option;
       d.append(el("b",String(i+1)),el("span",`${label}：${text}`)); return d;
