@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="本地 N1 知识点巩固：经 Codex 逐题复核的练习与中文解析。">
-  <title>余白 · N1 题库实验室</title><link rel="stylesheet" href="./style.css?v=grammar-examples-1">
+  <title>余白 · N1 题库实验室</title><link rel="stylesheet" href="./style.css?v=daily-grammar-summary-1">
 </head>
 <body>
   <aside class="sidebar">
@@ -22,6 +22,10 @@
       <div class="study-top"><div><span class="eyebrow">52 DAYS / N1 PRACTICE</span><h2 id="day-title">52 天复习计划</h2></div><div class="date-controls"><button id="date-previous" class="button quiet" aria-label="前一天">←</button><input id="study-date" type="date" aria-label="练习日期"><button id="date-next" class="button quiet" aria-label="后一天">→</button><button id="date-today" class="button quiet">今天</button></div></div>
       <p id="day-description"></p><div class="day-progress-row"><span id="day-progress">0 / 30 已完成</span><div class="progress"><i id="day-progress-bar"></i></div></div><p id="day-message" class="help"></p>
     </section>
+    <details id="daily-grammar-summary" class="daily-grammar-summary" hidden>
+      <summary id="daily-grammar-summary-title">今日语法まとめ</summary>
+      <div class="daily-summary-body"><p id="daily-summary-description" class="help" role="status"></p><div id="daily-grammar-cards"></div></div>
+    </details>
     <details id="bank-overview" class="bank-overview" open><summary>题库概况 · <span id="overview-count">360</span> 道已复核</summary>
     <section class="stats" aria-label="题库进度">
       <div><span>本批题目</span><strong id="stat-generated">0<small> / 360</small></strong><div class="progress"><i id="progress-bar"></i></div></div>
@@ -43,6 +47,7 @@
         <fieldset id="confidence"><legend>这次作答，你有多确定？</legend><label><input type="radio" name="confidence" value="sure">确定</label><label><input type="radio" name="confidence" value="unsure" checked>犹豫</label><label><input type="radio" name="confidence" value="guess">猜的</label></fieldset>
         <div class="question-actions"><button id="reveal" class="button primary" disabled>查看答案与解析</button><span id="save-state" class="subtle" role="status"></span></div>
         <section id="answer" class="answer" hidden><div id="result" class="result"></div><p id="translation"></p><p id="focus"></p><p id="explanation"></p><div id="option-explanations"></div></section>
+        <button id="show-daily-summary" class="button quiet summary-jump" hidden>查看今日语法まとめ ↑</button>
         <div class="question-bottom"><button id="previous" class="button quiet">← 上一题</button><span id="target-after" class="subtle"></span><button id="next" class="button quiet">下一题 →</button></div>
       </section>
       <aside class="review-panel">
@@ -55,6 +60,6 @@
     </div>
     <p id="storage-info" class="help storage-info">学习记录保存在当前设备和浏览器；不同设备不会自动同步，请定期备份。</p>
     <footer><span>一点ずつ、確かな理解へ。</span><div><a href="#export-plan" data-export="plan">导出 52 天题单</a><a href="#export-candidates" data-export="candidates">导出全部题目</a><a href="#export-reviewed" data-export="reviewed">导出复核题库</a><a href="#export-approved" data-export="approved">导出个人收藏</a><a href="#export-records" data-export="records">备份学习记录</a></div></footer>
-  </main><div id="toast" role="alert" hidden></div><script src="./storage.js"></script><script src="./grammar-notes.js"></script><script src="./app.js?v=grammar-examples-1"></script>
+  </main><div id="toast" role="alert" hidden></div><script src="./storage.js"></script><script src="./grammar-notes.js"></script><script src="./day-summary.js?v=daily-grammar-summary-1"></script><script src="./app.js?v=daily-grammar-summary-1"></script>
 </body>
 </html>

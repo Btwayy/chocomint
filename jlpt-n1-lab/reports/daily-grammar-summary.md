@@ -1,0 +1,9 @@
+# Daily grammar recap
+
+Daily practice now unlocks a grammar-only recap after all assigned questions for the selected date have saved attempts matching their question IDs and content versions. Repeated answers and answers from other dates or free practice cannot unlock it. No new model call or extra progress record is needed.
+
+The recap groups by grammar target, prioritizes any recorded mistake and then uncertainty/guessing, and shows the existing usage/connection note, deduplicated examples with Chinese translations, and collapsible original questions with the correct option inserted. A later correct retry does not erase an earlier mistake label. It summarizes tested grammar targets, not all distractors. Unavailable, changed or personally rejected questions are omitted, with a count shown. Earlier completed dates can be viewed by changing the date. Before completion, the section only explains its unlock condition.
+
+Validation: 6 new Node tests cover completion gating, duplicate/free/other-date attempts, version mismatches, rejection, grouping, prioritization and all 52 real daily plans. The existing 7 storage tests and 22 Python tests pass. JavaScript syntax and git diff checks pass.
+
+Browser QA used only an isolated localhost:8768 static origin. Answered 30 real planned questions through the UI (one intentionally wrong test answer), verified 10/30 and 20/30 remained locked, 30/30 unlocked seven grammar targets, and the mistaken target ranked first. Reload retained the recap; switching to an unfinished date hid all cards, switching back restored seven cards. Original-question expansion showed the correctly filled sentence. At a 390px viewport document width was 375px, without horizontal overflow. Screenshot: daily-grammar-summary-mobile.jpg. These are QA records, not the user's learning history; neither production browser storage nor the user's SQLite was modified for this test.

@@ -47,3 +47,13 @@
 .storage-info{margin-top:24px;line-height:1.8}
 
 .grammar-option-note{display:grid;gap:7px;min-width:0;overflow-wrap:anywhere}.grammar-option-note strong{font-weight:600;color:var(--ink)}.grammar-example{color:var(--ink);line-height:1.9}.grammar-translation{color:var(--muted)}.grammar-fit{border-left:2px solid var(--line);padding-left:10px}
+
+.daily-grammar-summary{background:#edf2ea;border:1px solid var(--line);border-radius:11px;margin:0 0 24px;scroll-margin-top:20px}
+.daily-grammar-summary>summary{padding:18px 20px;min-height:52px;cursor:pointer;font-size:15px;font-weight:600}
+.daily-summary-body{padding:0 20px 20px}.daily-summary-body>.help{margin:0 0 16px;line-height:1.9}
+#daily-grammar-cards{display:grid;gap:14px}.grammar-recap-card{padding:18px;background:#fff;border:1px solid var(--line);border-radius:8px;min-width:0;overflow-wrap:anywhere}
+.grammar-recap-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.grammar-recap-heading h3{font-size:19px;font-weight:500;margin:0}
+.recap-tag{font-size:11px;color:var(--accent);background:var(--soft);padding:5px 8px;border-radius:5px}.recap-attention{color:var(--warn);font-size:12px}
+.recap-usage{line-height:1.9;font-size:13px}.recap-example{border-left:3px solid #a7c3b3;margin:14px 0;padding:1px 0 1px 13px}.recap-example p{line-height:1.9;margin:5px 0}.recap-translation{color:#65766c;font-size:12px;line-height:1.9}
+.recap-questions>summary{cursor:pointer;min-height:44px;padding:12px 0;font-size:12px;color:var(--accent)}.recap-question{border-top:1px solid var(--line);padding:10px 0}.recap-question p{line-height:1.9}.summary-jump{margin:10px 0 18px;min-height:44px;white-space:normal}
+@media(max-width:700px){.daily-summary-body{padding:0 12px 12px}.daily-grammar-summary>summary{padding:16px 13px;font-size:14px}.grammar-recap-card{padding:15px 13px}.summary-jump{width:100%}}

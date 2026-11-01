@@ -174,9 +174,48 @@ function reviewDecision(q) { return q.human_review?.decision || "pending"; }
 function practiceAvailable(q) { return q.structural_check.passed && q.editorial_check?.decision === "reviewed" && q.editorial_check.content_hash === q.content_hash && reviewDecision(q) !== "rejected"; }
 function day() { return app.data?.study_plan?.days.find(d => d.date === app.date); }
 function doneOnDate(q, date = app.date) { return app.data.attempts.some(a => a.plan_date === date && a.question_id === q.id && a.content_hash === q.content_hash); }
+let summaryViewKey = null;
+function renderDailySummary() {
+  const summary = JLPTDaySummary.build(day(), app.data.questions, app.data.attempts, grammarOptionNotes);
+  const visible = app.mode === "daily" && !!day();
+  $("daily-grammar-summary").hidden = !visible;
+  $("show-daily-summary").hidden = !visible || !summary.ready;
+  if (!visible) return summary;
+  const viewKey = `${summary.date}:${summary.ready}`;
+  if (summaryViewKey !== viewKey) $("daily-grammar-summary").open = summary.ready;
+  summaryViewKey = viewKey;
+  $("daily-grammar-summary-title").textContent = summary.ready ? `今日语法まとめ · ${summary.groups.length} 个知识点` : "今日语法まとめ · 完成后解锁";
+  $("daily-summary-description").textContent = !summary.ready
+    ? `完成 ${summary.date} 的全部 ${summary.total} 题后自动整理，目前 ${summary.completed} / ${summary.total}。只汇总当天语法；不会提前显示答案。`
+    : `${summary.date} · 同一语法合并展示，曾答错或犹豫的优先回顾。` + (summary.unavailable ? ` ${summary.unavailable} 道题因版本或疑问标记暂不纳入まとめ。` : "") + (!summary.groups.length ? " 这份题单没有可汇总的语法题。" : "");
+  const cards = summary.groups.map(group => {
+    const card = el("article", undefined, "grammar-recap-card"), heading = el("div", undefined, "grammar-recap-heading");
+    const title = el("h3", group.title); title.lang = "ja"; heading.append(title);
+    if (group.wrong) heading.append(el("span", "曾答错 · 再看一次", "recap-tag recap-attention"));
+    else if (group.uncertain) heading.append(el("span", "曾犹豫 / 猜过", "recap-tag recap-attention"));
+    else heading.append(el("span", "已练习", "recap-tag"));
+    card.append(heading, el("p", group.usage, "recap-usage"));
+    for (const example of group.examples) {
+      const block = el("blockquote", undefined, "recap-example"), sentence = el("p", example.example);
+      sentence.lang = "ja"; block.append(sentence, el("p", example.translation, "recap-translation")); card.append(block);
+    }
+    const questions = el("details", undefined, "recap-questions");
+    questions.append(el("summary", `回看今日原题（${group.questions.length} 道）`));
+    for (const q of group.questions) {
+      const item = el("div", undefined, "recap-question"), sentence = el("p", q.stem); sentence.lang = "ja";
+      item.append(sentence, el("p", q.translation, "recap-translation"), el("p", q.explanation, "help"));
+      if (q.wrong || q.uncertain) item.append(el("p", [q.wrong ? "曾答错" : "", q.uncertain ? "曾犹豫 / 猜过" : ""].filter(Boolean).join(" · "), "recap-attention"));
+      questions.append(item);
+    }
+    card.append(questions); return card;
+  });
+  $("daily-grammar-cards").replaceChildren(...cards);
+  return summary;
+}
 function renderDay() {
   const plan = app.data.study_plan, d = day();
   $("study-card").hidden = app.mode !== "daily" || !plan;
+  renderDailySummary();
   if (!d) return;
   const completed = d.items.filter(e => app.data.attempts.some(a => a.plan_date === d.date && a.question_id === e.question_id && a.content_hash === e.content_hash)).length;
   const unavailable = d.items.filter(e => !e.available || !app.data.questions.some(q => q.id === e.question_id && practiceAvailable(q))).length;
@@ -273,7 +312,9 @@ async function reveal() {
   try {
     const attempt={question_id:q.id,content_hash:q.content_hash,selected_index:app.choice,confidence:document.querySelector('input[name="confidence"]:checked').value,elapsed_ms:Math.min(86400000,Math.round(performance.now()-app.started)),plan_date:app.mode === "daily" ? app.date : null};
     await post("/api/attempt", attempt);
+    const wasComplete = day()?.items.every(e => app.data.attempts.some(a => a.plan_date === app.date && a.question_id === e.question_id && a.content_hash === e.content_hash));
     app.data.attempts.unshift(attempt); renderDay();
+    if (app.mode === "daily" && !wasComplete && !$("show-daily-summary").hidden) toast("今日练习已完成，语法まとめ已整理好。点「查看今日语法まとめ」回顾。");
     app.revealed = true; $("answer").hidden = false; $("save-state").textContent = store.mode === "browser" ? "已保存到当前浏览器" : "已保存到本机"; $("reveal").textContent = "已展开解析";
     const correct = app.choice === q.answer_index;
     $("result").textContent = `${correct ? "回答正确" : "本题答案"} · ${q.answer_index+1}. ${q.options[q.answer_index]}`;
@@ -332,6 +373,7 @@ async function load(initial = false) {
 }
 document.querySelectorAll("[data-mode]").forEach(n => n.onclick = () => { app.mode = n.dataset.mode; app.status="all"; $("status-filter").value="all"; document.querySelectorAll("[data-mode]").forEach(b => b.classList.toggle("active",b===n)); $("page-title").textContent=app.mode==="candidate"?"查看题目与复核记录。":app.mode==="daily"?"每天三十题，循序巩固。":"留一点时间，巩固理解。";$("page-description").textContent=app.mode==="candidate"?"可查看未复核或已提出疑问的题目；不需要你承担审核工作。":"10 月 17 日至 12 月 7 日 · 题目已预先备好并经 AI 编辑复核，不需要你审核。";if(app.data)filter(); });
 function changeDate(date) { if (!app.data.study_plan?.days.some(d=>d.date===date)) return; app.date=date; app.kind="all"; app.search=""; app.status="all"; $("search").value=""; $("status-filter").value="all"; document.querySelectorAll("[data-kind]").forEach(b=>b.classList.toggle("active",b.dataset.kind==="all")); filter(); }
+$("show-daily-summary").onclick=()=>{const summary=$("daily-grammar-summary");summary.open=true;summary.scrollIntoView({behavior:"smooth",block:"start"});};
 $("study-date").onchange=e=>changeDate(e.target.value);
 $("date-previous").onclick=()=>changeDate(app.data.study_plan.days[day().day_number-2]?.date);
 $("date-next").onclick=()=>changeDate(app.data.study_plan.days[day().day_number]?.date);
