@@ -23,7 +23,7 @@ function attemptFor(state,date='2026-10-19'){
 }
 test('nested static URLs load the full bank without /api requests and use Tokyo date',async()=>{
  const x=setup(),s=await x.store.load();
- assert.equal(s.questions.length,360);assert.equal(s.study_plan.today,'2026-10-19');
+ assert.equal(s.questions.length,1000);assert.equal(s.study_plan.today,'2026-10-19');
  assert.deepEqual(x.calls.map(x=>x[0]),['https://example.test/nested/jlpt-n1-lab/data/candidates.json','https://example.test/nested/jlpt-n1-lab/data/study-plan.json']);
  assert.equal(s.study_plan.days[0].items.length,30);
 });
@@ -65,7 +65,7 @@ test('old reviews do not approve changed content; records exports preserve learn
  const records=JSON.parse(x.values.get(KEY));records.reviews[a.question_id].content_hash='old';x.values.set(KEY,JSON.stringify(records));
  assert.equal((await x.store.exportData('approved')).data.length,0);
  assert.equal((await x.store.exportData('plan')).data.days.length,52);
- assert.equal((await x.store.exportData('reviewed')).data.length,360);
+ assert.equal((await x.store.exportData('reviewed')).data.length,1000);
 });
 test('storage failures are surfaced and never pretend the attempt was saved',async()=>{
  const x=setup({storageError:true}),s=await x.store.load();

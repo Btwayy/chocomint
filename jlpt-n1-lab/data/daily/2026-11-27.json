@@ -2,47 +2,47 @@
   "date": "2026-11-27",
   "day_number": 42,
   "phase": "learning",
-  "new_count": 7,
-  "review_count": 23,
+  "new_count": 29,
+  "review_count": 1,
   "questions": [
     {
-      "target_id": "v-3e0f9f6085",
-      "target_label": "敏感",
+      "target_id": "v-488c0046f9",
+      "target_label": "憤慨",
       "level": "N1",
-      "focus_zh": "敏感",
+      "focus_zh": "愤慨",
       "source": {
         "project": "OpenJLPT",
         "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "3e0f9f6085",
+        "source_id": "488c0046f9",
         "source_file": "vocab-n1.json",
         "license": "CC-BY-SA-4.0"
       },
       "generation": {
         "model": "Codex（当前对话原创）",
         "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.655202+00:00",
+        "created_at": "2026-10-17T13:40:55.656810+00:00",
         "curriculum_version": "codex-52days-v1"
       },
       "review_status": "pending",
-      "id": "v-3e0f9f6085-reading",
+      "id": "v-488c0046f9-reading",
       "kind": "reading",
-      "stem": "このセンサーは温度のわずかな変化にも【敏感】に反応する。",
+      "stem": "弱い立場の人をだます行為を知り、彼は不正への怒りをあらわにして【憤慨】した。",
       "options": [
-        "びかん",
-        "びんがん",
-        "びんかん",
-        "ぴんかん"
+        "ふんがい",
+        "ぶんがい",
+        "ふがい",
+        "ふんかい"
       ],
-      "answer_index": 2,
-      "translation_zh": "这个传感器对温度的细微变化也反应灵敏。",
-      "explanation_zh": "「敏感」本题读「びんかん」，句中表示敏感。",
+      "answer_index": 0,
+      "translation_zh": "得知有人欺骗弱势者，他对这种不正当行为公开表达了愤慨。",
+      "explanation_zh": "「憤慨」本题读「ふんがい」，句中表示愤慨。",
       "option_explanations_zh": [
-        "不是本题标记词的正确读音；这里应选「びんかん」。",
-        "不是本题标记词的正确读音；这里应选「びんかん」。",
-        "正确：本题标记词读「びんかん」。",
-        "不是本题标记词的正确读音；这里应选「びんかん」。"
+        "正确：本题标记词读「ふんがい」。",
+        "不是本题标记词的正确读音；这里应选「ふんがい」。",
+        "不是本题标记词的正确读音；这里应选「ふんがい」。",
+        "不是本题标记词的正确读音；这里应选「ふんがい」。"
       ],
-      "content_hash": "678f9822838b914b396134684a2c42cd23fd535ba6e9e1015ab582b199ca341d",
+      "content_hash": "0a33d0dacc84146a6078418d19388e168e77425447d2f778eb802747ed3a1604",
       "structural_check": {
         "passed": true,
         "errors": []
@@ -50,23 +50,23 @@
       "dictionary_check": {
         "passed": true,
         "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "びんかん",
+        "reading": "ふんがい",
         "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
       },
       "quality_status": "codex_reviewed",
       "editorial_check": {
-        "question_id": "v-3e0f9f6085-reading",
-        "content_hash": "678f9822838b914b396134684a2c42cd23fd535ba6e9e1015ab582b199ca341d",
+        "question_id": "v-488c0046f9-reading",
+        "content_hash": "0a33d0dacc84146a6078418d19388e168e77425447d2f778eb802747ed3a1604",
         "decision": "reviewed",
         "review_id": "codex-52days-v1",
         "reviewer": "Codex（当前对话中的 AI 编辑）",
         "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「敏感」本题读「びんかん」，句中表示敏感。",
+        "note_zh": "「憤慨」本题读「ふんがい」，句中表示愤慨。",
         "options_checked": [
-          "びかん",
-          "びんがん",
-          "びんかん",
-          "ぴんかん"
+          "ふんがい",
+          "ぶんがい",
+          "ふがい",
+          "ふんかい"
         ],
         "references": [
           {
@@ -74,1663 +74,10 @@
             "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
           }
         ],
-        "created_at": "2026-10-17T13:40:55.655229+00:00",
+        "created_at": "2026-10-17T13:40:55.656838+00:00",
         "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
       },
       "plan_role": "new",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-8d1c155181",
-      "target_label": "簡易",
-      "level": "N1",
-      "focus_zh": "简易、简便",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "8d1c155181",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.652867+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-8d1c155181-reading",
-      "kind": "reading",
-      "stem": "専門的な設備を使わずに測れる【簡易】な検査キットが開発された。",
-      "options": [
-        "がんい",
-        "かんいん",
-        "かに",
-        "かんい"
-      ],
-      "answer_index": 3,
-      "translation_zh": "研发出了无需专业设备就能测量的简易检测试剂盒。",
-      "explanation_zh": "「簡易」本题读「かんい」，句中表示简易、简便。",
-      "option_explanations_zh": [
-        "不是本题标记词的正确读音；这里应选「かんい」。",
-        "不是本题标记词的正确读音；这里应选「かんい」。",
-        "不是本题标记词的正确读音；这里应选「かんい」。",
-        "正确：本题标记词读「かんい」。"
-      ],
-      "content_hash": "341b5ea583124b09b31f1f7e06a3c29fab8b44a769bd8bcdbba877838d3c1241",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "かんい",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-8d1c155181-reading",
-        "content_hash": "341b5ea583124b09b31f1f7e06a3c29fab8b44a769bd8bcdbba877838d3c1241",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「簡易」本题读「かんい」，句中表示简易、简便。",
-        "options_checked": [
-          "がんい",
-          "かんいん",
-          "かに",
-          "かんい"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.652894+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-8e13072b37",
-      "target_label": "伴う",
-      "level": "N1",
-      "focus_zh": "伴随着某事发生",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "8e13072b37",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:46:36.147787Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-8e13072b37-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:46:36.147787Z",
-          "done_reason": "stop",
-          "eval_count": 210,
-          "eval_duration": 21746431000,
-          "prompt_eval_count": 567,
-          "prompt_eval_duration": 8485620999,
-          "load_duration": 676500,
-          "wall_seconds": 30.29
-        }
-      },
-      "review_status": "pending",
-      "id": "v-8e13072b37-reading",
-      "kind": "reading",
-      "stem": "経済の成長には、環境問題が【伴う】場合が多い。",
-      "options": [
-        "とむなう",
-        "はんなう",
-        "ともらう",
-        "ともなう"
-      ],
-      "answer_index": 3,
-      "translation_zh": "经济增长往往伴随着环境问题。",
-      "explanation_zh": "逐一检查读音选项；本题「伴う」读「ともなう」，句中用于表示伴随。",
-      "option_explanations_zh": [
-        "这不是本题标记词的正确读音；本题应选「ともなう」。",
-        "这不是本题标记词的正确读音；本题应选「ともなう」。",
-        "这不是本题标记词的正确读音；本题应选「ともなう」。",
-        "本题正确读音「ともなう」。"
-      ],
-      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.448156+00:00",
-        "original_content_hash": "ece9ae32afb538a64adba3466b2225d8900c645e9d3639a243798a95c1a2c1e7",
-        "archive_file": "data/revisions/codex-full-review-v1/v-8e13072b37-reading.json",
-        "changed_fields": [
-          "explanation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": false,
-        "reason_zh": "逐一检查读音选项；本题「伴う」读「ともなう」，句中用于表示伴随。"
-      },
-      "content_hash": "d9ba2c903cf7e4e36b6807e6136adff1afbef77c542f3bbe9bae981be490dc98",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "ともなう",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-8e13072b37-reading",
-        "content_hash": "d9ba2c903cf7e4e36b6807e6136adff1afbef77c542f3bbe9bae981be490dc98",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "逐一检查读音选项；本题「伴う」读「ともなう」，句中用于表示伴随。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.448184+00:00",
-        "substantive_revision": false,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "new",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-44a1e074f7",
-      "target_label": "推測",
-      "level": "N1",
-      "focus_zh": "推测",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "44a1e074f7",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.668535+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-44a1e074f7-reading",
-      "kind": "reading",
-      "stem": "確かな資料がないので、限られた情報から事情を【推測】するしかない。",
-      "options": [
-        "すいそく",
-        "ずいそく",
-        "すいぞく",
-        "すそく"
-      ],
-      "answer_index": 0,
-      "translation_zh": "因为没有可靠资料，只能根据有限信息推测情况。",
-      "explanation_zh": "「推測」本题读「すいそく」，句中表示推测。",
-      "option_explanations_zh": [
-        "正确：本题标记词读「すいそく」。",
-        "不是本题标记词的正确读音；这里应选「すいそく」。",
-        "不是本题标记词的正确读音；这里应选「すいそく」。",
-        "不是本题标记词的正确读音；这里应选「すいそく」。"
-      ],
-      "content_hash": "c7fc5dcc2843081008bf5626c676c470c2c4f9c6e5494ce0124f81b32acfb44f",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "すいそく",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-44a1e074f7-reading",
-        "content_hash": "c7fc5dcc2843081008bf5626c676c470c2c4f9c6e5494ce0124f81b32acfb44f",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「推測」本题读「すいそく」，句中表示推测。",
-        "options_checked": [
-          "すいそく",
-          "ずいそく",
-          "すいぞく",
-          "すそく"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.668571+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-13d06bf02b",
-      "target_label": "排除",
-      "level": "N1",
-      "focus_zh": "排除不利因素或可能性",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "13d06bf02b",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:47:07.847282Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-13d06bf02b-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:47:07.847282Z",
-          "done_reason": "stop",
-          "eval_count": 218,
-          "eval_duration": 22959066000,
-          "prompt_eval_count": 553,
-          "prompt_eval_duration": 8674856000,
-          "load_duration": 756708,
-          "wall_seconds": 31.69
-        }
-      },
-      "review_status": "pending",
-      "stem": "製品の安全性を高めるため、製造工程に混入した異物を（　）する。",
-      "options": [
-        "委託",
-        "補足",
-        "配慮",
-        "排除"
-      ],
-      "answer_index": 3,
-      "translation_zh": "为提高产品安全性，去除混入生产流程的异物。",
-      "explanation_zh": "「異物を排除する」表示去除异物；改写后不再有原稿的因果矛盾。",
-      "option_explanations_zh": [
-        "表示委托他人办理；不符合本题完整句子的接续或明确语境。",
-        "表示补充不足的内容；不符合本题完整句子的接续或明确语境。",
-        "表示顾及、关照；不符合本题完整句子的接续或明确语境。",
-        "本题正确。「異物を排除する」表示去除异物；改写后不再有原稿的因果矛盾。"
-      ],
-      "id": "v-13d06bf02b-cloze",
-      "kind": "vocabulary",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.434777+00:00",
-        "original_content_hash": "3732da17a7223b21516859c2d80ab8fda584031f2debab310b04e68373e786ee",
-        "archive_file": "data/revisions/codex-full-review-v1/v-13d06bf02b-cloze.json",
-        "changed_fields": [
-          "stem",
-          "explanation_zh",
-          "translation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": true,
-        "reason_zh": "「異物を排除する」表示去除异物；改写后不再有原稿的因果矛盾。"
-      },
-      "content_hash": "d63ece7d15f642526cfed4b7b7d7e75bd24e1ea856c9c610aecc815d14d99f0c",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-13d06bf02b-cloze",
-        "content_hash": "d63ece7d15f642526cfed4b7b7d7e75bd24e1ea856c9c610aecc815d14d99f0c",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "「異物を排除する」表示去除异物；改写后不再有原稿的因果矛盾。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.434805+00:00",
-        "substantive_revision": true,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-32936b686e",
-      "target_label": "簡潔",
-      "level": "N1",
-      "focus_zh": "简洁、言简意赅",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "32936b686e",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.652349+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-32936b686e-reading",
-      "kind": "reading",
-      "stem": "時間が限られているので、要点だけを【簡潔】に説明してください。",
-      "options": [
-        "かんけち",
-        "かけつ",
-        "かんけつ",
-        "かんげつ"
-      ],
-      "answer_index": 2,
-      "translation_zh": "由于时间有限，请只简洁地说明要点。",
-      "explanation_zh": "「簡潔」本题读「かんけつ」，句中表示简洁、言简意赅。",
-      "option_explanations_zh": [
-        "不是本题标记词的正确读音；这里应选「かんけつ」。",
-        "不是本题标记词的正确读音；这里应选「かんけつ」。",
-        "正确：本题标记词读「かんけつ」。",
-        "不是本题标记词的正确读音；这里应选「かんけつ」。"
-      ],
-      "content_hash": "125a93dd80d8c94442aec6e05ef51130cec1fba14a407bbb6d7ec3171beb1019",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "かんけつ",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-32936b686e-reading",
-        "content_hash": "125a93dd80d8c94442aec6e05ef51130cec1fba14a407bbb6d7ec3171beb1019",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「簡潔」本题读「かんけつ」，句中表示简洁、言简意赅。",
-        "options_checked": [
-          "かんけち",
-          "かけつ",
-          "かんけつ",
-          "かんげつ"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.652378+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-cb43087881",
-      "target_label": "賄う",
-      "level": "N1",
-      "focus_zh": "用某种收入或资金支付费用",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "cb43087881",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:50:03.877663Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-cb43087881-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:50:03.877663Z",
-          "done_reason": "stop",
-          "eval_count": 293,
-          "eval_duration": 27338097000,
-          "prompt_eval_count": 562,
-          "prompt_eval_duration": 7903775000,
-          "load_duration": 796375,
-          "wall_seconds": 35.29
-        }
-      },
-      "review_status": "pending",
-      "stem": "アルバイトの収入だけで生活費を（　）のは大変だ。",
-      "options": [
-        "損なう",
-        "賄う",
-        "携わる",
-        "阻む"
-      ],
-      "answer_index": 1,
-      "translation_zh": "仅靠打工收入支付生活费是很辛苦的。",
-      "explanation_zh": "用打工收入支付生活费，用「生活費を賄う」；不等于笼统的「家計を賄う」。",
-      "option_explanations_zh": [
-        "表示损害、破坏；不符合本题完整句子的接续或明确语境。",
-        "本题正确。用打工收入支付生活费，用「生活費を賄う」；不等于笼统的「家計を賄う」。",
-        "表示参与、从事；不符合本题完整句子的接续或明确语境。",
-        "表示阻碍；不符合本题完整句子的接续或明确语境。"
-      ],
-      "id": "v-cb43087881-cloze",
-      "kind": "vocabulary",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.455097+00:00",
-        "original_content_hash": "efa3d97fdb21399002db4c5b130495d2a80f0924e366e73bea27e23708d3853b",
-        "archive_file": "data/revisions/codex-full-review-v1/v-cb43087881-cloze.json",
-        "changed_fields": [
-          "stem",
-          "explanation_zh",
-          "translation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": true,
-        "reason_zh": "用打工收入支付生活费，用「生活費を賄う」；不等于笼统的「家計を賄う」。"
-      },
-      "content_hash": "a8b696e333b4ff04f880d1e0c5daee33f2c4e56ad7f4d955c15490ca5ef25ed2",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-cb43087881-cloze",
-        "content_hash": "a8b696e333b4ff04f880d1e0c5daee33f2c4e56ad7f4d955c15490ca5ef25ed2",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "用打工收入支付生活费，用「生活費を賄う」；不等于笼统的「家計を賄う」。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.455124+00:00",
-        "substantive_revision": true,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "g-o-yogi-naku-sareru",
-      "target_label": "〜を余儀なくされる",
-      "level": "N1",
-      "focus_zh": "因外部原因被迫做某事，动作名词+を余儀なくされる",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "o-yogi-naku-sareru",
-        "source_file": "grammar-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T13:02:44.529756Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-g-o-yogi-naku-sareru-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T13:02:44.529756Z",
-          "done_reason": "stop",
-          "eval_count": 583,
-          "eval_duration": 70022727000,
-          "prompt_eval_count": 671,
-          "prompt_eval_duration": 6891963000,
-          "load_duration": 886292,
-          "wall_seconds": 76.98
-        }
-      },
-      "review_status": "pending",
-      "stem": "会社は新事業の継続を強く望んでいたが、予算が大幅に削減され、中止を（　）。",
-      "options": [
-        "心待ちにしていた",
-        "楽しみにしていた",
-        "余儀なくされた",
-        "待ち望んでいた"
-      ],
-      "answer_index": 2,
-      "translation_zh": "公司强烈希望继续这项新事业，却因预算大幅削减而被迫取消。",
-      "explanation_zh": "「中止を余儀なくされた」表示并不愿意却被迫取消。前文明示希望继续，与后面因预算被迫取消构成转折。原题「避けられない」也成立，已更换干扰项。",
-      "option_explanations_zh": [
-        "表示一直期待取消，与强烈希望继续且用「が」转折的语境不合。",
-        "表示把取消当作盼望的事，与本句的无奈转折不符。",
-        "表示违背继续事业的愿望，被外部条件迫使取消。",
-        "表示盼望取消，不符合前文明说希望继续的语境。"
-      ],
-      "id": "g-o-yogi-naku-sareru-1",
-      "kind": "grammar",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:25:37.903696+00:00",
-        "original_content_hash": "7163a9ee86ade97b9cedfb7f4ae9d101ea0f25e0138cb7e573791b21b7e32f29",
-        "archive_file": "data/revisions/codex-full-review-v1/g-o-yogi-naku-sareru-1.json",
-        "changed_fields": [
-          "stem",
-          "options",
-          "explanation_zh",
-          "translation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": true,
-        "reason_zh": "「中止を余儀なくされた」表示并不愿意却被迫取消。前文明示希望继续，与后面因预算被迫取消构成转折。原题「避けられない」也成立，已更换干扰项。"
-      },
-      "content_hash": "d67fd56f1e8f264d10a8596130c5d8e86cfd2769271065b1c6e5d7f953c0f341",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "g-o-yogi-naku-sareru-1",
-        "content_hash": "d67fd56f1e8f264d10a8596130c5d8e86cfd2769271065b1c6e5d7f953c0f341",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "「中止を余儀なくされた」表示并不愿意却被迫取消。前文明示希望继续，与后面因预算被迫取消构成转折。原题「避けられない」也成立，已更换干扰项。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          },
-          {
-            "title": "Bunpro：を余儀なくされる（仅核对规则，不是题目来源）",
-            "url": "https://bunpro.jp/grammar_points/%E3%82%92%E4%BD%99%E5%84%80%E3%81%AA%E3%81%8F%E3%81%95%E3%82%8C%E3%82%8B"
-          }
-        ],
-        "created_at": "2026-10-17T13:25:37.904067+00:00",
-        "substantive_revision": true,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-800e05bcf1",
-      "target_label": "補償",
-      "level": "N1",
-      "focus_zh": "对损失作出补偿",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "800e05bcf1",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:48:19.04201Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-800e05bcf1-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:48:19.04201Z",
-          "done_reason": "stop",
-          "eval_count": 247,
-          "eval_duration": 25652685000,
-          "prompt_eval_count": 552,
-          "prompt_eval_duration": 8570493000,
-          "load_duration": 665084,
-          "wall_seconds": 34.28
-        }
-      },
-      "review_status": "pending",
-      "stem": "会社の過失で取引先の設備を壊したため、契約に従って、その損失の（　）を行った。",
-      "options": [
-        "促進",
-        "把握",
-        "補足",
-        "補償"
-      ],
-      "answer_index": 3,
-      "translation_zh": "由于公司过失损坏了客户的设备，按照合同对其损失进行了补偿。",
-      "explanation_zh": "本句明确约定由公司弥补设备损坏造成的损失，选择「補償」。这是虚构语言例句，不描述普遍赔付义务。",
-      "option_explanations_zh": [
-        "表示促进、推动；不符合本题完整句子的接续或明确语境。",
-        "表示掌握、了解；不符合本题完整句子的接续或明确语境。",
-        "表示补充不足的内容；不符合本题完整句子的接续或明确语境。",
-        "本题正确。本句明确约定由公司弥补设备损坏造成的损失，选择「補償」。这是虚构语言例句，不描述普遍赔付义务。"
-      ],
-      "id": "v-800e05bcf1-cloze",
-      "kind": "vocabulary",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.447274+00:00",
-        "original_content_hash": "022b1302cd65f1f963cb24e59e65545953669637d337506b8d8797daaf9155b4",
-        "archive_file": "data/revisions/codex-full-review-v1/v-800e05bcf1-cloze.json",
-        "changed_fields": [
-          "stem",
-          "explanation_zh",
-          "translation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": true,
-        "reason_zh": "本句明确约定由公司弥补设备损坏造成的损失，选择「補償」。这是虚构语言例句，不描述普遍赔付义务。"
-      },
-      "content_hash": "a233edaea9e6225751f805d7e9adf5b42e0f3ed0e30f73f404cef4032bcfa659",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-800e05bcf1-cloze",
-        "content_hash": "a233edaea9e6225751f805d7e9adf5b42e0f3ed0e30f73f404cef4032bcfa659",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "本句明确约定由公司弥补设备损坏造成的损失，选择「補償」。这是虚构语言例句，不描述普遍赔付义务。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.447303+00:00",
-        "substantive_revision": true,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "new",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-a5e340a2e7",
-      "target_label": "至って",
-      "level": "N1",
-      "focus_zh": "极其、非常",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "a5e340a2e7",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.657981+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-a5e340a2e7-cloze",
-      "kind": "vocabulary",
-      "stem": "検査の結果、体調には問題がなく、本人も（　）元気だと言っている。",
-      "options": [
-        "一概に",
-        "至って",
-        "滅多に",
-        "決して"
-      ],
-      "answer_index": 1,
-      "translation_zh": "检查发现身体没有问题，本人也说自己非常健康。",
-      "explanation_zh": "「至って元気だ」表示十分健康；其他选项不能构成这里的肯定叙述。",
-      "option_explanations_zh": [
-        "「一概に」表示一概、不加区分地；不符合本题已经限定的句意或接续。",
-        "「至って元気だ」表示十分健康；其他选项不能构成这里的肯定叙述。",
-        "「滅多に」表示很少（通常与否定呼应）；不符合本题已经限定的句意或接续。",
-        "「決して」表示绝不（通常与否定呼应）；不符合本题已经限定的句意或接续。"
-      ],
-      "content_hash": "b0189ea189526847bf874fe9db1b5948c8a595b94605a306cc2e7c682e82f928",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-a5e340a2e7-cloze",
-        "content_hash": "b0189ea189526847bf874fe9db1b5948c8a595b94605a306cc2e7c682e82f928",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「至って元気だ」表示十分健康；其他选项不能构成这里的肯定叙述。",
-        "options_checked": [
-          "一概に",
-          "至って",
-          "滅多に",
-          "決して"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.658034+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-58b8070ec3",
-      "target_label": "廃止",
-      "level": "N1",
-      "focus_zh": "废止、取消制度",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "58b8070ec3",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.645531+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-58b8070ec3-reading",
-      "kind": "reading",
-      "stem": "利用者がほとんどいなくなったため、この制度を来年度から【廃止】する。",
-      "options": [
-        "はし",
-        "はいじ",
-        "はいし",
-        "ばいし"
-      ],
-      "answer_index": 2,
-      "translation_zh": "由于几乎没有使用者，决定从下一年度起废止该制度。",
-      "explanation_zh": "「廃止」本题读「はいし」，句中表示废止、取消制度。",
-      "option_explanations_zh": [
-        "不是本题标记词的正确读音；这里应选「はいし」。",
-        "不是本题标记词的正确读音；这里应选「はいし」。",
-        "正确：本题标记词读「はいし」。",
-        "不是本题标记词的正确读音；这里应选「はいし」。"
-      ],
-      "content_hash": "56d16162dd2b075b8156c426ce3a03e5b8f4cf44c25f491d638caa64281be0c2",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "はいし",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-58b8070ec3-reading",
-        "content_hash": "56d16162dd2b075b8156c426ce3a03e5b8f4cf44c25f491d638caa64281be0c2",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「廃止」本题读「はいし」，句中表示废止、取消制度。",
-        "options_checked": [
-          "はし",
-          "はいじ",
-          "はいし",
-          "ばいし"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.645557+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-957d019486",
-      "target_label": "根拠",
-      "level": "N1",
-      "focus_zh": "判断或论述的依据",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "957d019486",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:33:44.976589Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-957d019486-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:33:44.976589Z",
-          "done_reason": "stop",
-          "eval_count": 270,
-          "eval_duration": 28301383000,
-          "prompt_eval_count": 535,
-          "prompt_eval_duration": 5049082000,
-          "load_duration": 722375,
-          "wall_seconds": 33.39
-        }
-      },
-      "review_status": "pending",
-      "stem": "この結論を導き出すためには、確かな（　）が必要です。",
-      "options": [
-        "実態",
-        "根拠",
-        "課題",
-        "意向"
-      ],
-      "answer_index": 1,
-      "translation_zh": "要得出这个结论，需要确凿的依据。",
-      "explanation_zh": "得出结论所需的确凿依据是「根拠」；「確かな実態」不能表达这里所说的论据。",
-      "option_explanations_zh": [
-        "表示真实情况；不符合本题完整句子的接续或明确语境。",
-        "本题正确。得出结论所需的确凿依据是「根拠」；「確かな実態」不能表达这里所说的论据。",
-        "表示需要解决的问题或任务；不符合本题完整句子的接续或明确语境。",
-        "表示意愿、打算；不符合本题完整句子的接续或明确语境。"
-      ],
-      "id": "v-957d019486-cloze",
-      "kind": "vocabulary",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.449641+00:00",
-        "original_content_hash": "bbf5590e12eb1d1a49fad7fdd3ea80fce2ce9b5d553305ac28fcd39ca95f387b",
-        "archive_file": "data/revisions/codex-full-review-v1/v-957d019486-cloze.json",
-        "changed_fields": [
-          "explanation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": false,
-        "reason_zh": "得出结论所需的确凿依据是「根拠」；「確かな実態」不能表达这里所说的论据。"
-      },
-      "content_hash": "cade9b91f6cb7f6a5439237712e9726116af3e3817d9def8f314d0ff44d947ae",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-957d019486-cloze",
-        "content_hash": "cade9b91f6cb7f6a5439237712e9726116af3e3817d9def8f314d0ff44d947ae",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "得出结论所需的确凿依据是「根拠」；「確かな実態」不能表达这里所说的论据。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.449669+00:00",
-        "substantive_revision": false,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-ccf2d2747e",
-      "target_label": "証言",
-      "level": "N1",
-      "focus_zh": "证言、作证",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "ccf2d2747e",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.668069+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-ccf2d2747e-reading",
-      "kind": "reading",
-      "stem": "事件を目撃した人が、法廷で見たことを【証言】した。",
-      "options": [
-        "しょうけん",
-        "しょげん",
-        "じょうげん",
-        "しょうげん"
-      ],
-      "answer_index": 3,
-      "translation_zh": "目击事件的人在法庭上就亲眼所见作了证。",
-      "explanation_zh": "「証言」本题读「しょうげん」，句中表示证言、作证。",
-      "option_explanations_zh": [
-        "不是本题标记词的正确读音；这里应选「しょうげん」。",
-        "不是本题标记词的正确读音；这里应选「しょうげん」。",
-        "不是本题标记词的正确读音；这里应选「しょうげん」。",
-        "正确：本题标记词读「しょうげん」。"
-      ],
-      "content_hash": "f9389cedfe13c5713e937cfb35e75a3ffa2b713448cbe4afdd7e06275b2a5fd4",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "しょうげん",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-ccf2d2747e-reading",
-        "content_hash": "f9389cedfe13c5713e937cfb35e75a3ffa2b713448cbe4afdd7e06275b2a5fd4",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「証言」本题读「しょうげん」，句中表示证言、作证。",
-        "options_checked": [
-          "しょうけん",
-          "しょげん",
-          "じょうげん",
-          "しょうげん"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.668104+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-5abe53229a",
-      "target_label": "携わる",
-      "level": "N1",
-      "focus_zh": "参与某项工作或事业",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "5abe53229a",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:45:31.192037Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-5abe53229a-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:45:31.192037Z",
-          "done_reason": "stop",
-          "eval_count": 198,
-          "eval_duration": 20536423000,
-          "prompt_eval_count": 552,
-          "prompt_eval_duration": 7410163000,
-          "load_duration": 775292,
-          "wall_seconds": 28.08
-        }
-      },
-      "review_status": "pending",
-      "id": "v-5abe53229a-reading",
-      "kind": "reading",
-      "stem": "このプロジェクトには、多くの専門家が【携わる】ことになっている。",
-      "options": [
-        "たずさわる",
-        "たずさばる",
-        "たすさわる",
-        "たずわる"
-      ],
-      "answer_index": 0,
-      "translation_zh": "许多专家将参与这个项目。",
-      "explanation_zh": "逐一检查读音选项；本题「携わる」读「たずさわる」，句中用于表示参与、从事。",
-      "option_explanations_zh": [
-        "本题正确读音「たずさわる」。",
-        "这不是本题标记词的正确读音；本题应选「たずさわる」。",
-        "这不是本题标记词的正确读音；本题应选「たずさわる」。",
-        "这不是本题标记词的正确读音；本题应选「たずさわる」。"
-      ],
-      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.439742+00:00",
-        "original_content_hash": "1453f5c6d2cc94bdaeaebb02fd951fee294c0e57eefe97f20e4034ad85090c2f",
-        "archive_file": "data/revisions/codex-full-review-v1/v-5abe53229a-reading.json",
-        "changed_fields": [
-          "explanation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": false,
-        "reason_zh": "逐一检查读音选项；本题「携わる」读「たずさわる」，句中用于表示参与、从事。"
-      },
-      "content_hash": "6dcf4e4b0942a0068dff1dd1da43f8399e4b61969804abdf9ee00379044852ee",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "たずさわる",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-5abe53229a-reading",
-        "content_hash": "6dcf4e4b0942a0068dff1dd1da43f8399e4b61969804abdf9ee00379044852ee",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "逐一检查读音选项；本题「携わる」读「たずさわる」，句中用于表示参与、从事。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.439770+00:00",
-        "substantive_revision": false,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "g-ni-taru",
-      "target_label": "〜に足る",
-      "level": "N1",
-      "focus_zh": "动词辞书形或名词＋に足る＋名词，值得……或足以……。",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "ni-taru",
-        "source_file": "grammar-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.673790+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "g-ni-taru-1",
-      "kind": "grammar",
-      "stem": "何度も約束を守ってきた彼は、信頼（　）人物だ。",
-      "options": [
-        "とあって",
-        "に足る",
-        "に先立ち",
-        "をよそに"
-      ],
-      "answer_index": 1,
-      "translation_zh": "他多次信守承诺，是值得信赖的人。",
-      "explanation_zh": "动词辞书形或名词＋に足る＋名词，值得……或足以……。 「信頼に足る人物／裏付けるに足るデータ」表示值得信赖或足以支持。",
-      "option_explanations_zh": [
-        "本题不选「とあって」。其他选项不是能在这里修饰「人物／データ」的连体表达，也不表示值得或足以。",
-        "正确。「信頼に足る人物／裏付けるに足るデータ」表示值得信赖或足以支持。",
-        "本题不选「に先立ち」。其他选项不是能在这里修饰「人物／データ」的连体表达，也不表示值得或足以。",
-        "本题不选「をよそに」。其他选项不是能在这里修饰「人物／データ」的连体表达，也不表示值得或足以。"
-      ],
-      "content_hash": "45d6b6ccd584dbcfff7f65805652c3b5f03f9ea528ca54aa2e04c649698dc14a",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "g-ni-taru-1",
-        "content_hash": "45d6b6ccd584dbcfff7f65805652c3b5f03f9ea528ca54aa2e04c649698dc14a",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "动词辞书形或名词＋に足る＋名词，值得……或足以……。 「信頼に足る人物／裏付けるに足るデータ」表示值得信赖或足以支持。",
-        "options_checked": [
-          "とあって",
-          "に足る",
-          "に先立ち",
-          "をよそに"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          },
-          {
-            "title": "Bunpro：に足る（核对接续与意义）",
-            "url": "https://cdn.bunpro.jp/grammar_points/に足る"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.673863+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-bb77560bcb",
-      "target_label": "提供",
-      "level": "N1",
-      "focus_zh": "提供",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "bb77560bcb",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.664576+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-bb77560bcb-cloze",
-      "kind": "vocabulary",
-      "stem": "この施設では、地域の子どもたちに無料で学習の場を（　）している。",
-      "options": [
-        "提供",
-        "棄権",
-        "返済",
-        "拘束"
-      ],
-      "answer_index": 0,
-      "translation_zh": "该设施免费为地区儿童提供学习场所。",
-      "explanation_zh": "「場を提供する」表示提供场所或机会。",
-      "option_explanations_zh": [
-        "「場を提供する」表示提供场所或机会。",
-        "「棄権」表示弃权、放弃参赛或投票权；不符合本题已经限定的句意或接续。",
-        "「返済」表示偿还借款；不符合本题已经限定的句意或接续。",
-        "「拘束」表示限制人身自由或行动时间；不符合本题已经限定的句意或接续。"
-      ],
-      "content_hash": "cbbeae02faa0fe09e4d21dd2b55c0204316fdc554ac8aea704692fc387cbf392",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-bb77560bcb-cloze",
-        "content_hash": "cbbeae02faa0fe09e4d21dd2b55c0204316fdc554ac8aea704692fc387cbf392",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「場を提供する」表示提供场所或机会。",
-        "options_checked": [
-          "提供",
-          "棄権",
-          "返済",
-          "拘束"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.664629+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "g-gatera",
-      "target_label": "〜がてら",
-      "level": "N1",
-      "focus_zh": "借一次外出顺便做另一件事；名词或动词ます形去ます接がてら",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "gatera",
-        "source_file": "grammar-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:55:15.458701Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-g-gatera-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:55:15.458701Z",
-          "done_reason": "stop",
-          "eval_count": 476,
-          "eval_duration": 89094103000,
-          "prompt_eval_count": 546,
-          "prompt_eval_duration": 10428447000,
-          "load_duration": 747250,
-          "wall_seconds": 99.57
-        }
-      },
-      "review_status": "pending",
-      "stem": "週末、散歩（　）、近所の店に寄ってパンを買ってきた。",
-      "options": [
-        "がてら",
-        "や否や",
-        "かたわら",
-        "うちに"
-      ],
-      "answer_index": 0,
-      "translation_zh": "周末散步时，顺便到附近的店买了面包。",
-      "explanation_zh": "名词「散歩」后可直接接「がてら」，表示借散步之机顺便做另一件事。",
-      "option_explanations_zh": [
-        "表示散步兼顺便买面包。",
-        "「や否や」前接动词辞书形，不能直接接「散歩」这个名词。",
-        "名词后通常要「のかたわら」，且此处并非长期兼顾两种活动。",
-        "名词后应为「のうちに」，此处不能直接接。"
-      ],
-      "id": "g-gatera-1",
-      "kind": "grammar",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.426955+00:00",
-        "original_content_hash": "441c006cddbc98e2a3d535f297a333ddc20eade5d1366e5f17dc0d34429f76a5",
-        "archive_file": "data/revisions/codex-full-review-v1/g-gatera-1.json",
-        "changed_fields": [
-          "stem",
-          "options",
-          "explanation_zh",
-          "translation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": true,
-        "reason_zh": "名词「散歩」后可直接接「がてら」，表示借散步之机顺便做另一件事。"
-      },
-      "content_hash": "4c6a65494d3c261a142139e1fb690a7b5f77da4c0e2387c7ebc3b3d37426cb25",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "g-gatera-1",
-        "content_hash": "4c6a65494d3c261a142139e1fb690a7b5f77da4c0e2387c7ebc3b3d37426cb25",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "名词「散歩」后可直接接「がてら」，表示借散步之机顺便做另一件事。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          },
-          {
-            "title": "Bunpro：がてら（仅核对规则，不是题目来源）",
-            "url": "https://bunpro.jp/grammar_points/%E3%81%8C%E3%81%A6%E3%82%89"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.427013+00:00",
-        "substantive_revision": true,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-7113165c32",
-      "target_label": "拘束",
-      "level": "N1",
-      "focus_zh": "限制人身自由或行动时间",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "7113165c32",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:32:16.809751Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-7113165c32-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:32:16.809751Z",
-          "done_reason": "stop",
-          "eval_count": 267,
-          "eval_duration": 26257513000,
-          "prompt_eval_count": 545,
-          "prompt_eval_duration": 5442128000,
-          "load_duration": 708042,
-          "wall_seconds": 31.75
-        }
-      },
-      "review_status": "pending",
-      "id": "v-7113165c32-reading",
-      "kind": "reading",
-      "stem": "参加者は会議による長時間の【拘束】に不満を感じていた。",
-      "options": [
-        "こそく",
-        "こうそく",
-        "こうしょく",
-        "こうぞく"
-      ],
-      "answer_index": 1,
-      "translation_zh": "参加者对开会占用很长时间、限制行动感到不满。",
-      "explanation_zh": "逐一检查读音选项；本题「拘束」读「こうそく」，句中用于表示限制自由或行动。",
-      "option_explanations_zh": [
-        "这不是本题标记词的正确读音；本题应选「こうそく」。",
-        "本题正确读音「こうそく」。",
-        "这不是本题标记词的正确读音；本题应选「こうそく」。",
-        "这不是本题标记词的正确读音；本题应选「こうそく」。"
-      ],
-      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.444588+00:00",
-        "original_content_hash": "0f4e59e55ab4fe93927b33171074853703844d5f5020a152a7c1d6ef295c76d0",
-        "archive_file": "data/revisions/codex-full-review-v1/v-7113165c32-reading.json",
-        "changed_fields": [
-          "stem",
-          "explanation_zh",
-          "translation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": true,
-        "reason_zh": "逐一检查读音选项；本题「拘束」读「こうそく」，句中用于表示限制自由或行动。"
-      },
-      "content_hash": "a99b7fcf4d1de36e7ab344a54d210048dff2f75267d823b47d27265cfb509595",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "こうそく",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-7113165c32-reading",
-        "content_hash": "a99b7fcf4d1de36e7ab344a54d210048dff2f75267d823b47d27265cfb509595",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "逐一检查读音选项；本题「拘束」读「こうそく」，句中用于表示限制自由或行动。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.444620+00:00",
-        "substantive_revision": true,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-7a62e550e4",
-      "target_label": "譲歩",
-      "level": "N1",
-      "focus_zh": "让步",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "7a62e550e4",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.661022+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-7a62e550e4-reading",
-      "kind": "reading",
-      "stem": "交渉をまとめるため、双方が自分の主張を一部引っ込めて【譲歩】した。",
-      "options": [
-        "じょほ",
-        "じょうほ",
-        "じょうぼ",
-        "しょうほ"
-      ],
-      "answer_index": 1,
-      "translation_zh": "为谈成协议，双方都收回部分主张，作出了让步。",
-      "explanation_zh": "「譲歩」本题读「じょうほ」，句中表示让步。",
-      "option_explanations_zh": [
-        "不是本题标记词的正确读音；这里应选「じょうほ」。",
-        "正确：本题标记词读「じょうほ」。",
-        "不是本题标记词的正确读音；这里应选「じょうほ」。",
-        "不是本题标记词的正确读音；这里应选「じょうほ」。"
-      ],
-      "content_hash": "4e0c719fda1676ed04fc80d67fd4bcec8f1b6967bb80650342fb2db847c8fe0c",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "じょうほ",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-7a62e550e4-reading",
-        "content_hash": "4e0c719fda1676ed04fc80d67fd4bcec8f1b6967bb80650342fb2db847c8fe0c",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「譲歩」本题读「じょうほ」，句中表示让步。",
-        "options_checked": [
-          "じょほ",
-          "じょうほ",
-          "じょうぼ",
-          "しょうほ"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.661048+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-f4518f31a9",
-      "target_label": "寄与",
-      "level": "N1",
-      "focus_zh": "贡献、有助于",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "f4518f31a9",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.664016+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-f4518f31a9-cloze",
-      "kind": "vocabulary",
-      "stem": "長年の基礎研究が、新しい治療法の開発に大きく（　）した。",
-      "options": [
-        "廃棄",
-        "返済",
-        "棄権",
-        "寄与"
-      ],
-      "answer_index": 3,
-      "translation_zh": "长期基础研究为新疗法开发作出了重大贡献。",
-      "explanation_zh": "「開発に寄与する」表示对开发有贡献。",
-      "option_explanations_zh": [
-        "「廃棄」表示废弃、丢弃；不符合本题已经限定的句意或接续。",
-        "「返済」表示偿还借款；不符合本题已经限定的句意或接续。",
-        "「棄権」表示弃权、放弃参赛或投票权；不符合本题已经限定的句意或接续。",
-        "「開発に寄与する」表示对开发有贡献。"
-      ],
-      "content_hash": "a222617cfefa930d72ad6380ea065947e1d515d07cc12694ebee1c0b9f83cade",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-f4518f31a9-cloze",
-        "content_hash": "a222617cfefa930d72ad6380ea065947e1d515d07cc12694ebee1c0b9f83cade",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "「開発に寄与する」表示对开发有贡献。",
-        "options_checked": [
-          "廃棄",
-          "返済",
-          "棄権",
-          "寄与"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.664069+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-d07bdd00a7",
-      "target_label": "契機",
-      "level": "N1",
-      "focus_zh": "促使变化发生的契机",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "d07bdd00a7",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:44:30.138Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-d07bdd00a7-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:44:30.138Z",
-          "done_reason": "stop",
-          "eval_count": 274,
-          "eval_duration": 29303683000,
-          "prompt_eval_count": 529,
-          "prompt_eval_duration": 6102744000,
-          "load_duration": 619166,
-          "wall_seconds": 35.48
-        }
-      },
-      "review_status": "pending",
-      "stem": "この出来事は、彼が人生を変える大きな（　）になった。",
-      "options": [
-        "根拠",
-        "余地",
-        "実態",
-        "契機"
-      ],
-      "answer_index": 3,
-      "translation_zh": "这件事成为了他改变人生的重大契机。",
-      "explanation_zh": "这件事触发人生改变，选择表示转折诱因的「契機」。",
-      "option_explanations_zh": [
-        "表示依据、根据；不符合本题完整句子的接续或明确语境。",
-        "表示剩余空间、可能性；不符合本题完整句子的接续或明确语境。",
-        "表示真实情况；不符合本题完整句子的接续或明确语境。",
-        "本题正确。这件事触发人生改变，选择表示转折诱因的「契機」。"
-      ],
-      "id": "v-d07bdd00a7-cloze",
-      "kind": "vocabulary",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.455711+00:00",
-        "original_content_hash": "3023ac64578c721693701247914f8951b1f3a38eaafed8c8dfefeeaaa39cb4cf",
-        "archive_file": "data/revisions/codex-full-review-v1/v-d07bdd00a7-cloze.json",
-        "changed_fields": [
-          "explanation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": false,
-        "reason_zh": "这件事触发人生改变，选择表示转折诱因的「契機」。"
-      },
-      "content_hash": "268eedb7a4980105af15414ee2a2296ea06f977c23463bdb792a26df4d3eb4e3",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-d07bdd00a7-cloze",
-        "content_hash": "268eedb7a4980105af15414ee2a2296ea06f977c23463bdb792a26df4d3eb4e3",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "这件事触发人生改变，选择表示转折诱因的「契機」。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.455739+00:00",
-        "substantive_revision": false,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "review",
       "plan_date": "2026-11-27"
     },
     {
@@ -1809,61 +156,61 @@
       "plan_date": "2026-11-27"
     },
     {
-      "target_id": "v-4426ad2212",
-      "target_label": "不吉",
+      "target_id": "v-e183ec9f8c",
+      "target_label": "一目",
       "level": "N1",
-      "focus_zh": "不吉利",
+      "focus_zh": "一目置く中读いちもく，敬重对方",
       "source": {
         "project": "OpenJLPT",
         "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "4426ad2212",
+        "source_id": "e183ec9f8c",
         "source_file": "vocab-n1.json",
         "license": "CC-BY-SA-4.0"
       },
       "generation": {
         "model": "Codex（当前对话原创）",
         "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.666494+00:00",
-        "curriculum_version": "codex-52days-v1"
+        "created_at": "2026-11-01T09:10:17.643221+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
       },
       "review_status": "pending",
-      "id": "v-4426ad2212-cloze",
+      "id": "v-e183ec9f8c-cloze-2",
       "kind": "vocabulary",
-      "stem": "何か悪いことが起こりそうで、その知らせには（　）なものを感じた。",
+      "stem": "若手ながら確かな腕があり、職人仲間から（　）置かれている。",
       "options": [
-        "頑丈",
-        "不吉",
-        "精密",
-        "円満"
+        "一帯",
+        "一目",
+        "一連",
+        "一心"
       ],
       "answer_index": 1,
-      "translation_zh": "感觉似乎会发生坏事，从那则消息中感到了不祥。",
-      "explanation_zh": "使人联想到坏事的征兆，用「不吉」。",
+      "translation_zh": "虽然年轻却技艺扎实，受到同行师傅的敬重。",
+      "explanation_zh": "固定表达「一目置く」读「いちもくおく」，表示承认对方胜过自己、敬重对方；「ひとめ」用于其他语境。",
       "option_explanations_zh": [
-        "「頑丈」表示结实、牢固；不符合本题已经限定的句意或接续。",
-        "使人联想到坏事的征兆，用「不吉」。",
-        "「精密」表示精密；不符合本题已经限定的句意或接续。",
-        "「円満」表示圆满、和睦；不符合本题已经限定的句意或接续。"
+        "「一帯」表示整个一片地区。",
+        "固定表达「一目置く」读「いちもくおく」，表示承认对方胜过自己、敬重对方；「ひとめ」用于其他语境。",
+        "「一連」表示一连串、相互关联的一系列。",
+        "「一心」表示一心一意、某种强烈愿望。"
       ],
-      "content_hash": "79d5cd6ab4637b72bc471eb61543a9b85d33ba33941816df19322d562ac1d0d9",
+      "content_hash": "63134a25aa4824a0076c69085d6fd4571c02c9440ceedbdc124aa8e7def4b1ed",
       "structural_check": {
         "passed": true,
         "errors": []
       },
       "quality_status": "codex_reviewed",
       "editorial_check": {
-        "question_id": "v-4426ad2212-cloze",
-        "content_hash": "79d5cd6ab4637b72bc471eb61543a9b85d33ba33941816df19322d562ac1d0d9",
+        "question_id": "v-e183ec9f8c-cloze-2",
+        "content_hash": "63134a25aa4824a0076c69085d6fd4571c02c9440ceedbdc124aa8e7def4b1ed",
         "decision": "reviewed",
-        "review_id": "codex-52days-v1",
+        "review_id": "codex-expansion-1000-v1",
         "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "使人联想到坏事的征兆，用「不吉」。",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "固定表达「一目置く」读「いちもくおく」，表示承认对方胜过自己、敬重对方；「ひとめ」用于其他语境。",
         "options_checked": [
-          "頑丈",
-          "不吉",
-          "精密",
-          "円満"
+          "一帯",
+          "一目",
+          "一連",
+          "一心"
         ],
         "references": [
           {
@@ -1871,75 +218,50 @@
             "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
           }
         ],
-        "created_at": "2026-10-17T13:40:55.666542+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
+        "created_at": "2026-11-01T09:04:21.704072+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
       },
       "plan_role": "new",
       "plan_date": "2026-11-27"
     },
     {
-      "target_id": "v-d5de1db218",
-      "target_label": "補足",
+      "target_id": "v-28bbcaef7c",
+      "target_label": "弁償",
       "level": "N1",
-      "focus_zh": "补充不足的说明或内容",
+      "focus_zh": "赔偿他人物品等损失",
       "source": {
         "project": "OpenJLPT",
         "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "d5de1db218",
+        "source_id": "28bbcaef7c",
         "source_file": "vocab-n1.json",
         "license": "CC-BY-SA-4.0"
       },
       "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:48:54.186178Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-d5de1db218-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:48:54.186178Z",
-          "done_reason": "stop",
-          "eval_count": 272,
-          "eval_duration": 28702758000,
-          "prompt_eval_count": 447,
-          "prompt_eval_duration": 6366355000,
-          "load_duration": 606625,
-          "wall_seconds": 35.13
-        }
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.662017+00:00",
+        "curriculum_version": "codex-52days-v1"
       },
       "review_status": "pending",
-      "id": "v-d5de1db218-reading",
+      "id": "v-28bbcaef7c-reading",
       "kind": "reading",
-      "stem": "会議で出た疑問点について、後ほど【補足】の資料を配布します。",
+      "stem": "借りていたカメラを壊してしまったので、自分のお金で【弁償】した。",
       "options": [
-        "ほそっく",
-        "ぼそく",
-        "ほぞく",
-        "ほそく"
+        "べんじょう",
+        "べんしょう",
+        "べしょう",
+        "へんしょう"
       ],
-      "answer_index": 3,
-      "translation_zh": "关于会议上提出的疑问点，稍后将分发补充资料。",
-      "explanation_zh": "逐一检查读音选项；本题「補足」读「ほそく」，句中用于表示补充不足的内容。",
+      "answer_index": 1,
+      "translation_zh": "弄坏了借来的相机，所以自己出钱赔偿。",
+      "explanation_zh": "「弁償」本题读「べんしょう」，句中表示赔偿他人物品等损失。",
       "option_explanations_zh": [
-        "这不是本题标记词的正确读音；本题应选「ほそく」。",
-        "这不是本题标记词的正确读音；本题应选「ほそく」。",
-        "这不是本题标记词的正确读音；本题应选「ほそく」。",
-        "本题正确读音「ほそく」。"
+        "不是本题标记词的正确读音；这里应选「べんしょう」。",
+        "正确：本题标记词读「べんしょう」。",
+        "不是本题标记词的正确读音；这里应选「べんしょう」。",
+        "不是本题标记词的正确读音；这里应选「べんしょう」。"
       ],
-      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.456233+00:00",
-        "original_content_hash": "4a8a6a23d2322fd31c6710d0673e435e7b41157ecc4513e9706e842718f05ed7",
-        "archive_file": "data/revisions/codex-full-review-v1/v-d5de1db218-reading.json",
-        "changed_fields": [
-          "explanation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": false,
-        "reason_zh": "逐一检查读音选项；本题「補足」读「ほそく」，句中用于表示补充不足的内容。"
-      },
-      "content_hash": "70f4dd5024f8510fce1a9d4016ad03522665ca53b2f23d5c2f237910b788e3f5",
+      "content_hash": "6a4a0571293534cc11bcf56f618cc3e902a9e76450e5aef6376b27b2b3ad1e09",
       "structural_check": {
         "passed": true,
         "errors": []
@@ -1947,94 +269,74 @@
       "dictionary_check": {
         "passed": true,
         "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "ほそく",
+        "reading": "べんしょう",
         "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
       },
       "quality_status": "codex_reviewed",
       "editorial_check": {
-        "question_id": "v-d5de1db218-reading",
-        "content_hash": "70f4dd5024f8510fce1a9d4016ad03522665ca53b2f23d5c2f237910b788e3f5",
+        "question_id": "v-28bbcaef7c-reading",
+        "content_hash": "6a4a0571293534cc11bcf56f618cc3e902a9e76450e5aef6376b27b2b3ad1e09",
         "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "逐一检查读音选项；本题「補足」读「ほそく」，句中用于表示补充不足的内容。",
+        "review_id": "codex-52days-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
+        "note_zh": "「弁償」本题读「べんしょう」，句中表示赔偿他人物品等损失。",
+        "options_checked": [
+          "べんじょう",
+          "べんしょう",
+          "べしょう",
+          "へんしょう"
+        ],
         "references": [
           {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
             "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
           }
         ],
-        "created_at": "2026-10-17T13:21:28.456267+00:00",
-        "substantive_revision": false,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
+        "created_at": "2026-10-17T13:40:55.662044+00:00",
+        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
       },
-      "plan_role": "review",
+      "plan_role": "new",
       "plan_date": "2026-11-27"
     },
     {
-      "target_id": "v-360aad068d",
-      "target_label": "阻む",
+      "target_id": "v-3d2ff7e701",
+      "target_label": "適宜",
       "level": "N1",
-      "focus_zh": "阻碍发展或行动",
+      "focus_zh": "酌情、视需要",
       "source": {
         "project": "OpenJLPT",
         "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "360aad068d",
+        "source_id": "3d2ff7e701",
         "source_file": "vocab-n1.json",
         "license": "CC-BY-SA-4.0"
       },
       "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:47:44.741226Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-360aad068d-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:47:44.741226Z",
-          "done_reason": "stop",
-          "eval_count": 269,
-          "eval_duration": 27957092000,
-          "prompt_eval_count": 575,
-          "prompt_eval_duration": 8850867000,
-          "load_duration": 620834,
-          "wall_seconds": 36.88
-        }
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.642056+00:00",
+        "curriculum_version": "codex-52days-v1"
       },
       "review_status": "pending",
-      "id": "v-360aad068d-reading",
+      "id": "v-3d2ff7e701-reading",
       "kind": "reading",
-      "stem": "不況が企業の成長を【阻む】恐れがある。",
+      "stem": "説明の途中でも、必要に応じて【適宜】質問してください。",
       "options": [
-        "ばばむ",
-        "そばむ",
-        "はばむ",
-        "はぼむ"
+        "てきき",
+        "てきぎい",
+        "てきぎ",
+        "てっぎ"
       ],
       "answer_index": 2,
-      "translation_zh": "经济萧条可能会阻碍企业的发展。",
-      "explanation_zh": "逐一检查读音选项；本题「阻む」读「はばむ」，句中用于表示阻碍。",
+      "translation_zh": "说明过程中也请根据需要酌情提问。",
+      "explanation_zh": "「適宜」本题读「てきぎ」，句中表示酌情、视需要。",
       "option_explanations_zh": [
-        "这不是本题标记词的正确读音；本题应选「はばむ」。",
-        "这不是本题标记词的正确读音；本题应选「はばむ」。",
-        "本题正确读音「はばむ」。",
-        "这不是本题标记词的正确读音；本题应选「はばむ」。"
+        "不是本题标记词的正确读音；这里应选「てきぎ」。",
+        "不是本题标记词的正确读音；这里应选「てきぎ」。",
+        "正确：本题标记词读「てきぎ」。",
+        "不是本题标记词的正确读音；这里应选「てきぎ」。"
       ],
-      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.436621+00:00",
-        "original_content_hash": "bcd1553c59481cf0b896d0a344d5b4e1594c1e0e3360cda25f850f174ffff35c",
-        "archive_file": "data/revisions/codex-full-review-v1/v-360aad068d-reading.json",
-        "changed_fields": [
-          "explanation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": false,
-        "reason_zh": "逐一检查读音选项；本题「阻む」读「はばむ」，句中用于表示阻碍。"
-      },
-      "content_hash": "08ba100bcdd7e7b99bfae9d61b92c8062b54ed16a87b6e51bce6df21cc9296fa",
+      "content_hash": "1cb27c81fc6f47e77e792d35879288738e2d95bb7d8ea06b48bfd300e20a8268",
       "structural_check": {
         "passed": true,
         "errors": []
@@ -2042,87 +344,23 @@
       "dictionary_check": {
         "passed": true,
         "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "はばむ",
+        "reading": "てきぎ",
         "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
       },
       "quality_status": "codex_reviewed",
       "editorial_check": {
-        "question_id": "v-360aad068d-reading",
-        "content_hash": "08ba100bcdd7e7b99bfae9d61b92c8062b54ed16a87b6e51bce6df21cc9296fa",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "逐一检查读音选项；本题「阻む」读「はばむ」，句中用于表示阻碍。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.436654+00:00",
-        "substantive_revision": false,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-0bdbaf26a4",
-      "target_label": "欠乏",
-      "level": "N1",
-      "focus_zh": "缺乏、不足",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "0bdbaf26a4",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "Codex（当前对话原创）",
-        "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.664784+00:00",
-        "curriculum_version": "codex-52days-v1"
-      },
-      "review_status": "pending",
-      "id": "v-0bdbaf26a4-cloze",
-      "kind": "vocabulary",
-      "stem": "干ばつが続き、この地域は深刻な水の（　）に苦しんでいる。",
-      "options": [
-        "欠乏",
-        "返済",
-        "公募",
-        "朗読"
-      ],
-      "answer_index": 0,
-      "translation_zh": "持续干旱使这个地区深受严重缺水之苦。",
-      "explanation_zh": "所需资源严重不足，用「水の欠乏」。",
-      "option_explanations_zh": [
-        "所需资源严重不足，用「水の欠乏」。",
-        "「返済」表示偿还借款；不符合本题已经限定的句意或接续。",
-        "「公募」表示公开招募；不符合本题已经限定的句意或接续。",
-        "「朗読」表示朗读；不符合本题已经限定的句意或接续。"
-      ],
-      "content_hash": "c430d572ea655b315eb79cff0a4cd4bb5f9b6fa9fe2e58742300573a1daa9264",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-0bdbaf26a4-cloze",
-        "content_hash": "c430d572ea655b315eb79cff0a4cd4bb5f9b6fa9fe2e58742300573a1daa9264",
+        "question_id": "v-3d2ff7e701-reading",
+        "content_hash": "1cb27c81fc6f47e77e792d35879288738e2d95bb7d8ea06b48bfd300e20a8268",
         "decision": "reviewed",
         "review_id": "codex-52days-v1",
         "reviewer": "Codex（当前对话中的 AI 编辑）",
         "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "所需资源严重不足，用「水の欠乏」。",
+        "note_zh": "「適宜」本题读「てきぎ」，句中表示酌情、视需要。",
         "options_checked": [
-          "欠乏",
-          "返済",
-          "公募",
-          "朗読"
+          "てきき",
+          "てきぎい",
+          "てきぎ",
+          "てっぎ"
         ],
         "references": [
           {
@@ -2130,241 +368,50 @@
             "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
           }
         ],
-        "created_at": "2026-10-17T13:40:55.664837+00:00",
+        "created_at": "2026-10-17T13:40:55.642090+00:00",
         "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
       },
       "plan_role": "new",
       "plan_date": "2026-11-27"
     },
     {
-      "target_id": "v-68a47d4c28",
-      "target_label": "辛うじて",
+      "target_id": "v-b84686d05e",
+      "target_label": "過密",
       "level": "N1",
-      "focus_zh": "勉强达到、好不容易做到",
+      "focus_zh": "人口或安排过度密集",
       "source": {
         "project": "OpenJLPT",
         "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "68a47d4c28",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:43:24.31215Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-68a47d4c28-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:43:24.31215Z",
-          "done_reason": "stop",
-          "eval_count": 230,
-          "eval_duration": 23726154000,
-          "prompt_eval_count": 551,
-          "prompt_eval_duration": 6640265000,
-          "load_duration": 896792,
-          "wall_seconds": 30.42
-        }
-      },
-      "review_status": "pending",
-      "id": "v-68a47d4c28-reading",
-      "kind": "reading",
-      "stem": "予算が不足していたが、【辛うじて】計画を完了させた。",
-      "options": [
-        "かろうじて",
-        "かろうして",
-        "からうじて",
-        "かろじて"
-      ],
-      "answer_index": 0,
-      "translation_zh": "虽然预算不足，但好歹勉强完成了计划。",
-      "explanation_zh": "逐一检查读音选项；本题「辛うじて」读「かろうじて」，句中用于表示勉强、好不容易。",
-      "option_explanations_zh": [
-        "本题正确读音「かろうじて」。",
-        "这不是本题标记词的正确读音；本题应选「かろうじて」。",
-        "这不是本题标记词的正确读音；本题应选「かろうじて」。",
-        "这不是本题标记词的正确读音；本题应选「かろうじて」。"
-      ],
-      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.443470+00:00",
-        "original_content_hash": "dc53fd63ac66adacf9d4d89637c18abf06505ac5ba43af9eb867cf7f47fedc0c",
-        "archive_file": "data/revisions/codex-full-review-v1/v-68a47d4c28-reading.json",
-        "changed_fields": [
-          "explanation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": false,
-        "reason_zh": "逐一检查读音选项；本题「辛うじて」读「かろうじて」，句中用于表示勉强、好不容易。"
-      },
-      "content_hash": "b74264d351a852be7179b39732a1726603f50d145e4701b1256e1891360dfef2",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "dictionary_check": {
-        "passed": true,
-        "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "かろうじて",
-        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-68a47d4c28-reading",
-        "content_hash": "b74264d351a852be7179b39732a1726603f50d145e4701b1256e1891360dfef2",
-        "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "逐一检查读音选项；本题「辛うじて」读「かろうじて」，句中用于表示勉强、好不容易。",
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:21:28.443505+00:00",
-        "substantive_revision": false,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
-      },
-      "plan_role": "new",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-6b0a6c0492",
-      "target_label": "巧妙",
-      "level": "N1",
-      "focus_zh": "巧妙、精巧",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "6b0a6c0492",
+        "source_id": "b84686d05e",
         "source_file": "vocab-n1.json",
         "license": "CC-BY-SA-4.0"
       },
       "generation": {
         "model": "Codex（当前对话原创）",
         "method": "authored_in_conversation",
-        "created_at": "2026-10-17T13:40:55.640192+00:00",
-        "curriculum_version": "codex-52days-v1"
+        "created_at": "2026-11-01T09:10:17.654297+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
       },
       "review_status": "pending",
-      "id": "v-6b0a6c0492-cloze",
-      "kind": "vocabulary",
-      "stem": "犯人は（　）な手口で警備員の目を欺いた。",
-      "options": [
-        "巧妙",
-        "頑丈",
-        "円満",
-        "質素"
-      ],
-      "answer_index": 0,
-      "translation_zh": "犯人用巧妙的手法骗过了保安。",
-      "explanation_zh": "手法精巧而难以识破，用「巧妙」。",
-      "option_explanations_zh": [
-        "手法精巧而难以识破，用「巧妙」。",
-        "「頑丈」表示结实、牢固；不符合本题已经限定的句意或接续。",
-        "「円満」表示圆满、和睦；不符合本题已经限定的句意或接续。",
-        "「質素」表示朴素、节俭；不符合本题已经限定的句意或接续。"
-      ],
-      "content_hash": "fc90b544d52595e49e9a2be17c09644b5070968cf5e5436a3decd35806fe7ff5",
-      "structural_check": {
-        "passed": true,
-        "errors": []
-      },
-      "quality_status": "codex_reviewed",
-      "editorial_check": {
-        "question_id": "v-6b0a6c0492-cloze",
-        "content_hash": "fc90b544d52595e49e9a2be17c09644b5070968cf5e5436a3decd35806fe7ff5",
-        "decision": "reviewed",
-        "review_id": "codex-52days-v1",
-        "reviewer": "Codex（当前对话中的 AI 编辑）",
-        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
-        "note_zh": "手法精巧而难以识破，用「巧妙」。",
-        "options_checked": [
-          "巧妙",
-          "頑丈",
-          "円満",
-          "質素"
-        ],
-        "references": [
-          {
-            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
-            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
-          }
-        ],
-        "created_at": "2026-10-17T13:40:55.640719+00:00",
-        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
-      },
-      "plan_role": "review",
-      "plan_date": "2026-11-27"
-    },
-    {
-      "target_id": "v-0484e1a526",
-      "target_label": "抑制",
-      "level": "N1",
-      "focus_zh": "抑制增长、冲动或活动",
-      "source": {
-        "project": "OpenJLPT",
-        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "0484e1a526",
-        "source_file": "vocab-n1.json",
-        "license": "CC-BY-SA-4.0"
-      },
-      "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:28:55.591496Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-0484e1a526-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:28:55.591496Z",
-          "done_reason": "stop",
-          "eval_count": 205,
-          "eval_duration": 16905476999,
-          "prompt_eval_count": 531,
-          "prompt_eval_duration": 4625970000,
-          "load_duration": 843417,
-          "wall_seconds": 26.31
-        }
-      },
-      "review_status": "pending",
-      "id": "v-0484e1a526-reading",
+      "id": "v-b84686d05e-reading",
       "kind": "reading",
-      "stem": "彼は深呼吸をして、感情の【抑制】に努めた。",
+      "stem": "人口が集中し、この地区は【過密】状態になっている。",
       "options": [
-        "おくせい",
-        "よくせい",
-        "よくさい",
-        "よくしょう"
+        "かびつ",
+        "かみつ",
+        "かみち",
+        "がみつ"
       ],
       "answer_index": 1,
-      "translation_zh": "他深呼吸，努力控制情绪。",
-      "explanation_zh": "逐一检查读音选项；本题「抑制」读「よくせい」，句中用于表示抑制、控制。",
+      "translation_zh": "人口集中，这个地区处于过密状态。",
+      "explanation_zh": "「過密」在本句中读「かみつ」，表示人口或安排过度密集。",
       "option_explanations_zh": [
-        "这不是本题标记词的正确读音；本题应选「よくせい」。",
-        "本题正确读音「よくせい」。",
-        "这不是本题标记词的正确读音；本题应选「よくせい」。",
-        "这不是本题标记词的正确读音；本题应选「よくせい」。"
+        "本句不读「かびつ」。",
+        "本句读「かみつ」。",
+        "本句不读「かみち」。",
+        "本句不读「がみつ」。"
       ],
-      "distractor_method": "curated_by_codex_then_deterministically_shuffled",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.432453+00:00",
-        "original_content_hash": "9f34725cd449d2df2142301bf9f2c9fea360fc948ff672b6000bcc83add18886",
-        "archive_file": "data/revisions/codex-full-review-v1/v-0484e1a526-reading.json",
-        "changed_fields": [
-          "stem",
-          "explanation_zh",
-          "translation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": true,
-        "reason_zh": "逐一检查读音选项；本题「抑制」读「よくせい」，句中用于表示抑制、控制。"
-      },
-      "content_hash": "ee0f8ddcd582d242caa104d8ce569dcb2f64a15a844f82ba6df21029468caddb",
+      "content_hash": "eb4f80b21803ba0606fee00c8e528a375bd35db29d72a363661dd60e987be0d6",
       "structural_check": {
         "passed": true,
         "errors": []
@@ -2372,120 +419,1733 @@
       "dictionary_check": {
         "passed": true,
         "source": "OpenJLPT / JMdict-linked entry",
-        "reading": "よくせい",
+        "reading": "かみつ",
         "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
       },
       "quality_status": "codex_reviewed",
       "editorial_check": {
-        "question_id": "v-0484e1a526-reading",
-        "content_hash": "ee0f8ddcd582d242caa104d8ce569dcb2f64a15a844f82ba6df21029468caddb",
+        "question_id": "v-b84686d05e-reading",
+        "content_hash": "eb4f80b21803ba0606fee00c8e528a375bd35db29d72a363661dd60e987be0d6",
         "decision": "reviewed",
-        "review_id": "codex-full-review-v1",
-        "reviewer": "Codex（本次对话中的 AI 编辑）",
-        "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "逐一检查读音选项；本题「抑制」读「よくせい」，句中用于表示抑制、控制。",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「過密」在本句中读「かみつ」，表示人口或安排过度密集。",
+        "options_checked": [
+          "かびつ",
+          "かみつ",
+          "かみち",
+          "がみつ"
+        ],
         "references": [
           {
-            "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
             "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
           }
         ],
-        "created_at": "2026-10-17T13:21:28.432484+00:00",
-        "substantive_revision": true,
-        "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
+        "created_at": "2026-11-01T09:04:21.714555+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
       },
       "plan_role": "new",
       "plan_date": "2026-11-27"
     },
     {
-      "target_id": "v-bd1e5daff0",
-      "target_label": "迅速",
+      "target_id": "v-002ee4fb5a",
+      "target_label": "奨励",
       "level": "N1",
-      "focus_zh": "处理或行动迅速",
+      "focus_zh": "鼓励、提倡",
       "source": {
         "project": "OpenJLPT",
         "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
-        "source_id": "bd1e5daff0",
+        "source_id": "002ee4fb5a",
         "source_file": "vocab-n1.json",
         "license": "CC-BY-SA-4.0"
       },
       "generation": {
-        "model": "qwen3.5:27b-q4_K_M",
-        "created_at": "2026-10-17T12:39:22.652845Z",
-        "attempt": 1,
-        "raw_file": "data/raw/generate-v-bd1e5daff0-a1.json",
-        "metrics": {
-          "model": "qwen3.5:27b-q4_K_M",
-          "created_at": "2026-10-17T12:39:22.652845Z",
-          "done_reason": "stop",
-          "eval_count": 212,
-          "eval_duration": 39024197000,
-          "prompt_eval_count": 481,
-          "prompt_eval_duration": 9546056000,
-          "load_duration": 794167,
-          "wall_seconds": 48.67
-        }
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.649835+00:00",
+        "curriculum_version": "codex-52days-v1"
       },
       "review_status": "pending",
-      "stem": "一刻を争う緊急事態には、（　）な対応が求められる。",
+      "id": "v-002ee4fb5a-reading",
+      "kind": "reading",
+      "stem": "社員の学習意欲を高めるため、会社は資格の取得を【奨励】している。",
       "options": [
-        "迅速",
-        "漠然",
-        "一概に",
-        "辛うじて"
+        "しょれい",
+        "しょうれ",
+        "じょうれい",
+        "しょうれい"
       ],
-      "answer_index": 0,
-      "translation_zh": "刻不容缓的紧急事态需要迅速应对。",
-      "explanation_zh": "「迅速な対応」表示快速应对；已去掉原题同样可成立的「柔軟な対応」。",
+      "answer_index": 3,
+      "translation_zh": "为提高员工学习积极性，公司鼓励考取资格。",
+      "explanation_zh": "「奨励」本题读「しょうれい」，句中表示鼓励、提倡。",
       "option_explanations_zh": [
-        "本题正确。「迅速な対応」表示快速应对；已去掉原题同样可成立的「柔軟な対応」。",
-        "表示模糊、不具体；不符合本题完整句子的接续或明确语境。",
-        "表示不加区分地、笼统地；不符合本题完整句子的接续或明确语境。",
-        "表示勉强、好不容易；不符合本题完整句子的接续或明确语境。"
+        "不是本题标记词的正确读音；这里应选「しょうれい」。",
+        "不是本题标记词的正确读音；这里应选「しょうれい」。",
+        "不是本题标记词的正确读音；这里应选「しょうれい」。",
+        "正确：本题标记词读「しょうれい」。"
       ],
-      "id": "v-bd1e5daff0-cloze",
-      "kind": "vocabulary",
-      "editorial_revision": {
-        "revision_id": "codex-full-review-v1",
-        "actor": "Codex（AI 编辑复核）",
-        "created_at": "2026-10-17T13:21:28.452074+00:00",
-        "original_content_hash": "df4cf9cea855bfb6b28f9fc7686ea9480ab3eda2112b9387d002720612b4f21c",
-        "archive_file": "data/revisions/codex-full-review-v1/v-bd1e5daff0-cloze.json",
-        "changed_fields": [
-          "stem",
-          "options",
-          "explanation_zh",
-          "translation_zh",
-          "option_explanations_zh"
-        ],
-        "substantive_revision": true,
-        "reason_zh": "「迅速な対応」表示快速应对；已去掉原题同样可成立的「柔軟な対応」。"
+      "content_hash": "cf7b6591c88ec8a6c44f6d3f7ce306245cc14e297f5fb2648dca74c2e06c52e3",
+      "structural_check": {
+        "passed": true,
+        "errors": []
       },
-      "content_hash": "4d165db4e92acdadc50752d36d8e01125043a717ccd6886d1babd0034692a1c2",
+      "dictionary_check": {
+        "passed": true,
+        "source": "OpenJLPT / JMdict-linked entry",
+        "reading": "しょうれい",
+        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-002ee4fb5a-reading",
+        "content_hash": "cf7b6591c88ec8a6c44f6d3f7ce306245cc14e297f5fb2648dca74c2e06c52e3",
+        "decision": "reviewed",
+        "review_id": "codex-52days-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
+        "note_zh": "「奨励」本题读「しょうれい」，句中表示鼓励、提倡。",
+        "options_checked": [
+          "しょれい",
+          "しょうれ",
+          "じょうれい",
+          "しょうれい"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-10-17T13:40:55.649863+00:00",
+        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-0c7666523d",
+      "target_label": "勤務",
+      "level": "N1",
+      "focus_zh": "在单位工作、任职",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "0c7666523d",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.666993+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-0c7666523d-cloze-1",
+      "kind": "vocabulary",
+      "stem": "姉は総合病院に（　）している看護師だ。",
+      "options": [
+        "閲覧",
+        "栽培",
+        "勤務",
+        "控除"
+      ],
+      "answer_index": 2,
+      "translation_zh": "姐姐是在综合医院工作的护士。",
+      "explanation_zh": "「病院に勤務する」「夜間勤務」说的是在机构任职、按安排工作。",
+      "option_explanations_zh": [
+        "「閲覧」表示查阅、浏览资料。",
+        "「栽培」表示种植、培育植物。",
+        "「病院に勤務する」「夜間勤務」说的是在机构任职、按安排工作。",
+        "「控除」表示从总额中扣除一定金额。"
+      ],
+      "content_hash": "4579bf72d9fe586e7ead8a42f984ffebc8dc5d596b74f4ab597f7793b2d720f5",
       "structural_check": {
         "passed": true,
         "errors": []
       },
       "quality_status": "codex_reviewed",
       "editorial_check": {
-        "question_id": "v-bd1e5daff0-cloze",
-        "content_hash": "4d165db4e92acdadc50752d36d8e01125043a717ccd6886d1babd0034692a1c2",
+        "question_id": "v-0c7666523d-cloze-1",
+        "content_hash": "4579bf72d9fe586e7ead8a42f984ffebc8dc5d596b74f4ab597f7793b2d720f5",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「病院に勤務する」「夜間勤務」说的是在机构任职、按安排工作。",
+        "options_checked": [
+          "閲覧",
+          "栽培",
+          "勤務",
+          "控除"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.724556+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-8cae689952",
+      "target_label": "規模",
+      "level": "N1",
+      "focus_zh": "事物的大小或规模",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "8cae689952",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.659751+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-8cae689952-cloze-2",
+      "kind": "vocabulary",
+      "stem": "従業員が三人だけの、小（　）な会社を経営している。",
+      "options": [
+        "規模",
+        "衣装",
+        "原則",
+        "残高"
+      ],
+      "answer_index": 0,
+      "translation_zh": "经营着一家只有三名员工的小规模公司。",
+      "explanation_zh": "「被害の規模」「小規模な会社」中的「規模」表示范围、体量大小。",
+      "option_explanations_zh": [
+        "「被害の規模」「小規模な会社」中的「規模」表示范围、体量大小。",
+        "「衣装」表示演出等所穿的服装。",
+        "「原則」表示作为准则的基本规则。",
+        "「残高」表示账户等剩余金额。"
+      ],
+      "content_hash": "6e672b1cfd2ce4ccc64c5e98f868f1290a51740c228af06a45e8a80bcbda698a",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-8cae689952-cloze-2",
+        "content_hash": "6e672b1cfd2ce4ccc64c5e98f868f1290a51740c228af06a45e8a80bcbda698a",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「被害の規模」「小規模な会社」中的「規模」表示范围、体量大小。",
+        "options_checked": [
+          "規模",
+          "衣装",
+          "原則",
+          "残高"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.718784+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-0fafecee52",
+      "target_label": "工作",
+      "level": "N1",
+      "focus_zh": "手工制作或为目的进行暗中活动",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "0fafecee52",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.676300+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-0fafecee52-cloze-2",
+      "kind": "vocabulary",
+      "stem": "敵に情報を渡すため、秘密の（　）を行っていた。",
+      "options": [
+        "閲覧",
+        "控除",
+        "栽培",
+        "工作"
+      ],
+      "answer_index": 3,
+      "translation_zh": "为向敌方传递情报，进行着秘密活动。",
+      "explanation_zh": "「工作」既指手工制作，也可指为达目的进行的秘密活动。",
+      "option_explanations_zh": [
+        "「閲覧」表示查阅、浏览资料。",
+        "「控除」表示从总额中扣除一定金额。",
+        "「栽培」表示种植、培育植物。",
+        "「工作」既指手工制作，也可指为达目的进行的秘密活动。"
+      ],
+      "content_hash": "df74e429d7d3de3bb9726c93cc45356b08fdd874a6330cd63ab1033d51a003d8",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-0fafecee52-cloze-2",
+        "content_hash": "df74e429d7d3de3bb9726c93cc45356b08fdd874a6330cd63ab1033d51a003d8",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「工作」既指手工制作，也可指为达目的进行的秘密活动。",
+        "options_checked": [
+          "閲覧",
+          "控除",
+          "栽培",
+          "工作"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.730633+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "g-sura",
+      "target_label": "〜すら",
+      "level": "N1",
+      "focus_zh": "名词（可带助词）＋すら：举出极端例子，表示连……都……，常与否定搭配。",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "sura",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.693543+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "g-sura-3",
+      "kind": "grammar",
+      "stem": "専門家である彼（　）、この問題の答えは分からなかった。",
+      "options": [
+        "すら",
+        "べく",
+        "ずじまい",
+        "がてら"
+      ],
+      "answer_index": 0,
+      "translation_zh": "就连身为专家的他，也不知道这道题的答案。",
+      "explanation_zh": "举出本应知道答案的专家，强调问题之难。",
+      "option_explanations_zh": [
+        "举出本应知道答案的专家，强调问题之难。",
+        "此处不选「べく」；请对照其接续和例句，原句要求的是「すら」表达的关系。",
+        "此处不选「ずじまい」；请对照其接续和例句，原句要求的是「すら」表达的关系。",
+        "此处不选「がてら」；请对照其接续和例句，原句要求的是「すら」表达的关系。"
+      ],
+      "content_hash": "40d1370ae6d8acfd69872530c6c15f07342df9681a96d92fd00a974c3739b09d",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "g-sura-3",
+        "content_hash": "40d1370ae6d8acfd69872530c6c15f07342df9681a96d92fd00a974c3739b09d",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "举出本应知道答案的专家，强调问题之难。",
+        "options_checked": [
+          "すら",
+          "べく",
+          "ずじまい",
+          "がてら"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.749076+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "g-shimatsu-da",
+      "target_label": "〜始末だ",
+      "level": "N1",
+      "focus_zh": "动词辞书形＋始末だ：最终竟落到不好的结果，带无奈或责备。",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "shimatsu-da",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.698676+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "g-shimatsu-da-1",
+      "kind": "grammar",
+      "stem": "彼は遅刻を繰り返し、ついには大事な会議まで忘れる（　）。",
+      "options": [
+        "べく",
+        "始末だ",
+        "たりとも",
+        "がてら"
+      ],
+      "answer_index": 1,
+      "translation_zh": "他反复迟到，最后竟连重要会议都忘了。",
+      "explanation_zh": "「ついには〜始末だ」叙述越来越糟糕的结果。",
+      "option_explanations_zh": [
+        "此处不选「べく」；请对照其接续和例句，原句要求的是「始末だ」表达的关系。",
+        "「ついには〜始末だ」叙述越来越糟糕的结果。",
+        "此处不选「たりとも」；请对照其接续和例句，原句要求的是「始末だ」表达的关系。",
+        "此处不选「がてら」；请对照其接续和例句，原句要求的是「始末だ」表达的关系。"
+      ],
+      "content_hash": "428435a12fd22b31a5e1d147bc4abb2e9aa28f12a9921340da1cbe516bf6d065",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "g-shimatsu-da-1",
+        "content_hash": "428435a12fd22b31a5e1d147bc4abb2e9aa28f12a9921340da1cbe516bf6d065",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「ついには〜始末だ」叙述越来越糟糕的结果。",
+        "options_checked": [
+          "べく",
+          "始末だ",
+          "たりとも",
+          "がてら"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.755346+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-b12f437f19",
+      "target_label": "提示",
+      "level": "N1",
+      "focus_zh": "出示、提出给对方看",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "b12f437f19",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.648448+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-b12f437f19-cloze",
+      "kind": "vocabulary",
+      "stem": "入館の際は、受付で身分証明書を（　）してください。",
+      "options": [
+        "返済",
+        "提示",
+        "妨害",
+        "棄権"
+      ],
+      "answer_index": 1,
+      "translation_zh": "入馆时请在前台出示身份证明。",
+      "explanation_zh": "让接待人员查看证件，用「提示する」。",
+      "option_explanations_zh": [
+        "「返済」表示偿还借款；不符合本题已经限定的句意或接续。",
+        "让接待人员查看证件，用「提示する」。",
+        "「妨害」表示妨碍、干扰；不符合本题已经限定的句意或接续。",
+        "「棄権」表示弃权、放弃参赛或投票权；不符合本题已经限定的句意或接续。"
+      ],
+      "content_hash": "10e9069f2b1dbe7be918f9f5084119e292b64b6a641ac733aa2c3fb14b4ae4f7",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-b12f437f19-cloze",
+        "content_hash": "10e9069f2b1dbe7be918f9f5084119e292b64b6a641ac733aa2c3fb14b4ae4f7",
+        "decision": "reviewed",
+        "review_id": "codex-52days-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
+        "note_zh": "让接待人员查看证件，用「提示する」。",
+        "options_checked": [
+          "返済",
+          "提示",
+          "妨害",
+          "棄権"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-10-17T13:40:55.648516+00:00",
+        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "g-koto-tote",
+      "target_label": "〜こととて",
+      "level": "N1",
+      "focus_zh": "普通形、な形容词＋な、名词＋の接こととて：因为……，较郑重，常用于解释或致歉。",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "koto-tote",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.697737+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "g-koto-tote-1",
+      "kind": "grammar",
+      "stem": "不慣れな（　）、手際の悪い点はご容赦ください。",
+      "options": [
+        "こととて",
+        "たりとも",
+        "がてら",
+        "べく"
+      ],
+      "answer_index": 0,
+      "translation_zh": "因为不熟悉，操作不周之处还请见谅。",
+      "explanation_zh": "「不慣れなこととて」以不熟悉为理由作郑重解释。",
+      "option_explanations_zh": [
+        "「不慣れなこととて」以不熟悉为理由作郑重解释。",
+        "此处不选「たりとも」；请对照其接续和例句，原句要求的是「こととて」表达的关系。",
+        "此处不选「がてら」；请对照其接续和例句，原句要求的是「こととて」表达的关系。",
+        "此处不选「べく」；请对照其接续和例句，原句要求的是「こととて」表达的关系。"
+      ],
+      "content_hash": "c38329a5577b46883519e6ab422381e4cacf557f3eaf91c919726055205e79c6",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "g-koto-tote-1",
+        "content_hash": "c38329a5577b46883519e6ab422381e4cacf557f3eaf91c919726055205e79c6",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「不慣れなこととて」以不熟悉为理由作郑重解释。",
+        "options_checked": [
+          "こととて",
+          "たりとも",
+          "がてら",
+          "べく"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.754529+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-ca1fafcdb2",
+      "target_label": "大幅",
+      "level": "N1",
+      "focus_zh": "幅度很大",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "ca1fafcdb2",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.649204+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-ca1fafcdb2-cloze-1",
+      "kind": "vocabulary",
+      "stem": "燃料費が上がり、運賃が（　）に値上げされた。",
+      "options": [
+        "臆病",
+        "温和",
+        "大幅",
+        "陰気"
+      ],
+      "answer_index": 2,
+      "translation_zh": "燃料费上涨，运费大幅提高了。",
+      "explanation_zh": "「大幅に」修饰上涨、缩短等，表示变化幅度很大。",
+      "option_explanations_zh": [
+        "「臆病」表示胆小、容易害怕。",
+        "「温和」表示性情温厚、平和。",
+        "「大幅に」修饰上涨、缩短等，表示变化幅度很大。",
+        "「陰気」表示阴沉、忧郁、不明朗。"
+      ],
+      "content_hash": "2a6921100d57ce780f04873f9edcb0eddcbfe176dcc8b67c74c8e04c76baba6e",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-ca1fafcdb2-cloze-1",
+        "content_hash": "2a6921100d57ce780f04873f9edcb0eddcbfe176dcc8b67c74c8e04c76baba6e",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「大幅に」修饰上涨、缩短等，表示变化幅度很大。",
+        "options_checked": [
+          "臆病",
+          "温和",
+          "大幅",
+          "陰気"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.709817+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-2427a8f4e6",
+      "target_label": "移行",
+      "level": "N1",
+      "focus_zh": "从一种状态转向另一种",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "2427a8f4e6",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.641240+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-2427a8f4e6-cloze-1",
+      "kind": "vocabulary",
+      "stem": "紙の申請からオンライン申請への（　）が進んでいる。",
+      "options": [
+        "孤独",
+        "郷愁",
+        "衣装",
+        "移行"
+      ],
+      "answer_index": 3,
+      "translation_zh": "从纸质申请向在线申请的转变正在推进。",
+      "explanation_zh": "「〜から〜への移行」表示制度、方式或阶段的过渡。",
+      "option_explanations_zh": [
+        "「孤独」表示孤单、缺乏心灵交流对象。",
+        "「郷愁」表示对故乡或往昔的怀念。",
+        "「衣装」表示演出等所穿的服装。",
+        "「〜から〜への移行」表示制度、方式或阶段的过渡。"
+      ],
+      "content_hash": "3ea19876f4a71fe81484f06be4248bf8e5eb2b35cd6ea8ca3d811617d1e33555",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-2427a8f4e6-cloze-1",
+        "content_hash": "3ea19876f4a71fe81484f06be4248bf8e5eb2b35cd6ea8ca3d811617d1e33555",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「〜から〜への移行」表示制度、方式或阶段的过渡。",
+        "options_checked": [
+          "孤独",
+          "郷愁",
+          "衣装",
+          "移行"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.702452+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-7ffd6e68aa",
+      "target_label": "一帯",
+      "level": "N1",
+      "focus_zh": "整个一片地区",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "7ffd6e68aa",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.644415+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-7ffd6e68aa-cloze-1",
+      "kind": "vocabulary",
+      "stem": "大雨で川があふれ、周辺（　）が浸水した。",
+      "options": [
+        "一心",
+        "一同",
+        "一連",
+        "一帯"
+      ],
+      "answer_index": 3,
+      "translation_zh": "大雨导致河水泛滥，周边一带被淹了。",
+      "explanation_zh": "「周辺一帯」「この一帯」表示一定范围内的整个地区。",
+      "option_explanations_zh": [
+        "「一心」表示一心一意、某种强烈愿望。",
+        "「一同」表示在场的全体人员。",
+        "「一連」表示一连串、相互关联的一系列。",
+        "「周辺一帯」「この一帯」表示一定范围内的整个地区。"
+      ],
+      "content_hash": "89a306134cafd26a33c6cfd680d45e8a0e17192756577b8c81df5278abcc26c6",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-7ffd6e68aa-cloze-1",
+        "content_hash": "89a306134cafd26a33c6cfd680d45e8a0e17192756577b8c81df5278abcc26c6",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「周辺一帯」「この一帯」表示一定范围内的整个地区。",
+        "options_checked": [
+          "一心",
+          "一同",
+          "一連",
+          "一帯"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.705160+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-12b0fc3312",
+      "target_label": "色彩",
+      "level": "N1",
+      "focus_zh": "色彩、颜色表现",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "12b0fc3312",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.683043+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-12b0fc3312-reading",
+      "kind": "reading",
+      "stem": "この画家は、豊かな【色彩】で季節の変化を描く。",
+      "options": [
+        "しきさ",
+        "しきさい",
+        "しきざい",
+        "しょくさい"
+      ],
+      "answer_index": 1,
+      "translation_zh": "这位画家以丰富的色彩描绘四季变化。",
+      "explanation_zh": "「色彩」在本句中读「しきさい」，表示色彩、颜色表现。",
+      "option_explanations_zh": [
+        "本句不读「しきさ」。",
+        "本句读「しきさい」。",
+        "本句不读「しきざい」。",
+        "本句不读「しょくさい」。"
+      ],
+      "content_hash": "d0127e6b5cbbe352224f90598679838e560aa6a85042d9cd287c63f43b6c9392",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "dictionary_check": {
+        "passed": true,
+        "source": "OpenJLPT / JMdict-linked entry",
+        "reading": "しきさい",
+        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-12b0fc3312-reading",
+        "content_hash": "d0127e6b5cbbe352224f90598679838e560aa6a85042d9cd287c63f43b6c9392",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「色彩」在本句中读「しきさい」，表示色彩、颜色表现。",
+        "options_checked": [
+          "しきさ",
+          "しきさい",
+          "しきざい",
+          "しょくさい"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.737209+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-3861eaa614",
+      "target_label": "使命",
+      "level": "N1",
+      "focus_zh": "应承担的重要职责",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "3861eaa614",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.688618+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-3861eaa614-cloze-2",
+      "kind": "vocabulary",
+      "stem": "情報を正確に伝えるという、報道機関の（　）を果たす。",
+      "options": [
+        "衣装",
+        "郷愁",
+        "残高",
+        "使命"
+      ],
+      "answer_index": 3,
+      "translation_zh": "履行新闻机构准确传递信息的使命。",
+      "explanation_zh": "「使命を果たす」指履行被赋予或自觉承担的重要职责。",
+      "option_explanations_zh": [
+        "「衣装」表示演出等所穿的服装。",
+        "「郷愁」表示对故乡或往昔的怀念。",
+        "「残高」表示账户等剩余金额。",
+        "「使命を果たす」指履行被赋予或自觉承担的重要职责。"
+      ],
+      "content_hash": "a7ce23ad9f789593f75d6911bef3cf6a060706909a773c21fe1e3141f83e6cfc",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-3861eaa614-cloze-2",
+        "content_hash": "a7ce23ad9f789593f75d6911bef3cf6a060706909a773c21fe1e3141f83e6cfc",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「使命を果たす」指履行被赋予或自觉承担的重要职责。",
+        "options_checked": [
+          "衣装",
+          "郷愁",
+          "残高",
+          "使命"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.742696+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-b538b0f211",
+      "target_label": "孤独",
+      "level": "N1",
+      "focus_zh": "孤单、缺乏心灵交流对象",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "b538b0f211",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.676902+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-b538b0f211-cloze-1",
+      "kind": "vocabulary",
+      "stem": "知り合いのいない街で、一人暮らしの（　）を感じた。",
+      "options": [
+        "意欲",
+        "好況",
+        "孤独",
+        "威力"
+      ],
+      "answer_index": 2,
+      "translation_zh": "在一个没有熟人的城市里，感受到了独居的孤独。",
+      "explanation_zh": "「孤独」指独自一人或内心无人理解、交流的状态。",
+      "option_explanations_zh": [
+        "「意欲」表示积极做某事的愿望。",
+        "「好況」表示经济或经营景气良好。",
+        "「孤独」指独自一人或内心无人理解、交流的状态。",
+        "「威力」表示强大力量、威势。"
+      ],
+      "content_hash": "f3c6456ddb1f1ade532763ed396280d18f3c6e81c35f6252d29fcdf1fc747e38",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-b538b0f211-cloze-1",
+        "content_hash": "f3c6456ddb1f1ade532763ed396280d18f3c6e81c35f6252d29fcdf1fc747e38",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「孤独」指独自一人或内心无人理解、交流的状态。",
+        "options_checked": [
+          "意欲",
+          "好況",
+          "孤独",
+          "威力"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.731243+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-116afb9f88",
+      "target_label": "措置",
+      "level": "N1",
+      "focus_zh": "针对问题采取的措施",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "116afb9f88",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "qwen3.5:27b-q4_K_M",
+        "created_at": "2026-10-17T12:32:47.379817Z",
+        "attempt": 1,
+        "raw_file": "data/raw/generate-v-116afb9f88-a1.json",
+        "metrics": {
+          "model": "qwen3.5:27b-q4_K_M",
+          "created_at": "2026-10-17T12:32:47.379817Z",
+          "done_reason": "stop",
+          "eval_count": 260,
+          "eval_duration": 25694296000,
+          "prompt_eval_count": 490,
+          "prompt_eval_duration": 4778537000,
+          "load_duration": 1571834,
+          "wall_seconds": 30.55
+        }
+      },
+      "review_status": "pending",
+      "stem": "この問題に対しては、早急に適切な（　）をとるべきだ。",
+      "options": [
+        "余地",
+        "措置",
+        "経緯",
+        "根拠"
+      ],
+      "answer_index": 1,
+      "translation_zh": "针对这个问题，应该尽早采取适当的措施。",
+      "explanation_zh": "「適切な措置をとる」表示采取适当措施；其余名词不能构成这里的行动搭配。",
+      "option_explanations_zh": [
+        "表示剩余空间、可能性；不符合本题完整句子的接续或明确语境。",
+        "本题正确。「適切な措置をとる」表示采取适当措施；其余名词不能构成这里的行动搭配。",
+        "表示事情的经过；不符合本题完整句子的接续或明确语境。",
+        "表示依据、根据；不符合本题完整句子的接续或明确语境。"
+      ],
+      "id": "v-116afb9f88-cloze",
+      "kind": "vocabulary",
+      "editorial_revision": {
+        "revision_id": "codex-full-review-v1",
+        "actor": "Codex（AI 编辑复核）",
+        "created_at": "2026-10-17T13:21:28.433728+00:00",
+        "original_content_hash": "798e6b955bbfe445647d1926d2e7d769fa86f748531a2d2d0f695d9150f515f8",
+        "archive_file": "data/revisions/codex-full-review-v1/v-116afb9f88-cloze.json",
+        "changed_fields": [
+          "explanation_zh",
+          "option_explanations_zh"
+        ],
+        "substantive_revision": false,
+        "reason_zh": "「適切な措置をとる」表示采取适当措施；其余名词不能构成这里的行动搭配。"
+      },
+      "content_hash": "0a101e1f3e6105b0ca1f67f6d3706009f4ba230e300c163ddc0f0c9144c6bfdb",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-116afb9f88-cloze",
+        "content_hash": "0a101e1f3e6105b0ca1f67f6d3706009f4ba230e300c163ddc0f0c9144c6bfdb",
         "decision": "reviewed",
         "review_id": "codex-full-review-v1",
         "reviewer": "Codex（本次对话中的 AI 编辑）",
         "method": "逐题阅读、将四个选项代入句子、核对答案与中译解析；对存疑规则查阅列出的资料",
-        "note_zh": "「迅速な対応」表示快速应对；已去掉原题同样可成立的「柔軟な対応」。",
+        "note_zh": "「適切な措置をとる」表示采取适当措施；其余名词不能构成这里的行动搭配。",
         "references": [
           {
             "title": "OpenJLPT 固定版本底库（知识点与读音，不为原创例句背书）",
             "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
           }
         ],
-        "created_at": "2026-10-17T13:21:28.452104+00:00",
-        "substantive_revision": true,
+        "created_at": "2026-10-17T13:21:28.433760+00:00",
+        "substantive_revision": false,
         "limitations": "AI 编辑复核，非真人教师或官方认证；用于知识点巩固，未经真实 N1 难度标定。"
       },
-      "plan_role": "review",
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-e5e4f44fbe",
+      "target_label": "細工",
+      "level": "N1",
+      "focus_zh": "精细手工制作或人为做手脚",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "e5e4f44fbe",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.678659+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-e5e4f44fbe-cloze-2",
+      "kind": "vocabulary",
+      "stem": "不正を隠すため、帳簿に（　）をした疑いがある。",
+      "options": [
+        "控除",
+        "辞退",
+        "細工",
+        "閲覧"
+      ],
+      "answer_index": 2,
+      "translation_zh": "涉嫌为掩盖舞弊而在账本上做了手脚。",
+      "explanation_zh": "「細工」既指精巧手工，也指为达目的而人为做手脚。",
+      "option_explanations_zh": [
+        "「控除」表示从总额中扣除一定金额。",
+        "「辞退」表示谢绝已获得的资格、邀请等。",
+        "「細工」既指精巧手工，也指为达目的而人为做手脚。",
+        "「閲覧」表示查阅、浏览资料。"
+      ],
+      "content_hash": "a9de24d8467c7acd8c933519f72e112a90db8a0eb42fb9713670d2ba96d361b0",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-e5e4f44fbe-cloze-2",
+        "content_hash": "a9de24d8467c7acd8c933519f72e112a90db8a0eb42fb9713670d2ba96d361b0",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「細工」既指精巧手工，也指为达目的而人为做手脚。",
+        "options_checked": [
+          "控除",
+          "辞退",
+          "細工",
+          "閲覧"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.732724+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "g-mamire",
+      "target_label": "〜まみれ",
+      "level": "N1",
+      "focus_zh": "名词＋まみれ：浑身或表面沾满不干净的东西，常接泥、血、汗、油等。",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "mamire",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.710212+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "g-mamire-2",
+      "kind": "grammar",
+      "stem": "真夏に坂道を登り、全身が汗（　）になった。",
+      "options": [
+        "がてら",
+        "べく",
+        "まみれ",
+        "に足る"
+      ],
+      "answer_index": 2,
+      "translation_zh": "盛夏登上坡道，浑身是汗。",
+      "explanation_zh": "「汗まみれ」表示汗水沾满全身。",
+      "option_explanations_zh": [
+        "此处不选「がてら」；请对照其接续和例句，原句要求的是「まみれ」表达的关系。",
+        "此处不选「べく」；请对照其接续和例句，原句要求的是「まみれ」表达的关系。",
+        "「汗まみれ」表示汗水沾满全身。",
+        "此处不选「に足る」；请对照其接续和例句，原句要求的是「まみれ」表达的关系。"
+      ],
+      "content_hash": "55ffc891bdf8375b6edddab0259bac3c2e3d85718885ef42bb79363576b94af9",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "g-mamire-2",
+        "content_hash": "55ffc891bdf8375b6edddab0259bac3c2e3d85718885ef42bb79363576b94af9",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「汗まみれ」表示汗水沾满全身。",
+        "options_checked": [
+          "がてら",
+          "べく",
+          "まみれ",
+          "に足る"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.764596+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-604ed9d75d",
+      "target_label": "還元",
+      "level": "N1",
+      "focus_zh": "还原；将收益回馈",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "604ed9d75d",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.661252+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-604ed9d75d-reading",
+      "kind": "reading",
+      "stem": "利益の一部を値下げという形で消費者に【還元】する。",
+      "options": [
+        "かげん",
+        "かんけん",
+        "かんげん",
+        "がんげん"
+      ],
+      "answer_index": 2,
+      "translation_zh": "以降价的形式把部分利润回馈给消费者。",
+      "explanation_zh": "「還元」本题读「かんげん」，句中表示还原；将收益回馈。",
+      "option_explanations_zh": [
+        "不是本题标记词的正确读音；这里应选「かんげん」。",
+        "不是本题标记词的正确读音；这里应选「かんげん」。",
+        "正确：本题标记词读「かんげん」。",
+        "不是本题标记词的正确读音；这里应选「かんげん」。"
+      ],
+      "content_hash": "237deaeec46e487deb22e93400d5a4a33f85f0e03721c996bf57d82d618cbb40",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "dictionary_check": {
+        "passed": true,
+        "source": "OpenJLPT / JMdict-linked entry",
+        "reading": "かんげん",
+        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-604ed9d75d-reading",
+        "content_hash": "237deaeec46e487deb22e93400d5a4a33f85f0e03721c996bf57d82d618cbb40",
+        "decision": "reviewed",
+        "review_id": "codex-52days-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
+        "note_zh": "「還元」本题读「かんげん」，句中表示还原；将收益回馈。",
+        "options_checked": [
+          "かげん",
+          "かんけん",
+          "かんげん",
+          "がんげん"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-10-17T13:40:55.661278+00:00",
+        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-f4518f31a9",
+      "target_label": "寄与",
+      "level": "N1",
+      "focus_zh": "贡献、有助于",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "f4518f31a9",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-10-17T13:40:55.664016+00:00",
+        "curriculum_version": "codex-52days-v1"
+      },
+      "review_status": "pending",
+      "id": "v-f4518f31a9-cloze",
+      "kind": "vocabulary",
+      "stem": "長年の基礎研究が、新しい治療法の開発に大きく（　）した。",
+      "options": [
+        "廃棄",
+        "返済",
+        "棄権",
+        "寄与"
+      ],
+      "answer_index": 3,
+      "translation_zh": "长期基础研究为新疗法开发作出了重大贡献。",
+      "explanation_zh": "「開発に寄与する」表示对开发有贡献。",
+      "option_explanations_zh": [
+        "「廃棄」表示废弃、丢弃；不符合本题已经限定的句意或接续。",
+        "「返済」表示偿还借款；不符合本题已经限定的句意或接续。",
+        "「棄権」表示弃权、放弃参赛或投票权；不符合本题已经限定的句意或接续。",
+        "「開発に寄与する」表示对开发有贡献。"
+      ],
+      "content_hash": "a222617cfefa930d72ad6380ea065947e1d515d07cc12694ebee1c0b9f83cade",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-f4518f31a9-cloze",
+        "content_hash": "a222617cfefa930d72ad6380ea065947e1d515d07cc12694ebee1c0b9f83cade",
+        "decision": "reviewed",
+        "review_id": "codex-52days-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "逐题将四个选项代入完整句子，复核语义、接续、唯一性、中文解析；读音与固定版本词典数据核对。不是独立真人复审。",
+        "note_zh": "「開発に寄与する」表示对开发有贡献。",
+        "options_checked": [
+          "廃棄",
+          "返済",
+          "棄権",
+          "寄与"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-10-17T13:40:55.664069+00:00",
+        "limitations": "原创知识点练习，非官方真题；AI 编辑仍可能漏错，未作真实 N1 难度标定。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "g-you-mono-nara",
+      "target_label": "〜(よ)うものなら",
+      "level": "N1",
+      "focus_zh": "动词意志形＋ものなら：万一做了……，就会发生严重后果。",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "you-mono-nara",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.694907+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "g-you-mono-nara-3",
+      "kind": "grammar",
+      "stem": "この時期に窓を開けよう（　）、虫が一斉に入ってくる。",
+      "options": [
+        "かたわら",
+        "ずじまい",
+        "べく",
+        "ものなら"
+      ],
+      "answer_index": 3,
+      "translation_zh": "这个季节若是开窗，虫子就会一窝蜂飞进来。",
+      "explanation_zh": "意志形加「ものなら」夸张地提示不利后果。",
+      "option_explanations_zh": [
+        "此处不选「かたわら」；请对照其接续和例句，原句要求的是「ものなら」表达的关系。",
+        "此处不选「ずじまい」；请对照其接续和例句，原句要求的是「ものなら」表达的关系。",
+        "此处不选「べく」；请对照其接续和例句，原句要求的是「ものなら」表达的关系。",
+        "意志形加「ものなら」夸张地提示不利后果。"
+      ],
+      "content_hash": "a7f177fffb399d75cb5bffbbf6d654d79fd7bd43376c93bae3fcc3ea9f218268",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "g-you-mono-nara-3",
+        "content_hash": "a7f177fffb399d75cb5bffbbf6d654d79fd7bd43376c93bae3fcc3ea9f218268",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "意志形加「ものなら」夸张地提示不利后果。",
+        "options_checked": [
+          "かたわら",
+          "ずじまい",
+          "べく",
+          "ものなら"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.750206+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-deed4a1ac8",
+      "target_label": "過疎",
+      "level": "N1",
+      "focus_zh": "人口过少的状态",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "deed4a1ac8",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.653968+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-deed4a1ac8-reading",
+      "kind": "reading",
+      "stem": "若者が都会へ出ていき、この村では【過疎】化が進んでいる。",
+      "options": [
+        "かぞ",
+        "がそ",
+        "かそ",
+        "かそう"
+      ],
+      "answer_index": 2,
+      "translation_zh": "年轻人纷纷去了城市，这个村庄人口稀少的问题加剧了。",
+      "explanation_zh": "「過疎」在本句中读「かそ」，表示人口过少的状态。",
+      "option_explanations_zh": [
+        "本句不读「かぞ」。",
+        "本句不读「がそ」。",
+        "本句读「かそ」。",
+        "本句不读「かそう」。"
+      ],
+      "content_hash": "547b5e3d5ff328a57e2586ccbb0b3730e19ba6bc1c8856526a14407943fd18f3",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "dictionary_check": {
+        "passed": true,
+        "source": "OpenJLPT / JMdict-linked entry",
+        "reading": "かそ",
+        "limitations": "仅核对底库读音及已知异读，不验证句子自然度，也不保证覆盖所有合法异读。"
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-deed4a1ac8-reading",
+        "content_hash": "547b5e3d5ff328a57e2586ccbb0b3730e19ba6bc1c8856526a14407943fd18f3",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「過疎」在本句中读「かそ」，表示人口过少的状态。",
+        "options_checked": [
+          "かぞ",
+          "がそ",
+          "かそ",
+          "かそう"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.713932+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "g-ni-kataku-nai",
+      "target_label": "〜に難くない",
+      "level": "N1",
+      "focus_zh": "「想像する」「察する」等＋に難くない：不难想象或理解，书面表达。",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "ni-kataku-nai",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.707915+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "g-ni-kataku-nai-4",
+      "kind": "grammar",
+      "stem": "この成績を見れば、監督が彼に期待する理由は想像する（　）。",
+      "options": [
+        "がてら",
+        "に難くない",
+        "たりとも",
+        "かたがた"
+      ],
+      "answer_index": 1,
+      "translation_zh": "看到这个成绩，不难想象教练为何期待他。",
+      "explanation_zh": "从成绩能够推知原因，适合“不难想象”。",
+      "option_explanations_zh": [
+        "此处不选「がてら」；请对照其接续和例句，原句要求的是「に難くない」表达的关系。",
+        "从成绩能够推知原因，适合“不难想象”。",
+        "此处不选「たりとも」；请对照其接续和例句，原句要求的是「に難くない」表达的关系。",
+        "此处不选「かたがた」；请对照其接续和例句，原句要求的是「に難くない」表达的关系。"
+      ],
+      "content_hash": "48fde7bbba2970ebc746ec19d95722405590c2d74668ce0183f711b883cd5aef",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "g-ni-kataku-nai-4",
+        "content_hash": "48fde7bbba2970ebc746ec19d95722405590c2d74668ce0183f711b883cd5aef",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "从成绩能够推知原因，适合“不难想象”。",
+        "options_checked": [
+          "がてら",
+          "に難くない",
+          "たりとも",
+          "かたがた"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.762775+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "v-f3190b2a08",
+      "target_label": "隠居",
+      "level": "N1",
+      "focus_zh": "退出工作或家业后安闲生活",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "f3190b2a08",
+        "source_file": "vocab-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.645601+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "v-f3190b2a08-cloze-2",
+      "kind": "vocabulary",
+      "stem": "長年の仕事を退き、田舎で（　）して暮らしている。",
+      "options": [
+        "掲載",
+        "隠居",
+        "控除",
+        "結成"
+      ],
+      "answer_index": 1,
+      "translation_zh": "退出长期从事的工作后，在乡下过着隐居生活。",
+      "explanation_zh": "「隠居」指退出家业、职务等后不再参与一线事务。",
+      "option_explanations_zh": [
+        "「掲載」表示在报纸、杂志、网站等刊登。",
+        "「隠居」指退出家业、职务等后不再参与一线事务。",
+        "「控除」表示从总额中扣除一定金额。",
+        "「結成」表示组成团队或组织。"
+      ],
+      "content_hash": "b77eff0c27f46a3de5882f3ce73801cc1add08d91dd7df462807fe866e81878d",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "v-f3190b2a08-cloze-2",
+        "content_hash": "b77eff0c27f46a3de5882f3ce73801cc1add08d91dd7df462807fe866e81878d",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "「隠居」指退出家业、职务等后不再参与一线事务。",
+        "options_checked": [
+          "掲載",
+          "隠居",
+          "控除",
+          "結成"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.706248+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
+      "plan_date": "2026-11-27"
+    },
+    {
+      "target_id": "g-to-bakari-ni",
+      "target_label": "〜とばかりに",
+      "level": "N1",
+      "focus_zh": "话语＋とばかりに：以动作或态度仿佛在说……，描述他人而非自己。",
+      "source": {
+        "project": "OpenJLPT",
+        "commit": "0d1d3410bec90bd4098a7c72de820543cb4f707c",
+        "source_id": "to-bakari-ni",
+        "source_file": "grammar-n1.json",
+        "license": "CC-BY-SA-4.0"
+      },
+      "generation": {
+        "model": "Codex（当前对话原创）",
+        "method": "authored_in_conversation",
+        "created_at": "2026-11-01T09:10:17.703745+00:00",
+        "curriculum_version": "codex-expansion-1000-v1"
+      },
+      "review_status": "pending",
+      "id": "g-to-bakari-ni-1",
+      "kind": "grammar",
+      "stem": "彼は「黙れ」（　）、私に鋭い視線を向けた。",
+      "options": [
+        "とばかりに",
+        "かたがた",
+        "いかんで",
+        "がてら"
+      ],
+      "answer_index": 0,
+      "translation_zh": "他向我投来锐利目光，仿佛在说闭嘴。",
+      "explanation_zh": "通过视线推测他人仿佛在说的话，用「とばかりに」。",
+      "option_explanations_zh": [
+        "通过视线推测他人仿佛在说的话，用「とばかりに」。",
+        "此处不选「かたがた」；请对照其接续和例句，原句要求的是「とばかりに」表达的关系。",
+        "此处不选「いかんで」；请对照其接续和例句，原句要求的是「とばかりに」表达的关系。",
+        "此处不选「がてら」；请对照其接续和例句，原句要求的是「とばかりに」表达的关系。"
+      ],
+      "content_hash": "173be1ef6783d57ea46bcd1048a8ccf9755ea3bd30d5ecad95bb4a027753db7e",
+      "structural_check": {
+        "passed": true,
+        "errors": []
+      },
+      "quality_status": "codex_reviewed",
+      "editorial_check": {
+        "question_id": "g-to-bakari-ni-1",
+        "content_hash": "173be1ef6783d57ea46bcd1048a8ccf9755ea3bd30d5ecad95bb4a027753db7e",
+        "decision": "reviewed",
+        "review_id": "codex-expansion-1000-v1",
+        "reviewer": "Codex（当前对话中的 AI 编辑）",
+        "method": "同一 AI 编写后的第二轮编辑复核：将四个选项代入完整句子，核对接续、语义唯一性、中译和解析；读音核对固定底库及异读。不是独立模型复答、真人审核或官方认证。",
+        "note_zh": "通过视线推测他人仿佛在说的话，用「とばかりに」。",
+        "options_checked": [
+          "とばかりに",
+          "かたがた",
+          "いかんで",
+          "がてら"
+        ],
+        "references": [
+          {
+            "title": "OpenJLPT 固定版本知识点资料（非现成试题）",
+            "url": "https://github.com/evanclan/OpenJLPT/tree/0d1d3410bec90bd4098a7c72de820543cb4f707c"
+          }
+        ],
+        "created_at": "2026-11-01T09:04:21.759572+00:00",
+        "limitations": "原创知识点巩固题，含接续辨析；未标定真实 N1 难度。读音题与该词第一道填空题共享句子，第二道填空题另设语境。"
+      },
+      "plan_role": "new",
       "plan_date": "2026-11-27"
     }
   ]

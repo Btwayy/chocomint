@@ -21,7 +21,7 @@ class StudyPlanTests(unittest.TestCase):
         self.assertEqual(p['total_slots'],1560)
         self.assertEqual(p['days'][0]['date'],'2026-10-17')
         self.assertEqual(p['days'][-1]['date'],'2026-12-07')
-        self.assertEqual(p['new_slots'],360)
+        self.assertEqual(p['new_slots'],1000)
         seen=set();by_id={q['id']:q for q in self.questions};new=collections.Counter()
         for day in p['days']:
             entries=day['items'];ids=[e['question_id'] for e in entries]

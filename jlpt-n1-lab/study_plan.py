@@ -69,6 +69,64 @@ def make_plan(questions,daily=30,start=START,end=END):
             'content_scope':'词汇读音、语境填空、语法；不含听力、长篇阅读或完整模拟卷。读音与词汇题可能共享例句。',
             'days':daily_rows}
 
+def extend_plan(plan, questions, preserve_through):
+    """Keep all already-issued dates intact and schedule added questions in future slots."""
+    candidates=[q for q in questions if lab.practice_allowed(q)]
+    by_id={q['id']:q for q in candidates}
+    prefix=[json.loads(json.dumps(d)) for d in plan['days'] if d['date']<=preserve_through]
+    future=[d for d in plan['days'] if d['date']>preserve_through]
+    learning=[d for d in future if d['phase']!='consolidation']
+    if not learning:raise ValueError('No future learning dates remain')
+    history={};first_dates={}
+    for n,day in enumerate(prefix):
+        for entry in day['items']:
+            q=by_id.get(entry['question_id'])
+            if not q or q['content_hash']!=entry['content_hash']:
+                raise ValueError('An already-issued question changed')
+            history.setdefault(q['id'],[]).append(n)
+            first_dates.setdefault(q['id'],day['date'])
+    deck=[q for q in candidates if q['id'] not in first_dates]
+    random.Random(20261101).shuffle(deck)
+    if len(deck)>len(learning)*plan['daily_count']:raise ValueError('Insufficient future slots')
+    base,extra=divmod(len(deck),len(learning))
+    quotas=[base+(i<extra) for i in range(len(learning))]+[0]*(len(future)-len(learning))
+    intervals=[1,3,7,14,21];rows=list(prefix)
+    cycle=['vocabulary','reading','grammar','vocabulary']
+    for i,old in enumerate(future):
+        n=len(prefix)+i;date=old['date'];quota=quotas[i];chosen=[];targets=set()
+        remaining_days=len(learning)-i
+        for slot in range(quota):
+            counts=collections.Counter(q['target_id'] for q in deck)
+            required={tid for tid,count in counts.items() if count>=remaining_days} if remaining_days>0 else set()
+            required-=targets
+            if len(required)>quota-len(chosen):raise ValueError('Unschedulable target capacity')
+            preferred=cycle[(n+slot)%len(cycle)]
+            eligible=[(j,q) for j,q in enumerate(deck) if q['target_id'] not in targets]
+            if required:
+                eligible=[x for x in eligible if x[1]['target_id'] in required]
+            if not eligible:raise ValueError('Too few distinct targets on '+date)
+            j,q=min(eligible,key=lambda x:(x[1]['kind']!=preferred,lab.seed_for(date+x[1]['id'])))
+            deck.pop(j);targets.add(q['target_id']);first_dates[q['id']]=date
+            chosen.append({'question_id':q['id'],'content_hash':q['content_hash'],'role':'new'})
+        def priority(qid):
+            appearances=history[qid];gap=intervals[min(len(appearances)-1,len(intervals)-1)]
+            return (appearances[-1]+gap-n,len(appearances),lab.seed_for(date+qid))
+        for qid in sorted(history,key=priority):
+            if len(chosen)>=plan['daily_count']:break
+            q=by_id[qid]
+            if q['target_id'] in targets:continue
+            chosen.append({'question_id':qid,'content_hash':q['content_hash'],'role':'review'});targets.add(q['target_id'])
+        if len(chosen)!=plan['daily_count']:raise ValueError('Unable to fill '+date)
+        random.Random(lab.seed_for(date)).shuffle(chosen)
+        for entry in chosen:history.setdefault(entry['question_id'],[]).append(n)
+        rows.append({**old,'new_count':quota,'review_count':plan['daily_count']-quota,'items':chosen})
+    if deck:raise ValueError('Unscheduled questions remain')
+    payload=json.dumps([(q['id'],q['content_hash']) for q in candidates],sort_keys=True).encode()
+    new_slots=sum(d['new_count'] for d in rows)
+    return {**plan,'version':'study-52days-expanded-1000-v1','created_at':lab.now(),'bank_hash':hashlib.sha256(payload).hexdigest(),
+            'unique_questions':len(candidates),'new_slots':new_slots,'review_slots':plan['total_slots']-new_slots,
+            'preserved_through':preserve_through,'first_dates':first_dates,'days':rows}
+
 def read_plan():
     path=lab.DATA/FILE
     return lab.read_json(path) if path.exists() else None
@@ -111,10 +169,10 @@ def save_plan(plan,questions):
         lab.write_json(lab.DATA/'daily'/(day['date']+'.json'),{k:v for k,v in day.items() if k!='items'}|{'questions':[{**by_id[e['question_id']],'plan_role':e['role'],'plan_date':day['date']} for e in day['items']]})
     lines=['# 52 天本地练习计划','',f"{plan['start_date']} 至 {plan['end_date']}，含首尾共 {plan['days_count']} 天，每天 {plan['daily_count']} 题。",'',
            f"共 {plan['total_slots']} 次作答：{plan['unique_questions']} 道不同题目首次练习 + {plan['review_slots']} 次间隔复习。不是 {plan['total_slots']} 道互不相同的新题。",'',
-           '题库覆盖 150 个词汇和 30 个语法点。延续原有 120 题，新编并复核 240 题。所有题目已保存，无需每日生成或启动 Ollama。', '',
-           '11 月 30 日前完成新题，12 月 1 日至 7 日只做复习。由于首日没有旧题，首日 30 题都是新题。以后每天 7–8 道新题搭配 22–23 道复习题。','',
+           f"题库覆盖 {len({q['target_id'] for q in questions if q['kind']=='vocabulary'})} 个词汇和 {len({q['target_id'] for q in questions if q['kind']=='grammar'})} 个语法点。所有题目已保存，无需每日生成或启动 Ollama。", '',
+           '11 月 30 日前完成新题，12 月 1 日至 7 日只做复习。扩容保留截至 '+plan.get('preserved_through','原计划')+' 的已发题单；后续日期按下表安排新题和复习题。','',
            plan['review_policy'],'',plan['content_scope'],'',
-           '审核：当前对话中的 Codex 逐题编辑复核，仍可能漏错，不是教师认证。4 组有问题的草稿组合已废弃；具体记录在 `data/curriculum/discarded-drafts.json`。不会要求学习者审核。','',
+           '审核：Codex 编辑复核，仍可能漏错，不是独立模型复答、教师或官方认证；草稿修订记录见 curriculum 和 reports，不要求学习者审核。','',
            '新增题目由当前 Codex 对话编写；没有新增 Ollama 请求或额外模型 API 调用。当前 Codex 对话的使用成本不在旧本机推理统计中。','',
            '每日日进度按日期、题目 ID 和内容版本去重；同题重复作答不会重复增加当日完成数。旧题库中无日期标记的作答记录保留，但不计作某一天的完成。', '',
            '## 每日题单','', '| 日期 | 第几天 | 新题 | 复习 | 合计 |','|---|---:|---:|---:|---:|']

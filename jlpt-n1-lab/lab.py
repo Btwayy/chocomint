@@ -182,7 +182,8 @@ def reading_options(target, qid):
     valid = {reading, *target["source"].get("other_readings", [])}
     curated_path = DATA / "reading-distractors.json"
     if curated_path.exists():
-        curated = read_json(curated_path).get(target["label"])
+        curated_table = read_json(curated_path)
+        curated = curated_table.get(target["id"]) or curated_table.get(target["label"])
         if curated:
             if len(curated) != 3 or any(x in valid for x in curated) or len(set(curated)) != 3:
                 raise ValueError("Invalid curated reading distractors")
